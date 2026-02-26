@@ -1,26 +1,3 @@
-"""
-ROS 2 node for visualizing depth and annotated RGB images while performing
-object tracking with 1D forward and lateral Kalman filters.
-
-This node:
-- Subscribes to annotated RGB images, depth frames, and 2D object detections
-- Computes forward distance from depth using disparity
-- Tracks distance and lateral error using Kalman filters
-- Publishes forward distance, side error, detection flags, and bounding box coordinates
-- Visualizes combined RGB and depth streams
-
-Subscribed topics:
-- annotated_image (sensor_msgs/Image)
-- depth_frame (sensor_msgs/Image)
-- detections (vision_msgs/Detection2DArray)
-
-Published topics:
-- forward_distance (std_msgs/Float32)
-- side_error (std_msgs/Int16)
-- detection (std_msgs/Bool)
-- coords (std_msgs/Float32MultiArray)
-"""
-
 import cv2
 import rclpy 
 import numpy as np
@@ -42,13 +19,6 @@ from filterpy.kalman import KalmanFilter
 #P - error covariance
 
 class KalmanBox:
-    """
-    Kalman filter wrappers for smoothing object distance and lateral error.
-
-    Contains two inner classes:
-    - Forward: tracks object distance in 1D using [distance, velocity] state
-    - Lateral: tracks lateral (x-axis) error relative to image center
-    """
     class Forward:
         """
         1D Kalman filter for smoothing forward distance.
@@ -64,30 +34,16 @@ class KalmanBox:
             self.kf.Q *= 0.00001  
 
         def predict(self) -> float:
-            """
-            Predict the next state of the filter.
-            """
             self.kf.predict()
             return self.kf.x[0, 0]
 
         def update(self, distance: float) -> None:
-            """
-            Update the filter with a new measurement.
-            """
             self.kf.update([[distance]])
 
         def get_distance(self) -> float:
-            """
-            Get the current estimated distance from the filter.
-            """    
             return self.kf.x[0, 0]
 
     class Lateral:
-        """
-        1D Kalman filter for lateral error (x-axis) relative to image center.
-        
-        State vector: [side_error, velocity]
-        """
         def __init__(self, side_error):
             self.kf = KalmanFilter(2,1)
             self.kf.F = np.array(
@@ -103,31 +59,18 @@ class KalmanBox:
             self.kf.Q[[0,0],[1,1]] *= 0.00001
 
         def predict(self):
-            """
-            Predict the next state of the filter.
-            """
             self.kf.predict()
             return self.get_side_error()
 
         def update(self, side_error):
-            """
-            Update the filter with a new measurement.
-            """
             self.kf.update([[side_error]])
 
         def get_side_error(self):
-            """
-            Get the current estimated distance from the filter.
-            """    
             return self.kf.x[0,0]
 
 
 
 class Visualizer(Node):
-    """
-    ROS 2 node for visualizing RGB and depth frames and performing real-time
-    forward and lateral object tracking using Kalman filters.
-    """
     def __init__(self):
         super().__init__("visualizer_node")
         self.annotated_frame = None
@@ -172,6 +115,8 @@ class Visualizer(Node):
         self.publisher_err_x = self.create_publisher(Int16, "side_error", 5)        
         self.publisher_det = self.create_publisher(Bool, "detection", 5)
         self.publisher_bb_coords = self.create_publisher(Float32MultiArray, "coords", 5)
+        self.publisher_meas_invalid = self.create_publisher(Bool, "meas_invalid", 5)
+        self.publisher_recovery = self.create_publisher(Bool, "recovery", 5)
 
         self.create_timer(float(1/30), self.ROI_callback)       
         self.create_timer(float(1/30), self.side_error_callback)
@@ -190,12 +135,6 @@ class Visualizer(Node):
         self.depth_frame_colorized = cv2.applyColorMap(self.depth_frame, self.colorMap)
 
     def detection_callback(self, msg: Detection2DArray):
-        """
-        Callback for 2D object detections.
-
-        Extracts bounding box information and center coordinates for the
-        first detection, and sets detection flags.
-        """
         if len(msg.detections) == 0:
             self.detected = False
             self.x1 = self.x2 = self.y1 = self.y2 = None
@@ -204,13 +143,11 @@ class Visualizer(Node):
             self.detected = True
 
         det =  msg.detections[0]
-        self.x_center = det.bbox.center.x
-        self.y_center = det.bbox.center.y
+        self.x_center = det.bbox.center.position.x
+        self.y_center = det.bbox.center.position.y
         self.size_x  = det.bbox.size_x
         self.size_y = det.bbox.size_y
         self.bb_center = (self.x_center, self.y_center)        
-
-
 
         h, w = 480, 640
 
@@ -219,21 +156,14 @@ class Visualizer(Node):
         self.y1 = max(0, int(self.y_center - self.size_y / 2)*0.99)
         self.y2 = min(h, int(self.y_center + self.size_y / 2)*0.99)
         self.bbox = [self.x1, self.y1, self.x2, self.y2]
-
     def is_disparity_spike(self, distance, prev_distance, threshold=0.25):
-        """
-        Check if the current distance measurement is a spike compared to previous.
-        """
         if prev_distance is None:
             return False
         return distance > prev_distance*(1+threshold)        
 
-    def recovered(self, actual, last, tol=0.15):        
-        """
-        Check if the measurement has recovered to a valid range after spike was detected.
-        """
+    def recovered(self, actual, last, tol=0.15):
         print(f"DIFFERENCE: {abs(actual - last)}")
-        return abs(actual - last) < tol
+        return bool(abs(actual - last) < tol)
 
 #    def derivative(self):
 #        if self.distance_m is not None:
@@ -244,10 +174,9 @@ class Visualizer(Node):
 
 
     def ROI_callback(self):
-        """
-        Compute forward distance using depth frame and object bounding box.
-        """
-        msg = Float32() 
+        msg = Float32()
+        msg_invalid = Bool()
+        msg_recovery = Bool() 
         if not self.detected and self.bbox is None:
             return
         if self.x1 is not None and self.y1 is not None and self.depth_frame is not None and self.detected:
@@ -258,13 +187,9 @@ class Visualizer(Node):
             self.disparity_value = 0.1
         self.distance_m = (self.f_x * self.B) / self.disparity_value  
         self.disparity_spike = self.is_disparity_spike(self.distance_m, self.prev_distance)
-      #  self.prev_distance = self.distance_m
-      #  if self.disparity_spike:
-      #      return
         if self.disparity_spike and not self.measurement_invalid:
             self.measurement_invalid = True
             self.recovery = False
-      #      self.recovery = self.recovered(self.distance_m, self.last_valid_distance)
         if self.measurement_invalid:
             self.recovery = self.recovered(self.distance_m, self.last_valid_distance)     
             if self.recovery:
@@ -274,21 +199,24 @@ class Visualizer(Node):
             distance_out = self.distance_m
             self.last_valid_distance = self.distance_m
         else: 
-            distance_out = self.last_valid_distance
+            difference = abs(self.distance_predicted - self.last_valid_distance)
+            #distance_out = self.distance_predicted
+            distance_out = self.last_valid_distance - difference
         self.prev_distance = self.distance_m     
-        print(f"{self.distance_m:.2f}")
         print(f"SPIKE: {self.disparity_spike}")
         print(f"MEASUREMENT INVALID: {self.measurement_invalid}")
         print(f"RECOVERY: {self.recovery}")
         print(f"LAST VALID DISTANCE: {self.last_valid_distance}")
+        print(f"DISTANCE: {distance_out}")
         msg.data = round(distance_out, 2)
+        msg_invalid.data = self.measurement_invalid
+        msg_recovery.data = self.recovery
         print(msg)
         self.publisher_frwd_dist.publish(msg)
+        self.publisher_meas_invalid.publish(msg_invalid)
+        self.publisher_recovery.publish(msg_recovery)  
  
     def tracking_loop(self):
-        """
-        Update the forward distance Kalman filter.
-        """
         if self.distance_m is None:
             return
         if self.tracker is None and self.distance_m is not None:
@@ -302,9 +230,6 @@ class Visualizer(Node):
 
 
     def side_tracking_loop(self):
-        """
-        Update the lateral error Kalman filter.
-        """
         if self.bbox is None:
             return
         if self.side_tracker is None and self.bbox is not None and self.error_x is not None:
@@ -316,9 +241,6 @@ class Visualizer(Node):
 
    
     def side_error_callback(self):
-        """
-        Compute and publish lateral error relative to image center.
-        """
         msg = Int16()
         if self.bb_center is None:
             return
@@ -327,21 +249,14 @@ class Visualizer(Node):
         elif not self.detected and self.error_predicted is not None:
             self.error_x = int(self.error_predicted)
         msg.data = max(-320, min(self.error_x, 320))
-        print(self.error_x)
         self.publisher_err_x.publish(msg)
     
     def detection(self):
-        """
-        Publish detection as a Boolean flag
-        """
         msg = Bool()
         msg.data = self.detected
         self.publisher_det.publish(msg) 
 
     def visualize(self):
-        """
-        Visualize the frames using cv window
-        """
         while rclpy.ok():
             if self.annotated_frame is None or self.depth_frame_colorized is None:
                 time.sleep(0.01)
@@ -371,5 +286,8 @@ def main(args=None):
 
 if __name__ == "__main__":
     main()
+
+    
+
 
           
