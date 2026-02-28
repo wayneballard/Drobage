@@ -1,4 +1,4 @@
-import cv2
+mport cv2
 import rclpy 
 import numpy as np
 import threading
@@ -55,7 +55,7 @@ class KalmanBox:
 
             self.kf.x = np.array([[side_error], [0]])
 
-            self.kf.R *= 10
+            self.kf.R *= 0.05
             self.kf.Q[[0,0],[1,1]] *= 0.00001
 
         def predict(self):
@@ -87,6 +87,8 @@ class Visualizer(Node):
 
         self.error_predicted = None
         self.distance_m = None
+        self.distance_predicted = None
+        self.side_error_out = None
 
         self.bbox = None
         self.bbox_predicted = None
@@ -101,6 +103,7 @@ class Visualizer(Node):
         self.disparity_spike = False
         self.prev_distance = None
         self.last_valid_distance = None
+        self.last_valid_side_error = None
         self.recovery = False 
 
         self.f_x = 457.798
@@ -194,14 +197,23 @@ class Visualizer(Node):
             self.recovery = self.recovered(self.distance_m, self.last_valid_distance)     
             if self.recovery:
                 self.measurement_invalid = False
-
-        if not self.measurement_invalid: 
-            distance_out = self.distance_m
-            self.last_valid_distance = self.distance_m
-        else: 
-            difference = abs(self.distance_predicted - self.last_valid_distance)
+            if self.distance_predicted is not None and not self.recovery:
+                difference = abs(self.distance_predicted - self.last_valid_distance)
             #distance_out = self.distance_predicted
-            distance_out = self.last_valid_distance - difference
+                distance_out = self.last_valid_distance - difference
+
+
+        if not self.measurement_invalid:
+            if self.detected: 
+                distance_out = self.distance_m
+                self.last_valid_distance = self.distance_m
+            elif not self.detected:
+                distance_out = self.distance_predicted
+       # else: 
+            #if self.distance_predicted is not None:
+            #    difference = abs(self.distance_predicted - self.last_valid_distance)
+            #distance_out = self.distance_predicted
+            #    distance_out = self.last_valid_distance - difference
         self.prev_distance = self.distance_m     
         print(f"SPIKE: {self.disparity_spike}")
         print(f"MEASUREMENT INVALID: {self.measurement_invalid}")
@@ -238,17 +250,26 @@ class Visualizer(Node):
             self.side_tracker.update(self.error_x)
         self.side_tracker.predict()
         self.error_predicted = self.side_tracker.get_side_error()
+        print(f"SIDE ERROR PREDICTED:{self.error_predicted}")   
 
-   
     def side_error_callback(self):
         msg = Int16()
         if self.bb_center is None:
             return
-        if self.x1 is not None and self.y1 is not None and self.depth_frame is not None and self.detected:
+        if self.x1 is not None and self.y1 is not None and self.depth_frame is not None and self.detected and not self.measurement_invalid:
             self.error_x = int(self.bb_center[0] - self.image_center[0])
-        elif not self.detected and self.error_predicted is not None:
-            self.error_x = int(self.error_predicted)
-        msg.data = max(-320, min(self.error_x, 320))
+            self.last_valid_side_error = self.error_x 
+            self.side_error_out = self.error_x
+        elif not self.detected and not self.measurement_invalid and self.error_predicted is not None:
+            self.side_error_out = self.error_predicted
+        elif self.error_predicted is not None and self.measurement_invalid and not self.detected:
+            side_difference = abs(self.last_valid_side_error - self.error_predicted) if self.error_predicted is not None else self.last_valid_side_error
+            if self.last_valid_side_error < 0:
+                self.side_error_out = int(self.error_predicted + side_difference)
+            elif self.last_valid_side_error > 0:
+                self.side_error_out = int(self.error_predicted - side_difference)
+        msg.data = max(-320, min(int(self.side_error_out), 320))
+        print(f"SIDE ERROR OUT:{msg.data}")
         self.publisher_err_x.publish(msg)
     
     def detection(self):
@@ -286,6 +307,7 @@ def main(args=None):
 
 if __name__ == "__main__":
     main()
+
 
     
 
