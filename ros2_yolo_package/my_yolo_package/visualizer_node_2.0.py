@@ -203,7 +203,7 @@ class Visualizer(Node):
                 distance_out = self.last_valid_distance - difference
 
 
-        if not self.measurement_invalid:
+        elif not self.measurement_invalid:
             if self.detected: 
                 distance_out = self.distance_m
                 self.last_valid_distance = self.distance_m
