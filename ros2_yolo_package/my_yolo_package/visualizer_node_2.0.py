@@ -1,4 +1,4 @@
-mport cv2
+import cv2
 import rclpy 
 import numpy as np
 import threading
@@ -91,20 +91,19 @@ class Visualizer(Node):
         self.side_error_out = None
 
         self.bbox = None
-        self.bbox_predicted = None
         self.bb_center = None    
         self.x1 = None
         self.x2 = None
         self.y1 = None
         self.y2 = None
         self.detected = False
-        self.measurement_invalid = False
 
         self.disparity_spike = False
         self.prev_distance = None
         self.last_valid_distance = None
         self.last_valid_side_error = None
-        self.recovery = False 
+        self.recovery = False
+        self.measurement_invalid = False 
 
         self.f_x = 457.798
         self.B = 0.075
@@ -168,13 +167,6 @@ class Visualizer(Node):
         print(f"DIFFERENCE: {abs(actual - last)}")
         return bool(abs(actual - last) < tol)
 
-#    def derivative(self):
-#        if self.distance_m is not None:
-#            previous = self.prev_distance if self.prev_distance is not None else 0
-#            self.rate_of_change = (self.distance_m - previous) / 0.033
-#            self.prev_distance = self.distance_m
-#            print(self.rate_of_change)    
-
 
     def ROI_callback(self):
         msg = Float32()
@@ -198,29 +190,28 @@ class Visualizer(Node):
             if self.recovery:
                 self.measurement_invalid = False
             if self.distance_predicted is not None and not self.recovery:
+                print("KALMAN CALCULATED")
                 difference = abs(self.distance_predicted - self.last_valid_distance)
-            #distance_out = self.distance_predicted
                 distance_out = self.last_valid_distance - difference
 
 
-        elif not self.measurement_invalid:
+        if not self.measurement_invalid:
             if self.detected: 
+                print("DETECTED")
                 distance_out = self.distance_m
                 self.last_valid_distance = self.distance_m
             elif not self.detected:
+                print("ACTUAL KALMAN")
                 distance_out = self.distance_predicted
-       # else: 
-            #if self.distance_predicted is not None:
-            #    difference = abs(self.distance_predicted - self.last_valid_distance)
-            #distance_out = self.distance_predicted
-            #    distance_out = self.last_valid_distance - difference
+
         self.prev_distance = self.distance_m     
         print(f"SPIKE: {self.disparity_spike}")
         print(f"MEASUREMENT INVALID: {self.measurement_invalid}")
         print(f"RECOVERY: {self.recovery}")
         print(f"LAST VALID DISTANCE: {self.last_valid_distance}")
         print(f"DISTANCE: {distance_out}")
-        msg.data = round(distance_out, 2)
+        if not np.isnan(distance_out):
+            msg.data = round(distance_out, 2)
         msg_invalid.data = self.measurement_invalid
         msg_recovery.data = self.recovery
         print(msg)
@@ -260,14 +251,8 @@ class Visualizer(Node):
             self.error_x = int(self.bb_center[0] - self.image_center[0])
             self.last_valid_side_error = self.error_x 
             self.side_error_out = self.error_x
-        elif not self.detected and not self.measurement_invalid and self.error_predicted is not None:
-            self.side_error_out = self.error_predicted
-        elif self.error_predicted is not None and self.measurement_invalid and not self.detected:
-            side_difference = abs(self.last_valid_side_error - self.error_predicted) if self.error_predicted is not None else self.last_valid_side_error
-            if self.last_valid_side_error < 0:
-                self.side_error_out = int(self.error_predicted + side_difference)
-            elif self.last_valid_side_error > 0:
-                self.side_error_out = int(self.error_predicted - side_difference)
+        elif not self.detected:
+            self.side_error_out = self.last_valid_side_error
         msg.data = max(-320, min(int(self.side_error_out), 320))
         print(f"SIDE ERROR OUT:{msg.data}")
         self.publisher_err_x.publish(msg)
@@ -307,6 +292,8 @@ def main(args=None):
 
 if __name__ == "__main__":
     main()
+
+
 
 
     
