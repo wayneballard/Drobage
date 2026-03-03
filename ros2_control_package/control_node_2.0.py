@@ -1,4 +1,4 @@
-mport rclpy
+import rclpy
 import time
 import requests
 import math 
@@ -38,7 +38,7 @@ class PIController:
         def update(self, error_side: float, dt: float) -> (float, float):
             self.integral_error_side += error_side * dt
             self.integral_error_side = max(-100, min(100, self.integral_error_side))
-            control_output = self.kp_side * error_side + self.ki_side * self.integral_error_side 
+            control_output = self.kp_side * error_side
             prev_error = self.last_error_side if self.last_error_side is not None else 0
             rate_of_change_side = (error_side - prev_error) / dt
             self.last_error_side = error_side 
@@ -54,10 +54,10 @@ class States(Enum):
 class Control(Node):
     def __init__(self):
         super().__init__("control_node")
-        self.Kp_frwd = 40
+        self.Kp_frwd = 45
         self.Ki_frwd = 45
 
-        self.Kp_side = 0.3  #12 V
+        self.Kp_side = 0.8  #12 V
         self.Ki_side = 0.2
 
         self.TARGET_DISTANCE = 0.3
@@ -69,13 +69,8 @@ class Control(Node):
         self.ip = "192.168.4.1"
         self.speed = None
         self.counter = 0
-        self.lock_counter = 0
-        self.stuck = 0
+        self.center_counter = 0
 
-        self.left_counter_search = 0
-        self.right_counter_search = 0
-        self.center_counter_search = 0 
-        self.search_counter = 0
 
         self.dt = 0.033
         self.last_time = 0
@@ -99,7 +94,6 @@ class Control(Node):
 
         self.rate_of_change = None
         self.rate_of_change_frwd = None
-        self.previous = None
         self.distance_m = None
         self.side_error = None
         self.detected = None    
@@ -113,7 +107,8 @@ class Control(Node):
 
     def side_error_callback(self, msg):
         self.side_error = msg.data
-        self.side_error = max(-320, min(self.side_error, 320))
+        if self.side_error is not None:
+            self.side_error = max(-320, min(self.side_error, 320))
 
     def invalid_callback(self, msg):
         self.meas_invalid = msg.data
@@ -123,8 +118,6 @@ class Control(Node):
 
     def detection_callback(self, msg):
         self.detected = msg.data
-#        if self.detection_count == 0 and not self.detected:
-#            self.approach_mode = True
 
 
     def send_command(self, T: int, L_speed: int, R_speed: int) -> None:
@@ -147,7 +140,7 @@ class Control(Node):
 
         should_move = self.distance_m > self.TARGET_DISTANCE + 0.03
         self.control_output_side, self.rate_of_change = self.side_controller.update(self.side_error, self.dt)
-
+ 
         if self.detected:
             self.approach_mode = False
             self.detection_count += 1       
@@ -156,18 +149,17 @@ class Control(Node):
             self.center_coutner_search = 0
 
         if abs(self.side_error) > 30:
-#            self.stop_all = False
             self.should_stop = False
         if self.should_stop:
             self.turning = False      
         if should_move and not self.turning:
-#            self.stop_all = False
             self.state = States.MOVING
 
-        if self.detected and not self.should_stop or not should_move and self.detected:
+        if not self.should_stop:
             self.state = States.CENTERING
         if not should_move and self.should_stop:
             self.state = States.STOP
+            self.speed = 20
 
 
     def approach(self):
@@ -176,44 +168,27 @@ class Control(Node):
     def moving(self):
         error = self.distance_m - self.TARGET_DISTANCE
         control_output_frwd, self.rate_of_change_frwd  = self.frwd_controller.update(error, self.dt)
-#        if self.should_stop:
-#            control_output_frwd = 20  
         self.speed = max(20, min(90, control_output_frwd))
-        if self.distance_m <= self.d_dec or self.rate_of_change_frwd > 1:
-            self.speed = 0
 
         L_speed = self.speed + self.feedforward
         R_speed = self.speed + self.feedforward
         self.send_command(11, L_speed, R_speed)
 
 
-    def search(self):
-        if self.left_counter_search < 60:
-            self.send_command(11, -100, 100)
-            self.left_counter_search += 1
-        if self.left_counter_search == 60:
-            if self.right_counter_search <= 120:
-                self.send_command(11, 100, -100)  
-                self.right_counter_search += 1
-        if self.right_counter_search == 120:
-            if self.center_counter_search < 60:
-                self.send_command(11, -100, 100)
-                self.center_counter_search += 1
-
     def centering(self):   
-#        control_output_side, self.rate_of_change = self.side_controller.update(self.side_error, self.dt)
 
         if -30 < self.side_error < 30:
             self.should_stop = True
         if self.should_turn and not self.should_stop:
             self.turning = True   
-            if self.control_output_side < 0:
-                L_speed = -100
-                R_speed = 100
+            if self.side_error < 0:
+                L_speed = -abs(self.control_output_side)
+                R_speed = abs(self.control_output_side)
                 self.send_command(11, L_speed, R_speed)
-            if self.control_output_side > 0:
-                L_speed = 100
-                R_speed = -100
+            if self.side_error > 0:
+                L_speed = abs(self.control_output_side)
+                R_speed = -abs(self.control_output_side)
+
                 self.send_command(11, L_speed, R_speed)
 
     def stop(self):
@@ -223,8 +198,8 @@ class Control(Node):
          now = time.monotonic()
          self.dt = now - self.last_time
          self.last_time = now
-#         if self.distance_m is None or self.side_error is None:
-#             return
+         if self.distance_m is None or self.side_error is None:
+             return
          self.update_state()
          if self.state == States.APPROACH:
              self.approach()
@@ -236,11 +211,12 @@ class Control(Node):
              self.stop()
 
     def print_timer(self):
-        self.get_logger().info(f"SPEED:{self.speed}")
+        self.get_logger().debug(f"SPEED:{self.speed}")
         self.get_logger().info(f"STATE:{self.state}")
         self.get_logger().info(f"DISTANCE:{self.distance_m}")
         self.get_logger().info(f"SIDE ERROR:{self.side_error}")
-        print(self.should_stop)
+        self.get_logger().info(f"CONTROL OUTPUT SIDE:{self.control_output_side}")
+
 def main():
     rclpy.init()
     control_node = Control()
@@ -254,6 +230,10 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+
+
 
 
 
