@@ -56,7 +56,3 @@ while pipeline.isRunning():
     rgb = messageGroup["cam_rgb"]
     print(f"Timestamps, message group {messageGroup.getTimestamp()}, left {left.getTimestamp()}, right {right.getTimestamp()}, rgb {rgb.getTimestamp()}, disparity {disparity.getTimestamp()}")
 
-
-
-        stream_stereo_camera()
-        stream_color_camera()
