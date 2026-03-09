@@ -9,10 +9,10 @@ from cv_bridge import CvBridge
 import atexit
 import os
 import time
-#import requests
-#import json
-#import math
-#import transforms3d as tf3d
+import requests
+import json
+import math
+import transforms3d as tf3d
 
 from ament_index_python.packages import get_package_share_directory
 
@@ -37,13 +37,13 @@ class OakCameraNode(Node):
         self.cam_info.header.frame_id = "camera_link"
 
         self.publisher_rgb = self.create_publisher(Image, 'image_raw', 1)
-        self.publisher_depth = self.create_publisher(Image, 'depth_frame_to_inference', 5)
+        self.publisher_depth = self.create_publisher(Image, 'depth_frame_to_inference', 1)
         self.publisher_depth_original = self.create_publisher(Image, 'image_depth', 1)
-        self.publisher_caminfo = self.create_publisher(CameraInfo, 'camera_info', 5)
+        self.publisher_caminfo = self.create_publisher(CameraInfo, 'camera_info', 1)
 ####
-#        self.publisher_imu = self.create_publisher(Imu, "imu", 5)
-#        self.create_timer(float(1/30), self.imu_callback)
-#        self.imu = Imu()   
+        self.publisher_imu = self.create_publisher(Imu, "imu", 1)
+        self.create_timer(float(1/30), self.imu_callback)
+        self.imu = Imu()   
 ####
 
         self.bridge = CvBridge()
@@ -52,7 +52,7 @@ class OakCameraNode(Node):
 
         self.pipeline = dai.Pipeline()
         self.cam_rgb = self.pipeline.create(dai.node.Camera).build()
-        self.videoQueue = self.cam_rgb.requestOutput((640, 480)) #.createOutputQueue()
+        self.videoQueue = self.cam_rgb.requestOutput((640, 480), fps=10) #.createOutputQueue()
 
         calibData = dai.CalibrationHandler(jsonfile)
         self.pipeline.setCalibrationData(calibData)
@@ -62,13 +62,13 @@ class OakCameraNode(Node):
         self.monoRight = self.pipeline.create(dai.node.Camera).build(dai.CameraBoardSocket.CAM_C)
         self.stereo = self.pipeline.create(dai.node.StereoDepth)
 
-        self.monoLeftOut = self.monoLeft.requestFullResolutionOutput()
-        self.monoRightOut = self.monoRight.requestFullResolutionOutput()
+        self.monoLeftOut = self.monoLeft.requestFullResolutionOutput(fps=10)
+        self.monoRightOut = self.monoRight.requestFullResolutionOutput(fps=10)
 
         self.monoLeftOut.link(self.stereo.left)
         self.monoRightOut.link(self.stereo.right)
     
-        self.stereo.setOutputSize(640,480)
+#        self.stereo.setOutputSize(640,480)
         self.stereo.setLeftRightCheck(True)
         self.stereo.setRectification(True)
         self.stereo.setSubpixel(False)
@@ -122,6 +122,51 @@ class OakCameraNode(Node):
 
         atexit.register(self.cleanup)
 
+####
+    def imu_callback(self):
+        imu = requests.get("http://192.168.4.1/js?json={\"T\":126}")        
+        data = imu.json()
+#        print(data)
+
+        self.roll = math.radians(float(data["r"]))
+        self.pitch = math.radians(float(data["p"]))
+        self.yaw = float(data["y"])
+
+        q = tf3d.euler.euler2quat(self.roll, self.pitch, self.yaw)
+
+#        print(q)
+
+        self.imu.orientation.x = q[1]
+        self.imu.orientation.y = q[2]
+        self.imu.orientation.z = q[3]
+        self.imu.orientation.w = q[0]
+
+        self.imu.orientation_covariance = [
+        0.01,0.0,0.0,
+        0.0,0.01,0.0,
+        0.0,0.0,0.01
+        ]
+
+        self.imu.angular_velocity_covariance = [
+        0.02,0.0,0.0,
+        0.0,0.02,0.0,
+        0.0,0.0,0.02
+        ]
+
+        self.imu.linear_acceleration_covariance = [
+        0.04,0.0,0.0,
+        0.0,0.04,0.0,
+        0.0,0.0,0.04
+        ]
+        self.imu.linear_acceleration.x = float(data["ax"]) * 9.80665 / 1000
+        self.imu.linear_acceleration.y = float(data["ay"]) * 9.80665 / 1000
+        self.imu.linear_acceleration.z = float(data["az"]) * 9.80665 / 1000
+
+        self.imu.angular_velocity.x = math.radians(float(data["gx"]))
+        self.imu.angular_velocity.y = math.radians(float(data["gy"]))
+        self.imu.angular_velocity.z = math.radians(float(data["gz"]))
+###
+
 
     def time_callback(self):
 #        rgb_in = self.videoQueue.get()
@@ -160,11 +205,17 @@ class OakCameraNode(Node):
 
         self.cam_info.header.stamp = rclpy.time.Time(seconds=depth_in.getTimestamp().total_seconds()).to_msg()
         self.cam_info.header.frame_id = "camera_link"
+###
+        self.imu.header.stamp = rclpy.time.Time(seconds=depth_in.getTimestamp().total_seconds()).to_msg()
+        self.imu.header.frame_id = "imu_link"
+#        self.publisher_imu.publish(self.imu)
 
+###
         self.publisher_rgb.publish(ros_image_rgb)
         self.publisher_depth.publish(ros_image_depth)
         self.publisher_depth_original.publish(ros_image_depth_original)
         self.publisher_caminfo.publish(self.cam_info)        
+        self.publisher_imu.publish(self.imu)
 
 
 
@@ -186,4 +237,7 @@ def main(args=None):
 
 if __name__ == '__main__':
     main()
+
+
+
 
