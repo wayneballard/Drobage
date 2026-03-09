@@ -68,45 +68,38 @@ class OakCameraNode(Node):
         self.monoLeftOut.link(self.stereo.left)
         self.monoRightOut.link(self.stereo.right)
     
-#        self.stereo.setOutputSize(640,480)
+        self.stereo.setOutputSize(640,480)
         self.stereo.setLeftRightCheck(True)
         self.stereo.setRectification(True)
         self.stereo.setSubpixel(False)
         self.stereo.setExtendedDisparity(True)
-#        self.stereo.setDepthAlign(dai.CameraBoardSocket.CAM_A)
+
 
         self.stereo.initialConfig.postProcessing.temporalFilter.enable = False
         self.stereo.initialConfig.postProcessing.spatialFilter.enable = True
 
-#        self.syncedLeftQueue = self.stereo.syncedLeft.createOutputQueue()
-#        self.syncedRightQueue = self.stereo.syncedRight.createOutputQueue()
+
 
         self.disparityQueue = self.stereo.disparity.createOutputQueue()
         self.maxDisparity = 1
-#        self.pipeline.start() ##########
-#        self.img_align = self.pipeline.create(dai.node.ImageAlign)
-#        self.stereo.disparity.link(self.img_align.input)
-#        self.videoQueue.link(self.img_align.inputAlignTo)
+
 
         self.sync = self.pipeline.create(dai.node.Sync)
         self.monoLeftOut.link(self.sync.inputs['self.monoLeft'])
         self.monoRightOut.link(self.sync.inputs["self.monoRight"])
         self.videoQueue.link(self.sync.inputs["self.cam_rgb"])
         self.queue = self.sync.out.createOutputQueue()
-#        self.pipeline.start()
-##################       
+     
 
 
         try:
             self.get_logger().info("Connecting to OAK-D Lite...")
             self.pipeline.start()
             self.get_logger().info("OAK-D Lite camera connected")
-          #  self.videoIn = self.videoQueue.get()
             self.disparity = self.disparityQueue.get()
 
             messageGroup = self.queue.get()
             rgb_in = messageGroup['self.cam_rgb']
-          #  depth_in = messageGroup['aligned_depth']  
 
           #  assert isinstance(self.videoIn, dai.ImgFrame)
           #  assert isinstance(self.disparity, dai.ImgFrame)
@@ -169,12 +162,12 @@ class OakCameraNode(Node):
 
 
     def time_callback(self):
-#        rgb_in = self.videoQueue.get()
+
         depth_in = self.disparityQueue.get()
         messageGroup = self.queue.get()
 
         rgb_in = messageGroup['self.cam_rgb']
-#        depth_in = messageGroup['aligned_depth']     
+    
 
         rgb_in_stamp = rgb_in.getTimestamp()
         depth_in_stamp = depth_in.getTimestamp()
@@ -208,7 +201,6 @@ class OakCameraNode(Node):
 ###
         self.imu.header.stamp = rclpy.time.Time(seconds=depth_in.getTimestamp().total_seconds()).to_msg()
         self.imu.header.frame_id = "imu_link"
-#        self.publisher_imu.publish(self.imu)
 
 ###
         self.publisher_rgb.publish(ros_image_rgb)
