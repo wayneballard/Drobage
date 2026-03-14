@@ -182,13 +182,18 @@ class OakCameraNode(Node):
         self.npDisparity  = depth_in.getFrame()
         self.maxDisparity = max(self.maxDisparity, np.max(self.npDisparity))
         normalizedDisparity = ((self.npDisparity / self.maxDisparity) * 255).astype(np.uint8)
-        stamp = self.get_clock().now().to_msg()
 
+        disp = self.npDisparity.astype(np.float32) / 34
+        depth_m = np.zeros_like(disp, dtype=np.float32)
+        valid = disp > 0
+        depth_m[valid] = (457.798 * 0.075) / disp[valid]
+
+        
         ros_image_rgb = self.bridge.cv2_to_imgmsg(rgb_frame, "bgr8")
         ros_image_rgb.header.stamp = rclpy.time.Time(seconds=depth_in.getTimestamp().total_seconds()).to_msg()
         ros_image_rgb.header.frame_id = "camera_link"
 
-        ros_image_depth_original = self.bridge.cv2_to_imgmsg(self.npDisparity)
+        ros_image_depth_original = self.bridge.cv2_to_imgmsg(depth_m)
         ros_image_depth_original.header.stamp = rclpy.time.Time(seconds=depth_in.getTimestamp().total_seconds()).to_msg()
         ros_image_depth_original.header.frame_id = "camera_link"
 
