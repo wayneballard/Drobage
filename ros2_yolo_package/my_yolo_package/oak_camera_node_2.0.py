@@ -42,7 +42,7 @@ class OakCameraNode(Node):
         self.publisher_caminfo = self.create_publisher(CameraInfo, 'camera_info', 1)
 ####
         self.publisher_imu = self.create_publisher(Imu, "imu", 1)
-        self.create_timer(float(1/30), self.imu_callback)
+        self.create_timer(float(1/12), self.imu_callback)
         self.imu = Imu()   
 ####
 
@@ -110,29 +110,19 @@ class OakCameraNode(Node):
             return
 
 
-        timer_period = float(1.0 / 30)
+        timer_period = float(1.0 / 12)
         self.timer = self.create_timer(timer_period, self.time_callback)
 
         atexit.register(self.cleanup)
 
 ####
     def imu_callback(self):
-        imu = requests.get("http://192.168.4.1/js?json={\"T\":126}")        
-        data = imu.json()
-#        print(data)
 
-        self.roll = math.radians(float(data["r"]))
-        self.pitch = math.radians(float(data["p"]))
-        self.yaw = float(data["y"])
-
-        q = tf3d.euler.euler2quat(self.roll, self.pitch, self.yaw)
-
-#        print(q)
-
-        self.imu.orientation.x = q[1]
-        self.imu.orientation.y = q[2]
-        self.imu.orientation.z = q[3]
-        self.imu.orientation.w = q[0]
+###
+        self.imu.orientation.x = 0.0
+        self.imu.orientation.y = 0.0
+        self.imu.orientation.z = 0.0
+        self.imu.orientation.w = 1.0
 
         self.imu.orientation_covariance = [
         0.01,0.0,0.0,
@@ -151,13 +141,16 @@ class OakCameraNode(Node):
         0.0,0.04,0.0,
         0.0,0.0,0.04
         ]
-        self.imu.linear_acceleration.x = float(data["ax"]) * 9.80665 / 1000
-        self.imu.linear_acceleration.y = float(data["ay"]) * 9.80665 / 1000
-        self.imu.linear_acceleration.z = float(data["az"]) * 9.80665 / 1000
 
-        self.imu.angular_velocity.x = math.radians(float(data["gx"]))
-        self.imu.angular_velocity.y = math.radians(float(data["gy"]))
-        self.imu.angular_velocity.z = math.radians(float(data["gz"]))
+        self.imu.linear_acceleration.x = 0.0
+        self.imu.linear_acceleration.y = 0.0
+        self.imu.linear_acceleration.z = 9.80665 
+
+        self.imu.angular_velocity.x = 0.0
+        self.imu.angular_velocity.y = 0.0
+        self.imu.angular_velocity.z = 0.0
+
+        self.imu.header.frame_id = "imu_link"
 ###
 
 
