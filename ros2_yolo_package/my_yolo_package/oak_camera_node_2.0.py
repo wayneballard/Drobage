@@ -42,7 +42,7 @@ class OakCameraNode(Node):
         self.publisher_caminfo = self.create_publisher(CameraInfo, 'camera_info', 1)
 ####
         self.publisher_imu = self.create_publisher(Imu, "imu", 1)
-        self.create_timer(float(1/12), self.imu_callback)
+        self.create_timer(float(1/10), self.imu_callback)
         self.imu = Imu()   
 ####
 
@@ -110,7 +110,7 @@ class OakCameraNode(Node):
             return
 
 
-        timer_period = float(1.0 / 12)
+        timer_period = float(1.0 / 10)
         self.timer = self.create_timer(timer_period, self.time_callback)
 
         atexit.register(self.cleanup)
