@@ -72,8 +72,8 @@ class Control(Node):
         self.center_counter = 0
 
 
-        self.dt = 0.033
-        self.last_time = 0
+        self.dt = 0.1
+        self.last_time = time.monotonic()
 
         self.should_turn = True
         self.should_stop = False
@@ -198,8 +198,6 @@ class Control(Node):
          now = time.monotonic()
          self.dt = now - self.last_time
          self.last_time = now
-         if self.distance_m is None or self.side_error is None:
-             return
          self.update_state()
          if self.state == States.APPROACH:
              self.approach()
