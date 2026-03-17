@@ -98,9 +98,9 @@ class Control(Node):
         self.side_error = None
         self.detected = None    
 
-        self.create_timer(self.dt, self.control_loop)
-        self.create_timer(self.dt, self.first_detection)
-        self.create_timer(self.dt, self.print_timer)
+        self.create_timer(float(1/10), self.control_loop)
+        self.create_timer(float(1/10), self.first_detection)
+        self.create_timer(float(1/10), self.print_timer)
 
     def forward_error_callback(self, msg):
         self.distance_m = msg.data
