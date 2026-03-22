@@ -1,30 +1,12 @@
-"""
-ROS 2 node for running YOLOv8 inference on incoming images.
-
-This node:
-- Subscribes to RGB images and depth frames
-- Runs YOLOv8 inference using Ultralytics
-- Publishes annotated images
-- Publishes 2D object detections as vision_msgs/Detection2DArray
-- Passes depth frames to the next node
-
-Subscribed topics:
-- image_raw (sensor_msgs/Image)
-- depth_frame_to_inference (sensor_msgs/Image)
-
-Published topics:
-- annotated_image (sensor_msgs/Image)
-- depth_frame (sensor_msgs/Image)
-- detections (vision_msgs/Detection2DArray)
-"""
-
+  GNU nano 6.2                                                            inference_node.py *                                                                    
 from ultralytics import YOLO
 import rclpy
 import threading
 import time
 from rclpy.node import Node
 from sensor_msgs.msg import Image
-from vision_msgs.msg import Detection2DArray, Detection2D,ObjectHypothesisWithPose
+from geometry_msgs.msg import Point
+from vision_msgs.msg import Detection2DArray, Detection2D,ObjectHypothesisWithPose, Pose2D
 from std_msgs.msg import Int32MultiArray
 from cv_bridge import CvBridge
 import cv2
@@ -33,22 +15,7 @@ import os
 from ament_index_python.packages import get_package_share_directory
 
 class YoloNode(Node):
-    """
-    ROS 2 node that performs YOLOv8 inference on incoming RGB images.
-
-    The node receives RGB images, runs object detection using a TensorRT
-    YOLOv8 model, publishes annotated images, republishes depth images form previous node and outputs detections using
-    standard ROS vision messages.
-    """
-    def __init__(self) -> None:
-        """
-        Initialize the YOLO inference node.
-
-        This method:
-        - Declares and loads ROS parameters
-        - Loads the YOLOv8 model defaults
-        - Creates publishers and subscribers
-        """
+    def __init__(self):
         print("Init")
         super().__init__('inference_node')
         self.cv_image = None
@@ -58,11 +25,11 @@ class YoloNode(Node):
         self.publisher_depth = self.create_publisher(Image, "depth_frame", 5)
         self.publisher_detection = self.create_publisher(Detection2DArray, "detections", 5)
   
-        pkg_share_directory = get_package_share_directory('my_yolo_package')
-        defaults = {"model_path" : os.path.join(pkg_share_directory, "models", "yolov8n_raw.engine"),
+        pkg_share_directory = "/home/wb/Desktop/Drobage/src/my_yolo_package/share"
+        defaults = {"model_path" : os.path.join(pkg_share_directory, "models", "best_model.engine"),
                     "conf":0.5,
                     "max_detections":1,
-                    "class_detection":[47],
+                    "class_detection":[2], #47
                     "device" : 'cuda'
                     }
         self.params = {}
@@ -98,40 +65,17 @@ class YoloNode(Node):
         self.bridge = CvBridge()
         self.message_received = False
 
-    def depth_callback(self, msg: Image) -> None:
-        """
-        Receive and republish depth frames.
-
-        The depth image is converted to OpenCV format and immediately
-        republished without modification. This allows downstream nodes
-        to synchronize depth with detections.
-        """
+    def depth_callback(self, msg: Image):
         self.depth_frame_inference = self.bridge.imgmsg_to_cv2(msg, "passthrough")
         self.depth_frame = self.bridge.cv2_to_imgmsg(self.depth_frame_inference, encoding = "passthrough")
 
         self.publisher_depth.publish(self.depth_frame)
 
-    def image_callback(self, msg: Image) -> None:
-        """
-        Store the most recent RGB image for inference.
-
-        The image is not processed directly in the callback to avoid
-        blocking the ROS executor. Inference is handled in a separate
-        processing thread.
-        """
+    def image_callback(self, msg: Image):
         self.latest_frame = msg
 
 
-    def processing_thread(self) -> None:
-        """
-        Perform YOLO inference in a background thread.
-
-        This method:
-        - Waits for incoming images
-        - Runs YOLOv8 inference
-        - Publishes Detection2DArray messages
-        - Publishes annotated images with bounding boxes
-        """
+    def processing_thread(self):
         while rclpy.ok():
             if self.latest_frame is None:
                 time.sleep(0.1)
@@ -158,15 +102,15 @@ class YoloNode(Node):
                 for result in infr_rslts:
                     for box in result.boxes:
                         x1, y1, x2, y2 = map(int, box.xyxy[0])
-                        detection_2d.bbox.center.x = ((x1 + x2) / 2)
-                        detection_2d.bbox.center.y = ((y1 + y2) / 2)
+                        detection_2d.bbox.center.position.x = ((x1 + x2) / 2)
+                        detection_2d.bbox.center.position.y = ((y1 + y2) / 2)
                         detection_2d.bbox.size_x = float((x2 - x1))
                         detection_2d.bbox.size_y = float((y2 - y1))
 
-                        hypothesis.id = str(box.cls[0].item())
-                        hypothesis.score = float(box.conf[0])        
+#                        detection_2d.results.hypothesis.class_id = str(box.cls[0].item())
+#                        detection_2d.results.hypothesis.score = float(box.conf[0])        
 
-                        detection_2d.results.append(hypothesis)
+#                        detection_2d.results.append(hypothesis)
                         detection_2d_msg.detections.append(detection_2d)
 
 
@@ -188,10 +132,7 @@ class YoloNode(Node):
                 self.get_logger().error(f"An exception occured: {e}")
 
 
-def main(args=None) -> None:
-    """
-    ROS2 node entry point
-    """
+def main(args=None):
     print("Start")
     rclpy.init(args=args)
     inference_node = YoloNode()
@@ -209,6 +150,7 @@ def main(args=None) -> None:
 
 if __name__ =='__main__':
     main()
+
 
 
 
