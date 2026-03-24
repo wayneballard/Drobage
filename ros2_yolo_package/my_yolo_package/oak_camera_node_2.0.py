@@ -1,3 +1,4 @@
+!/usr/bin/env python3
 import depthai as dai
 import torch
 import rclpy
@@ -12,9 +13,10 @@ import time
 import requests
 import json
 import math
-import transforms3d as tf3d
+from geometry_msgs.msg import TransformStamped
 
 from ament_index_python.packages import get_package_share_directory
+
 
 class OakCameraNode(Node):
     def __init__(self):
@@ -43,7 +45,8 @@ class OakCameraNode(Node):
 ####
         self.publisher_imu = self.create_publisher(Imu, "imu", 1)
         self.create_timer(float(1/10), self.imu_callback)
-        self.imu = Imu()   
+        self.imu = Imu()
+        self.session = requests.Session()   
 ####
 
         self.bridge = CvBridge()
@@ -52,7 +55,7 @@ class OakCameraNode(Node):
 
         self.pipeline = dai.Pipeline()
         self.cam_rgb = self.pipeline.create(dai.node.Camera).build()
-        self.videoQueue = self.cam_rgb.requestOutput((640, 480), fps=10) #.createOutputQueue()
+        self.videoQueue = self.cam_rgb.requestOutput((640, 480), fps=10) 
 
         calibData = dai.CalibrationHandler(jsonfile)
         self.pipeline.setCalibrationData(calibData)
@@ -73,23 +76,20 @@ class OakCameraNode(Node):
         self.stereo.setRectification(True)
         self.stereo.setSubpixel(False)
         self.stereo.setExtendedDisparity(True)
-
+        self.stereo.setDepthAlign(dai.CameraBoardSocket.CAM_A)
 
         self.stereo.initialConfig.postProcessing.temporalFilter.enable = False
         self.stereo.initialConfig.postProcessing.spatialFilter.enable = True
 
 
-
         self.disparityQueue = self.stereo.disparity.createOutputQueue()
         self.maxDisparity = 1
-
 
         self.sync = self.pipeline.create(dai.node.Sync)
         self.monoLeftOut.link(self.sync.inputs['self.monoLeft'])
         self.monoRightOut.link(self.sync.inputs["self.monoRight"])
         self.videoQueue.link(self.sync.inputs["self.cam_rgb"])
         self.queue = self.sync.out.createOutputQueue()
-     
 
 
         try:
@@ -101,8 +101,8 @@ class OakCameraNode(Node):
             messageGroup = self.queue.get()
             rgb_in = messageGroup['self.cam_rgb']
 
-          #  assert isinstance(self.videoIn, dai.ImgFrame)
-          #  assert isinstance(self.disparity, dai.ImgFrame)
+            assert isinstance(rgb_in, dai.ImgFrame)
+            assert isinstance(self.disparity, dai.ImgFrame)
    
         except Exception as e:
             self.get_logger().error(f"Failed to connect to OAK-D Lite: {e}")
@@ -118,7 +118,6 @@ class OakCameraNode(Node):
 ####
     def imu_callback(self):
 
-###
         self.imu.orientation.x = 0.0
         self.imu.orientation.y = 0.0
         self.imu.orientation.z = 0.0
@@ -151,16 +150,14 @@ class OakCameraNode(Node):
         self.imu.angular_velocity.z = 0.0
 
         self.imu.header.frame_id = "imu_link"
+
 ###
 
-
     def time_callback(self):
-
         depth_in = self.disparityQueue.get()
         messageGroup = self.queue.get()
 
         rgb_in = messageGroup['self.cam_rgb']
-    
 
         rgb_in_stamp = rgb_in.getTimestamp()
         depth_in_stamp = depth_in.getTimestamp()
@@ -175,30 +172,31 @@ class OakCameraNode(Node):
         self.npDisparity  = depth_in.getFrame()
         self.maxDisparity = max(self.maxDisparity, np.max(self.npDisparity))
         normalizedDisparity = ((self.npDisparity / self.maxDisparity) * 255).astype(np.uint8)
+        stamp = self.get_clock().now().to_msg()
 
         disp = self.npDisparity.astype(np.float32) / 34
         depth_m = np.zeros_like(disp, dtype=np.float32)
         valid = disp > 0
         depth_m[valid] = (457.798 * 0.075) / disp[valid]
 
-        
         ros_image_rgb = self.bridge.cv2_to_imgmsg(rgb_frame, "bgr8")
         ros_image_rgb.header.stamp = rclpy.time.Time(seconds=depth_in.getTimestamp().total_seconds()).to_msg()
-        ros_image_rgb.header.frame_id = "camera_link"
+        ros_image_rgb.header.frame_id = "camera_optical_frame"
 
-        ros_image_depth_original = self.bridge.cv2_to_imgmsg(depth_m)
+        ros_image_depth_original = self.bridge.cv2_to_imgmsg(depth_m) #self.npDisparity*0.15
         ros_image_depth_original.header.stamp = rclpy.time.Time(seconds=depth_in.getTimestamp().total_seconds()).to_msg()
-        ros_image_depth_original.header.frame_id = "camera_link"
+        ros_image_depth_original.header.frame_id = "camera_optical_frame"
 
         ros_image_depth = self.bridge.cv2_to_imgmsg(normalizedDisparity, "mono8")
         ros_image_depth.header.stamp = rclpy.time.Time(seconds=depth_in.getTimestamp().total_seconds()).to_msg()
         ros_image_depth.header.frame_id = "depth_frame_to_inference"
 
         self.cam_info.header.stamp = rclpy.time.Time(seconds=depth_in.getTimestamp().total_seconds()).to_msg()
-        self.cam_info.header.frame_id = "camera_link"
+        self.cam_info.header.frame_id = "camera_optical_frame"
 ###
         self.imu.header.stamp = rclpy.time.Time(seconds=depth_in.getTimestamp().total_seconds()).to_msg()
         self.imu.header.frame_id = "imu_link"
+        self.publisher_imu.publish(self.imu)
 
 ###
         self.publisher_rgb.publish(ros_image_rgb)
@@ -206,7 +204,6 @@ class OakCameraNode(Node):
         self.publisher_depth_original.publish(ros_image_depth_original)
         self.publisher_caminfo.publish(self.cam_info)        
         self.publisher_imu.publish(self.imu)
-
 
 
     def cleanup(self):
@@ -227,6 +224,8 @@ def main(args=None):
 
 if __name__ == '__main__':
     main()
+
+
 
 
 
