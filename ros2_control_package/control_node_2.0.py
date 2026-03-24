@@ -7,6 +7,7 @@ from rclpy.node import Node
 from cv_bridge import CvBridge
 from std_msgs.msg import Float32, Int16, Bool, Float32MultiArray
 from enum import Enum, auto
+import threading
 
 class PIController:
     class Forward:
@@ -57,20 +58,18 @@ class Control(Node):
         self.Kp_frwd = 45
         self.Ki_frwd = 45
 
-        self.Kp_side = 0.8  #12 V
+        self.Kp_side = 0.4  #12 V
         self.Ki_side = 0.2
 
-        self.TARGET_DISTANCE = 0.3
-        self.d_dec = 0.34
+        self.TARGET_DISTANCE = 0.28
         self.feedforward = 25
         self.detection_count = 0
-        self.control_output_side = 0        
+        self.control_output_side = 0 
 
         self.ip = "192.168.4.1"
-        self.speed = None
-        self.counter = 0
-        self.center_counter = 0
+        self.session = requests.Session()
 
+        self.speed = None
 
         self.dt = 0.1
         self.last_time = time.monotonic()
@@ -79,6 +78,8 @@ class Control(Node):
         self.should_stop = False
         self.turning = False
         self.approach_mode = False
+        self.full_stop = False
+        self.executing = False
 
         self.state = States.APPROACH
 
@@ -89,18 +90,22 @@ class Control(Node):
         self.subscriber_det = self.create_subscription(Bool, "detection", self.detection_callback, 5)        
         self.subscriber_meas_invalid = self.create_subscription(Bool, "meas_invalid", self.invalid_callback, 5)         
         self.subscriber_recovery = self.create_subscription(Bool, "recovery", self.recovery_callback, 5)
+        self.subscriber_exec = self.create_subscription(Bool, "executing",  self.exec_callback, 5)
 
-        self.lock_publisher = self.create_publisher(Bool, "lock", 5)
+        self.stop_publisher = self.create_publisher(Bool, "stop", 5)
+        self.det_publisher = self.create_publisher(Bool, "detection_to_arm", 5)
 
         self.rate_of_change = None
         self.rate_of_change_frwd = None
         self.distance_m = None
         self.side_error = None
-        self.detected = None    
+        self.detected = False #None    
 
         self.create_timer(float(1/10), self.control_loop)
         self.create_timer(float(1/10), self.first_detection)
         self.create_timer(float(1/10), self.print_timer)
+        self.create_timer(float(1/10), self.detection)
+
 
     def forward_error_callback(self, msg):
         self.distance_m = msg.data
@@ -119,36 +124,38 @@ class Control(Node):
     def detection_callback(self, msg):
         self.detected = msg.data
 
+    def exec_callback(self, msg):
+        self.executing = msg.data
 
     def send_command(self, T: int, L_speed: int, R_speed: int) -> None:
         json_command = f'{{"T":{T},"L":{L_speed},"R":{R_speed}}}'
         json_send =  f"http://{self.ip}/js?json={json_command}"
         try:
-            requests.get(json_send, timeout=0.1)
+            self.session.get(json_send, timeout=0.4)
         except Exception as e:
             print("HTTP error: ", e)
 
     def first_detection(self) -> None:
         if self.detected:
             self.detection_count += 1
-
     def update_state(self):
         if self.detection_count == 0 and not self.detected:
             self.state = States.APPROACH
+
         if self.distance_m is None or self.side_error is None:
             return
 
-        should_move = self.distance_m > self.TARGET_DISTANCE + 0.03
+        should_move = self.distance_m > self.TARGET_DISTANCE #+ 0.03
         self.control_output_side, self.rate_of_change = self.side_controller.update(self.side_error, self.dt)
  
+        if not self.executing:
+            self.full_stop = False
+
         if self.detected:
             self.approach_mode = False
             self.detection_count += 1       
-            self.right_counter_search = 0
-            self.left_counter_search = 0
-            self.center_coutner_search = 0
 
-        if abs(self.side_error) > 30:
+        if abs(self.side_error) > 20:
             self.should_stop = False
         if self.should_stop:
             self.turning = False      
@@ -157,13 +164,15 @@ class Control(Node):
 
         if not self.should_stop:
             self.state = States.CENTERING
+
         if not should_move and self.should_stop:
             self.state = States.STOP
+            self.full_stop = True 
             self.speed = 20
 
 
     def approach(self):
-        self.send_command(11, 70, 70)
+        self.send_command(1, 200, 200)
 
     def moving(self):
         error = self.distance_m - self.TARGET_DISTANCE
@@ -172,32 +181,37 @@ class Control(Node):
 
         L_speed = self.speed + self.feedforward
         R_speed = self.speed + self.feedforward
-        self.send_command(11, L_speed, R_speed)
+        self.send_command(1, L_speed, R_speed)
 
 
     def centering(self):   
 
-        if -30 < self.side_error < 30:
+        if -20 < self.side_error < 20:
             self.should_stop = True
         if self.should_turn and not self.should_stop:
             self.turning = True   
             if self.side_error < 0:
                 L_speed = -abs(self.control_output_side)
                 R_speed = abs(self.control_output_side)
-                self.send_command(11, L_speed, R_speed)
+                self.send_command(1, L_speed, R_speed)
             if self.side_error > 0:
                 L_speed = abs(self.control_output_side)
                 R_speed = -abs(self.control_output_side)
 
-                self.send_command(11, L_speed, R_speed)
+                self.send_command(1, L_speed, R_speed)
 
     def stop(self):
-         self.send_command(11, 0, 0)
+         self.send_command(1, 0, 0)
 
     def control_loop(self):
          now = time.monotonic()
          self.dt = now - self.last_time
          self.last_time = now
+###
+         if self.executing:
+             print(self.executing)
+             return
+###
          self.update_state()
          if self.state == States.APPROACH:
              self.approach()
@@ -207,17 +221,33 @@ class Control(Node):
              self.centering()
          elif self.state == States.STOP:
              self.stop()
+         try:
+             msg_stop = Bool()
+             msg_stop.data = self.full_stop
+             self.stop_publisher.publish(msg_stop)
+         except AssertionError as e:
+             print(e)
+
+
+    def detection(self):
+        msg_det = Bool()
+        msg_det.data = bool(self.detected)
+        self.det_publisher.publish(msg_det) 
+
 
     def print_timer(self):
-        self.get_logger().debug(f"SPEED:{self.speed}")
+        self.get_logger().info(f"SPEED:{self.speed}")
         self.get_logger().info(f"STATE:{self.state}")
         self.get_logger().info(f"DISTANCE:{self.distance_m}")
         self.get_logger().info(f"SIDE ERROR:{self.side_error}")
         self.get_logger().info(f"CONTROL OUTPUT SIDE:{self.control_output_side}")
+        self.get_logger().info(f"DETECTED:{self.detected}")
+        print(self.dt)
 
 def main():
     rclpy.init()
     control_node = Control()
+
     try:
         rclpy.spin(control_node)
     except (KeyboardInterrupt, SystemExit):
@@ -228,6 +258,8 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
 
 
 
