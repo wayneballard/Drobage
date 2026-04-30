@@ -4,6 +4,7 @@ install/
 log/
 usb_cam/
 
+
 # Python cache
 *.pyc
 __pycache__/

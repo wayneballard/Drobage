@@ -23,7 +23,8 @@ setup(
             'inference_node = my_yolo_package.inference_node:main',
             'visualizer_node = my_yolo_package.visualizer_node:main',
             'oak_camera_node = my_yolo_package.oak_camera_node:main',
-            'tracking_logger = my_yolo_package.tracking_logger:main'
+            'tracking_logger = my_yolo_package.tracking_logger:main',
+            'odom_node = my_yolo_package.odom_node:main'
         ],
     },
 )

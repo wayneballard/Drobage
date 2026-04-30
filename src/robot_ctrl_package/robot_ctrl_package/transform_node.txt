@@ -1,0 +1,129 @@
+from rclpy.node import Node
+from sensor_msgs.msg import Image
+import tf2_geometry_msgs
+from geometry_msgs.msg import PointStamped
+from geometry_msgs.msg import TransformStamped
+from tf2_ros.static_transform_broadcaster import StaticTransformBroadcaster
+from tf2_ros import TransformBroadcaster, Buffer, TransformListener
+from tf2_msgs.msg import TFMessage
+import math
+from std_msgs.msg import Float32
+import time
+from rclpy.time import Time
+
+class TransformNode(Node):
+    def __init__(self):
+        super().__init__("transform_node")
+        self.tf_broadcaster = TransformBroadcaster(self)
+        self.subscriber_timestamp = self.create_subscription(Image, "image_raw", self.timestamp_callback, 5)
+        self.timer = self.create_timer(float(1/10), self.run_transform)
+        self.distance_subscriber = self.create_subscription(Float32, "forward_distance", self.distance_callback, 5)
+        self.distance_m = None
+        self.timestamp = None
+        self.tf_buffer = Buffer()
+        self.tf_listener = TransformListener(self.tf_buffer, self)
+
+
+    def distance_callback(self, msg: Float32):
+        self.distance_m = msg.data
+        print(self.distance_m)     
+        if self.distance_m is None:
+            return
+
+    def timestamp_callback(self, msg: Image):
+        self.timestamp = msg.header.stamp
+        if self.timestamp is None:
+            return
+        print(self.timestamp)
+  
+
+    def run_transform(self):
+        z = self.distance_m
+        if z is None or self.timestamp is None:
+            return
+        X = (320 - 313.368) * z/ 457.798  #(u - c_x) * z / f_x
+        Y = (240 - 224.113) * z/ 456.957  #(v - c_y) * z / f_y
+        Z = z
+        cam_t = TransformStamped() 
+        cam_t.header.stamp = self.get_clock().now().to_msg()
+        cam_t.header.frame_id = "base_link"
+        cam_t.child_frame_id = "camera_link"
+        cam_t.transform.translation.x = 0.05
+        cam_t.transform.translation.y = 0.0
+        cam_t.transform.translation.z = 0.0
+
+        cam_t.transform.rotation.x = 0.0
+        cam_t.transform.rotation.y = 0.0
+        cam_t.transform.rotation.z = 0.0
+        cam_t.transform.rotation.w = 1.0
+
+        arm_t = TransformStamped() 
+        arm_t.header.stamp = self.get_clock().now().to_msg()
+        arm_t.header.frame_id = "base_link"
+        arm_t.child_frame_id = "arm_link"
+        arm_t.transform.translation.x = 0.0
+        arm_t.transform.translation.y = 0.0
+        arm_t.transform.translation.z = 0.09
+
+        arm_t.transform.rotation.x = 0.0
+        arm_t.transform.rotation.y = 0.0
+        arm_t.transform.rotation.z = 0.0
+        arm_t.transform.rotation.w = 1.0
+
+#        self.tf_broadcaster.sendTransform([cam_t, arm_t])
+
+
+        obj_point = PointStamped()
+        obj_point.header.frame_id = "camera_link"
+        obj_point.header.stamp = Time(seconds=0).to_msg()
+        obj_point.point.x = Z
+        obj_point.point.y = X
+        obj_point.point.z = Y
+        try:
+            obj_in_base = self.tf_buffer.transform(obj_point, "base_link")
+            print(f"POINT X:{obj_in_base.point.z}")
+        except Exception as e:
+            print("Transform error: ", e)
+
+        obj_t = TransformStamped()
+        obj_t.header.stamp = self.get_clock().now().to_msg()
+        obj_t.header.frame_id = "camera_link"
+        obj_t.child_frame_id = "object_link"
+        obj_t.transform.translation.x = Z
+        obj_t.transform.translation.y = X
+        obj_t.transform.translation.z = Y
+
+#        obj_t.transform.rotation.x = 0.0
+#        obj_t.transform.rotation.y = 0.0
+#        obj_t.transform.rotation.z = 0.0
+        obj_t.transform.rotation.w = 1.0
+
+        self.tf_broadcaster.sendTransform([cam_t, arm_t, obj_t])
+
+
+#        obj_in_base = self.tf_buffer.transform(obj_point, "base_link")
+
+
+
+
+#    def transform_callback(self, msg: Image):
+#        self.timestamp = msg.header.stamp
+#        print(self.timestamp)
+
+
+
+def main(args=None):
+    rclpy.init(args=args)
+    transform_node = TransformNode()
+    try:
+        rclpy.spin(transform_node)
+    except (SystemExit, KeyboardInterrupt):
+        pass
+    finally:
+        transform_node.destroy_node()
+        rclpy.shutdown()
+
+if __name__ == '__main__':
+    main()
+
+

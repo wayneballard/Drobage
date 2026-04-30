@@ -1,0 +1,142 @@
+amcl:
+  ros__parameters:
+    use_sim_time: false
+
+planner_server:
+  ros__parameters:
+    expected_planner_frequency: 1.0
+    planner_plugins: ["GridBased"]
+    GridBased:
+      plugin: "nav2_smac_planner/SmacPlanner2D"
+      tolerance: 0.5
+      downsample_costmap: false
+      allow_unknown: true
+      unknown_cost_value: -1
+
+
+controller_server:
+  ros__parameters:
+    controller_plugins: ["FollowPath"]
+    FollowPath:
+      plugin: "dwb_core::DWBLocalPlanner"
+      max_vel_x: 0.5
+      min_vel_x: 0.0
+      max_vel_theta: 1.0
+      min_vel_theta: -1.0
+      acc_lim_x: 0.5
+      acc_lim_theta: 1.0
+      xy_goal_tolerance: 0.02
+      yaw_goal_tolerance: 0.02
+      latch_xy_goal_tolerance: false
+      critics: ["ObstacleFootprint", 
+                "GoalAlign", 
+                "PathAlign", 
+                "PathDist", 
+                "GoalDist"]
+      ObstacleFootprint.scale: 0.05
+      GoalAlign.scale: 24.8
+      PathAlign.scale: 40.6
+      PathDist.scale: 40.8
+      GoalDist.scale: 10.8
+
+
+bt_navigator:
+  ros__parameters:
+    default_bt_xml_filename: "navigate_w_replanning_and_recovery.xml"
+    plugins: ["goal_checker"]
+    goal_checker:
+      plugin: "nav2_controller::SimpleGoalChecker"
+      xy_goal_tolerance: 0.05
+      yaw_goal_tolerance: 0.05
+      stateful: True
+
+global_costmap:
+  global_costmap:
+    ros__parameters:
+#
+      update_frequency: 1.0
+      publish_frequency: 1.0
+#
+      global_frame: map
+      robot_base_frame: base_link
+      static_map: false
+      unknown_cost_value: -1
+      track_unkown_space: true
+#      track_unknown_space: false
+      rolling_window: false
+      map_topic: /rtabmap/map
+      data_type: OccupancyGrid
+      map_subscribe_transient_local: True
+      footprint: "[[0.115, 0.075],[0.115, -0.075],[-0.115, -0.075],[-0.115, 0.075]]"
+
+      plugins: ["static_layer", "obstacle_layer", "inflation_layer"]
+#      plugins: ["static_layer"]
+      static_layer:
+        plugin: "nav2_costmap_2d::StaticLayer"
+        map_subscribe_transient_local: True
+      obstacle_layer:
+        plugin: "nav2_costmap_2d::ObstacleLayer"
+        enabled: True
+#        enabled: false
+        observation_sources: rtab_obstacles
+        rtab_obstacles:
+          plugin: "nav2_costmap_2d::ObstacleLayer"
+          enabled: True
+#          enabled: false
+          observation_sources: rtab_obstacles
+          rtab_obstacles:
+            topic: /rtabmap/cloud_obstacles
+            clearing: True
+            marking: True
+            data_type: PointCloud2
+            sensor_frame: camera_link
+            min_obstacle_height: 0.15
+            max_obstacle_height: 2.0
+            obstacle_range: 3.0
+            raytrace_range: 3.5
+      inflation_layer:
+        enabled: false
+        plugin: "nav2_costmap_2d::InflationLayer"
+        inflation_radius: 0.11
+        
+#      plugin_types: ["nav2_costmap_2d::StaticLayer", "nav2_costmap_2d::ObstacleLayer"]
+
+local_costmap:
+  local_costmap:
+    ros__parameters:
+      global_frame: odom
+      robot_base_frame: base_link
+      map_topic: /rtabmap/map
+      map_subscribe_transient_local: True
+      unknown_cost_value: 0
+      track_unknown_space: true
+#      track_unknown_space: false
+      update_frequency: 5.0
+      rolling_window: true
+      width: 6
+      height: 6
+      resolution: 0.05
+      footprint: "[[0.115, 0.075],[0.115, -0.075],[-0.115, -0.075],[-0.115, 0.075]]"
+      plugins: ["obstacle_layer", "inflation_layer"]
+#      plugins: ["static_layer"]
+      obstacle_layer:
+        plugin: "nav2_costmap_2d::ObstacleLayer"
+        enabled: True
+#        enabled: false
+        observation_sources: rtab_obstacles
+        rtab_obstacles:
+          topic: /rtabmap/cloud_obstacles
+          data_type: PointCloud2
+          sensor_frame: camera_link
+          min_obstacle_height: 0.15
+          max_obstacle_height: 2.0
+          obstacle_range: 3.0
+          raytrace_range: 3.5
+      inflation_layer:
+        enabled: false
+        plugin: "nav2_costmap_2d::InflationLayer"
+        inflation_radius: 0.11
+
+
+
+

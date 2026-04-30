@@ -4,7 +4,8 @@ import threading
 import time
 from rclpy.node import Node
 from sensor_msgs.msg import Image
-from vision_msgs.msg import Detection2DArray, Detection2D,ObjectHypothesisWithPose
+from geometry_msgs.msg import Point
+from vision_msgs.msg import Detection2DArray, Detection2D,ObjectHypothesisWithPose, Pose2D
 from std_msgs.msg import Int32MultiArray
 from cv_bridge import CvBridge
 import cv2
@@ -23,11 +24,11 @@ class YoloNode(Node):
         self.publisher_depth = self.create_publisher(Image, "depth_frame", 5)
         self.publisher_detection = self.create_publisher(Detection2DArray, "detections", 5)
   
-        pkg_share_directory = get_package_share_directory('my_yolo_package')
-        defaults = {"model_path" : os.path.join(pkg_share_directory, "models", "yolov8n_raw.engine"),
-                    "conf":0.5,
+        pkg_share_directory = "/home/wb/Desktop/Drobage/src/my_yolo_package/share"
+        defaults = {"model_path" : os.path.join(pkg_share_directory, "models", "best.pt"),
+                    "conf":0.3,
                     "max_detections":1,
-                    "class_detection":[47],
+                    "class_detection":[16, 17], #47
                     "device" : 'cuda'
                     }
         self.params = {}
@@ -52,13 +53,13 @@ class YoloNode(Node):
         Image, 
         'image_raw', 
         self.image_callback,
-        5)
+        1)
 
         self.subscription_depth = self.create_subscription(
         Image, 
         "depth_frame_to_inference",
         self.depth_callback,
-        5)
+        1)
         
         self.bridge = CvBridge()
         self.message_received = False
@@ -79,6 +80,7 @@ class YoloNode(Node):
                 time.sleep(0.1)
                 continue
             try:
+                print(self.class_detection)
                 detection_2d_msg = Detection2DArray()
                 detection_2d_msg.header = self.latest_frame.header
                 detection_2d = Detection2D()
@@ -87,7 +89,7 @@ class YoloNode(Node):
                 self.get_logger().info("Message was received succesfully")
 
                 self.cv_image = self.bridge.imgmsg_to_cv2(self.latest_frame, 'bgr8')
-
+                print(self.model.names)
                 infr_rslts = self.model(
                 source=self.cv_image,
                 device = self.device,
@@ -97,24 +99,19 @@ class YoloNode(Node):
 
                 infr = infr_rslts[0]
                 x1 = y1 = x2 = y2 = None
-                for result in infr_rslts:
-                    for box in result.boxes:
-                        x1, y1, x2, y2 = map(int, box.xyxy[0])
-                        detection_2d.bbox.center.x = ((x1 + x2) / 2)
-                        detection_2d.bbox.center.y = ((y1 + y2) / 2)
-                        detection_2d.bbox.size_x = float((x2 - x1))
-                        detection_2d.bbox.size_y = float((y2 - y1))
-
-                        hypothesis.id = str(box.cls[0].item())
-                        hypothesis.score = float(box.conf[0])        
-
-                        detection_2d.results.append(hypothesis)
-                        detection_2d_msg.detections.append(detection_2d)
 
 
                 if infr.boxes is not None and len(infr.boxes) > 0:
                     box = infr.boxes[0]
                     x1, y1,  x2, y2 = map(int, box.xyxy[0])
+                    detection_2d.bbox.center.position.x = ((x1 + x2) / 2)
+                    detection_2d.bbox.center.position.y = ((y1 + y2) / 2)
+                    detection_2d.bbox.size_x = float((x2 - x1))
+                    detection_2d.bbox.size_y = float((y2 - y1))
+
+                    detection_2d_msg.detections.append(detection_2d)
+
+
                     x_center = int((x1 + x2) / 2)
                     y_center = int((y1 + y2) / 2)
                     cv2.circle(self.cv_image, (x_center, y_center),5, (0, 255, 0), -1)

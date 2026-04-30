@@ -21,6 +21,8 @@ setup(
     entry_points={
         'console_scripts': [
             'control_node = robot_ctrl_package.control_node:main',
+            'transform_node = robot_ctrl_package.transform_node:main',
+            'arm_node = robot_ctrl_package.arm_node:main'
         ],
     },
 )
