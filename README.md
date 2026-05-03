@@ -13,8 +13,6 @@
 
 ---
 
-> 🆕 **Update · 15 Apr** — The full perception → approach → pick-and-place pipeline is now working end-to-end. [See it in action ↗](https://www.youtube.com/shorts/TN71j92SHFM)
-
 ## 📝 Overview
 
 This repository contains a control framework for a vision-guided mobile robot.  
