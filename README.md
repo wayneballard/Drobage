@@ -2,7 +2,7 @@
 
 # 🤖 Vision-Based Control Framework for a Mobile Robot
 *(Work in Progress)*
-
+<div align="center">
 <a href="https://www.youtube.com/shorts/TN71j92SHFM">
   <img src="https://img.youtube.com/vi/TN71j92SHFM/maxresdefault.jpg" alt="Pick-and-place pipeline demo" width="420"/>
   <br/>
