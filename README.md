@@ -1,5 +1,19 @@
+
+
 # 🤖 Vision-Based Control Framework for a Mobile Robot
 *(Work in Progress)*
+
+<a href="https://www.youtube.com/shorts/TN71j92SHFM">
+  <img src="https://img.youtube.com/vi/TN71j92SHFM/maxresdefault.jpg" alt="Pick-and-place pipeline demo" width="420"/>
+  <br/>
+   <b>Watch the latest demo — Pick-and-Place Pipeline (15 Apr)</b>
+</a>
+
+</div>
+
+---
+
+> 🆕 **Update · 15 Apr** — The full perception → approach → pick-and-place pipeline is now working end-to-end. [See it in action ↗](https://www.youtube.com/shorts/TN71j92SHFM)
 
 ## 📝 Overview
 
