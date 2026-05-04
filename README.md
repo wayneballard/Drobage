@@ -16,9 +16,8 @@
 ## 📝 Overview
 
 This repository contains a control framework for a vision-guided mobile robot.  
-At the current stage, the project focuses on designing, implementing, and evaluating a modular control system that enables a wheeled robot to reliably track the object, successfully coping with external disturbances.
+At the current stage, the project focuses on implementation of autonomous navigation.
 
-The system combines perception outputs with classical control strategies. While the current implementation relies on deterministic control logic, the framework is designed to support future extensions toward learning-based methods.
 
 ---
 ## 🎯 Aim of the Project
@@ -41,6 +40,7 @@ The main goals of the project are:
 - Handle perception uncertainty and extenral disturbances
 - Ensure real-time feasibility and debuggability
 - Establish a foundation for future imitation or policy learning
+- Implement autonomous navigation for the robot
 
 ---
 
