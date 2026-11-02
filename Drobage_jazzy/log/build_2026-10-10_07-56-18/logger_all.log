@@ -1,0 +1,230 @@
+[0.422s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.423s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=6, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0xffffa4011b20>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffffa41f6240>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffffa41f6240>>, mixin_verb=('build',))
+[0.623s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.627s] INFO:colcon.colcon_metadata.package_discovery.colcon_meta:Using configuration from '/root/.colcon/metadata/default/Gazebo.meta'
+[0.629s] INFO:colcon.colcon_metadata.package_discovery.colcon_meta:Using configuration from '/root/.colcon/metadata/default/fastdds.meta'
+[0.630s] INFO:colcon.colcon_metadata.package_discovery.colcon_meta:Using configuration from '/root/.colcon/metadata/default/fastrtps.meta'
+[0.631s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.631s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.631s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.631s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.631s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.631s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/Drobage_jazzy'
+[0.632s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.632s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.632s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.632s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.632s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.633s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.633s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.633s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.633s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.727s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.728s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.728s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.728s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.728s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.729s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.729s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.729s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.729s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.730s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.730s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.730s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.730s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.730s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.731s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.731s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.731s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.731s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.731s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.731s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.731s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.732s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.732s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.732s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.732s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.732s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.732s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.732s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.733s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_yolo_package) by extensions ['ignore', 'ignore_ament_install']
+[0.734s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_yolo_package) by extension 'ignore'
+[0.734s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_yolo_package) by extension 'ignore_ament_install'
+[0.734s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_yolo_package) by extensions ['colcon_pkg']
+[0.734s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_yolo_package) by extension 'colcon_pkg'
+[0.734s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_yolo_package) by extensions ['colcon_meta']
+[0.734s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_yolo_package) by extension 'colcon_meta'
+[0.734s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_yolo_package) by extensions ['ros']
+[0.734s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_yolo_package) by extension 'ros'
+[0.745s] DEBUG:colcon.colcon_core.package_identification:Package 'src/my_yolo_package' with type 'ros.ament_python' and name 'my_yolo_package'
+[0.745s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation_package) by extensions ['ignore', 'ignore_ament_install']
+[0.745s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation_package) by extension 'ignore'
+[0.746s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation_package) by extension 'ignore_ament_install'
+[0.746s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation_package) by extensions ['colcon_pkg']
+[0.746s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation_package) by extension 'colcon_pkg'
+[0.746s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation_package) by extensions ['colcon_meta']
+[0.746s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation_package) by extension 'colcon_meta'
+[0.746s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation_package) by extensions ['ros']
+[0.746s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation_package) by extension 'ros'
+[0.748s] DEBUG:colcon.colcon_core.package_identification:Package 'src/navigation_package' with type 'ros.ament_python' and name 'navigation_package'
+[0.749s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_ctrl_package) by extensions ['ignore', 'ignore_ament_install']
+[0.749s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_ctrl_package) by extension 'ignore'
+[0.749s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_ctrl_package) by extension 'ignore_ament_install'
+[0.750s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_ctrl_package) by extensions ['colcon_pkg']
+[0.750s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_ctrl_package) by extension 'colcon_pkg'
+[0.750s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_ctrl_package) by extensions ['colcon_meta']
+[0.750s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_ctrl_package) by extension 'colcon_meta'
+[0.750s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_ctrl_package) by extensions ['ros']
+[0.750s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_ctrl_package) by extension 'ros'
+[0.752s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robot_ctrl_package' with type 'ros.ament_python' and name 'robot_ctrl_package'
+[0.752s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.752s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.752s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.752s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.752s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.812s] Level 5:colcon.colcon_core.verb:set package 'my_yolo_package' build argument 'cmake_args' from command line to 'None'
+[0.813s] Level 5:colcon.colcon_core.verb:set package 'my_yolo_package' build argument 'cmake_target' from command line to 'None'
+[0.813s] Level 5:colcon.colcon_core.verb:set package 'my_yolo_package' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.813s] Level 5:colcon.colcon_core.verb:set package 'my_yolo_package' build argument 'cmake_clean_cache' from command line to 'False'
+[0.813s] Level 5:colcon.colcon_core.verb:set package 'my_yolo_package' build argument 'cmake_clean_first' from command line to 'False'
+[0.813s] Level 5:colcon.colcon_core.verb:set package 'my_yolo_package' build argument 'cmake_force_configure' from command line to 'False'
+[0.813s] Level 5:colcon.colcon_core.verb:set package 'my_yolo_package' build argument 'ament_cmake_args' from command line to 'None'
+[0.813s] Level 5:colcon.colcon_core.verb:set package 'my_yolo_package' build argument 'catkin_cmake_args' from command line to 'None'
+[0.813s] Level 5:colcon.colcon_core.verb:set package 'my_yolo_package' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.813s] DEBUG:colcon.colcon_core.verb:Building package 'my_yolo_package' with the following arguments: {'ament_cmake_args': None, 'build_base': '/Drobage_jazzy/build/my_yolo_package', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/Drobage_jazzy/install/my_yolo_package', 'merge_install': False, 'path': '/Drobage_jazzy/src/my_yolo_package', 'symlink_install': False, 'test_result_base': None}
+[0.814s] Level 5:colcon.colcon_core.verb:set package 'navigation_package' build argument 'cmake_args' from command line to 'None'
+[0.814s] Level 5:colcon.colcon_core.verb:set package 'navigation_package' build argument 'cmake_target' from command line to 'None'
+[0.814s] Level 5:colcon.colcon_core.verb:set package 'navigation_package' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.814s] Level 5:colcon.colcon_core.verb:set package 'navigation_package' build argument 'cmake_clean_cache' from command line to 'False'
+[0.814s] Level 5:colcon.colcon_core.verb:set package 'navigation_package' build argument 'cmake_clean_first' from command line to 'False'
+[0.814s] Level 5:colcon.colcon_core.verb:set package 'navigation_package' build argument 'cmake_force_configure' from command line to 'False'
+[0.814s] Level 5:colcon.colcon_core.verb:set package 'navigation_package' build argument 'ament_cmake_args' from command line to 'None'
+[0.814s] Level 5:colcon.colcon_core.verb:set package 'navigation_package' build argument 'catkin_cmake_args' from command line to 'None'
+[0.814s] Level 5:colcon.colcon_core.verb:set package 'navigation_package' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.814s] DEBUG:colcon.colcon_core.verb:Building package 'navigation_package' with the following arguments: {'ament_cmake_args': None, 'build_base': '/Drobage_jazzy/build/navigation_package', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/Drobage_jazzy/install/navigation_package', 'merge_install': False, 'path': '/Drobage_jazzy/src/navigation_package', 'symlink_install': False, 'test_result_base': None}
+[0.815s] Level 5:colcon.colcon_core.verb:set package 'robot_ctrl_package' build argument 'cmake_args' from command line to 'None'
+[0.815s] Level 5:colcon.colcon_core.verb:set package 'robot_ctrl_package' build argument 'cmake_target' from command line to 'None'
+[0.815s] Level 5:colcon.colcon_core.verb:set package 'robot_ctrl_package' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.815s] Level 5:colcon.colcon_core.verb:set package 'robot_ctrl_package' build argument 'cmake_clean_cache' from command line to 'False'
+[0.815s] Level 5:colcon.colcon_core.verb:set package 'robot_ctrl_package' build argument 'cmake_clean_first' from command line to 'False'
+[0.815s] Level 5:colcon.colcon_core.verb:set package 'robot_ctrl_package' build argument 'cmake_force_configure' from command line to 'False'
+[0.815s] Level 5:colcon.colcon_core.verb:set package 'robot_ctrl_package' build argument 'ament_cmake_args' from command line to 'None'
+[0.815s] Level 5:colcon.colcon_core.verb:set package 'robot_ctrl_package' build argument 'catkin_cmake_args' from command line to 'None'
+[0.815s] Level 5:colcon.colcon_core.verb:set package 'robot_ctrl_package' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.816s] DEBUG:colcon.colcon_core.verb:Building package 'robot_ctrl_package' with the following arguments: {'ament_cmake_args': None, 'build_base': '/Drobage_jazzy/build/robot_ctrl_package', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/Drobage_jazzy/install/robot_ctrl_package', 'merge_install': False, 'path': '/Drobage_jazzy/src/robot_ctrl_package', 'symlink_install': False, 'test_result_base': None}
+[0.816s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.818s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.819s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/Drobage_jazzy/src/my_yolo_package' with build type 'ament_python'
+[0.819s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_yolo_package', 'ament_prefix_path')
+[0.833s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.834s] INFO:colcon.colcon_core.shell:Creating environment hook '/Drobage_jazzy/install/my_yolo_package/share/my_yolo_package/hook/ament_prefix_path.ps1'
+[0.837s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/Drobage_jazzy/install/my_yolo_package/share/my_yolo_package/hook/ament_prefix_path.dsv'
+[0.853s] INFO:colcon.colcon_core.shell:Creating environment hook '/Drobage_jazzy/install/my_yolo_package/share/my_yolo_package/hook/ament_prefix_path.sh'
+[0.862s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.863s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.903s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/Drobage_jazzy/src/navigation_package' with build type 'ament_python'
+[0.903s] Level 1:colcon.colcon_core.shell:create_environment_hook('navigation_package', 'ament_prefix_path')
+[0.903s] INFO:colcon.colcon_core.shell:Creating environment hook '/Drobage_jazzy/install/navigation_package/share/navigation_package/hook/ament_prefix_path.ps1'
+[0.905s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/Drobage_jazzy/install/navigation_package/share/navigation_package/hook/ament_prefix_path.dsv'
+[0.906s] INFO:colcon.colcon_core.shell:Creating environment hook '/Drobage_jazzy/install/navigation_package/share/navigation_package/hook/ament_prefix_path.sh'
+[0.907s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.907s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.919s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/Drobage_jazzy/src/robot_ctrl_package' with build type 'ament_python'
+[0.919s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_ctrl_package', 'ament_prefix_path')
+[0.920s] INFO:colcon.colcon_core.shell:Creating environment hook '/Drobage_jazzy/install/robot_ctrl_package/share/robot_ctrl_package/hook/ament_prefix_path.ps1'
+[0.921s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/Drobage_jazzy/install/robot_ctrl_package/share/robot_ctrl_package/hook/ament_prefix_path.dsv'
+[0.922s] INFO:colcon.colcon_core.shell:Creating environment hook '/Drobage_jazzy/install/robot_ctrl_package/share/robot_ctrl_package/hook/ament_prefix_path.sh'
+[0.923s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.923s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[24.427s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/Drobage_jazzy/src/my_yolo_package'
+[24.428s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[24.428s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[24.930s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/Drobage_jazzy/src/navigation_package'
+[24.931s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[24.931s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[26.960s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/Drobage_jazzy/src/robot_ctrl_package'
+[26.961s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[26.961s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[34.839s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools commands: saveopts, build, build_scripts, build_py, build_ext, editable_wheel, symlink_data, build_clib, install_lib, extract_messages, bdist, develop, update_catalog, setopt, init_catalog, install_egg_info, sdist, bdist_dumb, install_data, check, compile_catalog, rotate, install, install_scripts, install_headers, alias, clean, bdist_wheel, egg_info, bdist_rpm, dist_info, easy_install, bdist_egg
+[34.845s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/Drobage_jazzy/src/navigation_package': PYTHONPATH=/Drobage_jazzy/build/navigation_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/Drobage_jazzy/install/navigation_package/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/navigation_package build --build-base /Drobage_jazzy/build/navigation_package/build install --record /Drobage_jazzy/build/navigation_package/install.log --install-scripts $base/lib/navigation_package --single-version-externally-managed install_data
+[34.853s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools commands: saveopts, build, build_scripts, build_py, build_ext, editable_wheel, symlink_data, build_clib, install_lib, extract_messages, bdist, develop, update_catalog, setopt, init_catalog, install_egg_info, sdist, bdist_dumb, install_data, check, compile_catalog, rotate, install, install_scripts, install_headers, alias, clean, bdist_wheel, egg_info, bdist_rpm, dist_info, easy_install, bdist_egg
+[34.857s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools commands: saveopts, build, build_scripts, build_py, build_ext, editable_wheel, symlink_data, build_clib, install_lib, extract_messages, bdist, develop, update_catalog, setopt, init_catalog, install_egg_info, sdist, bdist_dumb, install_data, check, compile_catalog, rotate, install, install_scripts, install_headers, alias, clean, bdist_wheel, egg_info, bdist_rpm, dist_info, easy_install, bdist_egg
+[34.858s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/Drobage_jazzy/src/my_yolo_package': PYTHONPATH=/Drobage_jazzy/build/my_yolo_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/Drobage_jazzy/install/my_yolo_package/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_yolo_package build --build-base /Drobage_jazzy/build/my_yolo_package/build install --record /Drobage_jazzy/build/my_yolo_package/install.log --install-scripts $base/lib/my_yolo_package --single-version-externally-managed install_data
+[34.862s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/Drobage_jazzy/src/robot_ctrl_package': PYTHONPATH=/Drobage_jazzy/build/robot_ctrl_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/Drobage_jazzy/install/robot_ctrl_package/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robot_ctrl_package build --build-base /Drobage_jazzy/build/robot_ctrl_package/build install --record /Drobage_jazzy/build/robot_ctrl_package/install.log --install-scripts $base/lib/robot_ctrl_package --single-version-externally-managed install_data
+[35.910s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/Drobage_jazzy/src/robot_ctrl_package' returned '0': PYTHONPATH=/Drobage_jazzy/build/robot_ctrl_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/Drobage_jazzy/install/robot_ctrl_package/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robot_ctrl_package build --build-base /Drobage_jazzy/build/robot_ctrl_package/build install --record /Drobage_jazzy/build/robot_ctrl_package/install.log --install-scripts $base/lib/robot_ctrl_package --single-version-externally-managed install_data
+[35.927s] Level 1:colcon.colcon_core.environment:checking '/Drobage_jazzy/install/robot_ctrl_package' for CMake module files
+[35.928s] Level 1:colcon.colcon_core.environment:checking '/Drobage_jazzy/install/robot_ctrl_package' for CMake config files
+[35.932s] Level 1:colcon.colcon_core.environment:checking '/Drobage_jazzy/install/robot_ctrl_package/lib'
+[35.933s] Level 1:colcon.colcon_core.environment:checking '/Drobage_jazzy/install/robot_ctrl_package/bin'
+[35.933s] Level 1:colcon.colcon_core.environment:checking '/Drobage_jazzy/install/robot_ctrl_package/lib/pkgconfig/robot_ctrl_package.pc'
+[35.933s] Level 1:colcon.colcon_core.environment:checking '/Drobage_jazzy/install/robot_ctrl_package/lib/python3.12/site-packages'
+[35.934s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_ctrl_package', 'pythonpath')
+[35.934s] INFO:colcon.colcon_core.shell:Creating environment hook '/Drobage_jazzy/install/robot_ctrl_package/share/robot_ctrl_package/hook/pythonpath.ps1'
+[35.935s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/Drobage_jazzy/install/robot_ctrl_package/share/robot_ctrl_package/hook/pythonpath.dsv'
+[35.936s] INFO:colcon.colcon_core.shell:Creating environment hook '/Drobage_jazzy/install/robot_ctrl_package/share/robot_ctrl_package/hook/pythonpath.sh'
+[35.938s] Level 1:colcon.colcon_core.environment:checking '/Drobage_jazzy/install/robot_ctrl_package/bin'
+[35.938s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_ctrl_package)
+[35.939s] INFO:colcon.colcon_core.shell:Creating package script '/Drobage_jazzy/install/robot_ctrl_package/share/robot_ctrl_package/package.ps1'
+[35.947s] INFO:colcon.colcon_core.shell:Creating package descriptor '/Drobage_jazzy/install/robot_ctrl_package/share/robot_ctrl_package/package.dsv'
+[35.955s] INFO:colcon.colcon_core.shell:Creating package script '/Drobage_jazzy/install/robot_ctrl_package/share/robot_ctrl_package/package.sh'
+[35.962s] INFO:colcon.colcon_core.shell:Creating package script '/Drobage_jazzy/install/robot_ctrl_package/share/robot_ctrl_package/package.bash'
+[35.968s] INFO:colcon.colcon_core.shell:Creating package script '/Drobage_jazzy/install/robot_ctrl_package/share/robot_ctrl_package/package.zsh'
+[35.974s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/Drobage_jazzy/install/robot_ctrl_package/share/colcon-core/packages/robot_ctrl_package)
+[35.980s] Level 1:colcon.colcon_core.environment:checking '/Drobage_jazzy/install/navigation_package' for CMake module files
+[35.981s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/Drobage_jazzy/src/navigation_package' returned '0': PYTHONPATH=/Drobage_jazzy/build/navigation_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/Drobage_jazzy/install/navigation_package/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/navigation_package build --build-base /Drobage_jazzy/build/navigation_package/build install --record /Drobage_jazzy/build/navigation_package/install.log --install-scripts $base/lib/navigation_package --single-version-externally-managed install_data
+[35.982s] Level 1:colcon.colcon_core.environment:checking '/Drobage_jazzy/install/navigation_package' for CMake config files
+[35.984s] Level 1:colcon.colcon_core.environment:checking '/Drobage_jazzy/install/navigation_package/lib'
+[35.984s] Level 1:colcon.colcon_core.environment:checking '/Drobage_jazzy/install/navigation_package/bin'
+[35.984s] Level 1:colcon.colcon_core.environment:checking '/Drobage_jazzy/install/navigation_package/lib/pkgconfig/navigation_package.pc'
+[35.985s] Level 1:colcon.colcon_core.environment:checking '/Drobage_jazzy/install/navigation_package/lib/python3.12/site-packages'
+[35.985s] Level 1:colcon.colcon_core.shell:create_environment_hook('navigation_package', 'pythonpath')
+[35.985s] INFO:colcon.colcon_core.shell:Creating environment hook '/Drobage_jazzy/install/navigation_package/share/navigation_package/hook/pythonpath.ps1'
+[35.987s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/Drobage_jazzy/install/navigation_package/share/navigation_package/hook/pythonpath.dsv'
+[35.988s] INFO:colcon.colcon_core.shell:Creating environment hook '/Drobage_jazzy/install/navigation_package/share/navigation_package/hook/pythonpath.sh'
+[35.989s] Level 1:colcon.colcon_core.environment:checking '/Drobage_jazzy/install/navigation_package/bin'
+[35.989s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(navigation_package)
+[35.990s] INFO:colcon.colcon_core.shell:Creating package script '/Drobage_jazzy/install/navigation_package/share/navigation_package/package.ps1'
+[35.991s] INFO:colcon.colcon_core.shell:Creating package descriptor '/Drobage_jazzy/install/navigation_package/share/navigation_package/package.dsv'
+[35.992s] INFO:colcon.colcon_core.shell:Creating package script '/Drobage_jazzy/install/navigation_package/share/navigation_package/package.sh'
+[35.993s] INFO:colcon.colcon_core.shell:Creating package script '/Drobage_jazzy/install/navigation_package/share/navigation_package/package.bash'
+[35.994s] INFO:colcon.colcon_core.shell:Creating package script '/Drobage_jazzy/install/navigation_package/share/navigation_package/package.zsh'
+[35.994s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/Drobage_jazzy/install/navigation_package/share/colcon-core/packages/navigation_package)
+[35.995s] Level 1:colcon.colcon_core.environment:checking '/Drobage_jazzy/install/my_yolo_package' for CMake module files
+[35.998s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/Drobage_jazzy/src/my_yolo_package' returned '0': PYTHONPATH=/Drobage_jazzy/build/my_yolo_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/Drobage_jazzy/install/my_yolo_package/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_yolo_package build --build-base /Drobage_jazzy/build/my_yolo_package/build install --record /Drobage_jazzy/build/my_yolo_package/install.log --install-scripts $base/lib/my_yolo_package --single-version-externally-managed install_data
+[35.998s] Level 1:colcon.colcon_core.environment:checking '/Drobage_jazzy/install/my_yolo_package' for CMake config files
+[36.000s] Level 1:colcon.colcon_core.environment:checking '/Drobage_jazzy/install/my_yolo_package/lib'
+[36.000s] Level 1:colcon.colcon_core.environment:checking '/Drobage_jazzy/install/my_yolo_package/bin'
+[36.000s] Level 1:colcon.colcon_core.environment:checking '/Drobage_jazzy/install/my_yolo_package/lib/pkgconfig/my_yolo_package.pc'
+[36.000s] Level 1:colcon.colcon_core.environment:checking '/Drobage_jazzy/install/my_yolo_package/lib/python3.12/site-packages'
+[36.001s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_yolo_package', 'pythonpath')
+[36.001s] INFO:colcon.colcon_core.shell:Creating environment hook '/Drobage_jazzy/install/my_yolo_package/share/my_yolo_package/hook/pythonpath.ps1'
+[36.002s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/Drobage_jazzy/install/my_yolo_package/share/my_yolo_package/hook/pythonpath.dsv'
+[36.003s] INFO:colcon.colcon_core.shell:Creating environment hook '/Drobage_jazzy/install/my_yolo_package/share/my_yolo_package/hook/pythonpath.sh'
+[36.004s] Level 1:colcon.colcon_core.environment:checking '/Drobage_jazzy/install/my_yolo_package/bin'
+[36.004s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_yolo_package)
+[36.005s] INFO:colcon.colcon_core.shell:Creating package script '/Drobage_jazzy/install/my_yolo_package/share/my_yolo_package/package.ps1'
+[36.006s] INFO:colcon.colcon_core.shell:Creating package descriptor '/Drobage_jazzy/install/my_yolo_package/share/my_yolo_package/package.dsv'
+[36.007s] INFO:colcon.colcon_core.shell:Creating package script '/Drobage_jazzy/install/my_yolo_package/share/my_yolo_package/package.sh'
+[36.008s] INFO:colcon.colcon_core.shell:Creating package script '/Drobage_jazzy/install/my_yolo_package/share/my_yolo_package/package.bash'
+[36.009s] INFO:colcon.colcon_core.shell:Creating package script '/Drobage_jazzy/install/my_yolo_package/share/my_yolo_package/package.zsh'
+[36.010s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/Drobage_jazzy/install/my_yolo_package/share/colcon-core/packages/my_yolo_package)
+[36.010s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[36.011s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[36.011s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[36.012s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[36.111s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[36.111s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[36.111s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[36.112s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[36.123s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.Spawn.ExecFailed: /usr/bin/dbus-launch terminated abnormally without any error message
+[36.123s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[36.124s] INFO:colcon.colcon_core.shell:Creating prefix script '/Drobage_jazzy/install/local_setup.ps1'
+[36.128s] INFO:colcon.colcon_core.shell:Creating prefix util module '/Drobage_jazzy/install/_local_setup_util_ps1.py'
+[36.136s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/Drobage_jazzy/install/setup.ps1'
+[36.144s] INFO:colcon.colcon_core.shell:Creating prefix script '/Drobage_jazzy/install/local_setup.sh'
+[36.149s] INFO:colcon.colcon_core.shell:Creating prefix util module '/Drobage_jazzy/install/_local_setup_util_sh.py'
+[36.152s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/Drobage_jazzy/install/setup.sh'
+[36.169s] INFO:colcon.colcon_core.shell:Creating prefix script '/Drobage_jazzy/install/local_setup.bash'
+[36.174s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/Drobage_jazzy/install/setup.bash'
+[36.179s] INFO:colcon.colcon_core.shell:Creating prefix script '/Drobage_jazzy/install/local_setup.zsh'
+[36.184s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/Drobage_jazzy/install/setup.zsh'

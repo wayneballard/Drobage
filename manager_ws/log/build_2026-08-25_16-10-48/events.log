@@ -1,0 +1,447 @@
+[0.000000] (-) TimerEvent: {}
+[0.000779] (mission_manager) JobQueued: {'identifier': 'mission_manager', 'dependencies': OrderedDict()}
+[0.001721] (mission_manager) JobStarted: {'identifier': 'mission_manager'}
+[0.022929] (mission_manager) JobProgress: {'identifier': 'mission_manager', 'progress': 'cmake'}
+[0.024101] (mission_manager) JobProgress: {'identifier': 'mission_manager', 'progress': 'build'}
+[0.025132] (mission_manager) Command: {'cmd': ['/usr/bin/cmake', '--build', '/manager_ws/build/mission_manager', '--', '-j6', '-l6'], 'cwd': '/manager_ws/build/mission_manager', 'env': OrderedDict({'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'HOSTNAME': 'wb-desktop', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/root', 'OLDPWD': '/manager_ws/src', 'ROS_PYTHON_VERSION': '3', 'COLCON_PREFIX_PATH': '/manager_ws/install', 'ROS_DISTRO': 'jazzy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'ROS_DOMAIN_ID': '42', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy:/manager_ws/install/mission_manager', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/manager_ws/build/mission_manager', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/manager_ws/install/mission_manager:/opt/ros/jazzy'}), 'shell': False}
+[0.099523] (-) TimerEvent: {}
+[0.178416] (mission_manager) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/mission.dir/src/mission.cpp.o\x1b[0m\n'}
+[0.199674] (-) TimerEvent: {}
+[0.300462] (-) TimerEvent: {}
+[0.401236] (-) TimerEvent: {}
+[0.501758] (-) TimerEvent: {}
+[0.602281] (-) TimerEvent: {}
+[0.702812] (-) TimerEvent: {}
+[0.803362] (-) TimerEvent: {}
+[0.903924] (-) TimerEvent: {}
+[1.004511] (-) TimerEvent: {}
+[1.105123] (-) TimerEvent: {}
+[1.205681] (-) TimerEvent: {}
+[1.306235] (-) TimerEvent: {}
+[1.406828] (-) TimerEvent: {}
+[1.507439] (-) TimerEvent: {}
+[1.608007] (-) TimerEvent: {}
+[1.708570] (-) TimerEvent: {}
+[1.809147] (-) TimerEvent: {}
+[1.909690] (-) TimerEvent: {}
+[2.010229] (-) TimerEvent: {}
+[2.110789] (-) TimerEvent: {}
+[2.211341] (-) TimerEvent: {}
+[2.311886] (-) TimerEvent: {}
+[2.412413] (-) TimerEvent: {}
+[2.513194] (-) TimerEvent: {}
+[2.613813] (-) TimerEvent: {}
+[2.714415] (-) TimerEvent: {}
+[2.814959] (-) TimerEvent: {}
+[2.915510] (-) TimerEvent: {}
+[3.016043] (-) TimerEvent: {}
+[3.116569] (-) TimerEvent: {}
+[3.217119] (-) TimerEvent: {}
+[3.317652] (-) TimerEvent: {}
+[3.418191] (-) TimerEvent: {}
+[3.518752] (-) TimerEvent: {}
+[3.619312] (-) TimerEvent: {}
+[3.719865] (-) TimerEvent: {}
+[3.820404] (-) TimerEvent: {}
+[3.920982] (-) TimerEvent: {}
+[4.021644] (-) TimerEvent: {}
+[4.122212] (-) TimerEvent: {}
+[4.222748] (-) TimerEvent: {}
+[4.323361] (-) TimerEvent: {}
+[4.423902] (-) TimerEvent: {}
+[4.524459] (-) TimerEvent: {}
+[4.625168] (-) TimerEvent: {}
+[4.725740] (-) TimerEvent: {}
+[4.826413] (-) TimerEvent: {}
+[4.927056] (-) TimerEvent: {}
+[5.027610] (-) TimerEvent: {}
+[5.070296] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid MissionManager::\x1b[01;32m\x1b[KExplorationCompleteCallback\x1b[m\x1b[K(std_msgs::msg::Empty_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.071071] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:31:78:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kmsg\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[5.071460] (mission_manager) StderrLine: {'line': b'   31 |       void ExplorationCompleteCallback(\x1b[01;35m\x1b[Kconst std_msgs::msg::Empty::SharedPtr msg\x1b[m\x1b[K)\n'}
+[5.071764] (mission_manager) StderrLine: {'line': b'      |                                        \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[5.073006] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid MissionManager::\x1b[01;32m\x1b[KOccupancyCallback\x1b[m\x1b[K(nav_msgs::msg::OccupancyGrid_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.075100] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:42:30:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno match for \xe2\x80\x98\x1b[01m\x1b[Koperator<<\x1b[m\x1b[K\xe2\x80\x99 (operand types are \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_ostream<char>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Pose_<std::allocator<void> >::_position_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Point_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99})\n'}
+[5.075855] (mission_manager) StderrLine: {'line': b'   42 |           \x1b[32m\x1b[Kcout << "Origin: "\x1b[m\x1b[K \x1b[01;31m\x1b[K<<\x1b[m\x1b[K \x1b[34m\x1b[Kmap_.info.origin.position\x1b[m\x1b[K << endl;\n'}
+[5.076525] (mission_manager) StderrLine: {'line': b'      |           \x1b[32m\x1b[K~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K \x1b[01;31m\x1b[K^~\x1b[m\x1b[K \x1b[34m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.077082] (mission_manager) StderrLine: {'line': b'      |                \x1b[32m\x1b[K|\x1b[m\x1b[K                                 \x1b[34m\x1b[K|\x1b[m\x1b[K\n'}
+[5.077265] (mission_manager) StderrLine: {'line': b'      |                \x1b[32m\x1b[Kstd::basic_ostream<char>\x1b[m\x1b[K          \x1b[34m\x1b[Kgeometry_msgs::msg::Pose_<std::allocator<void> >::_position_type {aka geometry_msgs::msg::Point_<std::allocator<void> >}\x1b[m\x1b[K\n'}
+[5.078071] (mission_manager) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/13/istream:41\x1b[m\x1b[K,\n'}
+[5.078424] (mission_manager) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/13/sstream:40\x1b[m\x1b[K,\n'}
+[5.078745] (mission_manager) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__traits.hpp:13\x1b[m\x1b[K,\n'}
+[5.079055] (mission_manager) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/list_parameters.hpp:9\x1b[m\x1b[K,\n'}
+[5.079350] (mission_manager) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:21\x1b[m\x1b[K,\n'}
+[5.079668] (mission_manager) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:175\x1b[m\x1b[K,\n'}
+[5.079973] (mission_manager) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:1\x1b[m\x1b[K:\n'}
+[5.080108] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/ostream:110:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::\x1b[01;32m\x1b[Koperator<<\x1b[m\x1b[K(__ostream_type& (*)(__ostream_type&)) \x1b[35m\x1b[K[with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.080253] (mission_manager) StderrLine: {'line': b'  110 |       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<<(__ostream_type& (*__pf)(__ostream_type&))\n'}
+[5.080385] (mission_manager) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.080514] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/ostream:110:36:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Pose_<std::allocator<void> >::_position_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Point_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_ostream<char>::__ostream_type& (*)(std::basic_ostream<char>::__ostream_type&)\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_ostream<char>& (*)(std::basic_ostream<char>&)\x1b[m\x1b[K\xe2\x80\x99}\n'}
+[5.080738] (mission_manager) StderrLine: {'line': b'  110 |       operator<<(\x1b[01;36m\x1b[K__ostream_type& (*__pf)(__ostream_type&)\x1b[m\x1b[K)\n'}
+[5.080877] (mission_manager) StderrLine: {'line': b'      |                  \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.081225] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/ostream:119:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::\x1b[01;32m\x1b[Koperator<<\x1b[m\x1b[K(__ios_type& (*)(__ios_type&)) \x1b[35m\x1b[K[with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>; __ios_type = std::basic_ios<char>]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.081409] (mission_manager) StderrLine: {'line': b'  119 |       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<<(__ios_type& (*__pf)(__ios_type&))\n'}
+[5.081554] (mission_manager) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.081704] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/ostream:119:32:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Pose_<std::allocator<void> >::_position_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Point_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_ostream<char>::__ios_type& (*)(std::basic_ostream<char>::__ios_type&)\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_ios<char>& (*)(std::basic_ios<char>&)\x1b[m\x1b[K\xe2\x80\x99}\n'}
+[5.081873] (mission_manager) StderrLine: {'line': b'  119 |       operator<<(\x1b[01;36m\x1b[K__ios_type& (*__pf)(__ios_type&)\x1b[m\x1b[K)\n'}
+[5.082008] (mission_manager) StderrLine: {'line': b'      |                  \x1b[01;36m\x1b[K~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.082139] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/ostream:129:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::\x1b[01;32m\x1b[Koperator<<\x1b[m\x1b[K(std::ios_base& (*)(std::ios_base&)) \x1b[35m\x1b[K[with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.082273] (mission_manager) StderrLine: {'line': b'  129 |       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<<(ios_base& (*__pf) (ios_base&))\n'}
+[5.082601] (mission_manager) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.083069] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/ostream:129:30:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Pose_<std::allocator<void> >::_position_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Point_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kstd::ios_base& (*)(std::ios_base&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.083494] (mission_manager) StderrLine: {'line': b'  129 |       operator<<(\x1b[01;36m\x1b[Kios_base& (*__pf) (ios_base&)\x1b[m\x1b[K)\n'}
+[5.083790] (mission_manager) StderrLine: {'line': b'      |                  \x1b[01;36m\x1b[K~~~~~~~~~~~~^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.084076] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/ostream:168:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::\x1b[01;32m\x1b[Koperator<<\x1b[m\x1b[K(long int) \x1b[35m\x1b[K[with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.084375] (mission_manager) StderrLine: {'line': b'  168 |       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<<(long __n)\n'}
+[5.084684] (mission_manager) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.084843] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/ostream:168:23:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Pose_<std::allocator<void> >::_position_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Point_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Klong int\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.085003] (mission_manager) StderrLine: {'line': b'  168 |       operator<<(\x1b[01;36m\x1b[Klong __n\x1b[m\x1b[K)\n'}
+[5.085136] (mission_manager) StderrLine: {'line': b'      |                  \x1b[01;36m\x1b[K~~~~~^~~\x1b[m\x1b[K\n'}
+[5.085268] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/ostream:172:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::\x1b[01;32m\x1b[Koperator<<\x1b[m\x1b[K(long unsigned int) \x1b[35m\x1b[K[with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.085407] (mission_manager) StderrLine: {'line': b'  172 |       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<<(unsigned long __n)\n'}
+[5.085536] (mission_manager) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.085663] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/ostream:172:32:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Pose_<std::allocator<void> >::_position_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Point_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.085817] (mission_manager) StderrLine: {'line': b'  172 |       operator<<(\x1b[01;36m\x1b[Kunsigned long __n\x1b[m\x1b[K)\n'}
+[5.085949] (mission_manager) StderrLine: {'line': b'      |                  \x1b[01;36m\x1b[K~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[5.086081] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/ostream:176:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::\x1b[01;32m\x1b[Koperator<<\x1b[m\x1b[K(bool) \x1b[35m\x1b[K[with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.086232] (mission_manager) StderrLine: {'line': b'  176 |       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<<(bool __n)\n'}
+[5.086365] (mission_manager) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.086495] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/ostream:176:23:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Pose_<std::allocator<void> >::_position_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Point_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kbool\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.086632] (mission_manager) StderrLine: {'line': b'  176 |       operator<<(\x1b[01;36m\x1b[Kbool __n\x1b[m\x1b[K)\n'}
+[5.086906] (mission_manager) StderrLine: {'line': b'      |                  \x1b[01;36m\x1b[K~~~~~^~~\x1b[m\x1b[K\n'}
+[5.087482] (mission_manager) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/13/ostream:880\x1b[m\x1b[K:\n'}
+[5.087843] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/ostream.tcc:96:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_ostream<_Ch, _Tr>& std::basic_ostream<_CharT, _Traits>::\x1b[01;32m\x1b[Koperator<<\x1b[m\x1b[K(short int) \x1b[35m\x1b[K[with _CharT = char; _Traits = std::char_traits<char>]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.088183] (mission_manager) StderrLine: {'line': b'   96 |     \x1b[01;36m\x1b[Kbasic_ostream<_CharT, _Traits>\x1b[m\x1b[K::\n'}
+[5.088478] (mission_manager) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.088821] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/ostream.tcc:97:22:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Pose_<std::allocator<void> >::_position_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Point_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kshort int\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.089125] (mission_manager) StderrLine: {'line': b'   97 |     operator<<(\x1b[01;36m\x1b[Kshort __n\x1b[m\x1b[K)\n'}
+[5.089256] (mission_manager) StderrLine: {'line': b'      |                \x1b[01;36m\x1b[K~~~~~~^~~\x1b[m\x1b[K\n'}
+[5.089384] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/ostream:183:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::\x1b[01;32m\x1b[Koperator<<\x1b[m\x1b[K(short unsigned int) \x1b[35m\x1b[K[with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.089533] (mission_manager) StderrLine: {'line': b'  183 |       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<<(unsigned short __n)\n'}
+[5.089663] (mission_manager) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.089793] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/ostream:183:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Pose_<std::allocator<void> >::_position_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Point_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kshort unsigned int\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.089928] (mission_manager) StderrLine: {'line': b'  183 |       operator<<(\x1b[01;36m\x1b[Kunsigned short __n\x1b[m\x1b[K)\n'}
+[5.090058] (mission_manager) StderrLine: {'line': b'      |                  \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[5.090186] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/ostream.tcc:110:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_ostream<_Ch, _Tr>& std::basic_ostream<_CharT, _Traits>::\x1b[01;32m\x1b[Koperator<<\x1b[m\x1b[K(int) \x1b[35m\x1b[K[with _CharT = char; _Traits = std::char_traits<char>]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.090323] (mission_manager) StderrLine: {'line': b'  110 |     \x1b[01;36m\x1b[Kbasic_ostream<_CharT, _Traits>\x1b[m\x1b[K::\n'}
+[5.090452] (mission_manager) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.090579] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/ostream.tcc:111:20:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Pose_<std::allocator<void> >::_position_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Point_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.090712] (mission_manager) StderrLine: {'line': b'  111 |     operator<<(\x1b[01;36m\x1b[Kint __n\x1b[m\x1b[K)\n'}
+[5.090837] (mission_manager) StderrLine: {'line': b'      |                \x1b[01;36m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[5.090964] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/ostream:194:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::\x1b[01;32m\x1b[Koperator<<\x1b[m\x1b[K(unsigned int) \x1b[35m\x1b[K[with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.091123] (mission_manager) StderrLine: {'line': b'  194 |       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<<(unsigned int __n)\n'}
+[5.091251] (mission_manager) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.091377] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/ostream:194:31:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Pose_<std::allocator<void> >::_position_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Point_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kunsigned int\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.091523] (mission_manager) StderrLine: {'line': b'  194 |       operator<<(\x1b[01;36m\x1b[Kunsigned int __n\x1b[m\x1b[K)\n'}
+[5.091654] (mission_manager) StderrLine: {'line': b'      |                  \x1b[01;36m\x1b[K~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[5.091829] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/ostream:203:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::\x1b[01;32m\x1b[Koperator<<\x1b[m\x1b[K(long long int) \x1b[35m\x1b[K[with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.092120] (mission_manager) StderrLine: {'line': b'  203 |       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<<(long long __n)\n'}
+[5.092424] (mission_manager) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.092774] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/ostream:203:28:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Pose_<std::allocator<void> >::_position_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Point_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Klong long int\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.093155] (mission_manager) StderrLine: {'line': b'  203 |       operator<<(\x1b[01;36m\x1b[Klong long __n\x1b[m\x1b[K)\n'}
+[5.093648] (mission_manager) StderrLine: {'line': b'      |                  \x1b[01;36m\x1b[K~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[5.093964] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/ostream:207:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::\x1b[01;32m\x1b[Koperator<<\x1b[m\x1b[K(long long unsigned int) \x1b[35m\x1b[K[with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.094266] (mission_manager) StderrLine: {'line': b'  207 |       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<<(unsigned long long __n)\n'}
+[5.094551] (mission_manager) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.094837] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/ostream:207:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Pose_<std::allocator<void> >::_position_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Point_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Klong long unsigned int\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.095129] (mission_manager) StderrLine: {'line': b'  207 |       operator<<(\x1b[01;36m\x1b[Kunsigned long long __n\x1b[m\x1b[K)\n'}
+[5.095403] (mission_manager) StderrLine: {'line': b'      |                  \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[5.095760] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/ostream:222:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::\x1b[01;32m\x1b[Koperator<<\x1b[m\x1b[K(double) \x1b[35m\x1b[K[with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.095912] (mission_manager) StderrLine: {'line': b'  222 |       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<<(double __f)\n'}
+[5.096046] (mission_manager) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.096180] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/ostream:222:25:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Pose_<std::allocator<void> >::_position_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Point_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.096319] (mission_manager) StderrLine: {'line': b'  222 |       operator<<(\x1b[01;36m\x1b[Kdouble __f\x1b[m\x1b[K)\n'}
+[5.096447] (mission_manager) StderrLine: {'line': b'      |                  \x1b[01;36m\x1b[K~~~~~~~^~~\x1b[m\x1b[K\n'}
+[5.096576] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/ostream:226:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::\x1b[01;32m\x1b[Koperator<<\x1b[m\x1b[K(float) \x1b[35m\x1b[K[with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.096756] (mission_manager) StderrLine: {'line': b'  226 |       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<<(float __f)\n'}
+[5.096892] (mission_manager) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.097022] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/ostream:226:24:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Pose_<std::allocator<void> >::_position_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Point_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kfloat\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.097167] (mission_manager) StderrLine: {'line': b'  226 |       operator<<(\x1b[01;36m\x1b[Kfloat __f\x1b[m\x1b[K)\n'}
+[5.097300] (mission_manager) StderrLine: {'line': b'      |                  \x1b[01;36m\x1b[K~~~~~~^~~\x1b[m\x1b[K\n'}
+[5.097438] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/ostream:234:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::\x1b[01;32m\x1b[Koperator<<\x1b[m\x1b[K(long double) \x1b[35m\x1b[K[with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.097782] (mission_manager) StderrLine: {'line': b'  234 |       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<<(long double __f)\n'}
+[5.098078] (mission_manager) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.098358] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/ostream:234:30:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Pose_<std::allocator<void> >::_position_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Point_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Klong double\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.098799] (mission_manager) StderrLine: {'line': b'  234 |       operator<<(\x1b[01;36m\x1b[Klong double __f\x1b[m\x1b[K)\n'}
+[5.099102] (mission_manager) StderrLine: {'line': b'      |                  \x1b[01;36m\x1b[K~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[5.099388] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/ostream:292:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::\x1b[01;32m\x1b[Koperator<<\x1b[m\x1b[K(const void*) \x1b[35m\x1b[K[with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.099734] (mission_manager) StderrLine: {'line': b'  292 |       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<<(const void* __p)\n'}
+[5.100052] (mission_manager) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.100333] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/ostream:292:30:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Pose_<std::allocator<void> >::_position_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Point_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kconst void*\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.100684] (mission_manager) StderrLine: {'line': b'  292 |       operator<<(\x1b[01;36m\x1b[Kconst void* __p\x1b[m\x1b[K)\n'}
+[5.100974] (mission_manager) StderrLine: {'line': b'      |                  \x1b[01;36m\x1b[K~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[5.101235] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/ostream:297:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::\x1b[01;32m\x1b[Koperator<<\x1b[m\x1b[K(std::nullptr_t) \x1b[35m\x1b[K[with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>; std::nullptr_t = std::nullptr_t]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.101511] (mission_manager) StderrLine: {'line': b'  297 |       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<<(nullptr_t)\n'}
+[5.101771] (mission_manager) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.102021] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/ostream:297:18:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Pose_<std::allocator<void> >::_position_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Point_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kstd::nullptr_t\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.102283] (mission_manager) StderrLine: {'line': b'  297 |       operator<<(\x1b[01;36m\x1b[Knullptr_t\x1b[m\x1b[K)\n'}
+[5.102535] (mission_manager) StderrLine: {'line': b'      |                  \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[5.102783] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/ostream.tcc:124:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_ostream<_Ch, _Tr>& std::basic_ostream<_CharT, _Traits>::\x1b[01;32m\x1b[Koperator<<\x1b[m\x1b[K(__streambuf_type*) \x1b[35m\x1b[K[with _CharT = char; _Traits = std::char_traits<char>; __streambuf_type = std::basic_streambuf<char>]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.103064] (mission_manager) StderrLine: {'line': b'  124 |     \x1b[01;36m\x1b[Kbasic_ostream<_CharT, _Traits>\x1b[m\x1b[K::\n'}
+[5.103319] (mission_manager) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.103572] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/ostream.tcc:125:34:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Pose_<std::allocator<void> >::_position_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Point_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_ostream<char>::__streambuf_type*\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_streambuf<char>*\x1b[m\x1b[K\xe2\x80\x99}\n'}
+[5.103889] (mission_manager) StderrLine: {'line': b'  125 |     operator<<(\x1b[01;36m\x1b[K__streambuf_type* __sbin\x1b[m\x1b[K)\n'}
+[5.104153] (mission_manager) StderrLine: {'line': b'      |                \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~^~~~~~\x1b[m\x1b[K\n'}
+[5.104407] (mission_manager) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/13/memory:80\x1b[m\x1b[K,\n'}
+[5.104702] (mission_manager) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:173\x1b[m\x1b[K:\n'}
+[5.104857] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/shared_ptr.h:70:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Ch, class _Tr, class _Tp, __gnu_cxx::_Lock_policy _Lp> std::basic_ostream<_Ch, _Tr>& std::\x1b[01;32m\x1b[Koperator<<\x1b[m\x1b[K(basic_ostream<_Ch, _Tr>&, const __shared_ptr<_Tp, _Lp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.105023] (mission_manager) StderrLine: {'line': b'   70 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<<(std::basic_ostream<_Ch, _Tr>& __os,\n'}
+[5.105159] (mission_manager) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.105288] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/shared_ptr.h:70:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[5.105418] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:42:50:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Pose_<std::allocator<void> >::_position_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Point_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::__shared_ptr<_Tp, _Lp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.105556] (mission_manager) StderrLine: {'line': b'   42 |           cout << "Origin: " << map_.info.origin.\x1b[01;36m\x1b[Kposition\x1b[m\x1b[K << endl;\n'}
+[5.105688] (mission_manager) StderrLine: {'line': b'      |                                                  \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.105818] (mission_manager) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/13/bits/basic_string.h:47\x1b[m\x1b[K,\n'}
+[5.105949] (mission_manager) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/13/string:54\x1b[m\x1b[K,\n'}
+[5.106077] (mission_manager) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:18\x1b[m\x1b[K:\n'}
+[5.106204] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/string_view:761:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_Ch, _Tr>& std::\x1b[01;32m\x1b[Koperator<<\x1b[m\x1b[K(basic_ostream<_Ch, _Tr>&, basic_string_view<_CharT, _Traits>)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.106372] (mission_manager) StderrLine: {'line': b'  761 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<<(basic_ostream<_CharT, _Traits>& __os,\n'}
+[5.106506] (mission_manager) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.106637] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/string_view:761:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[5.106765] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:42:50:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Point_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_string_view<_CharT, _Traits>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.106910] (mission_manager) StderrLine: {'line': b'   42 |           cout << "Origin: " << map_.info.origin.\x1b[01;36m\x1b[Kposition\x1b[m\x1b[K << endl;\n'}
+[5.107040] (mission_manager) StderrLine: {'line': b'      |                                                  \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.107168] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/basic_string.h:4032:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits, class _Alloc> std::basic_ostream<_Ch, _Tr>& std::\x1b[01;32m\x1b[Koperator<<\x1b[m\x1b[K(basic_ostream<_Ch, _Tr>&, const __cxx11::basic_string<_CharT, _Traits, _Allocator>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.107302] (mission_manager) StderrLine: {'line': b' 4032 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<<(basic_ostream<_CharT, _Traits>& __os,\n'}
+[5.107430] (mission_manager) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.107556] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/basic_string.h:4032:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[5.107690] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:42:50:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Pose_<std::allocator<void> >::_position_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Point_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Allocator>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.108181] (mission_manager) StderrLine: {'line': b'   42 |           cout << "Origin: " << map_.info.origin.\x1b[01;36m\x1b[Kposition\x1b[m\x1b[K << endl;\n'}
+[5.108462] (mission_manager) StderrLine: {'line': b'      |                                                  \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.108784] (mission_manager) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/13/bits/memory_resource.h:38\x1b[m\x1b[K,\n'}
+[5.109048] (mission_manager) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/13/string:58\x1b[m\x1b[K:\n'}
+[5.109304] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/cstddef:124:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _IntegerType> constexpr std::__byte_op_t<_IntegerType> std::\x1b[01;32m\x1b[Koperator<<\x1b[m\x1b[K(byte, _IntegerType)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.109565] (mission_manager) StderrLine: {'line': b'  124 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<<(byte __b, _IntegerType __shift) noexcept\n'}
+[5.109820] (mission_manager) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.110070] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/cstddef:124:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[5.110344] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:42:16:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  cannot convert \xe2\x80\x98\x1b[01m\x1b[Kstd::operator<< <char_traits<char> >(std::cout, ((const char*)"Origin: "))\x1b[m\x1b[K\xe2\x80\x99 (type \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_ostream<char>\x1b[m\x1b[K\xe2\x80\x99) to type \xe2\x80\x98\x1b[01m\x1b[Kstd::byte\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.110593] (mission_manager) StderrLine: {'line': b'   42 |           \x1b[01;36m\x1b[Kcout << "Origin: "\x1b[m\x1b[K << map_.info.origin.position << endl;\n'}
+[5.110824] (mission_manager) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K~~~~~^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.111077] (mission_manager) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/13/bits/ios_base.h:46\x1b[m\x1b[K,\n'}
+[5.111309] (mission_manager) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/13/ios:44\x1b[m\x1b[K,\n'}
+[5.111538] (mission_manager) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/13/istream:40\x1b[m\x1b[K:\n'}
+[5.111769] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/system_error:339:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_Ch, _Tr>& std::\x1b[01;32m\x1b[Koperator<<\x1b[m\x1b[K(basic_ostream<_Ch, _Tr>&, const error_code&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.112005] (mission_manager) StderrLine: {'line': b'  339 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<<(basic_ostream<_CharT, _Traits>& __os, const error_code& __e)\n'}
+[5.112236] (mission_manager) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.112468] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/system_error:339:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[5.112752] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:42:50:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  cannot convert \xe2\x80\x98\x1b[01m\x1b[K((MissionManager*)this)->MissionManager::map_.nav_msgs::msg::OccupancyGrid_<std::allocator<void> >::info.nav_msgs::msg::MapMetaData_<std::allocator<void> >::origin.geometry_msgs::msg::Pose_<std::allocator<void> >::position\x1b[m\x1b[K\xe2\x80\x99 (type \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Pose_<std::allocator<void> >::_position_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Point_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99}) to type \xe2\x80\x98\x1b[01m\x1b[Kconst std::error_code&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.113041] (mission_manager) StderrLine: {'line': b'   42 |           cout << "Origin: " << \x1b[01;36m\x1b[Kmap_.info.origin.position\x1b[m\x1b[K << endl;\n'}
+[5.113265] (mission_manager) StderrLine: {'line': b'      |                                 \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~^~~~~~~~\x1b[m\x1b[K\n'}
+[5.113483] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/ostream:554:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_Ch, _Tr>& std::\x1b[01;32m\x1b[Koperator<<\x1b[m\x1b[K(basic_ostream<_Ch, _Tr>&, _CharT)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.113707] (mission_manager) StderrLine: {'line': b'  554 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<<(basic_ostream<_CharT, _Traits>& __out, _CharT __c)\n'}
+[5.113924] (mission_manager) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.114139] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/ostream:554:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[5.114352] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:42:50:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  deduced conflicting types for parameter \xe2\x80\x98\x1b[01m\x1b[K_CharT\x1b[m\x1b[K\xe2\x80\x99 (\xe2\x80\x98\x1b[01m\x1b[Kchar\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Point_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99)\n'}
+[5.114573] (mission_manager) StderrLine: {'line': b'   42 |           cout << "Origin: " << map_.info.origin.\x1b[01;36m\x1b[Kposition\x1b[m\x1b[K << endl;\n'}
+[5.114791] (mission_manager) StderrLine: {'line': b'      |                                                  \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.115005] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/ostream:564:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_Ch, _Tr>& std::\x1b[01;32m\x1b[Koperator<<\x1b[m\x1b[K(basic_ostream<_Ch, _Tr>&, char)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.115252] (mission_manager) StderrLine: {'line': b'  564 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<<(basic_ostream<_CharT, _Traits>& __out, char __c)\n'}
+[5.115468] (mission_manager) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.115635] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/ostream:564:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[5.115764] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:42:50:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  cannot convert \xe2\x80\x98\x1b[01m\x1b[K((MissionManager*)this)->MissionManager::map_.nav_msgs::msg::OccupancyGrid_<std::allocator<void> >::info.nav_msgs::msg::MapMetaData_<std::allocator<void> >::origin.geometry_msgs::msg::Pose_<std::allocator<void> >::position\x1b[m\x1b[K\xe2\x80\x99 (type \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Pose_<std::allocator<void> >::_position_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Point_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99}) to type \xe2\x80\x98\x1b[01m\x1b[Kchar\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.115918] (mission_manager) StderrLine: {'line': b'   42 |           cout << "Origin: " << \x1b[01;36m\x1b[Kmap_.info.origin.position\x1b[m\x1b[K << endl;\n'}
+[5.116050] (mission_manager) StderrLine: {'line': b'      |                                 \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~^~~~~~~~\x1b[m\x1b[K\n'}
+[5.116179] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/ostream:570:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::\x1b[01;32m\x1b[Koperator<<\x1b[m\x1b[K(basic_ostream<char, _Traits>&, char)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.116309] (mission_manager) StderrLine: {'line': b'  570 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<<(basic_ostream<char, _Traits>& __out, char __c)\n'}
+[5.116438] (mission_manager) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.116565] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/ostream:570:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[5.116727] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:42:50:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  cannot convert \xe2\x80\x98\x1b[01m\x1b[K((MissionManager*)this)->MissionManager::map_.nav_msgs::msg::OccupancyGrid_<std::allocator<void> >::info.nav_msgs::msg::MapMetaData_<std::allocator<void> >::origin.geometry_msgs::msg::Pose_<std::allocator<void> >::position\x1b[m\x1b[K\xe2\x80\x99 (type \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Pose_<std::allocator<void> >::_position_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Point_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99}) to type \xe2\x80\x98\x1b[01m\x1b[Kchar\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.116867] (mission_manager) StderrLine: {'line': b'   42 |           cout << "Origin: " << \x1b[01;36m\x1b[Kmap_.info.origin.position\x1b[m\x1b[K << endl;\n'}
+[5.116999] (mission_manager) StderrLine: {'line': b'      |                                 \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~^~~~~~~~\x1b[m\x1b[K\n'}
+[5.117129] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/ostream:581:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::\x1b[01;32m\x1b[Koperator<<\x1b[m\x1b[K(basic_ostream<char, _Traits>&, signed char)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.117260] (mission_manager) StderrLine: {'line': b'  581 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<<(basic_ostream<char, _Traits>& __out, signed char __c)\n'}
+[5.117410] (mission_manager) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.117538] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/ostream:581:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[5.117723] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:42:50:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  cannot convert \xe2\x80\x98\x1b[01m\x1b[K((MissionManager*)this)->MissionManager::map_.nav_msgs::msg::OccupancyGrid_<std::allocator<void> >::info.nav_msgs::msg::MapMetaData_<std::allocator<void> >::origin.geometry_msgs::msg::Pose_<std::allocator<void> >::position\x1b[m\x1b[K\xe2\x80\x99 (type \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Pose_<std::allocator<void> >::_position_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Point_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99}) to type \xe2\x80\x98\x1b[01m\x1b[Ksigned char\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.117961] (mission_manager) StderrLine: {'line': b'   42 |           cout << "Origin: " << \x1b[01;36m\x1b[Kmap_.info.origin.position\x1b[m\x1b[K << endl;\n'}
+[5.118163] (mission_manager) StderrLine: {'line': b'      |                                 \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~^~~~~~~~\x1b[m\x1b[K\n'}
+[5.118362] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/ostream:586:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::\x1b[01;32m\x1b[Koperator<<\x1b[m\x1b[K(basic_ostream<char, _Traits>&, unsigned char)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.118570] (mission_manager) StderrLine: {'line': b'  586 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<<(basic_ostream<char, _Traits>& __out, unsigned char __c)\n'}
+[5.118773] (mission_manager) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.118971] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/ostream:586:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[5.119169] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:42:50:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  cannot convert \xe2\x80\x98\x1b[01m\x1b[K((MissionManager*)this)->MissionManager::map_.nav_msgs::msg::OccupancyGrid_<std::allocator<void> >::info.nav_msgs::msg::MapMetaData_<std::allocator<void> >::origin.geometry_msgs::msg::Pose_<std::allocator<void> >::position\x1b[m\x1b[K\xe2\x80\x99 (type \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Pose_<std::allocator<void> >::_position_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Point_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99}) to type \xe2\x80\x98\x1b[01m\x1b[Kunsigned char\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.119380] (mission_manager) StderrLine: {'line': b'   42 |           cout << "Origin: " << \x1b[01;36m\x1b[Kmap_.info.origin.position\x1b[m\x1b[K << endl;\n'}
+[5.119580] (mission_manager) StderrLine: {'line': b'      |                                 \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~^~~~~~~~\x1b[m\x1b[K\n'}
+[5.119739] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/ostream:645:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_Ch, _Tr>& std::\x1b[01;32m\x1b[Koperator<<\x1b[m\x1b[K(basic_ostream<_Ch, _Tr>&, const _CharT*)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.119884] (mission_manager) StderrLine: {'line': b'  645 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<<(basic_ostream<_CharT, _Traits>& __out, const _CharT* __s)\n'}
+[5.120013] (mission_manager) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.120139] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/ostream:645:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[5.120278] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:42:50:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst _CharT*\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Point_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.120408] (mission_manager) StderrLine: {'line': b'   42 |           cout << "Origin: " << map_.info.origin.\x1b[01;36m\x1b[Kposition\x1b[m\x1b[K << endl;\n'}
+[5.120533] (mission_manager) StderrLine: {'line': b'      |                                                  \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.120692] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/ostream.tcc:307:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_Ch, _Tr>& std::\x1b[01;32m\x1b[Koperator<<\x1b[m\x1b[K(basic_ostream<_Ch, _Tr>&, const char*)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.120829] (mission_manager) StderrLine: {'line': b'  307 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<<(basic_ostream<_CharT, _Traits>& __out, const char* __s)\n'}
+[5.120962] (mission_manager) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.121089] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/ostream.tcc:307:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[5.121218] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:42:50:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  cannot convert \xe2\x80\x98\x1b[01m\x1b[K((MissionManager*)this)->MissionManager::map_.nav_msgs::msg::OccupancyGrid_<std::allocator<void> >::info.nav_msgs::msg::MapMetaData_<std::allocator<void> >::origin.geometry_msgs::msg::Pose_<std::allocator<void> >::position\x1b[m\x1b[K\xe2\x80\x99 (type \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Pose_<std::allocator<void> >::_position_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Point_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99}) to type \xe2\x80\x98\x1b[01m\x1b[Kconst char*\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.121368] (mission_manager) StderrLine: {'line': b'   42 |           cout << "Origin: " << \x1b[01;36m\x1b[Kmap_.info.origin.position\x1b[m\x1b[K << endl;\n'}
+[5.121513] (mission_manager) StderrLine: {'line': b'      |                                 \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~^~~~~~~~\x1b[m\x1b[K\n'}
+[5.121655] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/ostream:662:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::\x1b[01;32m\x1b[Koperator<<\x1b[m\x1b[K(basic_ostream<char, _Traits>&, const char*)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.121787] (mission_manager) StderrLine: {'line': b'  662 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<<(basic_ostream<char, _Traits>& __out, const char* __s)\n'}
+[5.121914] (mission_manager) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.122039] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/ostream:662:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[5.122165] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:42:50:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  cannot convert \xe2\x80\x98\x1b[01m\x1b[K((MissionManager*)this)->MissionManager::map_.nav_msgs::msg::OccupancyGrid_<std::allocator<void> >::info.nav_msgs::msg::MapMetaData_<std::allocator<void> >::origin.geometry_msgs::msg::Pose_<std::allocator<void> >::position\x1b[m\x1b[K\xe2\x80\x99 (type \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Pose_<std::allocator<void> >::_position_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Point_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99}) to type \xe2\x80\x98\x1b[01m\x1b[Kconst char*\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.122312] (mission_manager) StderrLine: {'line': b'   42 |           cout << "Origin: " << \x1b[01;36m\x1b[Kmap_.info.origin.position\x1b[m\x1b[K << endl;\n'}
+[5.122443] (mission_manager) StderrLine: {'line': b'      |                                 \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~^~~~~~~~\x1b[m\x1b[K\n'}
+[5.122571] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/ostream:675:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::\x1b[01;32m\x1b[Koperator<<\x1b[m\x1b[K(basic_ostream<char, _Traits>&, const signed char*)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.122702] (mission_manager) StderrLine: {'line': b'  675 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<<(basic_ostream<char, _Traits>& __out, const signed char* __s)\n'}
+[5.122829] (mission_manager) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.122953] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/ostream:675:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[5.123089] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:42:50:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  cannot convert \xe2\x80\x98\x1b[01m\x1b[K((MissionManager*)this)->MissionManager::map_.nav_msgs::msg::OccupancyGrid_<std::allocator<void> >::info.nav_msgs::msg::MapMetaData_<std::allocator<void> >::origin.geometry_msgs::msg::Pose_<std::allocator<void> >::position\x1b[m\x1b[K\xe2\x80\x99 (type \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Pose_<std::allocator<void> >::_position_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Point_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99}) to type \xe2\x80\x98\x1b[01m\x1b[Kconst signed char*\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.123234] (mission_manager) StderrLine: {'line': b'   42 |           cout << "Origin: " << \x1b[01;36m\x1b[Kmap_.info.origin.position\x1b[m\x1b[K << endl;\n'}
+[5.123366] (mission_manager) StderrLine: {'line': b'      |                                 \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~^~~~~~~~\x1b[m\x1b[K\n'}
+[5.123549] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/ostream:680:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::\x1b[01;32m\x1b[Koperator<<\x1b[m\x1b[K(basic_ostream<char, _Traits>&, const unsigned char*)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.123738] (mission_manager) StderrLine: {'line': b'  680 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<<(basic_ostream<char, _Traits>& __out, const unsigned char* __s)\n'}
+[5.123922] (mission_manager) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.124104] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/ostream:680:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[5.124289] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:42:50:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  cannot convert \xe2\x80\x98\x1b[01m\x1b[K((MissionManager*)this)->MissionManager::map_.nav_msgs::msg::OccupancyGrid_<std::allocator<void> >::info.nav_msgs::msg::MapMetaData_<std::allocator<void> >::origin.geometry_msgs::msg::Pose_<std::allocator<void> >::position\x1b[m\x1b[K\xe2\x80\x99 (type \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Pose_<std::allocator<void> >::_position_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Point_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99}) to type \xe2\x80\x98\x1b[01m\x1b[Kconst unsigned char*\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.124503] (mission_manager) StderrLine: {'line': b'   42 |           cout << "Origin: " << \x1b[01;36m\x1b[Kmap_.info.origin.position\x1b[m\x1b[K << endl;\n'}
+[5.124731] (mission_manager) StderrLine: {'line': b'      |                                 \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~^~~~~~~~\x1b[m\x1b[K\n'}
+[5.124927] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/ostream:801:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Ostream, class _Tp> _Ostream&& std::\x1b[01;32m\x1b[Koperator<<\x1b[m\x1b[K(_Ostream&&, const _Tp&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.125123] (mission_manager) StderrLine: {'line': b'  801 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<<(_Ostream&& __os, const _Tp& __x)\n'}
+[5.125331] (mission_manager) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.125490] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/ostream:801:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[5.125636] (mission_manager) StderrLine: {'line': b'/usr/include/c++/13/ostream: In substitution of \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Ostream, class _Tp> _Ostream&& std::\x1b[01;32m\x1b[Koperator<<\x1b[m\x1b[K(_Ostream&&, const _Tp&) \x1b[35m\x1b[K[with _Ostream = std::basic_ostream<char>&; _Tp = geometry_msgs::msg::Point_<std::allocator<void> >]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.125774] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:42:50:\x1b[m\x1b[K   required from here\n'}
+[5.125904] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/ostream:801:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno type named \xe2\x80\x98\x1b[01m\x1b[Ktype\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Kstruct std::enable_if<false, void>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.126036] (mission_manager) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/jazzy/include/rosidl_runtime_cpp/rosidl_runtime_cpp/traits.hpp:20\x1b[m\x1b[K,\n'}
+[5.126166] (mission_manager) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__traits.hpp:18\x1b[m\x1b[K:\n'}
+[5.126294] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/iomanip:81:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_Ch, _Tr>& std::\x1b[01;32m\x1b[Koperator<<\x1b[m\x1b[K(basic_ostream<_Ch, _Tr>&, _Resetiosflags)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.126425] (mission_manager) StderrLine: {'line': b'   81 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<<(basic_ostream<_CharT, _Traits>& __os, _Resetiosflags __f)\n'}
+[5.126552] (mission_manager) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.126680] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/iomanip:81:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[5.126810] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:42:50:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  cannot convert \xe2\x80\x98\x1b[01m\x1b[K((MissionManager*)this)->MissionManager::map_.nav_msgs::msg::OccupancyGrid_<std::allocator<void> >::info.nav_msgs::msg::MapMetaData_<std::allocator<void> >::origin.geometry_msgs::msg::Pose_<std::allocator<void> >::position\x1b[m\x1b[K\xe2\x80\x99 (type \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Pose_<std::allocator<void> >::_position_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Point_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99}) to type \xe2\x80\x98\x1b[01m\x1b[Kstd::_Resetiosflags\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.126981] (mission_manager) StderrLine: {'line': b'   42 |           cout << "Origin: " << \x1b[01;36m\x1b[Kmap_.info.origin.position\x1b[m\x1b[K << endl;\n'}
+[5.127124] (mission_manager) StderrLine: {'line': b'      |                                 \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~^~~~~~~~\x1b[m\x1b[K\n'}
+[5.127268] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/iomanip:111:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_Ch, _Tr>& std::\x1b[01;32m\x1b[Koperator<<\x1b[m\x1b[K(basic_ostream<_Ch, _Tr>&, _Setiosflags)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.127405] (mission_manager) StderrLine: {'line': b'  111 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<<(basic_ostream<_CharT, _Traits>& __os, _Setiosflags __f)\n'}
+[5.127532] (mission_manager) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.127678] (-) TimerEvent: {}
+[5.127913] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/iomanip:111:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[5.128131] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:42:50:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  cannot convert \xe2\x80\x98\x1b[01m\x1b[K((MissionManager*)this)->MissionManager::map_.nav_msgs::msg::OccupancyGrid_<std::allocator<void> >::info.nav_msgs::msg::MapMetaData_<std::allocator<void> >::origin.geometry_msgs::msg::Pose_<std::allocator<void> >::position\x1b[m\x1b[K\xe2\x80\x99 (type \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Pose_<std::allocator<void> >::_position_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Point_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99}) to type \xe2\x80\x98\x1b[01m\x1b[Kstd::_Setiosflags\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.128340] (mission_manager) StderrLine: {'line': b'   42 |           cout << "Origin: " << \x1b[01;36m\x1b[Kmap_.info.origin.position\x1b[m\x1b[K << endl;\n'}
+[5.128527] (mission_manager) StderrLine: {'line': b'      |                                 \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~^~~~~~~~\x1b[m\x1b[K\n'}
+[5.128764] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/iomanip:145:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_Ch, _Tr>& std::\x1b[01;32m\x1b[Koperator<<\x1b[m\x1b[K(basic_ostream<_Ch, _Tr>&, _Setbase)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.128955] (mission_manager) StderrLine: {'line': b'  145 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<<(basic_ostream<_CharT, _Traits>& __os, _Setbase __f)\n'}
+[5.129138] (mission_manager) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.129318] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/iomanip:145:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[5.129495] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:42:50:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  cannot convert \xe2\x80\x98\x1b[01m\x1b[K((MissionManager*)this)->MissionManager::map_.nav_msgs::msg::OccupancyGrid_<std::allocator<void> >::info.nav_msgs::msg::MapMetaData_<std::allocator<void> >::origin.geometry_msgs::msg::Pose_<std::allocator<void> >::position\x1b[m\x1b[K\xe2\x80\x99 (type \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Pose_<std::allocator<void> >::_position_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Point_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99}) to type \xe2\x80\x98\x1b[01m\x1b[Kstd::_Setbase\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.129748] (mission_manager) StderrLine: {'line': b'   42 |           cout << "Origin: " << \x1b[01;36m\x1b[Kmap_.info.origin.position\x1b[m\x1b[K << endl;\n'}
+[5.129938] (mission_manager) StderrLine: {'line': b'      |                                 \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~^~~~~~~~\x1b[m\x1b[K\n'}
+[5.130117] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/iomanip:180:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_Ch, _Tr>& std::\x1b[01;32m\x1b[Koperator<<\x1b[m\x1b[K(basic_ostream<_Ch, _Tr>&, _Setfill<_CharT>)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.130318] (mission_manager) StderrLine: {'line': b'  180 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<<(basic_ostream<_CharT, _Traits>& __os, _Setfill<_CharT> __f)\n'}
+[5.130497] (mission_manager) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.130672] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/iomanip:180:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[5.130846] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:42:50:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Point_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kstd::_Setfill<_CharT>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.131024] (mission_manager) StderrLine: {'line': b'   42 |           cout << "Origin: " << map_.info.origin.\x1b[01;36m\x1b[Kposition\x1b[m\x1b[K << endl;\n'}
+[5.131199] (mission_manager) StderrLine: {'line': b'      |                                                  \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.131378] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/iomanip:210:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_Ch, _Tr>& std::\x1b[01;32m\x1b[Koperator<<\x1b[m\x1b[K(basic_ostream<_Ch, _Tr>&, _Setprecision)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.131554] (mission_manager) StderrLine: {'line': b'  210 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<<(basic_ostream<_CharT, _Traits>& __os, _Setprecision __f)\n'}
+[5.131724] (mission_manager) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.131889] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/iomanip:210:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[5.132054] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:42:50:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  cannot convert \xe2\x80\x98\x1b[01m\x1b[K((MissionManager*)this)->MissionManager::map_.nav_msgs::msg::OccupancyGrid_<std::allocator<void> >::info.nav_msgs::msg::MapMetaData_<std::allocator<void> >::origin.geometry_msgs::msg::Pose_<std::allocator<void> >::position\x1b[m\x1b[K\xe2\x80\x99 (type \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Pose_<std::allocator<void> >::_position_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Point_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99}) to type \xe2\x80\x98\x1b[01m\x1b[Kstd::_Setprecision\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.132233] (mission_manager) StderrLine: {'line': b'   42 |           cout << "Origin: " << \x1b[01;36m\x1b[Kmap_.info.origin.position\x1b[m\x1b[K << endl;\n'}
+[5.132399] (mission_manager) StderrLine: {'line': b'      |                                 \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~^~~~~~~~\x1b[m\x1b[K\n'}
+[5.132564] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/iomanip:240:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_Ch, _Tr>& std::\x1b[01;32m\x1b[Koperator<<\x1b[m\x1b[K(basic_ostream<_Ch, _Tr>&, _Setw)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.132789] (mission_manager) StderrLine: {'line': b'  240 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<<(basic_ostream<_CharT, _Traits>& __os, _Setw __f)\n'}
+[5.132962] (mission_manager) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.133128] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/iomanip:240:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[5.133312] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:42:50:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  cannot convert \xe2\x80\x98\x1b[01m\x1b[K((MissionManager*)this)->MissionManager::map_.nav_msgs::msg::OccupancyGrid_<std::allocator<void> >::info.nav_msgs::msg::MapMetaData_<std::allocator<void> >::origin.geometry_msgs::msg::Pose_<std::allocator<void> >::position\x1b[m\x1b[K\xe2\x80\x99 (type \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Pose_<std::allocator<void> >::_position_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Point_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99}) to type \xe2\x80\x98\x1b[01m\x1b[Kstd::_Setw\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.133491] (mission_manager) StderrLine: {'line': b'   42 |           cout << "Origin: " << \x1b[01;36m\x1b[Kmap_.info.origin.position\x1b[m\x1b[K << endl;\n'}
+[5.133660] (mission_manager) StderrLine: {'line': b'      |                                 \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~^~~~~~~~\x1b[m\x1b[K\n'}
+[5.133827] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/iomanip:313:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits, class _MoneyT> std::basic_ostream<_Ch, _Tr>& std::\x1b[01;32m\x1b[Koperator<<\x1b[m\x1b[K(basic_ostream<_Ch, _Tr>&, _Put_money<_MoneyT>)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.134034] (mission_manager) StderrLine: {'line': b'  313 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<<(basic_ostream<_CharT, _Traits>& __os, _Put_money<_MoneyT> __f)\n'}
+[5.134205] (mission_manager) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.134371] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/iomanip:313:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[5.134536] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:42:50:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Point_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kstd::_Put_money<_MoneyT>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.134705] (mission_manager) StderrLine: {'line': b'   42 |           cout << "Origin: " << map_.info.origin.\x1b[01;36m\x1b[Kposition\x1b[m\x1b[K << endl;\n'}
+[5.134872] (mission_manager) StderrLine: {'line': b'      |                                                  \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.135038] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/iomanip:365:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_Ch, _Tr>& std::\x1b[01;32m\x1b[Koperator<<\x1b[m\x1b[K(basic_ostream<_Ch, _Tr>&, _Put_time<_CharT>)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.135207] (mission_manager) StderrLine: {'line': b'  365 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<<(basic_ostream<_CharT, _Traits>& __os, _Put_time<_CharT> __f)\n'}
+[5.135366] (mission_manager) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.135491] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/iomanip:365:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[5.135627] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:42:50:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Point_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kstd::_Put_time<_CharT>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.135765] (mission_manager) StderrLine: {'line': b'   42 |           cout << "Origin: " << map_.info.origin.\x1b[01;36m\x1b[Kposition\x1b[m\x1b[K << endl;\n'}
+[5.135894] (mission_manager) StderrLine: {'line': b'      |                                                  \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.136037] (mission_manager) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:22\x1b[m\x1b[K,\n'}
+[5.136166] (mission_manager) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[5.136295] (mission_manager) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:176\x1b[m\x1b[K:\n'}
+[5.136425] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/thread:97:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_Ch, _Tr>& std::\x1b[01;32m\x1b[Koperator<<\x1b[m\x1b[K(basic_ostream<_Ch, _Tr>&, thread::id)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.136560] (mission_manager) StderrLine: {'line': b'   97 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<<(basic_ostream<_CharT, _Traits>& __out, thread::id __id)\n'}
+[5.136726] (mission_manager) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.136858] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/thread:97:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[5.136989] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:42:50:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  cannot convert \xe2\x80\x98\x1b[01m\x1b[K((MissionManager*)this)->MissionManager::map_.nav_msgs::msg::OccupancyGrid_<std::allocator<void> >::info.nav_msgs::msg::MapMetaData_<std::allocator<void> >::origin.geometry_msgs::msg::Pose_<std::allocator<void> >::position\x1b[m\x1b[K\xe2\x80\x99 (type \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Pose_<std::allocator<void> >::_position_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Point_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99}) to type \xe2\x80\x98\x1b[01m\x1b[Kstd::thread::id\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.137132] (mission_manager) StderrLine: {'line': b'   42 |           cout << "Origin: " << \x1b[01;36m\x1b[Kmap_.info.origin.position\x1b[m\x1b[K << endl;\n'}
+[5.137262] (mission_manager) StderrLine: {'line': b'      |                                 \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~^~~~~~~~\x1b[m\x1b[K\n'}
+[5.137390] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[01;32m\x1b[K main\x1b[m\x1b[K(int, char**)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.137548] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:56:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstatement is a reference, not call, to function \xe2\x80\x98\x1b[01m\x1b[Krclcpp::shutdown\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Waddress\x1b[m\x1b[K]\n'}
+[5.137709] (mission_manager) StderrLine: {'line': b'   56 |    \x1b[01;35m\x1b[Krclcpp::shutdown\x1b[m\x1b[K;\n'}
+[5.137867] (mission_manager) StderrLine: {'line': b'      |    \x1b[01;35m\x1b[K~~~~~~~~^~~~~~~~\x1b[m\x1b[K\n'}
+[5.138024] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:56:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstatement has no effect [\x1b[01;35m\x1b[K-Wunused-value\x1b[m\x1b[K]\n'}
+[5.227838] (-) TimerEvent: {}
+[5.328367] (-) TimerEvent: {}
+[5.428987] (-) TimerEvent: {}
+[5.529619] (-) TimerEvent: {}
+[5.630130] (-) TimerEvent: {}
+[5.730668] (-) TimerEvent: {}
+[5.831322] (-) TimerEvent: {}
+[5.931997] (-) TimerEvent: {}
+[6.032707] (-) TimerEvent: {}
+[6.133580] (-) TimerEvent: {}
+[6.234408] (-) TimerEvent: {}
+[6.335104] (-) TimerEvent: {}
+[6.435737] (-) TimerEvent: {}
+[6.536247] (-) TimerEvent: {}
+[6.636809] (-) TimerEvent: {}
+[6.737340] (-) TimerEvent: {}
+[6.837859] (-) TimerEvent: {}
+[6.938456] (-) TimerEvent: {}
+[7.039128] (-) TimerEvent: {}
+[7.139811] (-) TimerEvent: {}
+[7.240464] (-) TimerEvent: {}
+[7.341595] (-) TimerEvent: {}
+[7.442269] (-) TimerEvent: {}
+[7.542939] (-) TimerEvent: {}
+[7.643640] (-) TimerEvent: {}
+[7.744315] (-) TimerEvent: {}
+[7.845047] (-) TimerEvent: {}
+[7.945593] (-) TimerEvent: {}
+[8.046292] (-) TimerEvent: {}
+[8.146983] (-) TimerEvent: {}
+[8.247712] (-) TimerEvent: {}
+[8.348422] (-) TimerEvent: {}
+[8.449152] (-) TimerEvent: {}
+[8.549818] (-) TimerEvent: {}
+[8.650495] (-) TimerEvent: {}
+[8.751202] (-) TimerEvent: {}
+[8.851913] (-) TimerEvent: {}
+[8.952640] (-) TimerEvent: {}
+[9.053368] (-) TimerEvent: {}
+[9.154060] (-) TimerEvent: {}
+[9.254752] (-) TimerEvent: {}
+[9.355477] (-) TimerEvent: {}
+[9.456150] (-) TimerEvent: {}
+[9.556702] (-) TimerEvent: {}
+[9.657247] (-) TimerEvent: {}
+[9.757914] (-) TimerEvent: {}
+[9.858618] (-) TimerEvent: {}
+[9.962238] (-) TimerEvent: {}
+[10.062775] (-) TimerEvent: {}
+[10.163487] (-) TimerEvent: {}
+[10.264278] (-) TimerEvent: {}
+[10.365004] (-) TimerEvent: {}
+[10.465645] (-) TimerEvent: {}
+[10.566167] (-) TimerEvent: {}
+[10.667279] (-) TimerEvent: {}
+[10.767972] (-) TimerEvent: {}
+[10.868705] (-) TimerEvent: {}
+[10.969378] (-) TimerEvent: {}
+[11.070428] (-) TimerEvent: {}
+[11.172154] (-) TimerEvent: {}
+[11.272899] (-) TimerEvent: {}
+[11.323357] (mission_manager) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/mission.dir/build.make:76: CMakeFiles/mission.dir/src/mission.cpp.o] Error 1\n'}
+[11.323993] (mission_manager) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/mission.dir/all] Error 2\n'}
+[11.324344] (mission_manager) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[11.329776] (mission_manager) CommandEnded: {'returncode': 2}
+[11.373400] (mission_manager) JobEnded: {'identifier': 'mission_manager', 'rc': 2}
+[11.379440] (-) TimerEvent: {}
+[11.384707] (-) EventReactorShutdown: {}

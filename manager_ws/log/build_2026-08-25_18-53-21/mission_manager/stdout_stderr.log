@@ -1,0 +1,44 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/mission.dir/src/mission.cpp.o[0m
+[01m[K/manager_ws/src/mission_manager/src/mission.cpp:[m[K In member function ‘[01m[Kvoid MissionManager::[01;32m[KExplorationCompleteCallback[m[K(std_msgs::msg::Empty_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/manager_ws/src/mission_manager/src/mission.cpp:49:78:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   49 |       void ExplorationCompleteCallback([01;35m[Kconst std_msgs::msg::Empty::SharedPtr msg[m[K)
+      |                                        [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:175[m[K,
+                 from [01m[K/manager_ws/src/mission_manager/src/mission.cpp:1[m[K:
+[01m[K/manager_ws/src/mission_manager/src/mission.cpp:[m[K In member function ‘[01m[Kvoid MissionManager::[01;32m[KGetRobotPose[m[K()[m[K’:
+[01m[K/manager_ws/src/mission_manager/src/mission.cpp:81:45:[m[K [01;35m[Kwarning: [m[Ktoo many arguments for format [[01;35m[K-Wformat-extra-args[m[K]
+   81 |             RCLCPP_WARN(this->get_logger(), [01;35m[K"Could not get the transform"[m[K, ex.what());
+      |                                             [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/manager_ws/src/mission_manager/src/mission.cpp:84:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kwidth[m[K’ was not declared in this scope; did you mean ‘[01m[Kwcwidth[m[K’?
+   84 |          [01;31m[Kwidth[m[K = map_.info.origin.position.x;
+      |          [01;31m[K^~~~~[m[K
+      |          [32m[Kwcwidth[m[K
+[01m[K/manager_ws/src/mission_manager/src/mission.cpp:85:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kheight[m[K’ was not declared in this scope
+   85 |          [01;31m[Kheight[m[K = map_.info.origin.position.y;
+      |          [01;31m[K^~~~~~[m[K
+[01m[K/manager_ws/src/mission_manager/src/mission.cpp:86:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kresolution[m[K’ was not declared in this scope
+   86 |          [01;31m[Kresolution[m[K = map_.info.resolution;
+      |          [01;31m[K^~~~~~~~~~[m[K
+[01m[K/manager_ws/src/mission_manager/src/mission.cpp:87:34:[m[K [01;31m[Kerror: [m[K‘[01m[Ki[m[K’ was not declared in this scope
+   87 |          for(unsigned int y = 0; [01;31m[Ki[m[K < height; y++){
+      |                                  [01;31m[K^[m[K
+[01m[K/manager_ws/src/mission_manager/src/mission.cpp:88:38:[m[K [01;31m[Kerror: [m[K‘[01m[Kj[m[K’ was not declared in this scope; did you mean ‘[01m[Kjn[m[K’?
+   88 |              for(unsigned int x = 0; [01;31m[Kj[m[K < width; x++){
+      |                                      [01;31m[K^[m[K
+      |                                      [32m[Kjn[m[K
+[01m[K/manager_ws/src/mission_manager/src/mission.cpp:90:29:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator[][m[K’ (operand types are ‘[01m[Knav_msgs::msg::OccupancyGrid_<std::allocator<void> >::_info_type[m[K’ {aka ‘[01m[Knav_msgs::msg::MapMetaData_<std::allocator<void> >[m[K’} and ‘[01m[Kint[m[K’)
+   90 |                 if(map_.info[01;31m[K[[m[Kindex] == 0){
+      |                             [01;31m[K^[m[K
+[01m[K/manager_ws/src/mission_manager/src/mission.cpp:91:26:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kx_coords[m[K’ [[01;35m[K-Wunused-variable[m[K]
+   91 |                   double [01;35m[Kx_coords[m[K = x;
+      |                          [01;35m[K^~~~~~~~[m[K
+[01m[K/manager_ws/src/mission_manager/src/mission.cpp:[m[K In function ‘[01m[Kint[01;32m[K main[m[K(int, char**)[m[K’:
+[01m[K/manager_ws/src/mission_manager/src/mission.cpp:109:12:[m[K [01;35m[Kwarning: [m[Kstatement is a reference, not call, to function ‘[01m[Krclcpp::shutdown[m[K’ [[01;35m[K-Waddress[m[K]
+  109 |    [01;35m[Krclcpp::shutdown[m[K;
+      |    [01;35m[K~~~~~~~~^~~~~~~~[m[K
+[01m[K/manager_ws/src/mission_manager/src/mission.cpp:109:12:[m[K [01;35m[Kwarning: [m[Kstatement has no effect [[01;35m[K-Wunused-value[m[K]
+gmake[2]: *** [CMakeFiles/mission.dir/build.make:76: CMakeFiles/mission.dir/src/mission.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/mission.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

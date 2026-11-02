@@ -1,0 +1,25 @@
+[0.023s] Invoking command in '/manager_ws/build/mission_manager': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Drobage_jazzy/install/robot_ctrl_package:/Drobage_jazzy/install/navigation_package:/Drobage_jazzy/install/my_yolo_package:/opt/ros/jazzy /usr/bin/cmake --build /manager_ws/build/mission_manager -- -j6 -l6
+[0.171s] [ 50%] [32mBuilding CXX object CMakeFiles/mission.dir/src/mission.cpp.o[0m
+[25.571s] [100%] [32m[1mLinking CXX executable mission[0m
+[26.799s] [100%] Built target mission
+[26.889s] Invoked command in '/manager_ws/build/mission_manager' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Drobage_jazzy/install/robot_ctrl_package:/Drobage_jazzy/install/navigation_package:/Drobage_jazzy/install/my_yolo_package:/opt/ros/jazzy /usr/bin/cmake --build /manager_ws/build/mission_manager -- -j6 -l6
+[26.926s] Invoking command in '/manager_ws/build/mission_manager': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Drobage_jazzy/install/robot_ctrl_package:/Drobage_jazzy/install/navigation_package:/Drobage_jazzy/install/my_yolo_package:/opt/ros/jazzy /usr/bin/cmake --install /manager_ws/build/mission_manager
+[26.950s] -- Install configuration: ""
+[26.951s] -- Execute custom install script
+[26.952s] -- Up-to-date symlink: /manager_ws/install/mission_manager/lib/mission_manager/mission
+[26.952s] -- Up-to-date symlink: /manager_ws/install/mission_manager/share/ament_index/resource_index/package_run_dependencies/mission_manager
+[26.953s] -- Up-to-date symlink: /manager_ws/install/mission_manager/share/ament_index/resource_index/parent_prefix_path/mission_manager
+[26.953s] -- Up-to-date symlink: /manager_ws/install/mission_manager/share/mission_manager/environment/ament_prefix_path.sh
+[26.953s] -- Up-to-date symlink: /manager_ws/install/mission_manager/share/mission_manager/environment/ament_prefix_path.dsv
+[26.954s] -- Up-to-date symlink: /manager_ws/install/mission_manager/share/mission_manager/environment/path.sh
+[26.954s] -- Up-to-date symlink: /manager_ws/install/mission_manager/share/mission_manager/environment/path.dsv
+[26.954s] -- Up-to-date symlink: /manager_ws/install/mission_manager/share/mission_manager/local_setup.bash
+[26.954s] -- Up-to-date symlink: /manager_ws/install/mission_manager/share/mission_manager/local_setup.sh
+[26.955s] -- Up-to-date symlink: /manager_ws/install/mission_manager/share/mission_manager/local_setup.zsh
+[26.955s] -- Up-to-date symlink: /manager_ws/install/mission_manager/share/mission_manager/local_setup.dsv
+[26.955s] -- Symlinking: /manager_ws/install/mission_manager/share/mission_manager/package.dsv
+[26.982s] -- Up-to-date symlink: /manager_ws/install/mission_manager/share/ament_index/resource_index/packages/mission_manager
+[26.983s] -- Up-to-date symlink: /manager_ws/install/mission_manager/share/mission_manager/cmake/mission_managerConfig.cmake
+[26.983s] -- Up-to-date symlink: /manager_ws/install/mission_manager/share/mission_manager/cmake/mission_managerConfig-version.cmake
+[26.983s] -- Up-to-date symlink: /manager_ws/install/mission_manager/share/mission_manager/package.xml
+[26.988s] Invoked command in '/manager_ws/build/mission_manager' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Drobage_jazzy/install/robot_ctrl_package:/Drobage_jazzy/install/navigation_package:/Drobage_jazzy/install/my_yolo_package:/opt/ros/jazzy /usr/bin/cmake --install /manager_ws/build/mission_manager

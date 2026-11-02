@@ -1,0 +1,44 @@
+[2.900s] Invoking command in '/Drobage_jazzy/src/robot_ctrl_package': PYTHONPATH=/Drobage_jazzy/build/robot_ctrl_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/Drobage_jazzy/install/robot_ctrl_package/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robot_ctrl_package build --build-base /Drobage_jazzy/build/robot_ctrl_package/build install --record /Drobage_jazzy/build/robot_ctrl_package/install.log --install-scripts $base/lib/robot_ctrl_package --single-version-externally-managed install_data
+[3.235s] /usr/local/lib/python3.12/dist-packages/setuptools/_distutils/dist.py:318: UserWarning: Unknown distribution option: 'tests_require'
+[3.235s]   warnings.warn(msg)
+[3.462s] running egg_info
+[3.499s] creating ../../build/robot_ctrl_package/robot_ctrl_package.egg-info
+[3.499s] writing ../../build/robot_ctrl_package/robot_ctrl_package.egg-info/PKG-INFO
+[3.500s] writing dependency_links to ../../build/robot_ctrl_package/robot_ctrl_package.egg-info/dependency_links.txt
+[3.501s] writing entry points to ../../build/robot_ctrl_package/robot_ctrl_package.egg-info/entry_points.txt
+[3.501s] writing requirements to ../../build/robot_ctrl_package/robot_ctrl_package.egg-info/requires.txt
+[3.501s] writing top-level names to ../../build/robot_ctrl_package/robot_ctrl_package.egg-info/top_level.txt
+[3.501s] writing manifest file '../../build/robot_ctrl_package/robot_ctrl_package.egg-info/SOURCES.txt'
+[3.585s] reading manifest file '../../build/robot_ctrl_package/robot_ctrl_package.egg-info/SOURCES.txt'
+[3.587s] writing manifest file '../../build/robot_ctrl_package/robot_ctrl_package.egg-info/SOURCES.txt'
+[3.587s] running build
+[3.588s] running build_py
+[3.588s] creating /Drobage_jazzy/build/robot_ctrl_package/build/lib/robot_ctrl_package
+[3.588s] copying robot_ctrl_package/transform_node.py -> /Drobage_jazzy/build/robot_ctrl_package/build/lib/robot_ctrl_package
+[3.592s] copying robot_ctrl_package/arm_node.py -> /Drobage_jazzy/build/robot_ctrl_package/build/lib/robot_ctrl_package
+[3.593s] copying robot_ctrl_package/control_node.py -> /Drobage_jazzy/build/robot_ctrl_package/build/lib/robot_ctrl_package
+[3.594s] copying robot_ctrl_package/__init__.py -> /Drobage_jazzy/build/robot_ctrl_package/build/lib/robot_ctrl_package
+[3.594s] running install
+[3.604s] running install_lib
+[3.642s] creating /Drobage_jazzy/install/robot_ctrl_package/lib/python3.12/site-packages/robot_ctrl_package
+[3.642s] copying /Drobage_jazzy/build/robot_ctrl_package/build/lib/robot_ctrl_package/transform_node.py -> /Drobage_jazzy/install/robot_ctrl_package/lib/python3.12/site-packages/robot_ctrl_package
+[3.642s] copying /Drobage_jazzy/build/robot_ctrl_package/build/lib/robot_ctrl_package/arm_node.py -> /Drobage_jazzy/install/robot_ctrl_package/lib/python3.12/site-packages/robot_ctrl_package
+[3.643s] copying /Drobage_jazzy/build/robot_ctrl_package/build/lib/robot_ctrl_package/control_node.py -> /Drobage_jazzy/install/robot_ctrl_package/lib/python3.12/site-packages/robot_ctrl_package
+[3.643s] copying /Drobage_jazzy/build/robot_ctrl_package/build/lib/robot_ctrl_package/__init__.py -> /Drobage_jazzy/install/robot_ctrl_package/lib/python3.12/site-packages/robot_ctrl_package
+[3.644s] byte-compiling /Drobage_jazzy/install/robot_ctrl_package/lib/python3.12/site-packages/robot_ctrl_package/transform_node.py to transform_node.cpython-312.pyc
+[3.647s] byte-compiling /Drobage_jazzy/install/robot_ctrl_package/lib/python3.12/site-packages/robot_ctrl_package/arm_node.py to arm_node.cpython-312.pyc
+[3.650s] byte-compiling /Drobage_jazzy/install/robot_ctrl_package/lib/python3.12/site-packages/robot_ctrl_package/control_node.py to control_node.cpython-312.pyc
+[3.654s] byte-compiling /Drobage_jazzy/install/robot_ctrl_package/lib/python3.12/site-packages/robot_ctrl_package/__init__.py to __init__.cpython-312.pyc
+[3.655s] running install_data
+[3.655s] creating /Drobage_jazzy/install/robot_ctrl_package/share/ament_index/resource_index/packages
+[3.656s] copying resource/robot_ctrl_package -> /Drobage_jazzy/install/robot_ctrl_package/share/ament_index/resource_index/packages
+[3.656s] copying package.xml -> /Drobage_jazzy/install/robot_ctrl_package/share/robot_ctrl_package
+[3.656s] creating /Drobage_jazzy/install/robot_ctrl_package/share/robot_ctrl_package/launch
+[3.657s] running install_egg_info
+[3.696s] Copying ../../build/robot_ctrl_package/robot_ctrl_package.egg-info to /Drobage_jazzy/install/robot_ctrl_package/lib/python3.12/site-packages/robot_ctrl_package-0.0.0-py3.12.egg-info
+[3.698s] running install_scripts
+[3.779s] Installing arm_node script to /Drobage_jazzy/install/robot_ctrl_package/lib/robot_ctrl_package
+[3.779s] Installing control_node script to /Drobage_jazzy/install/robot_ctrl_package/lib/robot_ctrl_package
+[3.779s] Installing transform_node script to /Drobage_jazzy/install/robot_ctrl_package/lib/robot_ctrl_package
+[3.780s] writing list of installed files to '/Drobage_jazzy/build/robot_ctrl_package/install.log'
+[3.851s] Invoked command in '/Drobage_jazzy/src/robot_ctrl_package' returned '0': PYTHONPATH=/Drobage_jazzy/build/robot_ctrl_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/Drobage_jazzy/install/robot_ctrl_package/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robot_ctrl_package build --build-base /Drobage_jazzy/build/robot_ctrl_package/build install --record /Drobage_jazzy/build/robot_ctrl_package/install.log --install-scripts $base/lib/robot_ctrl_package --single-version-externally-managed install_data

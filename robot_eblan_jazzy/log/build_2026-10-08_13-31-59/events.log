@@ -1,0 +1,653 @@
+[0.000000] (-) TimerEvent: {}
+[0.000977] (roarm_description) JobQueued: {'identifier': 'roarm_description', 'dependencies': OrderedDict()}
+[0.001267] (roarm_driver) JobQueued: {'identifier': 'roarm_driver', 'dependencies': OrderedDict()}
+[0.002113] (roarm_msgs) JobQueued: {'identifier': 'roarm_msgs', 'dependencies': OrderedDict()}
+[0.002978] (roarm_moveit_cmd) JobQueued: {'identifier': 'roarm_moveit_cmd', 'dependencies': OrderedDict({'roarm_msgs': '/robot_eblan/install/roarm_msgs'})}
+[0.003128] (roarm_moveit_config) JobQueued: {'identifier': 'roarm_moveit_config', 'dependencies': OrderedDict({'roarm_description': '/robot_eblan/install/roarm_description', 'roarm_msgs': '/robot_eblan/install/roarm_msgs', 'roarm_moveit_cmd': '/robot_eblan/install/roarm_moveit_cmd'})}
+[0.003486] (roarm_msgs) JobStarted: {'identifier': 'roarm_msgs'}
+[0.026284] (roarm_description) JobStarted: {'identifier': 'roarm_description'}
+[0.041405] (roarm_driver) JobStarted: {'identifier': 'roarm_driver'}
+[0.056549] (roarm_msgs) JobProgress: {'identifier': 'roarm_msgs', 'progress': 'cmake'}
+[0.057576] (roarm_msgs) Command: {'cmd': ['/usr/bin/cmake', '/robot_eblan/src/roarm_msgs', '-DCMAKE_INSTALL_PREFIX=/robot_eblan/install/roarm_msgs'], 'cwd': '/robot_eblan/build/roarm_msgs', 'env': OrderedDict({'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'HOSTNAME': 'wb-desktop', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/robot_eblan/install/roarm_msgs/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/root', 'OLDPWD': '/', 'ROS_PYTHON_VERSION': '3', 'COLCON_PREFIX_PATH': '/robot_eblan/install:/manager_ws/install:/ldlidar_ros2_binning/install:/Drobage_jazzy/install', 'ROS_DISTRO': 'jazzy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'ROS_DOMAIN_ID': '42', 'AMENT_PREFIX_PATH': '/robot_eblan/install/roarm_moveit_config:/robot_eblan/install/roarm_moveit_cmd:/robot_eblan/install/roarm_msgs:/robot_eblan/install/roarm_driver:/robot_eblan/install/roarm_description:/manager_ws/install/mission_manager:/Drobage_jazzy/install/robot_ctrl_package:/Drobage_jazzy/install/navigation_package:/Drobage_jazzy/install/my_yolo_package:/ldlidar_ros2_binning/install/ldlidar_stl_ros2:/opt/ros/jazzy', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/robot_eblan/build/roarm_msgs', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/robot_eblan/install/roarm_moveit_cmd/lib/python3.12/site-packages:/robot_eblan/install/roarm_msgs/lib/python3.12/site-packages:/robot_eblan/install/roarm_driver/lib/python3.12/site-packages:/robot_eblan/install/roarm_description/lib/python3.12/site-packages:/Drobage_jazzy/install/robot_ctrl_package/lib/python3.12/site-packages:/Drobage_jazzy/install/navigation_package/lib/python3.12/site-packages:/Drobage_jazzy/install/my_yolo_package/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/robot_eblan/install/roarm_moveit_config:/robot_eblan/install/roarm_msgs:/manager_ws/install/mission_manager:/ldlidar_ros2_binning/install/ldlidar_stl_ros2:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/robot_eblan/install/roarm_moveit_cmd:/robot_eblan/install/roarm_driver:/robot_eblan/install/roarm_description:/Drobage_jazzy/install/robot_ctrl_package:/Drobage_jazzy/install/navigation_package:/Drobage_jazzy/install/my_yolo_package:/opt/ros/jazzy'}), 'shell': False}
+[0.098951] (-) TimerEvent: {}
+[0.199840] (-) TimerEvent: {}
+[0.300440] (-) TimerEvent: {}
+[0.401037] (-) TimerEvent: {}
+[0.501852] (-) TimerEvent: {}
+[0.603600] (-) TimerEvent: {}
+[0.704257] (-) TimerEvent: {}
+[0.804849] (-) TimerEvent: {}
+[0.849009] (roarm_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.905049] (-) TimerEvent: {}
+[1.005699] (-) TimerEvent: {}
+[1.106334] (-) TimerEvent: {}
+[1.207571] (-) TimerEvent: {}
+[1.309033] (-) TimerEvent: {}
+[1.326892] (roarm_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[1.382617] (roarm_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.409269] (-) TimerEvent: {}
+[1.510038] (-) TimerEvent: {}
+[1.611000] (-) TimerEvent: {}
+[1.624358] (roarm_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.646762] (roarm_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.650555] (roarm_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.652521] (roarm_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.682562] (roarm_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.713913] (-) TimerEvent: {}
+[1.814931] (-) TimerEvent: {}
+[1.915678] (-) TimerEvent: {}
+[1.948778] (roarm_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.970446] (roarm_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.971005] (roarm_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.972018] (roarm_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.016146] (roarm_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[2.016637] (-) TimerEvent: {}
+[2.117017] (-) TimerEvent: {}
+[2.217834] (-) TimerEvent: {}
+[2.319176] (-) TimerEvent: {}
+[2.333492] (roarm_description) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/roarm_description', 'build', '--build-base', '/robot_eblan/build/roarm_description/build', 'install', '--record', '/robot_eblan/build/roarm_description/install.log', '--install-scripts', '$base/lib/roarm_description', '--single-version-externally-managed', 'install_data'], 'cwd': '/robot_eblan/src/roarm_description', 'env': {'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'HOSTNAME': 'wb-desktop', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/robot_eblan/install/roarm_msgs/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/root', 'OLDPWD': '/', 'ROS_PYTHON_VERSION': '3', 'COLCON_PREFIX_PATH': '/robot_eblan/install:/manager_ws/install:/ldlidar_ros2_binning/install:/Drobage_jazzy/install', 'ROS_DISTRO': 'jazzy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'ROS_DOMAIN_ID': '42', 'AMENT_PREFIX_PATH': '/robot_eblan/install/roarm_moveit_config:/robot_eblan/install/roarm_moveit_cmd:/robot_eblan/install/roarm_msgs:/robot_eblan/install/roarm_driver:/robot_eblan/install/roarm_description:/manager_ws/install/mission_manager:/Drobage_jazzy/install/robot_ctrl_package:/Drobage_jazzy/install/navigation_package:/Drobage_jazzy/install/my_yolo_package:/ldlidar_ros2_binning/install/ldlidar_stl_ros2:/opt/ros/jazzy', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/robot_eblan/build/roarm_description', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/robot_eblan/build/roarm_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/robot_eblan/install/roarm_description/lib/python3.12/site-packages:/robot_eblan/install/roarm_moveit_cmd/lib/python3.12/site-packages:/robot_eblan/install/roarm_msgs/lib/python3.12/site-packages:/robot_eblan/install/roarm_driver/lib/python3.12/site-packages:/robot_eblan/install/roarm_description/lib/python3.12/site-packages:/Drobage_jazzy/install/robot_ctrl_package/lib/python3.12/site-packages:/Drobage_jazzy/install/navigation_package/lib/python3.12/site-packages:/Drobage_jazzy/install/my_yolo_package/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/robot_eblan/install/roarm_moveit_config:/robot_eblan/install/roarm_msgs:/manager_ws/install/mission_manager:/ldlidar_ros2_binning/install/ldlidar_stl_ros2:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[2.354434] (roarm_driver) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/roarm_driver', 'build', '--build-base', '/robot_eblan/build/roarm_driver/build', 'install', '--record', '/robot_eblan/build/roarm_driver/install.log', '--install-scripts', '$base/lib/roarm_driver', '--single-version-externally-managed', 'install_data'], 'cwd': '/robot_eblan/src/roarm_driver', 'env': {'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'HOSTNAME': 'wb-desktop', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/robot_eblan/install/roarm_msgs/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/root', 'OLDPWD': '/', 'ROS_PYTHON_VERSION': '3', 'COLCON_PREFIX_PATH': '/robot_eblan/install:/manager_ws/install:/ldlidar_ros2_binning/install:/Drobage_jazzy/install', 'ROS_DISTRO': 'jazzy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'ROS_DOMAIN_ID': '42', 'AMENT_PREFIX_PATH': '/robot_eblan/install/roarm_moveit_config:/robot_eblan/install/roarm_moveit_cmd:/robot_eblan/install/roarm_msgs:/robot_eblan/install/roarm_driver:/robot_eblan/install/roarm_description:/manager_ws/install/mission_manager:/Drobage_jazzy/install/robot_ctrl_package:/Drobage_jazzy/install/navigation_package:/Drobage_jazzy/install/my_yolo_package:/ldlidar_ros2_binning/install/ldlidar_stl_ros2:/opt/ros/jazzy', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/robot_eblan/build/roarm_driver', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/robot_eblan/build/roarm_driver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/robot_eblan/install/roarm_driver/lib/python3.12/site-packages:/robot_eblan/install/roarm_moveit_cmd/lib/python3.12/site-packages:/robot_eblan/install/roarm_msgs/lib/python3.12/site-packages:/robot_eblan/install/roarm_driver/lib/python3.12/site-packages:/robot_eblan/install/roarm_description/lib/python3.12/site-packages:/Drobage_jazzy/install/robot_ctrl_package/lib/python3.12/site-packages:/Drobage_jazzy/install/navigation_package/lib/python3.12/site-packages:/Drobage_jazzy/install/my_yolo_package/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/robot_eblan/install/roarm_moveit_config:/robot_eblan/install/roarm_msgs:/manager_ws/install/mission_manager:/ldlidar_ros2_binning/install/ldlidar_stl_ros2:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[2.419396] (-) TimerEvent: {}
+[2.439233] (roarm_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[2.519557] (-) TimerEvent: {}
+[2.620262] (-) TimerEvent: {}
+[2.721003] (-) TimerEvent: {}
+[2.822592] (-) TimerEvent: {}
+[2.923194] (-) TimerEvent: {}
+[2.937041] (roarm_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.6.1 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)\n'}
+[2.976519] (roarm_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.984931] (roarm_driver) StdoutLine: {'line': b'running egg_info\n'}
+[3.013765] (roarm_description) StdoutLine: {'line': b'running egg_info\n'}
+[3.023357] (-) TimerEvent: {}
+[3.029183] (roarm_driver) StdoutLine: {'line': b'creating ../../build/roarm_driver/roarm_driver.egg-info\n'}
+[3.032697] (roarm_driver) StdoutLine: {'line': b'writing ../../build/roarm_driver/roarm_driver.egg-info/PKG-INFO\n'}
+[3.033192] (roarm_driver) StdoutLine: {'line': b'writing dependency_links to ../../build/roarm_driver/roarm_driver.egg-info/dependency_links.txt\n'}
+[3.033381] (roarm_driver) StdoutLine: {'line': b'writing entry points to ../../build/roarm_driver/roarm_driver.egg-info/entry_points.txt\n'}
+[3.033543] (roarm_driver) StdoutLine: {'line': b'writing requirements to ../../build/roarm_driver/roarm_driver.egg-info/requires.txt\n'}
+[3.033692] (roarm_driver) StdoutLine: {'line': b'writing top-level names to ../../build/roarm_driver/roarm_driver.egg-info/top_level.txt\n'}
+[3.033875] (roarm_driver) StdoutLine: {'line': b"writing manifest file '../../build/roarm_driver/roarm_driver.egg-info/SOURCES.txt'\n"}
+[3.059093] (roarm_description) StdoutLine: {'line': b'creating ../../build/roarm_description/roarm_description.egg-info\n'}
+[3.059567] (roarm_description) StdoutLine: {'line': b'writing ../../build/roarm_description/roarm_description.egg-info/PKG-INFO\n'}
+[3.063791] (roarm_description) StdoutLine: {'line': b'writing dependency_links to ../../build/roarm_description/roarm_description.egg-info/dependency_links.txt\n'}
+[3.064237] (roarm_description) StdoutLine: {'line': b'writing requirements to ../../build/roarm_description/roarm_description.egg-info/requires.txt\n'}
+[3.064462] (roarm_description) StdoutLine: {'line': b'writing top-level names to ../../build/roarm_description/roarm_description.egg-info/top_level.txt\n'}
+[3.064703] (roarm_description) StdoutLine: {'line': b"writing manifest file '../../build/roarm_description/roarm_description.egg-info/SOURCES.txt'\n"}
+[3.123492] (-) TimerEvent: {}
+[3.125581] (roarm_driver) StdoutLine: {'line': b"reading manifest file '../../build/roarm_driver/roarm_driver.egg-info/SOURCES.txt'\n"}
+[3.127153] (roarm_driver) StdoutLine: {'line': b"writing manifest file '../../build/roarm_driver/roarm_driver.egg-info/SOURCES.txt'\n"}
+[3.127534] (roarm_driver) StdoutLine: {'line': b'running build\n'}
+[3.128129] (roarm_driver) StdoutLine: {'line': b'running build_py\n'}
+[3.128555] (roarm_driver) StdoutLine: {'line': b'creating /robot_eblan/build/roarm_driver/build/lib/roarm_driver\n'}
+[3.128751] (roarm_driver) StdoutLine: {'line': b'copying roarm_driver/roarm_driver.py -> /robot_eblan/build/roarm_driver/build/lib/roarm_driver\n'}
+[3.131588] (roarm_driver) StdoutLine: {'line': b'copying roarm_driver/__init__.py -> /robot_eblan/build/roarm_driver/build/lib/roarm_driver\n'}
+[3.132271] (roarm_driver) StdoutLine: {'line': b'running install\n'}
+[3.141698] (roarm_driver) StdoutLine: {'line': b'running install_lib\n'}
+[3.168737] (roarm_description) StdoutLine: {'line': b"reading manifest file '../../build/roarm_description/roarm_description.egg-info/SOURCES.txt'\n"}
+[3.171321] (roarm_description) StdoutLine: {'line': b"writing manifest file '../../build/roarm_description/roarm_description.egg-info/SOURCES.txt'\n"}
+[3.171767] (roarm_description) StdoutLine: {'line': b'running build\n'}
+[3.172114] (roarm_description) StdoutLine: {'line': b'running build_py\n'}
+[3.172426] (roarm_description) StdoutLine: {'line': b'creating /robot_eblan/build/roarm_description/build/lib/roarm_description\n'}
+[3.172806] (roarm_description) StdoutLine: {'line': b'copying roarm_description/__init__.py -> /robot_eblan/build/roarm_description/build/lib/roarm_description\n'}
+[3.173537] (roarm_description) StdoutLine: {'line': b'running install\n'}
+[3.183486] (roarm_description) StdoutLine: {'line': b'running install_lib\n'}
+[3.184974] (roarm_driver) StdoutLine: {'line': b'creating /robot_eblan/install/roarm_driver/lib/python3.12/site-packages/roarm_driver\n'}
+[3.185361] (roarm_driver) StdoutLine: {'line': b'copying /robot_eblan/build/roarm_driver/build/lib/roarm_driver/roarm_driver.py -> /robot_eblan/install/roarm_driver/lib/python3.12/site-packages/roarm_driver\n'}
+[3.185640] (roarm_driver) StdoutLine: {'line': b'copying /robot_eblan/build/roarm_driver/build/lib/roarm_driver/__init__.py -> /robot_eblan/install/roarm_driver/lib/python3.12/site-packages/roarm_driver\n'}
+[3.186884] (roarm_driver) StdoutLine: {'line': b'byte-compiling /robot_eblan/install/roarm_driver/lib/python3.12/site-packages/roarm_driver/roarm_driver.py to roarm_driver.cpython-312.pyc\n'}
+[3.189296] (roarm_driver) StdoutLine: {'line': b'byte-compiling /robot_eblan/install/roarm_driver/lib/python3.12/site-packages/roarm_driver/__init__.py to __init__.cpython-312.pyc\n'}
+[3.189696] (roarm_driver) StdoutLine: {'line': b'running install_data\n'}
+[3.190149] (roarm_driver) StdoutLine: {'line': b'creating /robot_eblan/install/roarm_driver/share/ament_index/resource_index/packages\n'}
+[3.190575] (roarm_driver) StdoutLine: {'line': b'copying resource/roarm_driver -> /robot_eblan/install/roarm_driver/share/ament_index/resource_index/packages\n'}
+[3.190992] (roarm_driver) StdoutLine: {'line': b'copying package.xml -> /robot_eblan/install/roarm_driver/share/roarm_driver\n'}
+[3.193905] (roarm_driver) StdoutLine: {'line': b'running install_egg_info\n'}
+[3.223638] (-) TimerEvent: {}
+[3.230378] (roarm_description) StdoutLine: {'line': b'creating /robot_eblan/install/roarm_description/lib/python3.12/site-packages/roarm_description\n'}
+[3.230850] (roarm_description) StdoutLine: {'line': b'copying /robot_eblan/build/roarm_description/build/lib/roarm_description/__init__.py -> /robot_eblan/install/roarm_description/lib/python3.12/site-packages/roarm_description\n'}
+[3.231938] (roarm_description) StdoutLine: {'line': b'byte-compiling /robot_eblan/install/roarm_description/lib/python3.12/site-packages/roarm_description/__init__.py to __init__.cpython-312.pyc\n'}
+[3.232602] (roarm_description) StdoutLine: {'line': b'running install_data\n'}
+[3.233007] (roarm_description) StdoutLine: {'line': b'creating /robot_eblan/install/roarm_description/share/ament_index/resource_index/packages\n'}
+[3.233468] (roarm_description) StdoutLine: {'line': b'copying resource/roarm_description -> /robot_eblan/install/roarm_description/share/ament_index/resource_index/packages\n'}
+[3.233969] (roarm_description) StdoutLine: {'line': b'copying package.xml -> /robot_eblan/install/roarm_description/share/roarm_description\n'}
+[3.234308] (roarm_description) StdoutLine: {'line': b'creating /robot_eblan/install/roarm_description/share/roarm_description/launch\n'}
+[3.234523] (roarm_description) StdoutLine: {'line': b'copying launch/display.launch.py -> /robot_eblan/install/roarm_description/share/roarm_description/launch\n'}
+[3.235772] (roarm_description) StdoutLine: {'line': b'creating /robot_eblan/install/roarm_description/share/roarm_description/urdf\n'}
+[3.236002] (roarm_description) StdoutLine: {'line': b'copying urdf/roarm_m3_description.xacro -> /robot_eblan/install/roarm_description/share/roarm_description/urdf\n'}
+[3.236923] (roarm_description) StdoutLine: {'line': b'copying urdf/roarm_m3_moveit.xacro -> /robot_eblan/install/roarm_description/share/roarm_description/urdf\n'}
+[3.237109] (roarm_driver) StdoutLine: {'line': b'Copying ../../build/roarm_driver/roarm_driver.egg-info to /robot_eblan/install/roarm_driver/lib/python3.12/site-packages/roarm_driver-0.0.0-py3.12.egg-info\n'}
+[3.237701] (roarm_description) StdoutLine: {'line': b'creating /robot_eblan/install/roarm_description/share/roarm_description/urdf/roarm_m3\n'}
+[3.238056] (roarm_description) StdoutLine: {'line': b'copying urdf/roarm_m3/roarm_m3.trans -> /robot_eblan/install/roarm_description/share/roarm_description/urdf/roarm_m3\n'}
+[3.238815] (roarm_description) StdoutLine: {'line': b'copying urdf/roarm_m3/materials.xacro -> /robot_eblan/install/roarm_description/share/roarm_description/urdf/roarm_m3\n'}
+[3.239545] (roarm_description) StdoutLine: {'line': b'copying urdf/roarm_m3/roarm_m3.xacro -> /robot_eblan/install/roarm_description/share/roarm_description/urdf/roarm_m3\n'}
+[3.239729] (roarm_driver) StdoutLine: {'line': b'running install_scripts\n'}
+[3.240475] (roarm_description) StdoutLine: {'line': b'copying urdf/roarm_m3/roarm_m3.gazebo -> /robot_eblan/install/roarm_description/share/roarm_description/urdf/roarm_m3\n'}
+[3.241267] (roarm_description) StdoutLine: {'line': b'copying urdf/roarm_m3/roarm_m3.save.xacro -> /robot_eblan/install/roarm_description/share/roarm_description/urdf/roarm_m3\n'}
+[3.242283] (roarm_description) StdoutLine: {'line': b'creating /robot_eblan/install/roarm_description/share/roarm_description/meshes/roarm_m3\n'}
+[3.242612] (roarm_description) StdoutLine: {'line': b'copying meshes/roarm_m3/link3.stl -> /robot_eblan/install/roarm_description/share/roarm_description/meshes/roarm_m3\n'}
+[3.244066] (roarm_description) StdoutLine: {'line': b'copying meshes/roarm_m3/base_link.stl -> /robot_eblan/install/roarm_description/share/roarm_description/meshes/roarm_m3\n'}
+[3.244821] (roarm_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.245100] (roarm_description) StdoutLine: {'line': b'copying meshes/roarm_m3/link4.stl -> /robot_eblan/install/roarm_description/share/roarm_description/meshes/roarm_m3\n'}
+[3.245844] (roarm_description) StdoutLine: {'line': b'copying meshes/roarm_m3/gripper_left_link.stl -> /robot_eblan/install/roarm_description/share/roarm_description/meshes/roarm_m3\n'}
+[3.260497] (roarm_description) StdoutLine: {'line': b'copying meshes/roarm_m3/link1.stl -> /robot_eblan/install/roarm_description/share/roarm_description/meshes/roarm_m3\n'}
+[3.262376] (roarm_description) StdoutLine: {'line': b'copying meshes/roarm_m3/link5.stl -> /robot_eblan/install/roarm_description/share/roarm_description/meshes/roarm_m3\n'}
+[3.274108] (roarm_description) StdoutLine: {'line': b'copying meshes/roarm_m3/link2.stl -> /robot_eblan/install/roarm_description/share/roarm_description/meshes/roarm_m3\n'}
+[3.282460] (roarm_description) StdoutLine: {'line': b'copying meshes/roarm_m3/gripper_link.stl -> /robot_eblan/install/roarm_description/share/roarm_description/meshes/roarm_m3\n'}
+[3.295478] (roarm_description) StdoutLine: {'line': b'creating /robot_eblan/install/roarm_description/share/roarm_description/rviz\n'}
+[3.295989] (roarm_description) StdoutLine: {'line': b'copying rviz/view_description.rviz -> /robot_eblan/install/roarm_description/share/roarm_description/rviz\n'}
+[3.296343] (roarm_description) StdoutLine: {'line': b'running install_egg_info\n'}
+[3.323780] (-) TimerEvent: {}
+[3.332556] (roarm_driver) StdoutLine: {'line': b'Installing roarm_driver script to /robot_eblan/install/roarm_driver/lib/roarm_driver\n'}
+[3.333028] (roarm_driver) StdoutLine: {'line': b"writing list of installed files to '/robot_eblan/build/roarm_driver/install.log'\n"}
+[3.346552] (roarm_description) StdoutLine: {'line': b'Copying ../../build/roarm_description/roarm_description.egg-info to /robot_eblan/install/roarm_description/lib/python3.12/site-packages/roarm_description-0.0.1-py3.12.egg-info\n'}
+[3.348890] (roarm_description) StdoutLine: {'line': b'running install_scripts\n'}
+[3.413695] (roarm_driver) CommandEnded: {'returncode': 0}
+[3.423897] (-) TimerEvent: {}
+[3.444206] (roarm_driver) JobEnded: {'identifier': 'roarm_driver', 'rc': 0}
+[3.445972] (roarm_description) StdoutLine: {'line': b"writing list of installed files to '/robot_eblan/build/roarm_description/install.log'\n"}
+[3.516699] (roarm_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 4.6.9 (/opt/ros/jazzy/share/rosidl_adapter/cmake)\n'}
+[3.524116] (-) TimerEvent: {}
+[3.540923] (roarm_msgs) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.5 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[3.544104] (roarm_description) CommandEnded: {'returncode': 0}
+[3.559089] (roarm_description) JobEnded: {'identifier': 'roarm_description', 'rc': 0}
+[3.624254] (-) TimerEvent: {}
+[3.724888] (-) TimerEvent: {}
+[3.825567] (-) TimerEvent: {}
+[3.926277] (-) TimerEvent: {}
+[4.027031] (-) TimerEvent: {}
+[4.127632] (-) TimerEvent: {}
+[4.228354] (-) TimerEvent: {}
+[4.329011] (-) TimerEvent: {}
+[4.429646] (-) TimerEvent: {}
+[4.530266] (-) TimerEvent: {}
+[4.630953] (-) TimerEvent: {}
+[4.731625] (-) TimerEvent: {}
+[4.832274] (-) TimerEvent: {}
+[4.893649] (roarm_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.12.1 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)\n'}
+[4.932490] (-) TimerEvent: {}
+[5.033250] (-) TimerEvent: {}
+[5.133945] (-) TimerEvent: {}
+[5.234616] (-) TimerEvent: {}
+[5.335305] (-) TimerEvent: {}
+[5.436116] (-) TimerEvent: {}
+[5.536688] (-) TimerEvent: {}
+[5.637638] (-) TimerEvent: {}
+[5.738321] (-) TimerEvent: {}
+[5.770643] (roarm_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[5.838494] (-) TimerEvent: {}
+[5.939167] (-) TimerEvent: {}
+[6.039869] (-) TimerEvent: {}
+[6.140464] (-) TimerEvent: {}
+[6.241144] (-) TimerEvent: {}
+[6.341800] (-) TimerEvent: {}
+[6.442451] (-) TimerEvent: {}
+[6.543000] (-) TimerEvent: {}
+[6.643595] (-) TimerEvent: {}
+[6.744320] (-) TimerEvent: {}
+[6.844965] (-) TimerEvent: {}
+[6.929087] (roarm_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[6.945144] (-) TimerEvent: {}
+[6.949894] (roarm_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)\n'}
+[7.045314] (-) TimerEvent: {}
+[7.146267] (-) TimerEvent: {}
+[7.246937] (-) TimerEvent: {}
+[7.249669] (roarm_msgs) StdoutLine: {'line': b'-- Found PythonExtra: /usr/bin/python3  \n'}
+[7.347116] (-) TimerEvent: {}
+[7.447788] (-) TimerEvent: {}
+[7.548365] (-) TimerEvent: {}
+[7.648972] (-) TimerEvent: {}
+[7.749781] (-) TimerEvent: {}
+[7.850458] (-) TimerEvent: {}
+[7.951182] (-) TimerEvent: {}
+[8.051806] (-) TimerEvent: {}
+[8.152431] (-) TimerEvent: {}
+[8.253162] (-) TimerEvent: {}
+[8.329655] (roarm_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed \n'}
+[8.353332] (-) TimerEvent: {}
+[8.453921] (-) TimerEvent: {}
+[8.479351] (roarm_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[8.528350] (roarm_msgs) StdoutLine: {'line': b'-- Configuring done (8.4s)\n'}
+[8.554117] (-) TimerEvent: {}
+[8.621461] (roarm_msgs) StdoutLine: {'line': b'-- Generating done (0.1s)\n'}
+[8.647543] (roarm_msgs) StdoutLine: {'line': b'-- Build files have been written to: /robot_eblan/build/roarm_msgs\n'}
+[8.654207] (-) TimerEvent: {}
+[8.672618] (roarm_msgs) CommandEnded: {'returncode': 0}
+[8.674185] (roarm_msgs) JobProgress: {'identifier': 'roarm_msgs', 'progress': 'build'}
+[8.675386] (roarm_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/robot_eblan/build/roarm_msgs', '--', '-j6', '-l6'], 'cwd': '/robot_eblan/build/roarm_msgs', 'env': OrderedDict({'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'HOSTNAME': 'wb-desktop', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/robot_eblan/install/roarm_msgs/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/root', 'OLDPWD': '/', 'ROS_PYTHON_VERSION': '3', 'COLCON_PREFIX_PATH': '/robot_eblan/install:/manager_ws/install:/ldlidar_ros2_binning/install:/Drobage_jazzy/install', 'ROS_DISTRO': 'jazzy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'ROS_DOMAIN_ID': '42', 'AMENT_PREFIX_PATH': '/robot_eblan/install/roarm_moveit_config:/robot_eblan/install/roarm_moveit_cmd:/robot_eblan/install/roarm_msgs:/robot_eblan/install/roarm_driver:/robot_eblan/install/roarm_description:/manager_ws/install/mission_manager:/Drobage_jazzy/install/robot_ctrl_package:/Drobage_jazzy/install/navigation_package:/Drobage_jazzy/install/my_yolo_package:/ldlidar_ros2_binning/install/ldlidar_stl_ros2:/opt/ros/jazzy', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/robot_eblan/build/roarm_msgs', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/robot_eblan/install/roarm_moveit_cmd/lib/python3.12/site-packages:/robot_eblan/install/roarm_msgs/lib/python3.12/site-packages:/robot_eblan/install/roarm_driver/lib/python3.12/site-packages:/robot_eblan/install/roarm_description/lib/python3.12/site-packages:/Drobage_jazzy/install/robot_ctrl_package/lib/python3.12/site-packages:/Drobage_jazzy/install/navigation_package/lib/python3.12/site-packages:/Drobage_jazzy/install/my_yolo_package/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/robot_eblan/install/roarm_moveit_config:/robot_eblan/install/roarm_msgs:/manager_ws/install/mission_manager:/ldlidar_ros2_binning/install/ldlidar_stl_ros2:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/robot_eblan/install/roarm_moveit_cmd:/robot_eblan/install/roarm_driver:/robot_eblan/install/roarm_description:/Drobage_jazzy/install/robot_ctrl_package:/Drobage_jazzy/install/navigation_package:/Drobage_jazzy/install/my_yolo_package:/opt/ros/jazzy'}), 'shell': False}
+[8.754413] (-) TimerEvent: {}
+[8.800091] (roarm_msgs) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating Rust code for ROS interfaces\x1b[0m\n'}
+[8.800608] (roarm_msgs) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating type hashes for ROS interfaces\x1b[0m\n'}
+[8.827228] (roarm_msgs) StdoutLine: {'line': b'[  5%] Built target ament_cmake_python_copy_roarm_msgs\n'}
+[8.854566] (-) TimerEvent: {}
+[8.956256] (-) TimerEvent: {}
+[9.057866] (-) TimerEvent: {}
+[9.158496] (-) TimerEvent: {}
+[9.208663] (roarm_msgs) StdoutLine: {'line': b'[  5%] Built target roarm_msgs__rosidl_generator_type_description\n'}
+[9.244099] (roarm_msgs) StdoutLine: {'line': b'[  8%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[9.260618] (roarm_msgs) StdoutLine: {'line': b'[ 11%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[9.261250] (-) TimerEvent: {}
+[9.335635] (roarm_msgs) StdoutLine: {'line': b'[ 11%] Built target roarm_msgs__rs\n'}
+[9.361405] (-) TimerEvent: {}
+[9.449944] (roarm_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[9.461537] (-) TimerEvent: {}
+[9.495549] (roarm_msgs) StdoutLine: {'line': b'creating roarm_msgs.egg-info\n'}
+[9.496370] (roarm_msgs) StdoutLine: {'line': b'writing roarm_msgs.egg-info/PKG-INFO\n'}
+[9.498053] (roarm_msgs) StdoutLine: {'line': b'writing dependency_links to roarm_msgs.egg-info/dependency_links.txt\n'}
+[9.499056] (roarm_msgs) StdoutLine: {'line': b'writing top-level names to roarm_msgs.egg-info/top_level.txt\n'}
+[9.499688] (roarm_msgs) StdoutLine: {'line': b"writing manifest file 'roarm_msgs.egg-info/SOURCES.txt'\n"}
+[9.561690] (-) TimerEvent: {}
+[9.653958] (roarm_msgs) StdoutLine: {'line': b"reading manifest file 'roarm_msgs.egg-info/SOURCES.txt'\n"}
+[9.654422] (roarm_msgs) StdoutLine: {'line': b"writing manifest file 'roarm_msgs.egg-info/SOURCES.txt'\n"}
+[9.661841] (-) TimerEvent: {}
+[9.755623] (roarm_msgs) StdoutLine: {'line': b'[ 11%] Built target ament_cmake_python_build_roarm_msgs_egg\n'}
+[9.761962] (-) TimerEvent: {}
+[9.850835] (roarm_msgs) StdoutLine: {'line': b'[ 11%] Built target roarm_msgs__cpp\n'}
+[9.862090] (-) TimerEvent: {}
+[9.962723] (-) TimerEvent: {}
+[9.975818] (roarm_msgs) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding C object CMakeFiles/roarm_msgs__rosidl_generator_c.dir/rosidl_generator_c/roarm_msgs/srv/detail/move_to_xyz__type_support.c.o\x1b[0m\n'}
+[9.976318] (roarm_msgs) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding C object CMakeFiles/roarm_msgs__rosidl_generator_c.dir/rosidl_generator_c/roarm_msgs/srv/detail/move_to_xyz__functions.c.o\x1b[0m\n'}
+[9.976964] (roarm_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding C object CMakeFiles/roarm_msgs__rosidl_generator_c.dir/rosidl_generator_c/roarm_msgs/srv/detail/move_to_xyz__description.c.o\x1b[0m\n'}
+[10.062855] (-) TimerEvent: {}
+[10.163437] (-) TimerEvent: {}
+[10.217936] (roarm_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32m\x1b[1mLinking C shared library libroarm_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[10.263560] (-) TimerEvent: {}
+[10.306058] (roarm_msgs) StdoutLine: {'line': b'[ 22%] Built target roarm_msgs__rosidl_generator_c\n'}
+[10.333593] (roarm_msgs) StdoutLine: {'line': b'[ 25%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[10.336928] (roarm_msgs) StdoutLine: {'line': b'[ 31%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[10.337504] (roarm_msgs) StdoutLine: {'line': b'[ 31%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[10.340672] (roarm_msgs) StdoutLine: {'line': b'[ 34%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[10.353660] (roarm_msgs) StdoutLine: {'line': b'[ 37%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[10.364492] (-) TimerEvent: {}
+[10.380865] (roarm_msgs) StdoutLine: {'line': b'[ 40%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[10.464662] (-) TimerEvent: {}
+[10.565853] (-) TimerEvent: {}
+[10.666339] (-) TimerEvent: {}
+[10.767524] (-) TimerEvent: {}
+[10.868679] (-) TimerEvent: {}
+[10.969201] (-) TimerEvent: {}
+[11.010589] (roarm_msgs) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/roarm_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/roarm_msgs/srv/move_to_xyz__type_support.cpp.o\x1b[0m\n'}
+[11.013707] (roarm_msgs) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/roarm_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/roarm_msgs/srv/detail/move_to_xyz__type_support.cpp.o\x1b[0m\n'}
+[11.045363] (roarm_msgs) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/roarm_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/roarm_msgs/srv/move_to_xyz__type_support.cpp.o\x1b[0m\n'}
+[11.074186] (-) TimerEvent: {}
+[11.171010] (roarm_msgs) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/roarm_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/roarm_msgs/srv/detail/move_to_xyz__type_support_c.cpp.o\x1b[0m\n'}
+[11.174550] (-) TimerEvent: {}
+[11.198209] (roarm_msgs) StdoutLine: {'line': b'[ 54%] \x1b[32m\x1b[1mLinking CXX shared library libroarm_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[11.274901] (-) TimerEvent: {}
+[11.302301] (roarm_msgs) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/roarm_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/roarm_msgs/srv/detail/dds_fastrtps/move_to_xyz__type_support.cpp.o\x1b[0m\n'}
+[11.322722] (roarm_msgs) StdoutLine: {'line': b'[ 57%] Built target roarm_msgs__rosidl_typesupport_c\n'}
+[11.337985] (roarm_msgs) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding C object CMakeFiles/roarm_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/roarm_msgs/srv/detail/move_to_xyz__type_support.c.o\x1b[0m\n'}
+[11.375090] (-) TimerEvent: {}
+[11.475604] (roarm_msgs) StdoutLine: {'line': b'[ 62%] \x1b[32m\x1b[1mLinking C shared library libroarm_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[11.476129] (-) TimerEvent: {}
+[11.559650] (roarm_msgs) StdoutLine: {'line': b'[ 62%] Built target roarm_msgs__rosidl_typesupport_introspection_c\n'}
+[11.576944] (-) TimerEvent: {}
+[11.677584] (-) TimerEvent: {}
+[11.778692] (-) TimerEvent: {}
+[11.879434] (-) TimerEvent: {}
+[11.980125] (-) TimerEvent: {}
+[12.080776] (-) TimerEvent: {}
+[12.128578] (roarm_msgs) StdoutLine: {'line': b'[ 65%] \x1b[32m\x1b[1mLinking CXX shared library libroarm_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[12.180953] (-) TimerEvent: {}
+[12.281642] (-) TimerEvent: {}
+[12.320665] (roarm_msgs) StdoutLine: {'line': b'[ 65%] Built target roarm_msgs__rosidl_typesupport_cpp\n'}
+[12.364549] (roarm_msgs) StdoutLine: {'line': b'[ 68%] \x1b[32m\x1b[1mLinking CXX shared library libroarm_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[12.381893] (-) TimerEvent: {}
+[12.483039] (-) TimerEvent: {}
+[12.583851] (-) TimerEvent: {}
+[12.587162] (roarm_msgs) StdoutLine: {'line': b'[ 68%] Built target roarm_msgs__rosidl_typesupport_introspection_cpp\n'}
+[12.651982] (roarm_msgs) StdoutLine: {'line': b'[ 71%] \x1b[32m\x1b[1mLinking CXX shared library libroarm_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[12.684029] (-) TimerEvent: {}
+[12.784743] (-) TimerEvent: {}
+[12.841511] (roarm_msgs) StdoutLine: {'line': b'[ 71%] Built target roarm_msgs__rosidl_typesupport_fastrtps_c\n'}
+[12.884921] (-) TimerEvent: {}
+[12.985507] (-) TimerEvent: {}
+[12.997623] (roarm_msgs) StdoutLine: {'line': b'[ 74%] \x1b[32m\x1b[1mLinking CXX shared library libroarm_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[13.085689] (-) TimerEvent: {}
+[13.179312] (roarm_msgs) StdoutLine: {'line': b'[ 74%] Built target roarm_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[13.185841] (-) TimerEvent: {}
+[13.231502] (roarm_msgs) StdoutLine: {'line': b'[ 74%] Built target roarm_msgs\n'}
+[13.276164] (roarm_msgs) StdoutLine: {'line': b'[ 77%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[13.286003] (-) TimerEvent: {}
+[13.386686] (-) TimerEvent: {}
+[13.487261] (-) TimerEvent: {}
+[13.587873] (-) TimerEvent: {}
+[13.688516] (-) TimerEvent: {}
+[13.789180] (-) TimerEvent: {}
+[13.889847] (-) TimerEvent: {}
+[13.990662] (-) TimerEvent: {}
+[14.026882] (roarm_msgs) StdoutLine: {'line': b'[ 77%] Built target roarm_msgs__py\n'}
+[14.072930] (roarm_msgs) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding C object CMakeFiles/roarm_msgs__rosidl_generator_py.dir/rosidl_generator_py/roarm_msgs/srv/_move_to_xyz_s.c.o\x1b[0m\n'}
+[14.090824] (-) TimerEvent: {}
+[14.191410] (-) TimerEvent: {}
+[14.292006] (-) TimerEvent: {}
+[14.392603] (-) TimerEvent: {}
+[14.493318] (-) TimerEvent: {}
+[14.524354] (roarm_msgs) StdoutLine: {'line': b'[ 82%] \x1b[32m\x1b[1mLinking C shared library libroarm_msgs__rosidl_generator_py.so\x1b[0m\n'}
+[14.593557] (-) TimerEvent: {}
+[14.622428] (roarm_msgs) StdoutLine: {'line': b'[ 82%] Built target roarm_msgs__rosidl_generator_py\n'}
+[14.670175] (roarm_msgs) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/roarm_msgs_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/roarm_msgs/_roarm_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[14.670663] (roarm_msgs) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/roarm_msgs_s__rosidl_typesupport_c.dir/rosidl_generator_py/roarm_msgs/_roarm_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[14.670964] (roarm_msgs) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/roarm_msgs_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/roarm_msgs/_roarm_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[14.693842] (-) TimerEvent: {}
+[14.794687] (-) TimerEvent: {}
+[14.895391] (-) TimerEvent: {}
+[14.916639] (roarm_msgs) StdoutLine: {'line': b'[ 94%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/roarm_msgs/roarm_msgs_s__rosidl_typesupport_c.so\x1b[0m\n'}
+[14.929473] (roarm_msgs) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/roarm_msgs/roarm_msgs_s__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[14.935572] (roarm_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/roarm_msgs/roarm_msgs_s__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[14.990987] (roarm_msgs) StdoutLine: {'line': b'[100%] Built target roarm_msgs_s__rosidl_typesupport_c\n'}
+[14.997940] (-) TimerEvent: {}
+[15.020641] (roarm_msgs) StdoutLine: {'line': b'[100%] Built target roarm_msgs_s__rosidl_typesupport_fastrtps_c\n'}
+[15.021117] (roarm_msgs) StdoutLine: {'line': b'[100%] Built target roarm_msgs_s__rosidl_typesupport_introspection_c\n'}
+[15.051069] (roarm_msgs) CommandEnded: {'returncode': 0}
+[15.053218] (roarm_msgs) JobProgress: {'identifier': 'roarm_msgs', 'progress': 'install'}
+[15.077713] (roarm_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/robot_eblan/build/roarm_msgs'], 'cwd': '/robot_eblan/build/roarm_msgs', 'env': OrderedDict({'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'HOSTNAME': 'wb-desktop', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/robot_eblan/install/roarm_msgs/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/root', 'OLDPWD': '/', 'ROS_PYTHON_VERSION': '3', 'COLCON_PREFIX_PATH': '/robot_eblan/install:/manager_ws/install:/ldlidar_ros2_binning/install:/Drobage_jazzy/install', 'ROS_DISTRO': 'jazzy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'ROS_DOMAIN_ID': '42', 'AMENT_PREFIX_PATH': '/robot_eblan/install/roarm_moveit_config:/robot_eblan/install/roarm_moveit_cmd:/robot_eblan/install/roarm_msgs:/robot_eblan/install/roarm_driver:/robot_eblan/install/roarm_description:/manager_ws/install/mission_manager:/Drobage_jazzy/install/robot_ctrl_package:/Drobage_jazzy/install/navigation_package:/Drobage_jazzy/install/my_yolo_package:/ldlidar_ros2_binning/install/ldlidar_stl_ros2:/opt/ros/jazzy', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/robot_eblan/build/roarm_msgs', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/robot_eblan/install/roarm_moveit_cmd/lib/python3.12/site-packages:/robot_eblan/install/roarm_msgs/lib/python3.12/site-packages:/robot_eblan/install/roarm_driver/lib/python3.12/site-packages:/robot_eblan/install/roarm_description/lib/python3.12/site-packages:/Drobage_jazzy/install/robot_ctrl_package/lib/python3.12/site-packages:/Drobage_jazzy/install/navigation_package/lib/python3.12/site-packages:/Drobage_jazzy/install/my_yolo_package/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/robot_eblan/install/roarm_moveit_config:/robot_eblan/install/roarm_msgs:/manager_ws/install/mission_manager:/ldlidar_ros2_binning/install/ldlidar_stl_ros2:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/robot_eblan/install/roarm_moveit_cmd:/robot_eblan/install/roarm_driver:/robot_eblan/install/roarm_description:/Drobage_jazzy/install/robot_ctrl_package:/Drobage_jazzy/install/navigation_package:/Drobage_jazzy/install/my_yolo_package:/opt/ros/jazzy'}), 'shell': False}
+[15.098118] (-) TimerEvent: {}
+[15.099969] (roarm_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[15.100531] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/share/ament_index/resource_index/rosidl_interfaces/roarm_msgs\n'}
+[15.101262] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/share/roarm_msgs/srv/MoveToXYZ.json\n'}
+[15.101644] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/include/roarm_msgs/roarm_msgs\n'}
+[15.102023] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/include/roarm_msgs/roarm_msgs/msg\n'}
+[15.102289] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/include/roarm_msgs/roarm_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[15.102525] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv\n'}
+[15.102740] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail\n'}
+[15.102922] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail/move_to_xyz__functions.h\n'}
+[15.103134] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail/move_to_xyz__struct.h\n'}
+[15.103401] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail/move_to_xyz__functions.c\n'}
+[15.103942] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail/move_to_xyz__type_support.h\n'}
+[15.104295] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail/move_to_xyz__type_support.c\n'}
+[15.104498] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail/move_to_xyz__description.c\n'}
+[15.104778] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/move_to_xyz.h\n'}
+[15.105359] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/share/roarm_msgs/environment/library_path.sh\n'}
+[15.105784] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/share/roarm_msgs/environment/library_path.dsv\n'}
+[15.108406] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/lib/libroarm_msgs__rosidl_generator_c.so\n'}
+[15.109071] (roarm_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/robot_eblan/install/roarm_msgs/lib/libroarm_msgs__rosidl_generator_c.so" to ""\n'}
+[15.109361] (roarm_msgs) StdoutLine: {'line': b'-- Up-to-date: /robot_eblan/install/roarm_msgs/include/roarm_msgs/roarm_msgs\n'}
+[15.109661] (roarm_msgs) StdoutLine: {'line': b'-- Up-to-date: /robot_eblan/install/roarm_msgs/include/roarm_msgs/roarm_msgs/msg\n'}
+[15.109865] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/include/roarm_msgs/roarm_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[15.110302] (roarm_msgs) StdoutLine: {'line': b'-- Up-to-date: /robot_eblan/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv\n'}
+[15.111649] (roarm_msgs) StdoutLine: {'line': b'-- Up-to-date: /robot_eblan/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail\n'}
+[15.112264] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail/move_to_xyz__rosidl_typesupport_fastrtps_c.h\n'}
+[15.112432] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/lib/libroarm_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[15.112625] (roarm_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/robot_eblan/install/roarm_msgs/lib/libroarm_msgs__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[15.114604] (roarm_msgs) StdoutLine: {'line': b'-- Up-to-date: /robot_eblan/install/roarm_msgs/include/roarm_msgs/roarm_msgs\n'}
+[15.114858] (roarm_msgs) StdoutLine: {'line': b'-- Up-to-date: /robot_eblan/install/roarm_msgs/include/roarm_msgs/roarm_msgs/msg\n'}
+[15.115029] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/include/roarm_msgs/roarm_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[15.115197] (roarm_msgs) StdoutLine: {'line': b'-- Up-to-date: /robot_eblan/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv\n'}
+[15.115347] (roarm_msgs) StdoutLine: {'line': b'-- Up-to-date: /robot_eblan/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail\n'}
+[15.117174] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail/move_to_xyz__rosidl_typesupport_introspection_c.h\n'}
+[15.117367] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail/move_to_xyz__type_support.c\n'}
+[15.117528] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/lib/libroarm_msgs__rosidl_typesupport_introspection_c.so\n'}
+[15.117890] (roarm_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/robot_eblan/install/roarm_msgs/lib/libroarm_msgs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[15.119698] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/lib/libroarm_msgs__rosidl_typesupport_c.so\n'}
+[15.120039] (roarm_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/robot_eblan/install/roarm_msgs/lib/libroarm_msgs__rosidl_typesupport_c.so" to ""\n'}
+[15.120256] (roarm_msgs) StdoutLine: {'line': b'-- Up-to-date: /robot_eblan/install/roarm_msgs/include/roarm_msgs/roarm_msgs\n'}
+[15.120439] (roarm_msgs) StdoutLine: {'line': b'-- Up-to-date: /robot_eblan/install/roarm_msgs/include/roarm_msgs/roarm_msgs/msg\n'}
+[15.121211] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/include/roarm_msgs/roarm_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[15.121542] (roarm_msgs) StdoutLine: {'line': b'-- Up-to-date: /robot_eblan/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv\n'}
+[15.121901] (roarm_msgs) StdoutLine: {'line': b'-- Up-to-date: /robot_eblan/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail\n'}
+[15.122128] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail/move_to_xyz__struct.hpp\n'}
+[15.122340] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail/move_to_xyz__traits.hpp\n'}
+[15.122646] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail/move_to_xyz__builder.hpp\n'}
+[15.122945] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail/move_to_xyz__type_support.hpp\n'}
+[15.123226] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/move_to_xyz.hpp\n'}
+[15.123513] (roarm_msgs) StdoutLine: {'line': b'-- Up-to-date: /robot_eblan/install/roarm_msgs/include/roarm_msgs/roarm_msgs\n'}
+[15.123808] (roarm_msgs) StdoutLine: {'line': b'-- Up-to-date: /robot_eblan/install/roarm_msgs/include/roarm_msgs/roarm_msgs/msg\n'}
+[15.124214] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/include/roarm_msgs/roarm_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[15.124445] (roarm_msgs) StdoutLine: {'line': b'-- Up-to-date: /robot_eblan/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv\n'}
+[15.124755] (roarm_msgs) StdoutLine: {'line': b'-- Up-to-date: /robot_eblan/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail\n'}
+[15.124969] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail/dds_fastrtps\n'}
+[15.125228] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail/move_to_xyz__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[15.125499] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/lib/libroarm_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[15.125899] (roarm_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/robot_eblan/install/roarm_msgs/lib/libroarm_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[15.126198] (roarm_msgs) StdoutLine: {'line': b'-- Up-to-date: /robot_eblan/install/roarm_msgs/include/roarm_msgs/roarm_msgs\n'}
+[15.128001] (roarm_msgs) StdoutLine: {'line': b'-- Up-to-date: /robot_eblan/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv\n'}
+[15.128281] (roarm_msgs) StdoutLine: {'line': b'-- Up-to-date: /robot_eblan/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail\n'}
+[15.128499] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail/move_to_xyz__type_support.cpp\n'}
+[15.128709] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail/move_to_xyz__rosidl_typesupport_introspection_cpp.hpp\n'}
+[15.128956] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/lib/libroarm_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[15.129163] (roarm_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/robot_eblan/install/roarm_msgs/lib/libroarm_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[15.129365] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/lib/libroarm_msgs__rosidl_typesupport_cpp.so\n'}
+[15.129563] (roarm_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/robot_eblan/install/roarm_msgs/lib/libroarm_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[15.129809] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/share/roarm_msgs/environment/pythonpath.sh\n'}
+[15.130022] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/share/roarm_msgs/environment/pythonpath.dsv\n'}
+[15.130224] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/lib/python3.12/site-packages/roarm_msgs-0.0.1-py3.12.egg-info\n'}
+[15.130422] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/lib/python3.12/site-packages/roarm_msgs-0.0.1-py3.12.egg-info/top_level.txt\n'}
+[15.130619] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/lib/python3.12/site-packages/roarm_msgs-0.0.1-py3.12.egg-info/SOURCES.txt\n'}
+[15.130816] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/lib/python3.12/site-packages/roarm_msgs-0.0.1-py3.12.egg-info/PKG-INFO\n'}
+[15.131013] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/lib/python3.12/site-packages/roarm_msgs-0.0.1-py3.12.egg-info/dependency_links.txt\n'}
+[15.131207] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/lib/python3.12/site-packages/roarm_msgs\n'}
+[15.131400] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/lib/python3.12/site-packages/roarm_msgs/_roarm_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[15.131630] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/lib/python3.12/site-packages/roarm_msgs/_roarm_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[15.131833] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/lib/python3.12/site-packages/roarm_msgs/roarm_msgs_s__rosidl_typesupport_introspection_c.so\n'}
+[15.132032] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/lib/python3.12/site-packages/roarm_msgs/roarm_msgs_s__rosidl_typesupport_c.so\n'}
+[15.132230] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/lib/python3.12/site-packages/roarm_msgs/_roarm_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[15.132430] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/lib/python3.12/site-packages/roarm_msgs/roarm_msgs_s__rosidl_typesupport_fastrtps_c.so\n'}
+[15.132633] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/lib/python3.12/site-packages/roarm_msgs/srv\n'}
+[15.132827] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/lib/python3.12/site-packages/roarm_msgs/srv/_move_to_xyz_s.c\n'}
+[15.133024] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/lib/python3.12/site-packages/roarm_msgs/srv/_move_to_xyz.py\n'}
+[15.133222] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/lib/python3.12/site-packages/roarm_msgs/srv/__init__.py\n'}
+[15.133424] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/lib/python3.12/site-packages/roarm_msgs/__init__.py\n'}
+[15.198326] (-) TimerEvent: {}
+[15.223857] (roarm_msgs) StdoutLine: {'line': b"Listing '/robot_eblan/install/roarm_msgs/lib/python3.12/site-packages/roarm_msgs'...\n"}
+[15.224570] (roarm_msgs) StdoutLine: {'line': b"Compiling '/robot_eblan/install/roarm_msgs/lib/python3.12/site-packages/roarm_msgs/__init__.py'...\n"}
+[15.224978] (roarm_msgs) StdoutLine: {'line': b"Listing '/robot_eblan/install/roarm_msgs/lib/python3.12/site-packages/roarm_msgs/srv'...\n"}
+[15.225250] (roarm_msgs) StdoutLine: {'line': b"Compiling '/robot_eblan/install/roarm_msgs/lib/python3.12/site-packages/roarm_msgs/srv/__init__.py'...\n"}
+[15.225535] (roarm_msgs) StdoutLine: {'line': b"Compiling '/robot_eblan/install/roarm_msgs/lib/python3.12/site-packages/roarm_msgs/srv/_move_to_xyz.py'...\n"}
+[15.241159] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/lib/python3.12/site-packages/roarm_msgs/roarm_msgs_s__rosidl_typesupport_fastrtps_c.so\n'}
+[15.241976] (roarm_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/robot_eblan/install/roarm_msgs/lib/python3.12/site-packages/roarm_msgs/roarm_msgs_s__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[15.242419] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/lib/python3.12/site-packages/roarm_msgs/roarm_msgs_s__rosidl_typesupport_introspection_c.so\n'}
+[15.243293] (roarm_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/robot_eblan/install/roarm_msgs/lib/python3.12/site-packages/roarm_msgs/roarm_msgs_s__rosidl_typesupport_introspection_c.so" to ""\n'}
+[15.243849] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/lib/python3.12/site-packages/roarm_msgs/roarm_msgs_s__rosidl_typesupport_c.so\n'}
+[15.244246] (roarm_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/robot_eblan/install/roarm_msgs/lib/python3.12/site-packages/roarm_msgs/roarm_msgs_s__rosidl_typesupport_c.so" to ""\n'}
+[15.244829] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/lib/libroarm_msgs__rosidl_generator_py.so\n'}
+[15.245270] (roarm_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/robot_eblan/install/roarm_msgs/lib/libroarm_msgs__rosidl_generator_py.so" to ""\n'}
+[15.245652] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/share/ament_index/resource_index/rust_packages/roarm_msgs\n'}
+[15.246050] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/share/roarm_msgs/rust\n'}
+[15.246437] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/share/roarm_msgs/rust/src\n'}
+[15.246737] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/share/roarm_msgs/rust/src/srv.rs\n'}
+[15.247195] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/share/roarm_msgs/rust/src/srv\n'}
+[15.247686] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/share/roarm_msgs/rust/src/srv/rmw.rs\n'}
+[15.248379] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/share/roarm_msgs/rust/src/lib.rs\n'}
+[15.248838] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/share/roarm_msgs/rust/build.rs\n'}
+[15.249236] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/share/roarm_msgs/rust/Cargo.toml\n'}
+[15.249615] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/share/roarm_msgs/srv/MoveToXYZ.idl\n'}
+[15.250151] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/share/roarm_msgs/srv/MoveToXYZ.srv\n'}
+[15.250622] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/share/ament_index/resource_index/package_run_dependencies/roarm_msgs\n'}
+[15.251055] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/share/ament_index/resource_index/parent_prefix_path/roarm_msgs\n'}
+[15.251437] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/share/roarm_msgs/environment/ament_prefix_path.sh\n'}
+[15.251893] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/share/roarm_msgs/environment/ament_prefix_path.dsv\n'}
+[15.252360] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/share/roarm_msgs/environment/path.sh\n'}
+[15.252797] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/share/roarm_msgs/environment/path.dsv\n'}
+[15.253262] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/share/roarm_msgs/local_setup.bash\n'}
+[15.253582] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/share/roarm_msgs/local_setup.sh\n'}
+[15.253992] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/share/roarm_msgs/local_setup.zsh\n'}
+[15.254360] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/share/roarm_msgs/local_setup.dsv\n'}
+[15.254725] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/share/roarm_msgs/package.dsv\n'}
+[15.255090] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/share/ament_index/resource_index/packages/roarm_msgs\n'}
+[15.255448] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/share/roarm_msgs/cmake/export_roarm_msgs__rosidl_generator_cExport.cmake\n'}
+[15.255845] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/share/roarm_msgs/cmake/export_roarm_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[15.256205] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/share/roarm_msgs/cmake/export_roarm_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[15.256570] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/share/roarm_msgs/cmake/export_roarm_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[15.256963] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/share/roarm_msgs/cmake/roarm_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[15.257335] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/share/roarm_msgs/cmake/roarm_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[15.257689] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/share/roarm_msgs/cmake/roarm_msgs__rosidl_typesupport_cExport.cmake\n'}
+[15.258096] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/share/roarm_msgs/cmake/roarm_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[15.258434] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/share/roarm_msgs/cmake/export_roarm_msgs__rosidl_generator_cppExport.cmake\n'}
+[15.259238] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/share/roarm_msgs/cmake/export_roarm_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[15.259580] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/share/roarm_msgs/cmake/export_roarm_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[15.259891] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/share/roarm_msgs/cmake/roarm_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[15.260190] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/share/roarm_msgs/cmake/roarm_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[15.260484] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/share/roarm_msgs/cmake/roarm_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[15.260775] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/share/roarm_msgs/cmake/roarm_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[15.261062] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/share/roarm_msgs/cmake/export_roarm_msgs__rosidl_generator_pyExport.cmake\n'}
+[15.262717] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/share/roarm_msgs/cmake/export_roarm_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[15.263302] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/share/roarm_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[15.263899] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/share/roarm_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[15.264467] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/share/roarm_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[15.265058] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/share/roarm_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[15.265468] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/share/roarm_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[15.266014] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/share/roarm_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[15.266388] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/share/roarm_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[15.266695] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/share/roarm_msgs/cmake/rosidl_cmake_aggregate_target-extras.cmake\n'}
+[15.266992] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/share/roarm_msgs/cmake/roarm_msgsConfig.cmake\n'}
+[15.267286] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/share/roarm_msgs/cmake/roarm_msgsConfig-version.cmake\n'}
+[15.267577] (roarm_msgs) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_msgs/share/roarm_msgs/package.xml\n'}
+[15.271325] (roarm_msgs) CommandEnded: {'returncode': 0}
+[15.298499] (-) TimerEvent: {}
+[15.328035] (roarm_msgs) JobEnded: {'identifier': 'roarm_msgs', 'rc': 0}
+[15.329333] (roarm_moveit_cmd) JobStarted: {'identifier': 'roarm_moveit_cmd'}
+[15.398668] (-) TimerEvent: {}
+[15.499415] (-) TimerEvent: {}
+[15.600000] (-) TimerEvent: {}
+[15.700606] (-) TimerEvent: {}
+[15.801155] (-) TimerEvent: {}
+[15.901843] (-) TimerEvent: {}
+[16.002484] (-) TimerEvent: {}
+[16.103900] (-) TimerEvent: {}
+[16.204630] (-) TimerEvent: {}
+[16.305819] (-) TimerEvent: {}
+[16.406626] (-) TimerEvent: {}
+[16.507387] (-) TimerEvent: {}
+[16.608658] (-) TimerEvent: {}
+[16.709742] (-) TimerEvent: {}
+[16.810425] (-) TimerEvent: {}
+[16.911111] (-) TimerEvent: {}
+[17.012083] (-) TimerEvent: {}
+[17.078584] (roarm_moveit_cmd) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/roarm_moveit_cmd', 'build', '--build-base', '/robot_eblan/build/roarm_moveit_cmd/build', 'install', '--record', '/robot_eblan/build/roarm_moveit_cmd/install.log', '--install-scripts', '$base/lib/roarm_moveit_cmd', '--single-version-externally-managed', 'install_data'], 'cwd': '/robot_eblan/src/roarm_moveit_cmd', 'env': {'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'HOSTNAME': 'wb-desktop', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/robot_eblan/install/roarm_msgs/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/root', 'OLDPWD': '/', 'ROS_PYTHON_VERSION': '3', 'COLCON_PREFIX_PATH': '/robot_eblan/install:/manager_ws/install:/ldlidar_ros2_binning/install:/Drobage_jazzy/install', 'ROS_DISTRO': 'jazzy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'ROS_DOMAIN_ID': '42', 'AMENT_PREFIX_PATH': '/robot_eblan/install/roarm_moveit_config:/robot_eblan/install/roarm_moveit_cmd:/robot_eblan/install/roarm_msgs:/robot_eblan/install/roarm_driver:/robot_eblan/install/roarm_description:/manager_ws/install/mission_manager:/Drobage_jazzy/install/robot_ctrl_package:/Drobage_jazzy/install/navigation_package:/Drobage_jazzy/install/my_yolo_package:/ldlidar_ros2_binning/install/ldlidar_stl_ros2:/opt/ros/jazzy', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/robot_eblan/build/roarm_moveit_cmd', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/robot_eblan/build/roarm_moveit_cmd/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/robot_eblan/install/roarm_moveit_cmd/lib/python3.12/site-packages:/robot_eblan/install/roarm_msgs/lib/python3.12/site-packages:/robot_eblan/install/roarm_moveit_cmd/lib/python3.12/site-packages:/robot_eblan/install/roarm_driver/lib/python3.12/site-packages:/robot_eblan/install/roarm_description/lib/python3.12/site-packages:/Drobage_jazzy/install/robot_ctrl_package/lib/python3.12/site-packages:/Drobage_jazzy/install/navigation_package/lib/python3.12/site-packages:/Drobage_jazzy/install/my_yolo_package/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/robot_eblan/install/roarm_msgs:/robot_eblan/install/roarm_moveit_config:/manager_ws/install/mission_manager:/ldlidar_ros2_binning/install/ldlidar_stl_ros2:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[17.112260] (-) TimerEvent: {}
+[17.212867] (-) TimerEvent: {}
+[17.313401] (-) TimerEvent: {}
+[17.413952] (-) TimerEvent: {}
+[17.514463] (-) TimerEvent: {}
+[17.615049] (-) TimerEvent: {}
+[17.715674] (-) TimerEvent: {}
+[17.783200] (roarm_moveit_cmd) StdoutLine: {'line': b'running egg_info\n'}
+[17.815843] (-) TimerEvent: {}
+[17.829781] (roarm_moveit_cmd) StdoutLine: {'line': b'creating ../../build/roarm_moveit_cmd/roarm_moveit_cmd.egg-info\n'}
+[17.830329] (roarm_moveit_cmd) StdoutLine: {'line': b'writing ../../build/roarm_moveit_cmd/roarm_moveit_cmd.egg-info/PKG-INFO\n'}
+[17.831577] (roarm_moveit_cmd) StdoutLine: {'line': b'writing dependency_links to ../../build/roarm_moveit_cmd/roarm_moveit_cmd.egg-info/dependency_links.txt\n'}
+[17.831904] (roarm_moveit_cmd) StdoutLine: {'line': b'writing entry points to ../../build/roarm_moveit_cmd/roarm_moveit_cmd.egg-info/entry_points.txt\n'}
+[17.832360] (roarm_moveit_cmd) StdoutLine: {'line': b'writing requirements to ../../build/roarm_moveit_cmd/roarm_moveit_cmd.egg-info/requires.txt\n'}
+[17.832586] (roarm_moveit_cmd) StdoutLine: {'line': b'writing top-level names to ../../build/roarm_moveit_cmd/roarm_moveit_cmd.egg-info/top_level.txt\n'}
+[17.832826] (roarm_moveit_cmd) StdoutLine: {'line': b"writing manifest file '../../build/roarm_moveit_cmd/roarm_moveit_cmd.egg-info/SOURCES.txt'\n"}
+[17.916033] (-) TimerEvent: {}
+[17.923783] (roarm_moveit_cmd) StdoutLine: {'line': b"reading manifest file '../../build/roarm_moveit_cmd/roarm_moveit_cmd.egg-info/SOURCES.txt'\n"}
+[17.925917] (roarm_moveit_cmd) StdoutLine: {'line': b"writing manifest file '../../build/roarm_moveit_cmd/roarm_moveit_cmd.egg-info/SOURCES.txt'\n"}
+[17.926317] (roarm_moveit_cmd) StdoutLine: {'line': b'running build\n'}
+[17.926548] (roarm_moveit_cmd) StdoutLine: {'line': b'running build_py\n'}
+[17.926732] (roarm_moveit_cmd) StdoutLine: {'line': b'creating /robot_eblan/build/roarm_moveit_cmd/build/lib/roarm_moveit_cmd\n'}
+[17.927116] (roarm_moveit_cmd) StdoutLine: {'line': b'copying roarm_moveit_cmd/xyz_control_new.py -> /robot_eblan/build/roarm_moveit_cmd/build/lib/roarm_moveit_cmd\n'}
+[17.931010] (roarm_moveit_cmd) StdoutLine: {'line': b'copying roarm_moveit_cmd/xyz_control_original.py -> /robot_eblan/build/roarm_moveit_cmd/build/lib/roarm_moveit_cmd\n'}
+[17.932215] (roarm_moveit_cmd) StdoutLine: {'line': b'copying roarm_moveit_cmd/xyz_control.py -> /robot_eblan/build/roarm_moveit_cmd/build/lib/roarm_moveit_cmd\n'}
+[17.933434] (roarm_moveit_cmd) StdoutLine: {'line': b'copying roarm_moveit_cmd/__init__.py -> /robot_eblan/build/roarm_moveit_cmd/build/lib/roarm_moveit_cmd\n'}
+[17.934155] (roarm_moveit_cmd) StdoutLine: {'line': b'running install\n'}
+[17.943406] (roarm_moveit_cmd) StdoutLine: {'line': b'running install_lib\n'}
+[17.986437] (roarm_moveit_cmd) StdoutLine: {'line': b'creating /robot_eblan/install/roarm_moveit_cmd/lib/python3.12/site-packages/roarm_moveit_cmd\n'}
+[17.986987] (roarm_moveit_cmd) StdoutLine: {'line': b'copying /robot_eblan/build/roarm_moveit_cmd/build/lib/roarm_moveit_cmd/xyz_control_new.py -> /robot_eblan/install/roarm_moveit_cmd/lib/python3.12/site-packages/roarm_moveit_cmd\n'}
+[17.987239] (roarm_moveit_cmd) StdoutLine: {'line': b'copying /robot_eblan/build/roarm_moveit_cmd/build/lib/roarm_moveit_cmd/xyz_control_original.py -> /robot_eblan/install/roarm_moveit_cmd/lib/python3.12/site-packages/roarm_moveit_cmd\n'}
+[17.987900] (roarm_moveit_cmd) StdoutLine: {'line': b'copying /robot_eblan/build/roarm_moveit_cmd/build/lib/roarm_moveit_cmd/xyz_control.py -> /robot_eblan/install/roarm_moveit_cmd/lib/python3.12/site-packages/roarm_moveit_cmd\n'}
+[17.988115] (roarm_moveit_cmd) StdoutLine: {'line': b'copying /robot_eblan/build/roarm_moveit_cmd/build/lib/roarm_moveit_cmd/__init__.py -> /robot_eblan/install/roarm_moveit_cmd/lib/python3.12/site-packages/roarm_moveit_cmd\n'}
+[17.989137] (roarm_moveit_cmd) StdoutLine: {'line': b'byte-compiling /robot_eblan/install/roarm_moveit_cmd/lib/python3.12/site-packages/roarm_moveit_cmd/xyz_control_new.py to xyz_control_new.cpython-312.pyc\n'}
+[17.996426] (roarm_moveit_cmd) StdoutLine: {'line': b'byte-compiling /robot_eblan/install/roarm_moveit_cmd/lib/python3.12/site-packages/roarm_moveit_cmd/xyz_control_original.py to xyz_control_original.cpython-312.pyc\n'}
+[18.002229] (roarm_moveit_cmd) StdoutLine: {'line': b'byte-compiling /robot_eblan/install/roarm_moveit_cmd/lib/python3.12/site-packages/roarm_moveit_cmd/xyz_control.py to xyz_control.cpython-312.pyc\n'}
+[18.007796] (roarm_moveit_cmd) StdoutLine: {'line': b'byte-compiling /robot_eblan/install/roarm_moveit_cmd/lib/python3.12/site-packages/roarm_moveit_cmd/__init__.py to __init__.cpython-312.pyc\n'}
+[18.008438] (roarm_moveit_cmd) StdoutLine: {'line': b'running install_data\n'}
+[18.009270] (roarm_moveit_cmd) StdoutLine: {'line': b'creating /robot_eblan/install/roarm_moveit_cmd/share/ament_index/resource_index/packages\n'}
+[18.009779] (roarm_moveit_cmd) StdoutLine: {'line': b'copying resource/roarm_moveit_cmd -> /robot_eblan/install/roarm_moveit_cmd/share/ament_index/resource_index/packages\n'}
+[18.010272] (roarm_moveit_cmd) StdoutLine: {'line': b'copying package.xml -> /robot_eblan/install/roarm_moveit_cmd/share/roarm_moveit_cmd\n'}
+[18.010498] (roarm_moveit_cmd) StdoutLine: {'line': b'running install_egg_info\n'}
+[18.016196] (-) TimerEvent: {}
+[18.053784] (roarm_moveit_cmd) StdoutLine: {'line': b'Copying ../../build/roarm_moveit_cmd/roarm_moveit_cmd.egg-info to /robot_eblan/install/roarm_moveit_cmd/lib/python3.12/site-packages/roarm_moveit_cmd-0.0.0-py3.12.egg-info\n'}
+[18.056046] (roarm_moveit_cmd) StdoutLine: {'line': b'running install_scripts\n'}
+[18.116393] (-) TimerEvent: {}
+[18.148145] (roarm_moveit_cmd) StdoutLine: {'line': b'Installing xyz_control script to /robot_eblan/install/roarm_moveit_cmd/lib/roarm_moveit_cmd\n'}
+[18.149212] (roarm_moveit_cmd) StdoutLine: {'line': b"writing list of installed files to '/robot_eblan/build/roarm_moveit_cmd/install.log'\n"}
+[18.216544] (-) TimerEvent: {}
+[18.228478] (roarm_moveit_cmd) CommandEnded: {'returncode': 0}
+[18.252205] (roarm_moveit_cmd) JobEnded: {'identifier': 'roarm_moveit_cmd', 'rc': 0}
+[18.255243] (roarm_moveit_config) JobStarted: {'identifier': 'roarm_moveit_config'}
+[18.289039] (roarm_moveit_config) JobProgress: {'identifier': 'roarm_moveit_config', 'progress': 'cmake'}
+[18.290139] (roarm_moveit_config) Command: {'cmd': ['/usr/bin/cmake', '/robot_eblan/src/roarm_moveit_config', '-DCMAKE_INSTALL_PREFIX=/robot_eblan/install/roarm_moveit_config'], 'cwd': '/robot_eblan/build/roarm_moveit_config', 'env': OrderedDict({'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'HOSTNAME': 'wb-desktop', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/robot_eblan/install/roarm_msgs/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/root', 'OLDPWD': '/', 'ROS_PYTHON_VERSION': '3', 'COLCON_PREFIX_PATH': '/robot_eblan/install:/manager_ws/install:/ldlidar_ros2_binning/install:/Drobage_jazzy/install', 'ROS_DISTRO': 'jazzy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'ROS_DOMAIN_ID': '42', 'AMENT_PREFIX_PATH': '/robot_eblan/install/roarm_moveit_cmd:/robot_eblan/install/roarm_description:/robot_eblan/install/roarm_moveit_config:/robot_eblan/install/roarm_msgs:/robot_eblan/install/roarm_driver:/manager_ws/install/mission_manager:/Drobage_jazzy/install/robot_ctrl_package:/Drobage_jazzy/install/navigation_package:/Drobage_jazzy/install/my_yolo_package:/ldlidar_ros2_binning/install/ldlidar_stl_ros2:/opt/ros/jazzy', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/robot_eblan/build/roarm_moveit_config', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/robot_eblan/install/roarm_moveit_cmd/lib/python3.12/site-packages:/robot_eblan/install/roarm_msgs/lib/python3.12/site-packages:/robot_eblan/install/roarm_description/lib/python3.12/site-packages:/robot_eblan/install/roarm_driver/lib/python3.12/site-packages:/Drobage_jazzy/install/robot_ctrl_package/lib/python3.12/site-packages:/Drobage_jazzy/install/navigation_package/lib/python3.12/site-packages:/Drobage_jazzy/install/my_yolo_package/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/robot_eblan/install/roarm_msgs:/robot_eblan/install/roarm_moveit_config:/manager_ws/install/mission_manager:/ldlidar_ros2_binning/install/ldlidar_stl_ros2:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/robot_eblan/install/roarm_moveit_cmd:/robot_eblan/install/roarm_driver:/robot_eblan/install/roarm_description:/Drobage_jazzy/install/robot_ctrl_package:/Drobage_jazzy/install/navigation_package:/Drobage_jazzy/install/my_yolo_package:/opt/ros/jazzy'}), 'shell': False}
+[18.316744] (-) TimerEvent: {}
+[18.417638] (-) TimerEvent: {}
+[18.423362] (roarm_moveit_config) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[18.517833] (-) TimerEvent: {}
+[18.539179] (roarm_moveit_config) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[18.571789] (roarm_moveit_config) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[18.618008] (-) TimerEvent: {}
+[18.718630] (-) TimerEvent: {}
+[18.776109] (roarm_moveit_config) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[18.802245] (roarm_moveit_config) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[18.803036] (roarm_moveit_config) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[18.803759] (roarm_moveit_config) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[18.818802] (-) TimerEvent: {}
+[18.828273] (roarm_moveit_config) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[18.919215] (-) TimerEvent: {}
+[19.020025] (-) TimerEvent: {}
+[19.049766] (roarm_moveit_config) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[19.066753] (roarm_moveit_config) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[19.067307] (roarm_moveit_config) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[19.068061] (roarm_moveit_config) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[19.081921] (roarm_moveit_config) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[19.120182] (-) TimerEvent: {}
+[19.220759] (-) TimerEvent: {}
+[19.321325] (-) TimerEvent: {}
+[19.415622] (roarm_moveit_config) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[19.421498] (-) TimerEvent: {}
+[19.522093] (-) TimerEvent: {}
+[19.622676] (-) TimerEvent: {}
+[19.723345] (-) TimerEvent: {}
+[19.823939] (-) TimerEvent: {}
+[19.924479] (-) TimerEvent: {}
+[20.025424] (-) TimerEvent: {}
+[20.053149] (roarm_moveit_config) StdoutLine: {'line': b'-- Configuring done (1.7s)\n'}
+[20.060792] (roarm_moveit_config) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[20.065148] (roarm_moveit_config) StdoutLine: {'line': b'-- Build files have been written to: /robot_eblan/build/roarm_moveit_config\n'}
+[20.076779] (roarm_moveit_config) CommandEnded: {'returncode': 0}
+[20.077861] (roarm_moveit_config) JobProgress: {'identifier': 'roarm_moveit_config', 'progress': 'build'}
+[20.078291] (roarm_moveit_config) Command: {'cmd': ['/usr/bin/cmake', '--build', '/robot_eblan/build/roarm_moveit_config', '--', '-j6', '-l6'], 'cwd': '/robot_eblan/build/roarm_moveit_config', 'env': OrderedDict({'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'HOSTNAME': 'wb-desktop', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/robot_eblan/install/roarm_msgs/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/root', 'OLDPWD': '/', 'ROS_PYTHON_VERSION': '3', 'COLCON_PREFIX_PATH': '/robot_eblan/install:/manager_ws/install:/ldlidar_ros2_binning/install:/Drobage_jazzy/install', 'ROS_DISTRO': 'jazzy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'ROS_DOMAIN_ID': '42', 'AMENT_PREFIX_PATH': '/robot_eblan/install/roarm_moveit_cmd:/robot_eblan/install/roarm_description:/robot_eblan/install/roarm_moveit_config:/robot_eblan/install/roarm_msgs:/robot_eblan/install/roarm_driver:/manager_ws/install/mission_manager:/Drobage_jazzy/install/robot_ctrl_package:/Drobage_jazzy/install/navigation_package:/Drobage_jazzy/install/my_yolo_package:/ldlidar_ros2_binning/install/ldlidar_stl_ros2:/opt/ros/jazzy', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/robot_eblan/build/roarm_moveit_config', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/robot_eblan/install/roarm_moveit_cmd/lib/python3.12/site-packages:/robot_eblan/install/roarm_msgs/lib/python3.12/site-packages:/robot_eblan/install/roarm_description/lib/python3.12/site-packages:/robot_eblan/install/roarm_driver/lib/python3.12/site-packages:/Drobage_jazzy/install/robot_ctrl_package/lib/python3.12/site-packages:/Drobage_jazzy/install/navigation_package/lib/python3.12/site-packages:/Drobage_jazzy/install/my_yolo_package/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/robot_eblan/install/roarm_msgs:/robot_eblan/install/roarm_moveit_config:/manager_ws/install/mission_manager:/ldlidar_ros2_binning/install/ldlidar_stl_ros2:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/robot_eblan/install/roarm_moveit_cmd:/robot_eblan/install/roarm_driver:/robot_eblan/install/roarm_description:/Drobage_jazzy/install/robot_ctrl_package:/Drobage_jazzy/install/navigation_package:/Drobage_jazzy/install/my_yolo_package:/opt/ros/jazzy'}), 'shell': False}
+[20.125861] (-) TimerEvent: {}
+[20.173662] (roarm_moveit_config) CommandEnded: {'returncode': 0}
+[20.175074] (roarm_moveit_config) JobProgress: {'identifier': 'roarm_moveit_config', 'progress': 'install'}
+[20.175428] (roarm_moveit_config) Command: {'cmd': ['/usr/bin/cmake', '--install', '/robot_eblan/build/roarm_moveit_config'], 'cwd': '/robot_eblan/build/roarm_moveit_config', 'env': OrderedDict({'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'HOSTNAME': 'wb-desktop', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/robot_eblan/install/roarm_msgs/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/root', 'OLDPWD': '/', 'ROS_PYTHON_VERSION': '3', 'COLCON_PREFIX_PATH': '/robot_eblan/install:/manager_ws/install:/ldlidar_ros2_binning/install:/Drobage_jazzy/install', 'ROS_DISTRO': 'jazzy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'ROS_DOMAIN_ID': '42', 'AMENT_PREFIX_PATH': '/robot_eblan/install/roarm_moveit_cmd:/robot_eblan/install/roarm_description:/robot_eblan/install/roarm_moveit_config:/robot_eblan/install/roarm_msgs:/robot_eblan/install/roarm_driver:/manager_ws/install/mission_manager:/Drobage_jazzy/install/robot_ctrl_package:/Drobage_jazzy/install/navigation_package:/Drobage_jazzy/install/my_yolo_package:/ldlidar_ros2_binning/install/ldlidar_stl_ros2:/opt/ros/jazzy', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/robot_eblan/build/roarm_moveit_config', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/robot_eblan/install/roarm_moveit_cmd/lib/python3.12/site-packages:/robot_eblan/install/roarm_msgs/lib/python3.12/site-packages:/robot_eblan/install/roarm_description/lib/python3.12/site-packages:/robot_eblan/install/roarm_driver/lib/python3.12/site-packages:/Drobage_jazzy/install/robot_ctrl_package/lib/python3.12/site-packages:/Drobage_jazzy/install/navigation_package/lib/python3.12/site-packages:/Drobage_jazzy/install/my_yolo_package/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/robot_eblan/install/roarm_msgs:/robot_eblan/install/roarm_moveit_config:/manager_ws/install/mission_manager:/ldlidar_ros2_binning/install/ldlidar_stl_ros2:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/robot_eblan/install/roarm_moveit_cmd:/robot_eblan/install/roarm_driver:/robot_eblan/install/roarm_description:/Drobage_jazzy/install/robot_ctrl_package:/Drobage_jazzy/install/navigation_package:/Drobage_jazzy/install/my_yolo_package:/opt/ros/jazzy'}), 'shell': False}
+[20.196314] (roarm_moveit_config) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[20.196870] (roarm_moveit_config) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_moveit_config/share/roarm_moveit_config/config\n'}
+[20.197113] (roarm_moveit_config) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_moveit_config/share/roarm_moveit_config/config/ompl_planning.yaml\n'}
+[20.197338] (roarm_moveit_config) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_moveit_config/share/roarm_moveit_config/config/sensors_3d.yaml\n'}
+[20.197580] (roarm_moveit_config) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_moveit_config/share/roarm_moveit_config/config/moveit.rviz\n'}
+[20.201386] (roarm_moveit_config) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_moveit_config/share/roarm_moveit_config/config/roarm_m3.urdf.xacro\n'}
+[20.202225] (roarm_moveit_config) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_moveit_config/share/roarm_moveit_config/config/roarm_m3.srdf\n'}
+[20.202522] (roarm_moveit_config) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_moveit_config/share/roarm_moveit_config/config/ros2_controllers.yaml\n'}
+[20.202717] (roarm_moveit_config) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_moveit_config/share/roarm_moveit_config/config/joint_limits.yaml\n'}
+[20.202889] (roarm_moveit_config) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_moveit_config/share/roarm_moveit_config/config/roarm_m3.ros2_control.xacro\n'}
+[20.203039] (roarm_moveit_config) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_moveit_config/share/roarm_moveit_config/config/initial_positions.yaml\n'}
+[20.203204] (roarm_moveit_config) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_moveit_config/share/roarm_moveit_config/config/kinematics.yaml\n'}
+[20.203371] (roarm_moveit_config) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_moveit_config/share/roarm_moveit_config/config/moveit_controllers.yaml\n'}
+[20.203555] (roarm_moveit_config) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_moveit_config/share/roarm_moveit_config/launch\n'}
+[20.203798] (roarm_moveit_config) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_moveit_config/share/roarm_moveit_config/launch/launch_arm.launch.py\n'}
+[20.204739] (roarm_moveit_config) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_moveit_config/share/roarm_moveit_config/launch/roarm_moveit.launch.py\n'}
+[20.205914] (roarm_moveit_config) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_moveit_config/share/roarm_moveit_config/launch/demo.launch.py\n'}
+[20.207389] (roarm_moveit_config) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_moveit_config/share/roarm_moveit_config/launch/driver.launch.py\n'}
+[20.208024] (roarm_moveit_config) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_moveit_config/share/roarm_moveit_config/launch/xyz_control.launch.py\n'}
+[20.209007] (roarm_moveit_config) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_moveit_config/share/roarm_moveit_config/launch/__pycache__\n'}
+[20.209257] (roarm_moveit_config) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_moveit_config/share/roarm_moveit_config/launch/__pycache__/demo.launch.cpython-312.pyc\n'}
+[20.209479] (roarm_moveit_config) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_moveit_config/share/roarm_moveit_config/launch/__pycache__/demo.launch.cpython-310.pyc\n'}
+[20.210488] (roarm_moveit_config) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_moveit_config/share/roarm_moveit_config/launch/__pycache__/driver.launch.cpython-312.pyc\n'}
+[20.210846] (roarm_moveit_config) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_moveit_config/share/roarm_moveit_config/launch/__pycache__/xyz_control.launch.cpython-312.pyc\n'}
+[20.211564] (roarm_moveit_config) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_moveit_config/share/ament_index/resource_index/package_run_dependencies/roarm_moveit_config\n'}
+[20.212226] (roarm_moveit_config) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_moveit_config/share/ament_index/resource_index/parent_prefix_path/roarm_moveit_config\n'}
+[20.212682] (roarm_moveit_config) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_moveit_config/share/roarm_moveit_config/environment/ament_prefix_path.sh\n'}
+[20.213045] (roarm_moveit_config) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_moveit_config/share/roarm_moveit_config/environment/ament_prefix_path.dsv\n'}
+[20.213345] (roarm_moveit_config) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_moveit_config/share/roarm_moveit_config/environment/path.sh\n'}
+[20.213962] (roarm_moveit_config) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_moveit_config/share/roarm_moveit_config/environment/path.dsv\n'}
+[20.214417] (roarm_moveit_config) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_moveit_config/share/roarm_moveit_config/local_setup.bash\n'}
+[20.214752] (roarm_moveit_config) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_moveit_config/share/roarm_moveit_config/local_setup.sh\n'}
+[20.215178] (roarm_moveit_config) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_moveit_config/share/roarm_moveit_config/local_setup.zsh\n'}
+[20.215447] (roarm_moveit_config) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_moveit_config/share/roarm_moveit_config/local_setup.dsv\n'}
+[20.215685] (roarm_moveit_config) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_moveit_config/share/roarm_moveit_config/package.dsv\n'}
+[20.216167] (roarm_moveit_config) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_moveit_config/share/ament_index/resource_index/packages/roarm_moveit_config\n'}
+[20.216662] (roarm_moveit_config) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_moveit_config/share/roarm_moveit_config/cmake/roarm_moveit_configConfig.cmake\n'}
+[20.216985] (roarm_moveit_config) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_moveit_config/share/roarm_moveit_config/cmake/roarm_moveit_configConfig-version.cmake\n'}
+[20.217234] (roarm_moveit_config) StdoutLine: {'line': b'-- Installing: /robot_eblan/install/roarm_moveit_config/share/roarm_moveit_config/package.xml\n'}
+[20.221324] (roarm_moveit_config) CommandEnded: {'returncode': 0}
+[20.226376] (-) TimerEvent: {}
+[20.257511] (roarm_moveit_config) JobEnded: {'identifier': 'roarm_moveit_config', 'rc': 0}
+[20.260641] (-) EventReactorShutdown: {}

@@ -1,0 +1,30 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/mission.dir/src/mission.cpp.o[0m
+[01m[K/manager_ws/src/mission_manager/src/mission.cpp:[m[K In member function ‘[01m[Kvoid MissionManager::[01;32m[KExplorationCompleteCallback[m[K(std_msgs::msg::Empty_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/manager_ws/src/mission_manager/src/mission.cpp:18:72:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   18 |       void ExplorationCompleteCallback([01;35m[Kstd_msgs::msg::Empty::SharedPtr msg[m[K)
+      |                                        [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[01m[K/manager_ws/src/mission_manager/src/mission.cpp:[m[K In function ‘[01m[Kint[01;32m[K main[m[K(int, char**)[m[K’:
+[01m[K/manager_ws/src/mission_manager/src/mission.cpp:32:12:[m[K [01;35m[Kwarning: [m[Kstatement is a reference, not call, to function ‘[01m[Krclcpp::shutdown[m[K’ [[01;35m[K-Waddress[m[K]
+   32 |    [01;35m[Krclcpp::shutdown[m[K;
+      |    [01;35m[K~~~~~~~~^~~~~~~~[m[K
+[01m[K/manager_ws/src/mission_manager/src/mission.cpp:32:12:[m[K [01;35m[Kwarning: [m[Kstatement has no effect [[01;35m[K-Wunused-value[m[K]
+[100%] [32m[1mLinking CXX executable mission[0m
+[100%] Built target mission
+-- Install configuration: ""
+-- Installing: /manager_ws/install/mission_manager/lib/mission_manager/mission
+-- Set non-toolchain portion of runtime path of "/manager_ws/install/mission_manager/lib/mission_manager/mission" to ""
+-- Up-to-date: /manager_ws/install/mission_manager/share/ament_index/resource_index/package_run_dependencies/mission_manager
+-- Up-to-date: /manager_ws/install/mission_manager/share/ament_index/resource_index/parent_prefix_path/mission_manager
+-- Up-to-date: /manager_ws/install/mission_manager/share/mission_manager/environment/ament_prefix_path.sh
+-- Up-to-date: /manager_ws/install/mission_manager/share/mission_manager/environment/ament_prefix_path.dsv
+-- Up-to-date: /manager_ws/install/mission_manager/share/mission_manager/environment/path.sh
+-- Up-to-date: /manager_ws/install/mission_manager/share/mission_manager/environment/path.dsv
+-- Up-to-date: /manager_ws/install/mission_manager/share/mission_manager/local_setup.bash
+-- Up-to-date: /manager_ws/install/mission_manager/share/mission_manager/local_setup.sh
+-- Up-to-date: /manager_ws/install/mission_manager/share/mission_manager/local_setup.zsh
+-- Up-to-date: /manager_ws/install/mission_manager/share/mission_manager/local_setup.dsv
+-- Installing: /manager_ws/install/mission_manager/share/mission_manager/package.dsv
+-- Up-to-date: /manager_ws/install/mission_manager/share/ament_index/resource_index/packages/mission_manager
+-- Up-to-date: /manager_ws/install/mission_manager/share/mission_manager/cmake/mission_managerConfig.cmake
+-- Up-to-date: /manager_ws/install/mission_manager/share/mission_manager/cmake/mission_managerConfig-version.cmake
+-- Up-to-date: /manager_ws/install/mission_manager/share/mission_manager/package.xml

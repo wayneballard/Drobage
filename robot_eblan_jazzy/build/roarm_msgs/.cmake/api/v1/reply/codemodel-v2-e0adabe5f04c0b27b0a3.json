@@ -1,0 +1,267 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-9ba80e06207246155f7a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						15,
+						16,
+						17,
+						18,
+						19
+					]
+				},
+				{
+					"build" : "roarm_msgs__py",
+					"jsonFile" : "directory-roarm_msgs__py-1d14e4c0d4e801015e20.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/robot_eblan/build/roarm_msgs/roarm_msgs__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "roarm_msgs__rs",
+					"jsonFile" : "directory-roarm_msgs__rs-6d1d31d773d63d82a7d7.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/robot_eblan/build/roarm_msgs/roarm_msgs__rs",
+					"targetIndexes" : 
+					[
+						14
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2
+					],
+					"name" : "roarm_msgs",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_roarm_msgs_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_roarm_msgs_egg-ea96f6655895cafba1f9.json",
+					"name" : "ament_cmake_python_build_roarm_msgs_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_roarm_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_roarm_msgs-4d87f46ef7d8f204f4df.json",
+					"name" : "ament_cmake_python_copy_roarm_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "roarm_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-roarm_msgs-446fc598f60390536879.json",
+					"name" : "roarm_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "roarm_msgs__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-roarm_msgs__cpp-71476f752a6ea86e4b14.json",
+					"name" : "roarm_msgs__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "roarm_msgs__py::@b6273abffb0cf755a96b",
+					"jsonFile" : "target-roarm_msgs__py-dc55da37aed29f390b2b.json",
+					"name" : "roarm_msgs__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "roarm_msgs__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-roarm_msgs__rosidl_generator_c-8472ac91166212c84682.json",
+					"name" : "roarm_msgs__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "roarm_msgs__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-roarm_msgs__rosidl_generator_py-9386357c93d05d156e26.json",
+					"name" : "roarm_msgs__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "roarm_msgs__rosidl_generator_type_description::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-roarm_msgs__rosidl_generator_type_description-2fb898c19b4508ae9113.json",
+					"name" : "roarm_msgs__rosidl_generator_type_description",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "roarm_msgs__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-roarm_msgs__rosidl_typesupport_c-19f5c1466121b8882938.json",
+					"name" : "roarm_msgs__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "roarm_msgs__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-roarm_msgs__rosidl_typesupport_cpp-725cc6d01081ce73b577.json",
+					"name" : "roarm_msgs__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "roarm_msgs__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-roarm_msgs__rosidl_typesupport_fastrtps_c-bafc1e7ea001958476aa.json",
+					"name" : "roarm_msgs__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "roarm_msgs__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-roarm_msgs__rosidl_typesupport_fastrtps_cpp-22fef4508e4b531e2a53.json",
+					"name" : "roarm_msgs__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "roarm_msgs__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-roarm_msgs__rosidl_typesupport_introspection_c-b260b659f280477e25b6.json",
+					"name" : "roarm_msgs__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "roarm_msgs__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-roarm_msgs__rosidl_typesupport_introspection_cpp-70ddb2eafe7b978690da.json",
+					"name" : "roarm_msgs__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "roarm_msgs__rs::@995cb17551853d531098",
+					"jsonFile" : "target-roarm_msgs__rs-37dda8a715cebecc37be.json",
+					"name" : "roarm_msgs__rs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "roarm_msgs_s__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-roarm_msgs_s__rosidl_typesupport_c-c6f4ebaf743dc93f5ae0.json",
+					"name" : "roarm_msgs_s__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "roarm_msgs_s__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-roarm_msgs_s__rosidl_typesupport_fastrtps_c-8a6b37890fc64c07c0da.json",
+					"name" : "roarm_msgs_s__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "roarm_msgs_s__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-roarm_msgs_s__rosidl_typesupport_introspection_c-0fed5229c57a2bb798d5.json",
+					"name" : "roarm_msgs_s__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "roarm_msgs_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-roarm_msgs_uninstall-7ab4df257ba86c25f7d0.json",
+					"name" : "roarm_msgs_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-84a99f8453356a24ec72.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/robot_eblan/build/roarm_msgs",
+		"source" : "/robot_eblan/src/roarm_msgs"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

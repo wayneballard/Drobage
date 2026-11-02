@@ -1,0 +1,7 @@
+/usr/local/lib/python3.12/dist-packages/setuptools/_distutils/dist.py:318: UserWarning: Unknown distribution option: 'tests_require'
+  warnings.warn(msg)
+  File "/Drobage_jazzy/install/robot_ctrl_package/lib/python3.12/site-packages/robot_ctrl_package/control_node_leo.py", line 191
+    if should_move: and not self.turning:
+                    ^^^
+SyntaxError: invalid syntax
+

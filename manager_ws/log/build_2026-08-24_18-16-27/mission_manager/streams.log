@@ -1,0 +1,56 @@
+[0.023s] Invoking command in '/manager_ws/build/mission_manager': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /manager_ws/build/mission_manager -- -j6 -l6
+[0.077s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.560s] -- Found rclcpp: 28.1.21 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.651s] -- Found rosidl_generator_c: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.670s] -- Found rosidl_generator_cpp: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.693s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.724s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.841s] -- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.841s] -- Found rmw_fastrtps_cpp: 8.4.4 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.958s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.072s] -- Found std_msgs: 5.3.8 (/opt/ros/jazzy/share/std_msgs/cmake)
+[1.096s] -- Found ament_lint_auto: 0.17.5 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[1.299s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.300s] -- Configured cppcheck include dirs: 
+[1.300s] -- Configured cppcheck exclude dirs and/or files: 
+[1.301s] -- Added test 'lint_cmake' to check CMake code style
+[1.302s] -- Added test 'uncrustify' to check C / C++ code style
+[1.302s] -- Configured uncrustify additional arguments: 
+[1.303s] -- Added test 'xmllint' to check XML markup files
+[1.305s] -- Configuring done (1.2s)
+[1.332s] -- Generating done (0.0s)
+[1.340s] -- Build files have been written to: /manager_ws/build/mission_manager
+[1.439s] [ 50%] [32mBuilding CXX object CMakeFiles/mission.dir/src/mission.cpp.o[0m
+[6.802s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:[m[K In member function ‘[01m[Kvoid MissionManager::[01;32m[KExplorationCompleteCallback[m[K(std_msgs::msg::Empty_<std::allocator<void> >::SharedPtr)[m[K’:
+[6.803s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:18:72:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[6.803s]    18 |  void ExplorationCompleteCallback([01;35m[Kstd_msgs::msg::Empty::SharedPtr msg[m[K)
+[6.803s]       |                                   [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[6.804s] 
+[6.808s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:[m[K In function ‘[01m[Kint[01;32m[K main[m[K(int, char**)[m[K’:
+[6.808s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:32:12:[m[K [01;35m[Kwarning: [m[Kstatement is a reference, not call, to function ‘[01m[Krclcpp::shutdown[m[K’ [[01;35m[K-Waddress[m[K]
+[6.808s]    32 |    [01;35m[Krclcpp::shutdown[m[K;
+[6.809s]       |    [01;35m[K~~~~~~~~^~~~~~~~[m[K
+[6.809s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:32:12:[m[K [01;35m[Kwarning: [m[Kstatement has no effect [[01;35m[K-Wunused-value[m[K]
+[19.301s] [100%] [32m[1mLinking CXX executable mission[0m
+[19.877s] [100%] Built target mission
+[19.911s] Invoked command in '/manager_ws/build/mission_manager' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /manager_ws/build/mission_manager -- -j6 -l6
+[19.944s] Invoking command in '/manager_ws/build/mission_manager': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /manager_ws/build/mission_manager
+[19.970s] -- Install configuration: ""
+[19.970s] -- Installing: /manager_ws/install/mission_manager/lib/mission_manager/mission
+[19.982s] -- Set non-toolchain portion of runtime path of "/manager_ws/install/mission_manager/lib/mission_manager/mission" to ""
+[19.983s] -- Up-to-date: /manager_ws/install/mission_manager/share/ament_index/resource_index/package_run_dependencies/mission_manager
+[19.983s] -- Up-to-date: /manager_ws/install/mission_manager/share/ament_index/resource_index/parent_prefix_path/mission_manager
+[19.983s] -- Up-to-date: /manager_ws/install/mission_manager/share/mission_manager/environment/ament_prefix_path.sh
+[19.983s] -- Up-to-date: /manager_ws/install/mission_manager/share/mission_manager/environment/ament_prefix_path.dsv
+[19.984s] -- Up-to-date: /manager_ws/install/mission_manager/share/mission_manager/environment/path.sh
+[19.984s] -- Up-to-date: /manager_ws/install/mission_manager/share/mission_manager/environment/path.dsv
+[19.984s] -- Up-to-date: /manager_ws/install/mission_manager/share/mission_manager/local_setup.bash
+[19.984s] -- Up-to-date: /manager_ws/install/mission_manager/share/mission_manager/local_setup.sh
+[19.984s] -- Up-to-date: /manager_ws/install/mission_manager/share/mission_manager/local_setup.zsh
+[19.984s] -- Up-to-date: /manager_ws/install/mission_manager/share/mission_manager/local_setup.dsv
+[19.985s] -- Installing: /manager_ws/install/mission_manager/share/mission_manager/package.dsv
+[19.985s] -- Up-to-date: /manager_ws/install/mission_manager/share/ament_index/resource_index/packages/mission_manager
+[19.985s] -- Up-to-date: /manager_ws/install/mission_manager/share/mission_manager/cmake/mission_managerConfig.cmake
+[19.985s] -- Up-to-date: /manager_ws/install/mission_manager/share/mission_manager/cmake/mission_managerConfig-version.cmake
+[19.985s] -- Up-to-date: /manager_ws/install/mission_manager/share/mission_manager/package.xml
+[19.989s] Invoked command in '/manager_ws/build/mission_manager' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /manager_ws/build/mission_manager

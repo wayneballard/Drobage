@@ -1,0 +1,32 @@
+[0.024s] Invoking command in '/manager_ws/build/mission_manager': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /manager_ws/build/mission_manager -- -j6 -l6
+[0.165s] [ 50%] [32mBuilding CXX object CMakeFiles/mission.dir/src/mission.cpp.o[0m
+[5.680s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:[m[K In member function ‘[01m[Kvoid MissionManager::[01;32m[KExplorationCompleteCallback[m[K(std_msgs::msg::Empty_<std::allocator<void> >::SharedPtr)[m[K’:
+[5.681s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:31:78:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[5.681s]    31 |       void ExplorationCompleteCallback([01;35m[Kconst std_msgs::msg::Empty::SharedPtr msg[m[K)
+[5.681s]       |                                        [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[5.681s] In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27[m[K,
+[5.681s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:175[m[K,
+[5.681s]                  from [01m[K/manager_ws/src/mission_manager/src/mission.cpp:1[m[K:
+[5.682s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:[m[K In member function ‘[01m[Kvoid MissionManager::[01;32m[KOccupancyCallback[m[K(nav_msgs::msg::OccupancyGrid_<std::allocator<void> >::SharedPtr)[m[K’:
+[5.682s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:41:11:[m[K [01;31m[Kerror: [m[Kstatic assertion failed: First argument to logging macros must be an rclcpp::Logger
+[5.682s]    41 |           [01;31m[KRCLCPP_INFO[m[K(map_.data);
+[5.682s]       |           [01;31m[K^~~~~~~~~~~[m[K
+[5.683s] In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:24[m[K:
+[5.683s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:41:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing nav_msgs::msg::OccupancyGrid_<std::allocator<void> >::_data_type = class std::vector<signed char, std::allocator<signed char> >[m[K’ {aka ‘[01m[Kclass std::vector<signed char, std::allocator<signed char> >[m[K’} has no member named ‘[01m[Kget_name[m[K’
+[5.683s]    41 |           [01;31m[KRCLCPP_INFO[m[K(map_.data);
+[5.683s]       |           [01;31m[K^~~~~~~~~~~[m[K
+[5.683s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:41:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing nav_msgs::msg::OccupancyGrid_<std::allocator<void> >::_data_type = class std::vector<signed char, std::allocator<signed char> >[m[K’ {aka ‘[01m[Kclass std::vector<signed char, std::allocator<signed char> >[m[K’} has no member named ‘[01m[Kget_name[m[K’
+[5.683s]    41 |           [01;31m[KRCLCPP_INFO[m[K(map_.data);
+[5.684s]       |           [01;31m[K^~~~~~~~~~~[m[K
+[5.684s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:41:11:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K)[m[K’ token
+[5.684s]    41 |           [01;31m[KRCLCPP_INFO[m[K(map_.data);
+[5.684s]       |           [01;31m[K^~~~~~~~~~~[m[K
+[5.684s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:[m[K In function ‘[01m[Kint[01;32m[K main[m[K(int, char**)[m[K’:
+[5.684s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:54:12:[m[K [01;35m[Kwarning: [m[Kstatement is a reference, not call, to function ‘[01m[Krclcpp::shutdown[m[K’ [[01;35m[K-Waddress[m[K]
+[5.684s]    54 |    [01;35m[Krclcpp::shutdown[m[K;
+[5.684s]       |    [01;35m[K~~~~~~~~^~~~~~~~[m[K
+[5.685s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:54:12:[m[K [01;35m[Kwarning: [m[Kstatement has no effect [[01;35m[K-Wunused-value[m[K]
+[11.965s] gmake[2]: *** [CMakeFiles/mission.dir/build.make:76: CMakeFiles/mission.dir/src/mission.cpp.o] Error 1
+[11.966s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/mission.dir/all] Error 2
+[11.967s] gmake: *** [Makefile:146: all] Error 2
+[11.972s] Invoked command in '/manager_ws/build/mission_manager' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /manager_ws/build/mission_manager -- -j6 -l6

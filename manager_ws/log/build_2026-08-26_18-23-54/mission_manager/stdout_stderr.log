@@ -1,0 +1,8 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/mission.dir/src/mission.cpp.o[0m
+[01m[K/manager_ws/src/mission_manager/src/mission.cpp:13:10:[m[K [01;31m[Kfatal error: [m[Knav2_msgs/action/navigate_to_pose.hpp: No such file or directory
+   13 | #include [01;31m[K<nav2_msgs/action/navigate_to_pose.hpp>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/mission.dir/build.make:76: CMakeFiles/mission.dir/src/mission.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/mission.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,328 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/mission.dir/src/mission.cpp.o[0m
+[01m[K/manager_ws/src/mission_manager/src/mission.cpp:168:1:[m[K [01;31m[Kerror: [m[Kunterminated argument list invoking macro "RCLCPP_INFO"
+  168 | 
+      | [01;31m[K^[m[K
+[01m[K/manager_ws/src/mission_manager/src/mission.cpp:79:74:[m[K [01;31m[Kerror: [m[K‘[01m[Kmsg[m[K’ is not a member of ‘[01m[Knav2_msgs[m[K’
+   79 |       void GoalResponse(const rclcpp_action::ClientGoalHandle<nav2_msgs::[01;31m[Kmsg[m[K::NavigateToPose>::SharedPtr &goal_handle){
+      |                                                                          [01;31m[K^~~[m[K
+[01m[K/manager_ws/src/mission_manager/src/mission.cpp:79:74:[m[K [01;36m[Knote: [m[Ksuggested alternatives:
+In file included from [01m[K/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__struct.hpp:157[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/list_parameters.hpp:7[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:21[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:175[m[K,
+                 from [01m[K/manager_ws/src/mission_manager/src/mission.cpp:1[m[K:
+[01m[K/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__struct.hpp:31:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Krcl_interfaces::msg[m[K’
+   31 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+In file included from [01m[K/opt/ros/jazzy/include/service_msgs/service_msgs/msg/detail/service_event_info__struct.hpp:24[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__struct.hpp:268[m[K:
+[01m[K/opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp:31:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kbuiltin_interfaces::msg[m[K’
+   31 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+[01m[K/opt/ros/jazzy/include/service_msgs/service_msgs/msg/detail/service_event_info__struct.hpp:35:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kservice_msgs::msg[m[K’
+   35 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+In file included from [01m[K/opt/ros/jazzy/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__struct.hpp:27[m[K,
+                 from [01m[K/opt/ros/jazzy/include/statistics_msgs/statistics_msgs/msg/metrics_message.hpp:7[m[K,
+                 from [01m[K/opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/collector/generate_statistics_message.hpp:21[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp:23[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/subscription.hpp:50[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/any_executable.hpp:25[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executor_options.hpp:22[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executor.hpp:38[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:176[m[K:
+[01m[K/opt/ros/jazzy/include/statistics_msgs/statistics_msgs/msg/detail/statistic_data_point__struct.hpp:31:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstatistics_msgs::msg[m[K’
+   31 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+In file included from [01m[K/opt/ros/jazzy/include/std_msgs/std_msgs/msg/empty.hpp:7[m[K,
+                 from [01m[K/manager_ws/src/mission_manager/src/mission.cpp:3[m[K:
+[01m[K/opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/empty__struct.hpp:31:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg[m[K’
+   31 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+In file included from [01m[K/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose__struct.hpp:24[m[K,
+                 from [01m[K/opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/detail/map_meta_data__struct.hpp:26[m[K,
+                 from [01m[K/opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/detail/occupancy_grid__struct.hpp:26[m[K,
+                 from [01m[K/opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/occupancy_grid.hpp:7[m[K,
+                 from [01m[K/manager_ws/src/mission_manager/src/mission.cpp:5[m[K:
+[01m[K/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp:31:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kgeometry_msgs::msg[m[K’
+   31 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+[01m[K/opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/detail/map_meta_data__struct.hpp:37:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Knav_msgs::msg[m[K’
+   37 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+In file included from [01m[K/opt/ros/jazzy/include/tf2_msgs/tf2_msgs/msg/tf_message.hpp:7[m[K,
+                 from [01m[K/opt/ros/jazzy/include/tf2_ros/tf2_ros/transform_listener.hpp:46[m[K,
+                 from [01m[K/opt/ros/jazzy/include/tf2_ros/tf2_ros/transform_listener.h:35[m[K,
+                 from [01m[K/manager_ws/src/mission_manager/src/mission.cpp:8[m[K:
+[01m[K/opt/ros/jazzy/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__struct.hpp:35:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Ktf2_msgs::msg[m[K’
+   35 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+In file included from [01m[K/opt/ros/jazzy/include/action_msgs/action_msgs/msg/detail/goal_info__struct.hpp:24[m[K,
+                 from [01m[K/opt/ros/jazzy/include/action_msgs/action_msgs/msg/detail/goal_status__struct.hpp:24[m[K,
+                 from [01m[K/opt/ros/jazzy/include/action_msgs/action_msgs/msg/goal_status.hpp:7[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp_action/rclcpp_action/client_goal_handle.hpp:25[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp_action/rclcpp_action/client.hpp:43[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp_action/rclcpp_action/rclcpp_action.hpp:36[m[K,
+                 from [01m[K/manager_ws/src/mission_manager/src/mission.cpp:12[m[K:
+[01m[K/opt/ros/jazzy/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__struct.hpp:31:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kunique_identifier_msgs::msg[m[K’
+   31 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+[01m[K/opt/ros/jazzy/include/action_msgs/action_msgs/msg/detail/goal_info__struct.hpp:37:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kaction_msgs::msg[m[K’
+   37 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+[01m[K/manager_ws/src/mission_manager/src/mission.cpp:79:93:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   79 |       void GoalResponse(const rclcpp_action::ClientGoalHandle<nav2_msgs::msg::NavigateToPose[01;31m[K>[m[K::SharedPtr &goal_handle){
+      |                                                                                             [01;31m[K^[m[K
+[01m[K/manager_ws/src/mission_manager/src/mission.cpp:79:74:[m[K [01;31m[Kerror: [m[K‘[01m[Kmsg[m[K’ is not a member of ‘[01m[Knav2_msgs[m[K’
+   79 |       void GoalResponse(const rclcpp_action::ClientGoalHandle<nav2_msgs::[01;31m[Kmsg[m[K::NavigateToPose>::SharedPtr &goal_handle){
+      |                                                                          [01;31m[K^~~[m[K
+[01m[K/manager_ws/src/mission_manager/src/mission.cpp:79:74:[m[K [01;36m[Knote: [m[Ksuggested alternatives:
+[01m[K/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__struct.hpp:31:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Krcl_interfaces::msg[m[K’
+   31 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+[01m[K/opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp:31:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kbuiltin_interfaces::msg[m[K’
+   31 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+[01m[K/opt/ros/jazzy/include/service_msgs/service_msgs/msg/detail/service_event_info__struct.hpp:35:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kservice_msgs::msg[m[K’
+   35 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+[01m[K/opt/ros/jazzy/include/statistics_msgs/statistics_msgs/msg/detail/statistic_data_point__struct.hpp:31:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstatistics_msgs::msg[m[K’
+   31 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+[01m[K/opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/empty__struct.hpp:31:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg[m[K’
+   31 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+[01m[K/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp:31:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kgeometry_msgs::msg[m[K’
+   31 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+[01m[K/opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/detail/map_meta_data__struct.hpp:37:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Knav_msgs::msg[m[K’
+   37 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+[01m[K/opt/ros/jazzy/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__struct.hpp:35:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Ktf2_msgs::msg[m[K’
+   35 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+[01m[K/opt/ros/jazzy/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__struct.hpp:31:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kunique_identifier_msgs::msg[m[K’
+   31 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+[01m[K/opt/ros/jazzy/include/action_msgs/action_msgs/msg/detail/goal_info__struct.hpp:37:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kaction_msgs::msg[m[K’
+   37 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+[01m[K/manager_ws/src/mission_manager/src/mission.cpp:79:93:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   79 |       void GoalResponse(const rclcpp_action::ClientGoalHandle<nav2_msgs::msg::NavigateToPose[01;31m[K>[m[K::SharedPtr &goal_handle){
+      |                                                                                             [01;31m[K^[m[K
+[01m[K/manager_ws/src/mission_manager/src/mission.cpp:79:74:[m[K [01;31m[Kerror: [m[K‘[01m[Kmsg[m[K’ is not a member of ‘[01m[Knav2_msgs[m[K’
+   79 |       void GoalResponse(const rclcpp_action::ClientGoalHandle<nav2_msgs::[01;31m[Kmsg[m[K::NavigateToPose>::SharedPtr &goal_handle){
+      |                                                                          [01;31m[K^~~[m[K
+[01m[K/manager_ws/src/mission_manager/src/mission.cpp:79:74:[m[K [01;36m[Knote: [m[Ksuggested alternatives:
+[01m[K/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__struct.hpp:31:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Krcl_interfaces::msg[m[K’
+   31 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+[01m[K/opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp:31:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kbuiltin_interfaces::msg[m[K’
+   31 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+[01m[K/opt/ros/jazzy/include/service_msgs/service_msgs/msg/detail/service_event_info__struct.hpp:35:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kservice_msgs::msg[m[K’
+   35 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+[01m[K/opt/ros/jazzy/include/statistics_msgs/statistics_msgs/msg/detail/statistic_data_point__struct.hpp:31:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstatistics_msgs::msg[m[K’
+   31 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+[01m[K/opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/empty__struct.hpp:31:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg[m[K’
+   31 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+[01m[K/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp:31:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kgeometry_msgs::msg[m[K’
+   31 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+[01m[K/opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/detail/map_meta_data__struct.hpp:37:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Knav_msgs::msg[m[K’
+   37 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+[01m[K/opt/ros/jazzy/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__struct.hpp:35:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Ktf2_msgs::msg[m[K’
+   35 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+[01m[K/opt/ros/jazzy/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__struct.hpp:31:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kunique_identifier_msgs::msg[m[K’
+   31 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+[01m[K/opt/ros/jazzy/include/action_msgs/action_msgs/msg/detail/goal_info__struct.hpp:37:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kaction_msgs::msg[m[K’
+   37 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+[01m[K/manager_ws/src/mission_manager/src/mission.cpp:79:93:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   79 |       void GoalResponse(const rclcpp_action::ClientGoalHandle<nav2_msgs::msg::NavigateToPose[01;31m[K>[m[K::SharedPtr &goal_handle){
+      |                                                                                             [01;31m[K^[m[K
+[01m[K/manager_ws/src/mission_manager/src/mission.cpp:79:31:[m[K [01;31m[Kerror: [m[Kinvalid template-id
+   79 |       void GoalResponse(const [01;31m[Krclcpp_action[m[K::ClientGoalHandle<nav2_msgs::msg::NavigateToPose>::SharedPtr &goal_handle){
+      |                               [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/manager_ws/src/mission_manager/src/mission.cpp:79:74:[m[K [01;31m[Kerror: [m[K‘[01m[Knav2_msgs::msg[m[K’ has not been declared
+   79 |       void GoalResponse(const rclcpp_action::ClientGoalHandle<nav2_msgs::[01;31m[Kmsg[m[K::NavigateToPose>::SharedPtr &goal_handle){
+      |                                                                          [01;31m[K^~~[m[K
+[01m[K/manager_ws/src/mission_manager/src/mission.cpp:79:106:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K&[m[K’ token
+   79 |       void GoalResponse(const rclcpp_action::ClientGoalHandle<nav2_msgs::msg::NavigateToPose>::SharedPtr [01;31m[K&[m[Kgoal_handle){
+      |                                                                                                          [01;31m[K^[m[K
+[01m[K/manager_ws/src/mission_manager/src/mission.cpp:79:105:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K&[m[K’ token
+   79 |       void GoalResponse[34m[K([m[Kconst rclcpp_action::ClientGoalHandle<nav2_msgs::msg::NavigateToPose>::SharedPtr[01;31m[K [m[K[32m[K&[m[Kgoal_handle){
+      |                        [34m[K~[m[K                                                                                [01;31m[K^[m[K[32m[K~[m[K
+      |                                                                                                         [32m[K)[m[K
+[01m[K/manager_ws/src/mission_manager/src/mission.cpp:79:106:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   79 |       void GoalResponse(const rclcpp_action::ClientGoalHandle<nav2_msgs::msg::NavigateToPose>::SharedPtr [01;31m[K&[m[Kgoal_handle){
+      |                                                                                                          [01;31m[K^[m[K
+      |                                                                                                           [32m[K;[m[K
+[01m[K/manager_ws/src/mission_manager/src/mission.cpp:79:107:[m[K [01;31m[Kerror: [m[K‘[01m[Kgoal_handle[m[K’ does not name a type
+   79 |      void GoalResponse(const rclcpp_action::ClientGoalHandle<nav2_msgs::msg::NavigateToPose>::SharedPtr &[01;31m[Kgoal_handle[m[K){
+      |                                                                                                          [01;31m[K^~~~~~~~~~~[m[K
+
+[01m[K/manager_ws/src/mission_manager/src/mission.cpp:87:76:[m[K [01;31m[Kerror: [m[K‘[01m[Kmsg[m[K’ is not a member of ‘[01m[Knav2_msgs[m[K’
+   87 |       void ResultResponse(const rclcpp_action::ClientGoalHandle<nav2_msgs::[01;31m[Kmsg[m[K::NavigateToPose>::WrappedResult &result){
+      |                                                                            [01;31m[K^~~[m[K
+[01m[K/manager_ws/src/mission_manager/src/mission.cpp:87:76:[m[K [01;36m[Knote: [m[Ksuggested alternatives:
+[01m[K/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__struct.hpp:31:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Krcl_interfaces::msg[m[K’
+   31 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+[01m[K/opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp:31:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kbuiltin_interfaces::msg[m[K’
+   31 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+[01m[K/opt/ros/jazzy/include/service_msgs/service_msgs/msg/detail/service_event_info__struct.hpp:35:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kservice_msgs::msg[m[K’
+   35 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+[01m[K/opt/ros/jazzy/include/statistics_msgs/statistics_msgs/msg/detail/statistic_data_point__struct.hpp:31:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstatistics_msgs::msg[m[K’
+   31 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+[01m[K/opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/empty__struct.hpp:31:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg[m[K’
+   31 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+[01m[K/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp:31:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kgeometry_msgs::msg[m[K’
+   31 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+[01m[K/opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/detail/map_meta_data__struct.hpp:37:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Knav_msgs::msg[m[K’
+   37 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+[01m[K/opt/ros/jazzy/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__struct.hpp:35:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Ktf2_msgs::msg[m[K’
+   35 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+[01m[K/opt/ros/jazzy/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__struct.hpp:31:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kunique_identifier_msgs::msg[m[K’
+   31 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+[01m[K/opt/ros/jazzy/include/action_msgs/action_msgs/msg/detail/goal_info__struct.hpp:37:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kaction_msgs::msg[m[K’
+   37 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+[01m[K/manager_ws/src/mission_manager/src/mission.cpp:87:95:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   87 |       void ResultResponse(const rclcpp_action::ClientGoalHandle<nav2_msgs::msg::NavigateToPose[01;31m[K>[m[K::WrappedResult &result){
+      |                                                                                               [01;31m[K^[m[K
+[01m[K/manager_ws/src/mission_manager/src/mission.cpp:87:76:[m[K [01;31m[Kerror: [m[K‘[01m[Kmsg[m[K’ is not a member of ‘[01m[Knav2_msgs[m[K’
+   87 |       void ResultResponse(const rclcpp_action::ClientGoalHandle<nav2_msgs::[01;31m[Kmsg[m[K::NavigateToPose>::WrappedResult &result){
+      |                                                                            [01;31m[K^~~[m[K
+[01m[K/manager_ws/src/mission_manager/src/mission.cpp:87:76:[m[K [01;36m[Knote: [m[Ksuggested alternatives:
+[01m[K/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__struct.hpp:31:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Krcl_interfaces::msg[m[K’
+   31 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+[01m[K/opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp:31:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kbuiltin_interfaces::msg[m[K’
+   31 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+[01m[K/opt/ros/jazzy/include/service_msgs/service_msgs/msg/detail/service_event_info__struct.hpp:35:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kservice_msgs::msg[m[K’
+   35 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+[01m[K/opt/ros/jazzy/include/statistics_msgs/statistics_msgs/msg/detail/statistic_data_point__struct.hpp:31:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstatistics_msgs::msg[m[K’
+   31 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+[01m[K/opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/empty__struct.hpp:31:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg[m[K’
+   31 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+[01m[K/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp:31:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kgeometry_msgs::msg[m[K’
+   31 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+[01m[K/opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/detail/map_meta_data__struct.hpp:37:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Knav_msgs::msg[m[K’
+   37 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+[01m[K/opt/ros/jazzy/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__struct.hpp:35:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Ktf2_msgs::msg[m[K’
+   35 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+[01m[K/opt/ros/jazzy/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__struct.hpp:31:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kunique_identifier_msgs::msg[m[K’
+   31 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+[01m[K/opt/ros/jazzy/include/action_msgs/action_msgs/msg/detail/goal_info__struct.hpp:37:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kaction_msgs::msg[m[K’
+   37 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+[01m[K/manager_ws/src/mission_manager/src/mission.cpp:87:95:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   87 |       void ResultResponse(const rclcpp_action::ClientGoalHandle<nav2_msgs::msg::NavigateToPose[01;31m[K>[m[K::WrappedResult &result){
+      |                                                                                               [01;31m[K^[m[K
+[01m[K/manager_ws/src/mission_manager/src/mission.cpp:87:76:[m[K [01;31m[Kerror: [m[K‘[01m[Kmsg[m[K’ is not a member of ‘[01m[Knav2_msgs[m[K’
+   87 |       void ResultResponse(const rclcpp_action::ClientGoalHandle<nav2_msgs::[01;31m[Kmsg[m[K::NavigateToPose>::WrappedResult &result){
+      |                                                                            [01;31m[K^~~[m[K
+[01m[K/manager_ws/src/mission_manager/src/mission.cpp:87:76:[m[K [01;36m[Knote: [m[Ksuggested alternatives:
+[01m[K/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__struct.hpp:31:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Krcl_interfaces::msg[m[K’
+   31 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+[01m[K/opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp:31:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kbuiltin_interfaces::msg[m[K’
+   31 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+[01m[K/opt/ros/jazzy/include/service_msgs/service_msgs/msg/detail/service_event_info__struct.hpp:35:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kservice_msgs::msg[m[K’
+   35 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+[01m[K/opt/ros/jazzy/include/statistics_msgs/statistics_msgs/msg/detail/statistic_data_point__struct.hpp:31:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstatistics_msgs::msg[m[K’
+   31 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+[01m[K/opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/empty__struct.hpp:31:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg[m[K’
+   31 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+[01m[K/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp:31:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kgeometry_msgs::msg[m[K’
+   31 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+[01m[K/opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/detail/map_meta_data__struct.hpp:37:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Knav_msgs::msg[m[K’
+   37 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+[01m[K/opt/ros/jazzy/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__struct.hpp:35:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Ktf2_msgs::msg[m[K’
+   35 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+[01m[K/opt/ros/jazzy/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__struct.hpp:31:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kunique_identifier_msgs::msg[m[K’
+   31 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+[01m[K/opt/ros/jazzy/include/action_msgs/action_msgs/msg/detail/goal_info__struct.hpp:37:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kaction_msgs::msg[m[K’
+   37 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+[01m[K/manager_ws/src/mission_manager/src/mission.cpp:87:95:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   87 |       void ResultResponse(const rclcpp_action::ClientGoalHandle<nav2_msgs::msg::NavigateToPose[01;31m[K>[m[K::WrappedResult &result){
+      |                                                                                               [01;31m[K^[m[K
+[01m[K/manager_ws/src/mission_manager/src/mission.cpp:87:33:[m[K [01;31m[Kerror: [m[Kinvalid template-id
+   87 |       void ResultResponse(const [01;31m[Krclcpp_action[m[K::ClientGoalHandle<nav2_msgs::msg::NavigateToPose>::WrappedResult &result){
+      |                                 [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/manager_ws/src/mission_manager/src/mission.cpp:87:76:[m[K [01;31m[Kerror: [m[K‘[01m[Knav2_msgs::msg[m[K’ has not been declared
+   87 |       void ResultResponse(const rclcpp_action::ClientGoalHandle<nav2_msgs::[01;31m[Kmsg[m[K::NavigateToPose>::WrappedResult &result){
+      |                                                                            [01;31m[K^~~[m[K
+[01m[K/manager_ws/src/mission_manager/src/mission.cpp:87:112:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K&[m[K’ token
+   87 |   void ResultResponse(const rclcpp_action::ClientGoalHandle<nav2_msgs::msg::NavigateToPose>::WrappedResult [01;31m[K&[m[Kresult){
+      |                                                                                                            [01;31m[K^[m[K
+
+[01m[K/manager_ws/src/mission_manager/src/mission.cpp:87:111:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K&[m[K’ token
+   87 |   void ResultResponse[34m[K([m[Kconst rclcpp_action::ClientGoalHandle<nav2_msgs::msg::NavigateToPose>::WrappedResult[01;31m[K [m[K[32m[K&[m[Kresult){
+      |                      [34m[K~[m[K                                                                                    [01;31m[K^[m[K[32m[K~[m[K
+      |                                                                                                           [32m[K)[m[K
+[01m[K/manager_ws/src/mission_manager/src/mission.cpp:87:112:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   87 |   void ResultResponse(const rclcpp_action::ClientGoalHandle<nav2_msgs::msg::NavigateToPose>::WrappedResult [01;31m[K&[m[Kresult){
+      |                                                                                                            [01;31m[K^[m[K
+      |                                                                                                             [32m[K;[m[K
+[01m[K/manager_ws/src/mission_manager/src/mission.cpp:87:113:[m[K [01;31m[Kerror: [m[K‘[01m[Kresult[m[K’ does not name a type
+   87 |   void ResultResponse(const rclcpp_action::ClientGoalHandle<nav2_msgs::msg::NavigateToPose>::WrappedResult &[01;31m[Kresult[m[K){
+      |                                                                                                             [01;31m[K^~~~~~[m[K
+
+[01m[K/manager_ws/src/mission_manager/src/mission.cpp:88:22:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+   88 |           RCLCPP_INFO[01;31m[K([m[Kthis->get_logger(), "Navigation finished with code: %d ", static_cast<int>(result.code);
+      |                      [01;31m[K^[m[K
+[01m[K/manager_ws/src/mission_manager/src/mission.cpp:19:1:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+   19 | [01;36m[K{[m[K
+      | [01;36m[K^[m[K
+[01m[K/manager_ws/src/mission_manager/src/mission.cpp:[m[K In constructor ‘[01m[KMissionManager::[01;32m[KMissionManager[m[K()[m[K’:
+[01m[K/manager_ws/src/mission_manager/src/mission.cpp:32:89:[m[K [01;31m[Kerror: [m[K‘[01m[KGetRobotPose[m[K’ is not a member of ‘[01m[KMissionManager[m[K’
+   32 |        timer_ = this->create_wall_timer(chrono::milliseconds(20), bind(&MissionManager::[01;31m[KGetRobotPose[m[K, this));
+      |                                                                                         [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/manager_ws/src/mission_manager/src/mission.cpp:[m[K In member function ‘[01m[Kvoid MissionManager::[01;32m[KExplorationCompleteCallback[m[K(std_msgs::msg::Empty_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/manager_ws/src/mission_manager/src/mission.cpp:61:78:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   61 |       void ExplorationCompleteCallback([01;35m[Kconst std_msgs::msg::Empty::SharedPtr msg[m[K)
+      |                                        [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[01m[K/manager_ws/src/mission_manager/src/mission.cpp:[m[K At global scope:
+[01m[K/manager_ws/src/mission_manager/src/mission.cpp:88:22:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id at end of input
+   88 |           RCLCPP_INFO[01;31m[K([m[Kthis->get_logger(), "Navigation finished with code: %d ", static_cast<int>(result.code);
+      |                      [01;31m[K^[m[K
+gmake[2]: *** [CMakeFiles/mission.dir/build.make:76: CMakeFiles/mission.dir/src/mission.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/mission.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,13 @@
+[0.069s] Invoking command in '/manager_ws/build/mission_manager': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Drobage_jazzy/install/robot_ctrl_package:/Drobage_jazzy/install/navigation_package:/Drobage_jazzy/install/my_yolo_package:/opt/ros/jazzy /usr/bin/cmake --build /manager_ws/build/mission_manager -- -j6 -l6
+[0.996s] [ 50%] [32mBuilding CXX object CMakeFiles/mission.dir/src/mission.cpp.o[0m
+[8.210s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:[m[K In function ‘[01m[Kint[01;32m[K main[m[K(int, char**)[m[K’:
+[8.210s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:2027:14:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+[8.210s]  2027 |     return 0;
+[8.210s]       |              [01;31m[K^[m[K
+[8.210s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:2014:1:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+[8.211s]  2014 | [01;36m[K{[m[K
+[8.211s]       | [01;36m[K^[m[K
+[19.262s] gmake[2]: *** [CMakeFiles/mission.dir/build.make:76: CMakeFiles/mission.dir/src/mission.cpp.o] Error 1
+[19.263s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/mission.dir/all] Error 2
+[19.263s] gmake: *** [Makefile:146: all] Error 2
+[19.270s] Invoked command in '/manager_ws/build/mission_manager' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Drobage_jazzy/install/robot_ctrl_package:/Drobage_jazzy/install/navigation_package:/Drobage_jazzy/install/my_yolo_package:/opt/ros/jazzy /usr/bin/cmake --build /manager_ws/build/mission_manager -- -j6 -l6

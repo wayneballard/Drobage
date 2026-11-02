@@ -1,0 +1,396 @@
+[0.000000] (-) TimerEvent: {}
+[0.001405] (mission_manager) JobQueued: {'identifier': 'mission_manager', 'dependencies': OrderedDict()}
+[0.002556] (mission_manager) JobStarted: {'identifier': 'mission_manager'}
+[0.054494] (mission_manager) JobProgress: {'identifier': 'mission_manager', 'progress': 'cmake'}
+[0.062835] (mission_manager) JobProgress: {'identifier': 'mission_manager', 'progress': 'build'}
+[0.064812] (mission_manager) Command: {'cmd': ['/usr/bin/cmake', '--build', '/manager_ws/build/mission_manager', '--', '-j6', '-l6'], 'cwd': '/manager_ws/build/mission_manager', 'env': OrderedDict({'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'HOSTNAME': 'wb-desktop', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/root', 'OLDPWD': '/manager_ws/src', 'ROS_PYTHON_VERSION': '3', 'COLCON_PREFIX_PATH': '/manager_ws/install', 'ROS_DISTRO': 'jazzy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'ROS_DOMAIN_ID': '42', 'AMENT_PREFIX_PATH': '/manager_ws/install/mission_manager:/opt/ros/jazzy', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/manager_ws/build/mission_manager', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/manager_ws/install/mission_manager:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.097858] (-) TimerEvent: {}
+[0.198771] (-) TimerEvent: {}
+[0.300133] (-) TimerEvent: {}
+[0.401107] (-) TimerEvent: {}
+[0.502162] (-) TimerEvent: {}
+[0.603327] (-) TimerEvent: {}
+[0.704492] (-) TimerEvent: {}
+[0.805980] (-) TimerEvent: {}
+[0.906990] (-) TimerEvent: {}
+[1.008613] (-) TimerEvent: {}
+[1.009440] (mission_manager) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/mission.dir/src/mission.cpp.o\x1b[0m\n'}
+[1.108940] (-) TimerEvent: {}
+[1.210119] (-) TimerEvent: {}
+[1.311016] (-) TimerEvent: {}
+[1.412048] (-) TimerEvent: {}
+[1.513173] (-) TimerEvent: {}
+[1.614050] (-) TimerEvent: {}
+[1.714970] (-) TimerEvent: {}
+[1.816466] (-) TimerEvent: {}
+[1.917248] (-) TimerEvent: {}
+[2.018359] (-) TimerEvent: {}
+[2.119166] (-) TimerEvent: {}
+[2.219892] (-) TimerEvent: {}
+[2.320397] (-) TimerEvent: {}
+[2.421004] (-) TimerEvent: {}
+[2.521570] (-) TimerEvent: {}
+[2.622199] (-) TimerEvent: {}
+[2.722984] (-) TimerEvent: {}
+[2.824180] (-) TimerEvent: {}
+[2.925124] (-) TimerEvent: {}
+[3.025606] (-) TimerEvent: {}
+[3.126175] (-) TimerEvent: {}
+[3.226879] (-) TimerEvent: {}
+[3.327383] (-) TimerEvent: {}
+[3.427825] (-) TimerEvent: {}
+[3.528269] (-) TimerEvent: {}
+[3.628754] (-) TimerEvent: {}
+[3.729212] (-) TimerEvent: {}
+[3.829734] (-) TimerEvent: {}
+[3.930371] (-) TimerEvent: {}
+[4.030928] (-) TimerEvent: {}
+[4.131417] (-) TimerEvent: {}
+[4.231913] (-) TimerEvent: {}
+[4.332381] (-) TimerEvent: {}
+[4.432849] (-) TimerEvent: {}
+[4.533305] (-) TimerEvent: {}
+[4.633782] (-) TimerEvent: {}
+[4.734280] (-) TimerEvent: {}
+[4.834862] (-) TimerEvent: {}
+[4.935520] (-) TimerEvent: {}
+[5.036077] (-) TimerEvent: {}
+[5.136579] (-) TimerEvent: {}
+[5.237047] (-) TimerEvent: {}
+[5.337490] (-) TimerEvent: {}
+[5.437930] (-) TimerEvent: {}
+[5.538399] (-) TimerEvent: {}
+[5.638956] (-) TimerEvent: {}
+[5.739427] (-) TimerEvent: {}
+[5.839990] (-) TimerEvent: {}
+[5.940647] (-) TimerEvent: {}
+[6.041192] (-) TimerEvent: {}
+[6.141659] (-) TimerEvent: {}
+[6.242089] (-) TimerEvent: {}
+[6.342540] (-) TimerEvent: {}
+[6.443023] (-) TimerEvent: {}
+[6.543466] (-) TimerEvent: {}
+[6.643937] (-) TimerEvent: {}
+[6.744392] (-) TimerEvent: {}
+[6.844924] (-) TimerEvent: {}
+[6.945565] (-) TimerEvent: {}
+[7.046091] (-) TimerEvent: {}
+[7.146552] (-) TimerEvent: {}
+[7.247001] (-) TimerEvent: {}
+[7.347426] (-) TimerEvent: {}
+[7.447854] (-) TimerEvent: {}
+[7.548296] (-) TimerEvent: {}
+[7.648766] (-) TimerEvent: {}
+[7.749212] (-) TimerEvent: {}
+[7.849724] (-) TimerEvent: {}
+[7.950324] (-) TimerEvent: {}
+[8.050907] (-) TimerEvent: {}
+[8.101611] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid MissionManager::\x1b[01;32m\x1b[KExplorationCompleteCallback\x1b[m\x1b[K(std_msgs::msg::Empty_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[8.102192] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:61:78:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kmsg\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[8.102483] (mission_manager) StderrLine: {'line': b'   61 | (\x1b[01;35m\x1b[Kconst std_msgs::msg::Empty::SharedPtr msg\x1b[m\x1b[K)\n'}
+[8.102744] (mission_manager) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[8.102956] (mission_manager) StderrLine: {'line': b'\n'}
+[8.123969] (mission_manager) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[8.124257] (mission_manager) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27\x1b[m\x1b[K,\n'}
+[8.124475] (mission_manager) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:175\x1b[m\x1b[K,\n'}
+[8.124682] (mission_manager) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:1\x1b[m\x1b[K:\n'}
+[8.124880] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid MissionManager::\x1b[01;32m\x1b[KGetRobotPose\x1b[m\x1b[K()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[8.125081] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:124:45:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ktoo many arguments for format [\x1b[01;35m\x1b[K-Wformat-extra-args\x1b[m\x1b[K]\n'}
+[8.125275] (mission_manager) StderrLine: {'line': b'  124 | RCLCPP_WARN(this->get_logger(), \x1b[01;35m\x1b[K"Could not get the transform"\x1b[m\x1b[K, ex.what());\n'}
+[8.125467] (mission_manager) StderrLine: {'line': b'      |                                 \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.125655] (mission_manager) StderrLine: {'line': b'\n'}
+[8.128946] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[01;32m\x1b[K main\x1b[m\x1b[K(int, char**)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[8.129246] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:138:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstatement is a reference, not call, to function \xe2\x80\x98\x1b[01m\x1b[Krclcpp::shutdown\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Waddress\x1b[m\x1b[K]\n'}
+[8.129497] (mission_manager) StderrLine: {'line': b'  138 |    \x1b[01;35m\x1b[Krclcpp::shutdown\x1b[m\x1b[K;\n'}
+[8.129737] (mission_manager) StderrLine: {'line': b'      |    \x1b[01;35m\x1b[K~~~~~~~~^~~~~~~~\x1b[m\x1b[K\n'}
+[8.129990] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:138:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstatement has no effect [\x1b[01;35m\x1b[K-Wunused-value\x1b[m\x1b[K]\n'}
+[8.151007] (-) TimerEvent: {}
+[8.251469] (-) TimerEvent: {}
+[8.351951] (-) TimerEvent: {}
+[8.452372] (-) TimerEvent: {}
+[8.552839] (-) TimerEvent: {}
+[8.653327] (-) TimerEvent: {}
+[8.753803] (-) TimerEvent: {}
+[8.854248] (-) TimerEvent: {}
+[8.954803] (-) TimerEvent: {}
+[9.055420] (-) TimerEvent: {}
+[9.155952] (-) TimerEvent: {}
+[9.256453] (-) TimerEvent: {}
+[9.356913] (-) TimerEvent: {}
+[9.457343] (-) TimerEvent: {}
+[9.557788] (-) TimerEvent: {}
+[9.658260] (-) TimerEvent: {}
+[9.758822] (-) TimerEvent: {}
+[9.859305] (-) TimerEvent: {}
+[9.959844] (-) TimerEvent: {}
+[10.060471] (-) TimerEvent: {}
+[10.161020] (-) TimerEvent: {}
+[10.261494] (-) TimerEvent: {}
+[10.361955] (-) TimerEvent: {}
+[10.462407] (-) TimerEvent: {}
+[10.562896] (-) TimerEvent: {}
+[10.663382] (-) TimerEvent: {}
+[10.763829] (-) TimerEvent: {}
+[10.864267] (-) TimerEvent: {}
+[10.964780] (-) TimerEvent: {}
+[11.065397] (-) TimerEvent: {}
+[11.165914] (-) TimerEvent: {}
+[11.266472] (-) TimerEvent: {}
+[11.367147] (-) TimerEvent: {}
+[11.467686] (-) TimerEvent: {}
+[11.568175] (-) TimerEvent: {}
+[11.668745] (-) TimerEvent: {}
+[11.769217] (-) TimerEvent: {}
+[11.869689] (-) TimerEvent: {}
+[11.970244] (-) TimerEvent: {}
+[12.070906] (-) TimerEvent: {}
+[12.171445] (-) TimerEvent: {}
+[12.271886] (-) TimerEvent: {}
+[12.372317] (-) TimerEvent: {}
+[12.472718] (-) TimerEvent: {}
+[12.573168] (-) TimerEvent: {}
+[12.673644] (-) TimerEvent: {}
+[12.774096] (-) TimerEvent: {}
+[12.874605] (-) TimerEvent: {}
+[12.975116] (-) TimerEvent: {}
+[13.075732] (-) TimerEvent: {}
+[13.176311] (-) TimerEvent: {}
+[13.276817] (-) TimerEvent: {}
+[13.377296] (-) TimerEvent: {}
+[13.477739] (-) TimerEvent: {}
+[13.578176] (-) TimerEvent: {}
+[13.678655] (-) TimerEvent: {}
+[13.779125] (-) TimerEvent: {}
+[13.879611] (-) TimerEvent: {}
+[13.980071] (-) TimerEvent: {}
+[14.080611] (-) TimerEvent: {}
+[14.181234] (-) TimerEvent: {}
+[14.281755] (-) TimerEvent: {}
+[14.382223] (-) TimerEvent: {}
+[14.482648] (-) TimerEvent: {}
+[14.583092] (-) TimerEvent: {}
+[14.683566] (-) TimerEvent: {}
+[14.784046] (-) TimerEvent: {}
+[14.897841] (-) TimerEvent: {}
+[14.998664] (-) TimerEvent: {}
+[15.099280] (-) TimerEvent: {}
+[15.199946] (-) TimerEvent: {}
+[15.300538] (-) TimerEvent: {}
+[15.401321] (-) TimerEvent: {}
+[15.502104] (-) TimerEvent: {}
+[15.602905] (-) TimerEvent: {}
+[15.703508] (-) TimerEvent: {}
+[15.804279] (-) TimerEvent: {}
+[15.905050] (-) TimerEvent: {}
+[16.005840] (-) TimerEvent: {}
+[16.106753] (-) TimerEvent: {}
+[16.207703] (-) TimerEvent: {}
+[16.308583] (-) TimerEvent: {}
+[16.409399] (-) TimerEvent: {}
+[16.510199] (-) TimerEvent: {}
+[16.611036] (-) TimerEvent: {}
+[16.711612] (-) TimerEvent: {}
+[16.812372] (-) TimerEvent: {}
+[16.913143] (-) TimerEvent: {}
+[17.013900] (-) TimerEvent: {}
+[17.114501] (-) TimerEvent: {}
+[17.215453] (-) TimerEvent: {}
+[17.316324] (-) TimerEvent: {}
+[17.417144] (-) TimerEvent: {}
+[17.517943] (-) TimerEvent: {}
+[17.618738] (-) TimerEvent: {}
+[17.719343] (-) TimerEvent: {}
+[17.819940] (-) TimerEvent: {}
+[17.920721] (-) TimerEvent: {}
+[18.021465] (-) TimerEvent: {}
+[18.122067] (-) TimerEvent: {}
+[18.223011] (-) TimerEvent: {}
+[18.323880] (-) TimerEvent: {}
+[18.424704] (-) TimerEvent: {}
+[18.525509] (-) TimerEvent: {}
+[18.626295] (-) TimerEvent: {}
+[18.726912] (-) TimerEvent: {}
+[18.827495] (-) TimerEvent: {}
+[18.928277] (-) TimerEvent: {}
+[19.028837] (-) TimerEvent: {}
+[19.129425] (-) TimerEvent: {}
+[19.230365] (-) TimerEvent: {}
+[19.331044] (-) TimerEvent: {}
+[19.431857] (-) TimerEvent: {}
+[19.532481] (-) TimerEvent: {}
+[19.633283] (-) TimerEvent: {}
+[19.733875] (-) TimerEvent: {}
+[19.834685] (-) TimerEvent: {}
+[19.935471] (-) TimerEvent: {}
+[20.036077] (-) TimerEvent: {}
+[20.136670] (-) TimerEvent: {}
+[20.237572] (-) TimerEvent: {}
+[20.338447] (-) TimerEvent: {}
+[20.439284] (-) TimerEvent: {}
+[20.539867] (-) TimerEvent: {}
+[20.640660] (-) TimerEvent: {}
+[20.741251] (-) TimerEvent: {}
+[20.842003] (-) TimerEvent: {}
+[20.942760] (-) TimerEvent: {}
+[21.043309] (-) TimerEvent: {}
+[21.143842] (-) TimerEvent: {}
+[21.244417] (-) TimerEvent: {}
+[21.345261] (-) TimerEvent: {}
+[21.446109] (-) TimerEvent: {}
+[21.546725] (-) TimerEvent: {}
+[21.647511] (-) TimerEvent: {}
+[21.748297] (-) TimerEvent: {}
+[21.849067] (-) TimerEvent: {}
+[21.949818] (-) TimerEvent: {}
+[22.050405] (-) TimerEvent: {}
+[22.151198] (-) TimerEvent: {}
+[22.251798] (-) TimerEvent: {}
+[22.352693] (-) TimerEvent: {}
+[22.453552] (-) TimerEvent: {}
+[22.554201] (-) TimerEvent: {}
+[22.655126] (-) TimerEvent: {}
+[22.755963] (-) TimerEvent: {}
+[22.856771] (-) TimerEvent: {}
+[22.957548] (-) TimerEvent: {}
+[23.058116] (-) TimerEvent: {}
+[23.158664] (-) TimerEvent: {}
+[23.259268] (-) TimerEvent: {}
+[23.359943] (-) TimerEvent: {}
+[23.460763] (-) TimerEvent: {}
+[23.561377] (-) TimerEvent: {}
+[23.662002] (-) TimerEvent: {}
+[23.762803] (-) TimerEvent: {}
+[23.863581] (-) TimerEvent: {}
+[23.964336] (-) TimerEvent: {}
+[24.064888] (-) TimerEvent: {}
+[24.165623] (-) TimerEvent: {}
+[24.266206] (-) TimerEvent: {}
+[24.366889] (-) TimerEvent: {}
+[24.467470] (-) TimerEvent: {}
+[24.568061] (-) TimerEvent: {}
+[24.668750] (-) TimerEvent: {}
+[24.769380] (-) TimerEvent: {}
+[24.870186] (-) TimerEvent: {}
+[24.970884] (-) TimerEvent: {}
+[25.099572] (-) TimerEvent: {}
+[25.200354] (-) TimerEvent: {}
+[25.300968] (-) TimerEvent: {}
+[25.401836] (-) TimerEvent: {}
+[25.502704] (-) TimerEvent: {}
+[25.603516] (-) TimerEvent: {}
+[25.704303] (-) TimerEvent: {}
+[25.805074] (-) TimerEvent: {}
+[25.905837] (-) TimerEvent: {}
+[26.006407] (-) TimerEvent: {}
+[26.106973] (-) TimerEvent: {}
+[26.207695] (-) TimerEvent: {}
+[26.308307] (-) TimerEvent: {}
+[26.409210] (-) TimerEvent: {}
+[26.510039] (-) TimerEvent: {}
+[26.610682] (-) TimerEvent: {}
+[26.711248] (-) TimerEvent: {}
+[26.811778] (-) TimerEvent: {}
+[26.912528] (-) TimerEvent: {}
+[27.013099] (-) TimerEvent: {}
+[27.113840] (-) TimerEvent: {}
+[27.214613] (-) TimerEvent: {}
+[27.315152] (-) TimerEvent: {}
+[27.415999] (-) TimerEvent: {}
+[27.516793] (-) TimerEvent: {}
+[27.617590] (-) TimerEvent: {}
+[27.718386] (-) TimerEvent: {}
+[27.819191] (-) TimerEvent: {}
+[27.919941] (-) TimerEvent: {}
+[28.020500] (-) TimerEvent: {}
+[28.121242] (-) TimerEvent: {}
+[28.221823] (-) TimerEvent: {}
+[28.322396] (-) TimerEvent: {}
+[28.423264] (-) TimerEvent: {}
+[28.523869] (-) TimerEvent: {}
+[28.624635] (-) TimerEvent: {}
+[28.725175] (-) TimerEvent: {}
+[28.825677] (-) TimerEvent: {}
+[28.926401] (-) TimerEvent: {}
+[29.026966] (-) TimerEvent: {}
+[29.127481] (-) TimerEvent: {}
+[29.228193] (-) TimerEvent: {}
+[29.328899] (-) TimerEvent: {}
+[29.429478] (-) TimerEvent: {}
+[29.530171] (-) TimerEvent: {}
+[29.631623] (-) TimerEvent: {}
+[29.733714] (-) TimerEvent: {}
+[29.835273] (-) TimerEvent: {}
+[29.936591] (-) TimerEvent: {}
+[30.037386] (-) TimerEvent: {}
+[32.550339] (-) TimerEvent: {}
+[32.651943] (-) TimerEvent: {}
+[32.752747] (-) TimerEvent: {}
+[32.853370] (-) TimerEvent: {}
+[32.953960] (-) TimerEvent: {}
+[33.054549] (-) TimerEvent: {}
+[33.155172] (-) TimerEvent: {}
+[33.255877] (-) TimerEvent: {}
+[33.356720] (-) TimerEvent: {}
+[33.457336] (-) TimerEvent: {}
+[33.558162] (-) TimerEvent: {}
+[33.659018] (-) TimerEvent: {}
+[33.759858] (-) TimerEvent: {}
+[33.860676] (-) TimerEvent: {}
+[33.961526] (-) TimerEvent: {}
+[34.062180] (-) TimerEvent: {}
+[34.162830] (-) TimerEvent: {}
+[34.263668] (-) TimerEvent: {}
+[34.364512] (-) TimerEvent: {}
+[34.465142] (-) TimerEvent: {}
+[34.566322] (-) TimerEvent: {}
+[34.619289] (mission_manager) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable mission\x1b[0m\n'}
+[34.666414] (-) TimerEvent: {}
+[34.767199] (-) TimerEvent: {}
+[34.867812] (-) TimerEvent: {}
+[34.969227] (-) TimerEvent: {}
+[35.071804] (-) TimerEvent: {}
+[35.174110] (-) TimerEvent: {}
+[35.276222] (-) TimerEvent: {}
+[35.377310] (-) TimerEvent: {}
+[35.478236] (-) TimerEvent: {}
+[35.578895] (-) TimerEvent: {}
+[35.679658] (-) TimerEvent: {}
+[35.780598] (-) TimerEvent: {}
+[35.881708] (-) TimerEvent: {}
+[35.982718] (-) TimerEvent: {}
+[36.083341] (-) TimerEvent: {}
+[36.183938] (-) TimerEvent: {}
+[36.284586] (-) TimerEvent: {}
+[36.385262] (-) TimerEvent: {}
+[36.485852] (-) TimerEvent: {}
+[36.586440] (-) TimerEvent: {}
+[36.687054] (-) TimerEvent: {}
+[36.787596] (-) TimerEvent: {}
+[36.888288] (-) TimerEvent: {}
+[36.909030] (mission_manager) StdoutLine: {'line': b'[100%] Built target mission\n'}
+[36.941859] (mission_manager) CommandEnded: {'returncode': 0}
+[36.946468] (mission_manager) JobProgress: {'identifier': 'mission_manager', 'progress': 'install'}
+[36.980626] (mission_manager) Command: {'cmd': ['/usr/bin/cmake', '--install', '/manager_ws/build/mission_manager'], 'cwd': '/manager_ws/build/mission_manager', 'env': OrderedDict({'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'HOSTNAME': 'wb-desktop', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/root', 'OLDPWD': '/manager_ws/src', 'ROS_PYTHON_VERSION': '3', 'COLCON_PREFIX_PATH': '/manager_ws/install', 'ROS_DISTRO': 'jazzy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'ROS_DOMAIN_ID': '42', 'AMENT_PREFIX_PATH': '/manager_ws/install/mission_manager:/opt/ros/jazzy', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/manager_ws/build/mission_manager', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/manager_ws/install/mission_manager:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[36.988329] (-) TimerEvent: {}
+[37.004914] (mission_manager) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[37.008913] (mission_manager) StdoutLine: {'line': b'-- Installing: /manager_ws/install/mission_manager/lib/mission_manager/mission\n'}
+[37.029612] (mission_manager) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/manager_ws/install/mission_manager/lib/mission_manager/mission" to ""\n'}
+[37.032474] (mission_manager) StdoutLine: {'line': b'-- Up-to-date: /manager_ws/install/mission_manager/share/ament_index/resource_index/package_run_dependencies/mission_manager\n'}
+[37.033047] (mission_manager) StdoutLine: {'line': b'-- Up-to-date: /manager_ws/install/mission_manager/share/ament_index/resource_index/parent_prefix_path/mission_manager\n'}
+[37.033279] (mission_manager) StdoutLine: {'line': b'-- Up-to-date: /manager_ws/install/mission_manager/share/mission_manager/environment/ament_prefix_path.sh\n'}
+[37.033483] (mission_manager) StdoutLine: {'line': b'-- Up-to-date: /manager_ws/install/mission_manager/share/mission_manager/environment/ament_prefix_path.dsv\n'}
+[37.033719] (mission_manager) StdoutLine: {'line': b'-- Up-to-date: /manager_ws/install/mission_manager/share/mission_manager/environment/path.sh\n'}
+[37.033925] (mission_manager) StdoutLine: {'line': b'-- Up-to-date: /manager_ws/install/mission_manager/share/mission_manager/environment/path.dsv\n'}
+[37.034106] (mission_manager) StdoutLine: {'line': b'-- Up-to-date: /manager_ws/install/mission_manager/share/mission_manager/local_setup.bash\n'}
+[37.034262] (mission_manager) StdoutLine: {'line': b'-- Up-to-date: /manager_ws/install/mission_manager/share/mission_manager/local_setup.sh\n'}
+[37.034412] (mission_manager) StdoutLine: {'line': b'-- Up-to-date: /manager_ws/install/mission_manager/share/mission_manager/local_setup.zsh\n'}
+[37.034632] (mission_manager) StdoutLine: {'line': b'-- Up-to-date: /manager_ws/install/mission_manager/share/mission_manager/local_setup.dsv\n'}
+[37.034820] (mission_manager) StdoutLine: {'line': b'-- Installing: /manager_ws/install/mission_manager/share/mission_manager/package.dsv\n'}
+[37.035457] (mission_manager) StdoutLine: {'line': b'-- Up-to-date: /manager_ws/install/mission_manager/share/ament_index/resource_index/packages/mission_manager\n'}
+[37.035996] (mission_manager) StdoutLine: {'line': b'-- Up-to-date: /manager_ws/install/mission_manager/share/mission_manager/cmake/mission_managerConfig.cmake\n'}
+[37.036166] (mission_manager) StdoutLine: {'line': b'-- Up-to-date: /manager_ws/install/mission_manager/share/mission_manager/cmake/mission_managerConfig-version.cmake\n'}
+[37.036347] (mission_manager) StdoutLine: {'line': b'-- Up-to-date: /manager_ws/install/mission_manager/share/mission_manager/package.xml\n'}
+[37.040358] (mission_manager) CommandEnded: {'returncode': 0}
+[37.088551] (-) TimerEvent: {}
+[37.162278] (mission_manager) JobEnded: {'identifier': 'mission_manager', 'rc': 0}
+[37.168021] (-) EventReactorShutdown: {}

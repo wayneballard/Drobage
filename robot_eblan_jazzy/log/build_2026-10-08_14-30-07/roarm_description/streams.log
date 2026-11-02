@@ -1,0 +1,19 @@
+[2.559s] Invoking command in '/robot_eblan/src/roarm_description': PYTHONPATH=/robot_eblan/build/roarm_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/robot_eblan/install/roarm_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/roarm_description build --build-base /robot_eblan/build/roarm_description/build install --record /robot_eblan/build/roarm_description/install.log --install-scripts $base/lib/roarm_description --single-version-externally-managed install_data
+[3.231s] running egg_info
+[3.277s] writing ../../build/roarm_description/roarm_description.egg-info/PKG-INFO
+[3.278s] writing dependency_links to ../../build/roarm_description/roarm_description.egg-info/dependency_links.txt
+[3.279s] writing requirements to ../../build/roarm_description/roarm_description.egg-info/requires.txt
+[3.279s] writing top-level names to ../../build/roarm_description/roarm_description.egg-info/top_level.txt
+[3.376s] reading manifest file '../../build/roarm_description/roarm_description.egg-info/SOURCES.txt'
+[3.379s] writing manifest file '../../build/roarm_description/roarm_description.egg-info/SOURCES.txt'
+[3.380s] running build
+[3.380s] running build_py
+[3.380s] running install
+[3.391s] running install_lib
+[3.438s] running install_data
+[3.440s] running install_egg_info
+[3.485s] removing '/robot_eblan/install/roarm_description/lib/python3.12/site-packages/roarm_description-0.0.1-py3.12.egg-info' (and everything under it)
+[3.486s] Copying ../../build/roarm_description/roarm_description.egg-info to /robot_eblan/install/roarm_description/lib/python3.12/site-packages/roarm_description-0.0.1-py3.12.egg-info
+[3.488s] running install_scripts
+[3.581s] writing list of installed files to '/robot_eblan/build/roarm_description/install.log'
+[3.681s] Invoked command in '/robot_eblan/src/roarm_description' returned '0': PYTHONPATH=/robot_eblan/build/roarm_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/robot_eblan/install/roarm_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/roarm_description build --build-base /robot_eblan/build/roarm_description/build install --record /robot_eblan/build/roarm_description/install.log --install-scripts $base/lib/roarm_description --single-version-externally-managed install_data

@@ -1,0 +1,15 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/mission.dir/src/mission.cpp.o[0m
+[01m[K/manager_ws/src/mission_manager/src/mission.cpp:[m[K In constructor ‘[01m[KMissionManager::[01;32m[KMissionManager[m[K()[m[K’:
+[01m[K/manager_ws/src/mission_manager/src/mission.cpp:203:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kexecuting_xyz_sub[m[K’ was not declared in this scope
+  203 |         [01;31m[Kexecuting_xyz_sub[m[K =
+      |         [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/manager_ws/src/mission_manager/src/mission.cpp:204:46:[m[K [01;31m[Kerror: [m[Kfound ‘[01m[K:[m[K’ in nested-name-specifier, expected ‘[01m[K::[m[K’
+  204 |             create_subscription<std_msgs::msg[01;31m[K:[m[KBool>(
+      |                                              [01;31m[K^[m[K
+      |                                              [32m[K::[m[K
+[01m[K/manager_ws/src/mission_manager/src/mission.cpp:210:21:[m[K [01;31m[Kerror: [m[K‘[01m[Ksrd[m[K’ has not been declared
+  210 |                     [01;31m[Ksrd[m[K::placeholders::_1
+      |                     [01;31m[K^~~[m[K
+gmake[2]: *** [CMakeFiles/mission.dir/build.make:76: CMakeFiles/mission.dir/src/mission.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/mission.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

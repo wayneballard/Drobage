@@ -1,0 +1,26 @@
+[0.066s] Invoking command in '/robot_eblan/build/roarm_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/robot_eblan/install/roarm_moveit_cmd:/robot_eblan/install/roarm_driver:/robot_eblan/install/roarm_description:/Drobage_jazzy/install/robot_ctrl_package:/Drobage_jazzy/install/navigation_package:/Drobage_jazzy/install/my_yolo_package:/opt/ros/jazzy /usr/bin/cmake --build /robot_eblan/build/roarm_msgs -- -j6 -l6
+[0.681s] [  2%] Built target roarm_msgs__rs
+[0.681s] [  5%] Built target roarm_msgs__rosidl_generator_type_description
+[0.681s] [  5%] Built target ament_cmake_python_copy_roarm_msgs
+[0.681s] [ 20%] Built target roarm_msgs__rosidl_generator_c
+[0.681s] [ 22%] Built target roarm_msgs__cpp
+[0.682s] [ 31%] Built target roarm_msgs__rosidl_typesupport_introspection_c
+[0.682s] [ 40%] Built target roarm_msgs__rosidl_typesupport_introspection_cpp
+[0.683s] [ 48%] Built target roarm_msgs__rosidl_typesupport_c
+[0.683s] [ 57%] Built target roarm_msgs__rosidl_typesupport_fastrtps_cpp
+[0.684s] [ 65%] Built target roarm_msgs__rosidl_typesupport_fastrtps_c
+[0.684s] [ 74%] Built target roarm_msgs__rosidl_typesupport_cpp
+[0.684s] [ 74%] Built target roarm_msgs
+[0.684s] [ 77%] Built target roarm_msgs__py
+[0.684s] [ 82%] Built target roarm_msgs__rosidl_generator_py
+[0.684s] [ 94%] Built target roarm_msgs_s__rosidl_typesupport_fastrtps_c
+[0.685s] [ 94%] Built target roarm_msgs_s__rosidl_typesupport_c
+[0.685s] [100%] Built target roarm_msgs_s__rosidl_typesupport_introspection_c
+[0.837s] running egg_info
+[0.883s] writing roarm_msgs.egg-info/PKG-INFO
+[0.884s] writing dependency_links to roarm_msgs.egg-info/dependency_links.txt
+[0.884s] writing top-level names to roarm_msgs.egg-info/top_level.txt
+[1.023s] reading manifest file 'roarm_msgs.egg-info/SOURCES.txt'
+[1.023s] writing manifest file 'roarm_msgs.egg-info/SOURCES.txt'
+[1.100s] gmake[1]: *** [CMakeFiles/Makefile2:498: CMakeFiles/ament_cmake_python_build_roarm_msgs_egg.dir/all] Interrupt
+[1.100s] gmake: *** [Makefile:146: all] Interrupt

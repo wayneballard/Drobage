@@ -1,0 +1,32 @@
+running egg_info
+creating ../../build/navigation_package/navigation_package.egg-info
+writing ../../build/navigation_package/navigation_package.egg-info/PKG-INFO
+writing dependency_links to ../../build/navigation_package/navigation_package.egg-info/dependency_links.txt
+writing requirements to ../../build/navigation_package/navigation_package.egg-info/requires.txt
+writing top-level names to ../../build/navigation_package/navigation_package.egg-info/top_level.txt
+writing manifest file '../../build/navigation_package/navigation_package.egg-info/SOURCES.txt'
+reading manifest file '../../build/navigation_package/navigation_package.egg-info/SOURCES.txt'
+writing manifest file '../../build/navigation_package/navigation_package.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /Drobage_jazzy/build/navigation_package/build/lib/navigation_package
+copying navigation_package/__init__.py -> /Drobage_jazzy/build/navigation_package/build/lib/navigation_package
+running install
+running install_lib
+creating /Drobage_jazzy/install/navigation_package/lib/python3.12/site-packages/navigation_package
+copying /Drobage_jazzy/build/navigation_package/build/lib/navigation_package/__init__.py -> /Drobage_jazzy/install/navigation_package/lib/python3.12/site-packages/navigation_package
+byte-compiling /Drobage_jazzy/install/navigation_package/lib/python3.12/site-packages/navigation_package/__init__.py to __init__.cpython-312.pyc
+running install_data
+creating /Drobage_jazzy/install/navigation_package/share/ament_index/resource_index/packages
+copying resource/navigation_package -> /Drobage_jazzy/install/navigation_package/share/ament_index/resource_index/packages
+copying package.xml -> /Drobage_jazzy/install/navigation_package/share/navigation_package
+creating /Drobage_jazzy/install/navigation_package/share/navigation_package/launch
+copying launch/launch_lidar.launch.py -> /Drobage_jazzy/install/navigation_package/share/navigation_package/launch
+copying launch/launch_all.launch.py -> /Drobage_jazzy/install/navigation_package/share/navigation_package/launch
+copying launch/launch_hardware.launch.py -> /Drobage_jazzy/install/navigation_package/share/navigation_package/launch
+copying launch/launch_rtabmap.launch.py -> /Drobage_jazzy/install/navigation_package/share/navigation_package/launch
+copying launch/launch_nav2.launch.py -> /Drobage_jazzy/install/navigation_package/share/navigation_package/launch
+running install_egg_info
+Copying ../../build/navigation_package/navigation_package.egg-info to /Drobage_jazzy/install/navigation_package/lib/python3.12/site-packages/navigation_package-0.0.0-py3.12.egg-info
+running install_scripts
+writing list of installed files to '/Drobage_jazzy/build/navigation_package/install.log'

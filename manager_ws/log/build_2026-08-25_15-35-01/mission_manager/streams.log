@@ -1,0 +1,86 @@
+[0.048s] Invoking command in '/manager_ws/build/mission_manager': /usr/bin/cmake --build /manager_ws/build/mission_manager -- -j6 -l6
+[0.871s] [ 50%] [32mBuilding CXX object CMakeFiles/mission.dir/src/mission.cpp.o[0m
+[6.943s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:25:15:[m[K [01;31m[Kerror: [m[K‘[01m[KSUbscription[m[K’ in namespace ‘[01m[Krclcpp[m[K’ does not name a template type; did you mean ‘[01m[KSubscription[m[K’?
+[6.944s]    25 |       rclcpp::[01;31m[KSUbscription[m[K<nav_msgs::msg::OccupancyGrid>::ShareDPtr grid_sub_;
+[6.944s]       |               [01;31m[K^~~~~~~~~~~~[m[K
+[6.944s]       |               [32m[KSubscription[m[K
+[6.944s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:32:45:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd_msgs::msg::OccupancyGrid[m[K’ has not been declared
+[6.944s]    32 |       void OccupancyCallback(std_msgs::msg::[01;31m[KOccupancyGrid[m[K::SharedPtr msg)
+[6.944s]       |                                             [01;31m[K^~~~~~~~~~~~~[m[K
+[6.944s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:32:70:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before ‘[01m[Kmsg[m[K’
+[6.945s]    32 |       void OccupancyCallback(std_msgs::msg::OccupancyGrid::SharedPtr [01;31m[Kmsg[m[K)
+[6.945s]       |                                                                      [01;31m[K^~~[m[K
+[6.983s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:[m[K In constructor ‘[01m[KMissionManager::[01;32m[KMissionManager[m[K()[m[K’:
+[6.984s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:17:8:[m[K [01;31m[Kerror: [m[K‘[01m[Kgrid_sub_[m[K’ was not declared in this scope
+[6.984s]    17 |        [01;31m[Kgrid_sub_[m[K = this->create_subscription<nav_msgs::msg::OccupancyGrid>(
+[6.984s]       |        [01;31m[K^~~~~~~~~[m[K
+[7.001s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:17:46:[m[K [01;31m[Kerror: [m[K‘[01m[Knav_msgs[m[K’ was not declared in this scope
+[7.001s]    17 |        grid_sub_ = this->create_subscription<[01;31m[Knav_msgs[m[K::msg::OccupancyGrid>(
+[7.001s]       |                                              [01;31m[K^~~~~~~~[m[K
+[7.001s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:17:26:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+[7.001s]    17 |        grid_sub_ = this->[01;31m[Kcreate_subscription<nav_msgs::msg::OccupancyGrid>[m[K(
+[7.002s]       |                          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[7.002s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:20:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kplaceholder[m[K’ has not been declared
+[7.002s]    20 |             [01;31m[Kplaceholder[m[K::_1));
+[7.002s]       |             [01;31m[K^~~~~~~~~~~[m[K
+[7.002s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:[m[K In member function ‘[01m[Kvoid MissionManager::[01;32m[KExplorationCompleteCallback[m[K(std_msgs::msg::Empty_<std::allocator<void> >::SharedPtr)[m[K’:
+[7.003s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:27:72:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[7.003s]    27 |       void ExplorationCompleteCallback([01;35m[Kstd_msgs::msg::Empty::SharedPtr msg[m[K)
+[7.003s]       |                                        [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[7.019s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:[m[K In member function ‘[01m[Kvoid MissionManager::[01;32m[KOccupancyCallback[m[K(int)[m[K’:
+[7.019s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:35:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kmap_[m[K’ was not declared in this scope
+[7.020s]    35 |           [01;31m[Kmap_[m[K = *msg;
+[7.020s]       |           [01;31m[K^~~~[m[K
+[7.021s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:35:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kmsg[m[K’ was not declared in this scope
+[7.021s]    35 |           map_ = *[01;31m[Kmsg[m[K;
+[7.022s]       |                   [01;31m[K^~~[m[K
+[7.022s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:35:19:[m[K [01;36m[Knote: [m[Ksuggested alternatives:
+[7.022s] In file included from [01m[K/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__struct.hpp:157[m[K,
+[7.022s]                  from [01m[K/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/list_parameters.hpp:7[m[K,
+[7.022s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:21[m[K,
+[7.022s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:175[m[K,
+[7.023s]                  from [01m[K/manager_ws/src/mission_manager/src/mission.cpp:1[m[K:
+[7.023s] [01m[K/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__struct.hpp:31:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Krcl_interfaces::msg[m[K’
+[7.023s]    31 | namespace [01;36m[Kmsg[m[K
+[7.023s]       |           [01;36m[K^~~[m[K
+[7.023s] In file included from [01m[K/opt/ros/jazzy/include/service_msgs/service_msgs/msg/detail/service_event_info__struct.hpp:24[m[K,
+[7.023s]                  from [01m[K/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__struct.hpp:268[m[K:
+[7.023s] [01m[K/opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp:31:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kbuiltin_interfaces::msg[m[K’
+[7.023s]    31 | namespace [01;36m[Kmsg[m[K
+[7.024s]       |           [01;36m[K^~~[m[K
+[7.024s] [01m[K/opt/ros/jazzy/include/service_msgs/service_msgs/msg/detail/service_event_info__struct.hpp:35:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kservice_msgs::msg[m[K’
+[7.024s]    35 | namespace [01;36m[Kmsg[m[K
+[7.024s]       |           [01;36m[K^~~[m[K
+[7.024s] In file included from [01m[K/opt/ros/jazzy/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__struct.hpp:27[m[K,
+[7.024s]                  from [01m[K/opt/ros/jazzy/include/statistics_msgs/statistics_msgs/msg/metrics_message.hpp:7[m[K,
+[7.024s]                  from [01m[K/opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/collector/generate_statistics_message.hpp:21[m[K,
+[7.025s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp:23[m[K,
+[7.025s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/subscription.hpp:50[m[K,
+[7.025s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/any_executable.hpp:25[m[K,
+[7.025s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[7.025s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[7.025s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executor_options.hpp:22[m[K,
+[7.025s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executor.hpp:38[m[K,
+[7.026s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[7.026s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[7.026s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:176[m[K:
+[7.026s] [01m[K/opt/ros/jazzy/include/statistics_msgs/statistics_msgs/msg/detail/statistic_data_point__struct.hpp:31:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstatistics_msgs::msg[m[K’
+[7.026s]    31 | namespace [01;36m[Kmsg[m[K
+[7.026s]       |           [01;36m[K^~~[m[K
+[7.026s] In file included from [01m[K/opt/ros/jazzy/include/std_msgs/std_msgs/msg/empty.hpp:7[m[K,
+[7.026s]                  from [01m[K/manager_ws/src/mission_manager/src/mission.cpp:3[m[K:
+[7.027s] [01m[K/opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/empty__struct.hpp:31:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg[m[K’
+[7.027s]    31 | namespace [01;36m[Kmsg[m[K
+[7.027s]       |           [01;36m[K^~~[m[K
+[7.027s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:32:60:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KSharedPtr[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[7.027s]    32 |       void OccupancyCallback([01;35m[Kstd_msgs::msg::OccupancyGrid::SharedPtr[m[K msg)
+[7.027s]       |                              [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~[m[K
+[7.028s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:[m[K In function ‘[01m[Kint[01;32m[K main[m[K(int, char**)[m[K’:
+[7.028s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:49:12:[m[K [01;35m[Kwarning: [m[Kstatement is a reference, not call, to function ‘[01m[Krclcpp::shutdown[m[K’ [[01;35m[K-Waddress[m[K]
+[7.028s]    49 |    [01;35m[Krclcpp::shutdown[m[K;
+[7.029s]       |    [01;35m[K~~~~~~~~^~~~~~~~[m[K
+[7.029s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:49:12:[m[K [01;35m[Kwarning: [m[Kstatement has no effect [[01;35m[K-Wunused-value[m[K]
+[11.866s] gmake[2]: *** [CMakeFiles/mission.dir/build.make:76: CMakeFiles/mission.dir/src/mission.cpp.o] Error 1
+[11.867s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/mission.dir/all] Error 2
+[11.867s] gmake: *** [Makefile:146: all] Error 2
+[11.873s] Invoked command in '/manager_ws/build/mission_manager' returned '2': /usr/bin/cmake --build /manager_ws/build/mission_manager -- -j6 -l6

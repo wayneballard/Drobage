@@ -1,0 +1,42 @@
+[0.021s] Invoking command in '/manager_ws/build/mission_manager': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /manager_ws/build/mission_manager -- -j6 -l6
+[0.170s] [ 50%] [32mBuilding CXX object CMakeFiles/mission.dir/src/mission.cpp.o[0m
+[5.771s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:[m[K In member function ‘[01m[Kvoid MissionManager::[01;32m[KExplorationCompleteCallback[m[K(std_msgs::msg::Empty_<std::allocator<void> >::SharedPtr)[m[K’:
+[5.772s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:66:78:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[5.772s]    66 |       void ExplorationCompleteCallback([01;35m[Kconst std_msgs::msg::Empty::SharedPtr msg[m[K)
+[5.772s]       |                                        [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[5.811s] In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[5.811s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27[m[K,
+[5.811s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:175[m[K,
+[5.811s]                  from [01m[K/manager_ws/src/mission_manager/src/mission.cpp:1[m[K:
+[5.811s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:[m[K In member function ‘[01m[Kvoid MissionManager::[01;32m[KGetRobotPose[m[K()[m[K’:
+[5.812s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:167:45:[m[K [01;35m[Kwarning: [m[Ktoo many arguments for format [[01;35m[K-Wformat-extra-args[m[K]
+[5.812s]   167 |             RCLCPP_WARN(this->get_logger(), [01;35m[K"Could not get the transform"[m[K, ex.what());
+[5.812s]       |                                             [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[5.816s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:[m[K In function ‘[01m[Kint[01;32m[K main[m[K(int, char**)[m[K’:
+[5.816s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:181:12:[m[K [01;35m[Kwarning: [m[Kstatement is a reference, not call, to function ‘[01m[Krclcpp::shutdown[m[K’ [[01;35m[K-Waddress[m[K]
+[5.816s]   181 |    [01;35m[Krclcpp::shutdown[m[K;
+[5.817s]       |    [01;35m[K~~~~~~~~^~~~~~~~[m[K
+[5.817s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:181:12:[m[K [01;35m[Kwarning: [m[Kstatement has no effect [[01;35m[K-Wunused-value[m[K]
+[29.590s] [100%] [32m[1mLinking CXX executable mission[0m
+[31.070s] [100%] Built target mission
+[31.104s] Invoked command in '/manager_ws/build/mission_manager' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /manager_ws/build/mission_manager -- -j6 -l6
+[31.132s] Invoking command in '/manager_ws/build/mission_manager': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /manager_ws/build/mission_manager
+[31.155s] -- Install configuration: ""
+[31.155s] -- Installing: /manager_ws/install/mission_manager/lib/mission_manager/mission
+[31.184s] -- Set non-toolchain portion of runtime path of "/manager_ws/install/mission_manager/lib/mission_manager/mission" to ""
+[31.185s] -- Up-to-date: /manager_ws/install/mission_manager/share/ament_index/resource_index/package_run_dependencies/mission_manager
+[31.185s] -- Up-to-date: /manager_ws/install/mission_manager/share/ament_index/resource_index/parent_prefix_path/mission_manager
+[31.185s] -- Up-to-date: /manager_ws/install/mission_manager/share/mission_manager/environment/ament_prefix_path.sh
+[31.185s] -- Up-to-date: /manager_ws/install/mission_manager/share/mission_manager/environment/ament_prefix_path.dsv
+[31.185s] -- Up-to-date: /manager_ws/install/mission_manager/share/mission_manager/environment/path.sh
+[31.186s] -- Up-to-date: /manager_ws/install/mission_manager/share/mission_manager/environment/path.dsv
+[31.186s] -- Up-to-date: /manager_ws/install/mission_manager/share/mission_manager/local_setup.bash
+[31.186s] -- Up-to-date: /manager_ws/install/mission_manager/share/mission_manager/local_setup.sh
+[31.186s] -- Up-to-date: /manager_ws/install/mission_manager/share/mission_manager/local_setup.zsh
+[31.186s] -- Up-to-date: /manager_ws/install/mission_manager/share/mission_manager/local_setup.dsv
+[31.186s] -- Installing: /manager_ws/install/mission_manager/share/mission_manager/package.dsv
+[31.187s] -- Up-to-date: /manager_ws/install/mission_manager/share/ament_index/resource_index/packages/mission_manager
+[31.187s] -- Up-to-date: /manager_ws/install/mission_manager/share/mission_manager/cmake/mission_managerConfig.cmake
+[31.187s] -- Up-to-date: /manager_ws/install/mission_manager/share/mission_manager/cmake/mission_managerConfig-version.cmake
+[31.187s] -- Up-to-date: /manager_ws/install/mission_manager/share/mission_manager/package.xml
+[31.190s] Invoked command in '/manager_ws/build/mission_manager' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /manager_ws/build/mission_manager

@@ -1,0 +1,25 @@
+[0.023s] Invoking command in '/manager_ws/build/mission_manager': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /manager_ws/build/mission_manager -- -j6 -l6
+[0.183s] [ 50%] [32mBuilding CXX object CMakeFiles/mission.dir/src/mission.cpp.o[0m
+[0.665s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:42:29:[m[K [01;35m[Kwarning: [m[Kmissing terminating " character
+[0.666s]    42 |           cout << "Origin: "[01;35m[K"[m[K << map_.info.origin.position << endl;
+[0.666s]       |                             [01;35m[K^[m[K
+[0.666s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:42:29:[m[K [01;31m[Kerror: [m[Kmissing terminating " character
+[0.666s]    42 |           cout << "Origin: "[01;31m[K" << map_.info.origin.position << endl;[m[K
+[0.666s]       |                             [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[5.210s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:[m[K In member function ‘[01m[Kvoid MissionManager::[01;32m[KExplorationCompleteCallback[m[K(std_msgs::msg::Empty_<std::allocator<void> >::SharedPtr)[m[K’:
+[5.210s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:31:78:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[5.210s]    31 |       void ExplorationCompleteCallback([01;35m[Kconst std_msgs::msg::Empty::SharedPtr msg[m[K)
+[5.211s]       |                                        [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[5.212s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:[m[K In member function ‘[01m[Kvoid MissionManager::[01;32m[KOccupancyCallback[m[K(nav_msgs::msg::OccupancyGrid_<std::allocator<void> >::SharedPtr)[m[K’:
+[5.213s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:43:7:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K}[m[K’ token
+[5.213s]    43 |       [01;31m[K}[m[K
+[5.213s]       |       [01;31m[K^[m[K
+[5.218s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:[m[K In function ‘[01m[Kint[01;32m[K main[m[K(int, char**)[m[K’:
+[5.219s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:56:12:[m[K [01;35m[Kwarning: [m[Kstatement is a reference, not call, to function ‘[01m[Krclcpp::shutdown[m[K’ [[01;35m[K-Waddress[m[K]
+[5.219s]    56 |    [01;35m[Krclcpp::shutdown[m[K;
+[5.219s]       |    [01;35m[K~~~~~~~~^~~~~~~~[m[K
+[5.219s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:56:12:[m[K [01;35m[Kwarning: [m[Kstatement has no effect [[01;35m[K-Wunused-value[m[K]
+[11.614s] gmake[2]: *** [CMakeFiles/mission.dir/build.make:76: CMakeFiles/mission.dir/src/mission.cpp.o] Error 1
+[11.615s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/mission.dir/all] Error 2
+[11.616s] gmake: *** [Makefile:146: all] Error 2
+[11.625s] Invoked command in '/manager_ws/build/mission_manager' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /manager_ws/build/mission_manager -- -j6 -l6

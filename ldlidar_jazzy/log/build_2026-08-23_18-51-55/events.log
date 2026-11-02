@@ -1,0 +1,147 @@
+[0.000000] (-) TimerEvent: {}
+[0.000634] (ldlidar_stl_ros2) JobQueued: {'identifier': 'ldlidar_stl_ros2', 'dependencies': OrderedDict()}
+[0.001120] (ldlidar_stl_ros2) JobStarted: {'identifier': 'ldlidar_stl_ros2'}
+[0.019737] (ldlidar_stl_ros2) JobProgress: {'identifier': 'ldlidar_stl_ros2', 'progress': 'cmake'}
+[0.021020] (ldlidar_stl_ros2) JobProgress: {'identifier': 'ldlidar_stl_ros2', 'progress': 'build'}
+[0.022042] (ldlidar_stl_ros2) Command: {'cmd': ['/usr/bin/cmake', '--build', '/ldlidar_ros2_binning/build/ldlidar_stl_ros2', '--', '-j6', '-l6'], 'cwd': '/ldlidar_ros2_binning/build/ldlidar_stl_ros2', 'env': OrderedDict({'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'HOSTNAME': 'wb-desktop', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/root', 'OLDPWD': '/ldlidar_ros2_binning/src', 'ROS_PYTHON_VERSION': '3', 'COLCON_PREFIX_PATH': '/ldlidar_ros2_binning/install', 'ROS_DISTRO': 'jazzy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'ROS_DOMAIN_ID': '42', 'AMENT_PREFIX_PATH': '/ldlidar_ros2_binning/install/ldlidar_stl_ros2:/opt/ros/jazzy', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/ldlidar_ros2_binning/build/ldlidar_stl_ros2', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/ldlidar_ros2_binning/install/ldlidar_stl_ros2:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.099544] (-) TimerEvent: {}
+[0.197427] (ldlidar_stl_ros2) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding CXX object CMakeFiles/ldlidar_stl_ros2_node.dir/src/demo.cpp.o\x1b[0m\n'}
+[0.199590] (-) TimerEvent: {}
+[0.300135] (-) TimerEvent: {}
+[0.400815] (-) TimerEvent: {}
+[0.501434] (-) TimerEvent: {}
+[0.601979] (-) TimerEvent: {}
+[0.702548] (-) TimerEvent: {}
+[0.803148] (-) TimerEvent: {}
+[0.903739] (-) TimerEvent: {}
+[1.004286] (-) TimerEvent: {}
+[1.104738] (-) TimerEvent: {}
+[1.205254] (-) TimerEvent: {}
+[1.305903] (-) TimerEvent: {}
+[1.406503] (-) TimerEvent: {}
+[1.507145] (-) TimerEvent: {}
+[1.607794] (-) TimerEvent: {}
+[1.708435] (-) TimerEvent: {}
+[1.809105] (-) TimerEvent: {}
+[1.909755] (-) TimerEvent: {}
+[2.010385] (-) TimerEvent: {}
+[2.110931] (-) TimerEvent: {}
+[2.211550] (-) TimerEvent: {}
+[2.312197] (-) TimerEvent: {}
+[2.412780] (-) TimerEvent: {}
+[2.513358] (-) TimerEvent: {}
+[2.613876] (-) TimerEvent: {}
+[2.714418] (-) TimerEvent: {}
+[2.814976] (-) TimerEvent: {}
+[2.915526] (-) TimerEvent: {}
+[3.016036] (-) TimerEvent: {}
+[3.116502] (-) TimerEvent: {}
+[3.217006] (-) TimerEvent: {}
+[3.317662] (-) TimerEvent: {}
+[3.418275] (-) TimerEvent: {}
+[3.518883] (-) TimerEvent: {}
+[3.619371] (-) TimerEvent: {}
+[3.719915] (-) TimerEvent: {}
+[3.820547] (-) TimerEvent: {}
+[3.921204] (-) TimerEvent: {}
+[4.022091] (-) TimerEvent: {}
+[4.122862] (-) TimerEvent: {}
+[4.223545] (-) TimerEvent: {}
+[4.324307] (-) TimerEvent: {}
+[4.425030] (-) TimerEvent: {}
+[4.526029] (-) TimerEvent: {}
+[4.626998] (-) TimerEvent: {}
+[4.727588] (-) TimerEvent: {}
+[4.828359] (-) TimerEvent: {}
+[4.928928] (-) TimerEvent: {}
+[5.029513] (-) TimerEvent: {}
+[5.130168] (-) TimerEvent: {}
+[5.230795] (-) TimerEvent: {}
+[5.331409] (-) TimerEvent: {}
+[5.432070] (-) TimerEvent: {}
+[5.532648] (-) TimerEvent: {}
+[5.633218] (-) TimerEvent: {}
+[5.733729] (-) TimerEvent: {}
+[5.834257] (-) TimerEvent: {}
+[5.934854] (-) TimerEvent: {}
+[6.035447] (-) TimerEvent: {}
+[6.136123] (-) TimerEvent: {}
+[6.236921] (-) TimerEvent: {}
+[6.337520] (-) TimerEvent: {}
+[6.438404] (-) TimerEvent: {}
+[6.539264] (-) TimerEvent: {}
+[6.639890] (-) TimerEvent: {}
+[6.740657] (-) TimerEvent: {}
+[6.841351] (-) TimerEvent: {}
+[6.942025] (-) TimerEvent: {}
+[7.042725] (-) TimerEvent: {}
+[7.143182] (-) TimerEvent: {}
+[7.243667] (-) TimerEvent: {}
+[7.344301] (-) TimerEvent: {}
+[7.444953] (-) TimerEvent: {}
+[7.545725] (-) TimerEvent: {}
+[7.646440] (-) TimerEvent: {}
+[7.746939] (-) TimerEvent: {}
+[7.847649] (-) TimerEvent: {}
+[7.948383] (-) TimerEvent: {}
+[8.048888] (-) TimerEvent: {}
+[8.149576] (-) TimerEvent: {}
+[8.250065] (-) TimerEvent: {}
+[8.350657] (-) TimerEvent: {}
+[8.451305] (-) TimerEvent: {}
+[8.551869] (-) TimerEvent: {}
+[8.652573] (-) TimerEvent: {}
+[8.753126] (-) TimerEvent: {}
+[8.853770] (-) TimerEvent: {}
+[8.954371] (-) TimerEvent: {}
+[9.054889] (-) TimerEvent: {}
+[9.155422] (-) TimerEvent: {}
+[9.256146] (-) TimerEvent: {}
+[9.356700] (-) TimerEvent: {}
+[9.457524] (-) TimerEvent: {}
+[9.558214] (-) TimerEvent: {}
+[9.658964] (-) TimerEvent: {}
+[9.759501] (-) TimerEvent: {}
+[9.825690] (ldlidar_stl_ros2) StdoutLine: {'line': b'[ 25%] \x1b[32m\x1b[1mLinking CXX executable ldlidar_stl_ros2_node\x1b[0m\n'}
+[9.859799] (-) TimerEvent: {}
+[9.960633] (-) TimerEvent: {}
+[10.061247] (-) TimerEvent: {}
+[10.161842] (-) TimerEvent: {}
+[10.226634] (ldlidar_stl_ros2) StdoutLine: {'line': b'[100%] Built target ldlidar_stl_ros2_node\n'}
+[10.260715] (ldlidar_stl_ros2) CommandEnded: {'returncode': 0}
+[10.261993] (-) TimerEvent: {}
+[10.262905] (ldlidar_stl_ros2) JobProgress: {'identifier': 'ldlidar_stl_ros2', 'progress': 'install'}
+[10.296709] (ldlidar_stl_ros2) Command: {'cmd': ['/usr/bin/cmake', '--install', '/ldlidar_ros2_binning/build/ldlidar_stl_ros2'], 'cwd': '/ldlidar_ros2_binning/build/ldlidar_stl_ros2', 'env': OrderedDict({'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'HOSTNAME': 'wb-desktop', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/root', 'OLDPWD': '/ldlidar_ros2_binning/src', 'ROS_PYTHON_VERSION': '3', 'COLCON_PREFIX_PATH': '/ldlidar_ros2_binning/install', 'ROS_DISTRO': 'jazzy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'ROS_DOMAIN_ID': '42', 'AMENT_PREFIX_PATH': '/ldlidar_ros2_binning/install/ldlidar_stl_ros2:/opt/ros/jazzy', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/ldlidar_ros2_binning/build/ldlidar_stl_ros2', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/ldlidar_ros2_binning/install/ldlidar_stl_ros2:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[10.319796] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[10.320423] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Installing: /ldlidar_ros2_binning/install/ldlidar_stl_ros2/lib/ldlidar_stl_ros2/ldlidar_stl_ros2_node\n'}
+[10.325937] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/ldlidar_ros2_binning/install/ldlidar_stl_ros2/lib/ldlidar_stl_ros2/ldlidar_stl_ros2_node" to ""\n'}
+[10.326356] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Up-to-date: /ldlidar_ros2_binning/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2//launch\n'}
+[10.326590] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Up-to-date: /ldlidar_ros2_binning/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2//launch/viewer_ld19.launch.py\n'}
+[10.326768] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Up-to-date: /ldlidar_ros2_binning/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2//launch/stl27l.launch.py\n'}
+[10.327066] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Up-to-date: /ldlidar_ros2_binning/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2//launch/ld06.launch.py\n'}
+[10.327329] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Up-to-date: /ldlidar_ros2_binning/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2//launch/viewer_ld06.launch.py\n'}
+[10.327554] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Up-to-date: /ldlidar_ros2_binning/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2//launch/ld19.launch.py\n'}
+[10.327746] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Up-to-date: /ldlidar_ros2_binning/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2//launch/viewer_stl27l.launch.py\n'}
+[10.327944] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Up-to-date: /ldlidar_ros2_binning/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2//launch/__pycache__\n'}
+[10.328155] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Up-to-date: /ldlidar_ros2_binning/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2//launch/__pycache__/ld19.launch.cpython-312.pyc\n'}
+[10.328367] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Up-to-date: /ldlidar_ros2_binning/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2//rviz2\n'}
+[10.328579] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Up-to-date: /ldlidar_ros2_binning/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2//rviz2/ldlidar.rviz\n'}
+[10.328810] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Up-to-date: /ldlidar_ros2_binning/install/ldlidar_stl_ros2/share/ament_index/resource_index/package_run_dependencies/ldlidar_stl_ros2\n'}
+[10.328978] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Up-to-date: /ldlidar_ros2_binning/install/ldlidar_stl_ros2/share/ament_index/resource_index/parent_prefix_path/ldlidar_stl_ros2\n'}
+[10.329139] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Up-to-date: /ldlidar_ros2_binning/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/environment/ament_prefix_path.sh\n'}
+[10.329331] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Up-to-date: /ldlidar_ros2_binning/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/environment/ament_prefix_path.dsv\n'}
+[10.329516] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Up-to-date: /ldlidar_ros2_binning/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/environment/path.sh\n'}
+[10.329746] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Up-to-date: /ldlidar_ros2_binning/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/environment/path.dsv\n'}
+[10.329907] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Up-to-date: /ldlidar_ros2_binning/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/local_setup.bash\n'}
+[10.330066] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Up-to-date: /ldlidar_ros2_binning/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/local_setup.sh\n'}
+[10.330244] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Up-to-date: /ldlidar_ros2_binning/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/local_setup.zsh\n'}
+[10.330427] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Up-to-date: /ldlidar_ros2_binning/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/local_setup.dsv\n'}
+[10.330585] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Installing: /ldlidar_ros2_binning/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/package.dsv\n'}
+[10.330738] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Up-to-date: /ldlidar_ros2_binning/install/ldlidar_stl_ros2/share/ament_index/resource_index/packages/ldlidar_stl_ros2\n'}
+[10.330891] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Up-to-date: /ldlidar_ros2_binning/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/cmake/ldlidar_stl_ros2Config.cmake\n'}
+[10.331044] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Up-to-date: /ldlidar_ros2_binning/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/cmake/ldlidar_stl_ros2Config-version.cmake\n'}
+[10.331216] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Up-to-date: /ldlidar_ros2_binning/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/package.xml\n'}
+[10.333456] (ldlidar_stl_ros2) CommandEnded: {'returncode': 0}
+[10.365626] (-) TimerEvent: {}
+[10.410543] (ldlidar_stl_ros2) JobEnded: {'identifier': 'ldlidar_stl_ros2', 'rc': 0}
+[10.413333] (-) EventReactorShutdown: {}

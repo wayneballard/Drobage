@@ -1,0 +1,6 @@
+{
+  "package_name": "roarm_msgs",
+  "non_idl_tuples": [
+    "/robot_eblan/src/roarm_msgs:srv/MoveToXYZ.srv"
+  ]
+}

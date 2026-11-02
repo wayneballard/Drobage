@@ -1,0 +1,2 @@
+gmake[1]: *** [CMakeFiles/Makefile2:498: CMakeFiles/ament_cmake_python_build_roarm_msgs_egg.dir/all] Interrupt
+gmake: *** [Makefile:146: all] Interrupt

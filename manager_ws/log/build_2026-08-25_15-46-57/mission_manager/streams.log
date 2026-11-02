@@ -1,0 +1,328 @@
+[0.025s] Invoking command in '/manager_ws/build/mission_manager': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /manager_ws/build/mission_manager -- -j6 -l6
+[0.188s] [ 50%] [32mBuilding CXX object CMakeFiles/mission.dir/src/mission.cpp.o[0m
+[5.098s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:[m[K In member function ‘[01m[Kvoid MissionManager::[01;32m[KExplorationCompleteCallback[m[K(std_msgs::msg::Empty_<std::allocator<void> >::SharedPtr)[m[K’:
+[5.099s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:30:78:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[5.099s]    30 |       void ExplorationCompleteCallback([01;35m[Kconst std_msgs::msg::Empty::SharedPtr msg[m[K)
+[5.099s]       |                                        [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[5.101s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:[m[K In member function ‘[01m[Kvoid MissionManager::[01;32m[KOccupancyCallback[m[K(nav_msgs::msg::OccupancyGrid_<std::allocator<void> >::SharedPtr)[m[K’:
+[5.102s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:39:16:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator<<[m[K’ (operand types are ‘[01m[Kstd::ostream[m[K’ {aka ‘[01m[Kstd::basic_ostream<char>[m[K’} and ‘[01m[Knav_msgs::msg::OccupancyGrid[m[K’ {aka ‘[01m[Knav_msgs::msg::OccupancyGrid_<std::allocator<void> >[m[K’})
+[5.103s]    39 |           [32m[Kcout[m[K [01;31m[K<<[m[K [34m[Kmap_[m[K;
+[5.103s]       |           [32m[K~~~~[m[K [01;31m[K^~[m[K [34m[K~~~~[m[K
+[5.104s]       |           [32m[K|[m[K       [34m[K|[m[K
+[5.105s]       |           [32m[K|[m[K       [34m[Knav_msgs::msg::OccupancyGrid {aka nav_msgs::msg::OccupancyGrid_<std::allocator<void> >}[m[K
+[5.105s]       |           [32m[Kstd::ostream {aka std::basic_ostream<char>}[m[K
+[5.105s] In file included from [01m[K/usr/include/c++/13/istream:41[m[K,
+[5.105s]                  from [01m[K/usr/include/c++/13/sstream:40[m[K,
+[5.105s]                  from [01m[K/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__traits.hpp:13[m[K,
+[5.105s]                  from [01m[K/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/list_parameters.hpp:9[m[K,
+[5.105s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:21[m[K,
+[5.106s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:175[m[K,
+[5.106s]                  from [01m[K/manager_ws/src/mission_manager/src/mission.cpp:1[m[K:
+[5.106s] [01m[K/usr/include/c++/13/ostream:110:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::[01;32m[Koperator<<[m[K(__ostream_type& (*)(__ostream_type&)) [35m[K[with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>][m[K[m[K’
+[5.106s]   110 |       [01;36m[Koperator[m[K<<(__ostream_type& (*__pf)(__ostream_type&))
+[5.106s]       |       [01;36m[K^~~~~~~~[m[K
+[5.106s] [01m[K/usr/include/c++/13/ostream:110:36:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Knav_msgs::msg::OccupancyGrid[m[K’ {aka ‘[01m[Knav_msgs::msg::OccupancyGrid_<std::allocator<void> >[m[K’} to ‘[01m[Kstd::basic_ostream<char>::__ostream_type& (*)(std::basic_ostream<char>::__ostream_type&)[m[K’ {aka ‘[01m[Kstd::basic_ostream<char>& (*)(std::basic_ostream<char>&)[m[K’}
+[5.106s]   110 |       operator<<([01;36m[K__ostream_type& (*__pf)(__ostream_type&)[m[K)
+[5.107s]       |                  [01;36m[K~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~[m[K
+[5.107s] [01m[K/usr/include/c++/13/ostream:119:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::[01;32m[Koperator<<[m[K(__ios_type& (*)(__ios_type&)) [35m[K[with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>; __ios_type = std::basic_ios<char>][m[K[m[K’
+[5.107s]   119 |       [01;36m[Koperator[m[K<<(__ios_type& (*__pf)(__ios_type&))
+[5.107s]       |       [01;36m[K^~~~~~~~[m[K
+[5.108s] [01m[K/usr/include/c++/13/ostream:119:32:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Knav_msgs::msg::OccupancyGrid[m[K’ {aka ‘[01m[Knav_msgs::msg::OccupancyGrid_<std::allocator<void> >[m[K’} to ‘[01m[Kstd::basic_ostream<char>::__ios_type& (*)(std::basic_ostream<char>::__ios_type&)[m[K’ {aka ‘[01m[Kstd::basic_ios<char>& (*)(std::basic_ios<char>&)[m[K’}
+[5.108s]   119 |       operator<<([01;36m[K__ios_type& (*__pf)(__ios_type&)[m[K)
+[5.108s]       |                  [01;36m[K~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~[m[K
+[5.108s] [01m[K/usr/include/c++/13/ostream:129:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::[01;32m[Koperator<<[m[K(std::ios_base& (*)(std::ios_base&)) [35m[K[with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>][m[K[m[K’
+[5.108s]   129 |       [01;36m[Koperator[m[K<<(ios_base& (*__pf) (ios_base&))
+[5.108s]       |       [01;36m[K^~~~~~~~[m[K
+[5.109s] [01m[K/usr/include/c++/13/ostream:129:30:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Knav_msgs::msg::OccupancyGrid[m[K’ {aka ‘[01m[Knav_msgs::msg::OccupancyGrid_<std::allocator<void> >[m[K’} to ‘[01m[Kstd::ios_base& (*)(std::ios_base&)[m[K’
+[5.109s]   129 |       operator<<([01;36m[Kios_base& (*__pf) (ios_base&)[m[K)
+[5.109s]       |                  [01;36m[K~~~~~~~~~~~~^~~~~~~~~~~~~~~~~[m[K
+[5.109s] [01m[K/usr/include/c++/13/ostream:168:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::[01;32m[Koperator<<[m[K(long int) [35m[K[with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>][m[K[m[K’
+[5.109s]   168 |       [01;36m[Koperator[m[K<<(long __n)
+[5.109s]       |       [01;36m[K^~~~~~~~[m[K
+[5.110s] [01m[K/usr/include/c++/13/ostream:168:23:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Knav_msgs::msg::OccupancyGrid[m[K’ {aka ‘[01m[Knav_msgs::msg::OccupancyGrid_<std::allocator<void> >[m[K’} to ‘[01m[Klong int[m[K’
+[5.110s]   168 |       operator<<([01;36m[Klong __n[m[K)
+[5.110s]       |                  [01;36m[K~~~~~^~~[m[K
+[5.110s] [01m[K/usr/include/c++/13/ostream:172:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::[01;32m[Koperator<<[m[K(long unsigned int) [35m[K[with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>][m[K[m[K’
+[5.110s]   172 |       [01;36m[Koperator[m[K<<(unsigned long __n)
+[5.111s]       |       [01;36m[K^~~~~~~~[m[K
+[5.111s] [01m[K/usr/include/c++/13/ostream:172:32:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Knav_msgs::msg::OccupancyGrid[m[K’ {aka ‘[01m[Knav_msgs::msg::OccupancyGrid_<std::allocator<void> >[m[K’} to ‘[01m[Klong unsigned int[m[K’
+[5.111s]   172 |       operator<<([01;36m[Kunsigned long __n[m[K)
+[5.111s]       |                  [01;36m[K~~~~~~~~~~~~~~^~~[m[K
+[5.111s] [01m[K/usr/include/c++/13/ostream:176:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::[01;32m[Koperator<<[m[K(bool) [35m[K[with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>][m[K[m[K’
+[5.111s]   176 |       [01;36m[Koperator[m[K<<(bool __n)
+[5.111s]       |       [01;36m[K^~~~~~~~[m[K
+[5.112s] [01m[K/usr/include/c++/13/ostream:176:23:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Knav_msgs::msg::OccupancyGrid[m[K’ {aka ‘[01m[Knav_msgs::msg::OccupancyGrid_<std::allocator<void> >[m[K’} to ‘[01m[Kbool[m[K’
+[5.112s]   176 |       operator<<([01;36m[Kbool __n[m[K)
+[5.112s]       |                  [01;36m[K~~~~~^~~[m[K
+[5.112s] In file included from [01m[K/usr/include/c++/13/ostream:880[m[K:
+[5.113s] [01m[K/usr/include/c++/13/bits/ostream.tcc:96:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_Ch, _Tr>& std::basic_ostream<_CharT, _Traits>::[01;32m[Koperator<<[m[K(short int) [35m[K[with _CharT = char; _Traits = std::char_traits<char>][m[K[m[K’
+[5.113s]    96 |     [01;36m[Kbasic_ostream<_CharT, _Traits>[m[K::
+[5.113s]       |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[5.113s] [01m[K/usr/include/c++/13/bits/ostream.tcc:97:22:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Knav_msgs::msg::OccupancyGrid[m[K’ {aka ‘[01m[Knav_msgs::msg::OccupancyGrid_<std::allocator<void> >[m[K’} to ‘[01m[Kshort int[m[K’
+[5.113s]    97 |     operator<<([01;36m[Kshort __n[m[K)
+[5.113s]       |                [01;36m[K~~~~~~^~~[m[K
+[5.113s] [01m[K/usr/include/c++/13/ostream:183:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::[01;32m[Koperator<<[m[K(short unsigned int) [35m[K[with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>][m[K[m[K’
+[5.114s]   183 |       [01;36m[Koperator[m[K<<(unsigned short __n)
+[5.114s]       |       [01;36m[K^~~~~~~~[m[K
+[5.114s] [01m[K/usr/include/c++/13/ostream:183:33:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Knav_msgs::msg::OccupancyGrid[m[K’ {aka ‘[01m[Knav_msgs::msg::OccupancyGrid_<std::allocator<void> >[m[K’} to ‘[01m[Kshort unsigned int[m[K’
+[5.114s]   183 |       operator<<([01;36m[Kunsigned short __n[m[K)
+[5.114s]       |                  [01;36m[K~~~~~~~~~~~~~~~^~~[m[K
+[5.114s] [01m[K/usr/include/c++/13/bits/ostream.tcc:110:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_Ch, _Tr>& std::basic_ostream<_CharT, _Traits>::[01;32m[Koperator<<[m[K(int) [35m[K[with _CharT = char; _Traits = std::char_traits<char>][m[K[m[K’
+[5.114s]   110 |     [01;36m[Kbasic_ostream<_CharT, _Traits>[m[K::
+[5.114s]       |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[5.115s] [01m[K/usr/include/c++/13/bits/ostream.tcc:111:20:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Knav_msgs::msg::OccupancyGrid[m[K’ {aka ‘[01m[Knav_msgs::msg::OccupancyGrid_<std::allocator<void> >[m[K’} to ‘[01m[Kint[m[K’
+[5.115s]   111 |     operator<<([01;36m[Kint __n[m[K)
+[5.115s]       |                [01;36m[K~~~~^~~[m[K
+[5.115s] [01m[K/usr/include/c++/13/ostream:194:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::[01;32m[Koperator<<[m[K(unsigned int) [35m[K[with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>][m[K[m[K’
+[5.115s]   194 |       [01;36m[Koperator[m[K<<(unsigned int __n)
+[5.115s]       |       [01;36m[K^~~~~~~~[m[K
+[5.115s] [01m[K/usr/include/c++/13/ostream:194:31:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Knav_msgs::msg::OccupancyGrid[m[K’ {aka ‘[01m[Knav_msgs::msg::OccupancyGrid_<std::allocator<void> >[m[K’} to ‘[01m[Kunsigned int[m[K’
+[5.116s]   194 |       operator<<([01;36m[Kunsigned int __n[m[K)
+[5.116s]       |                  [01;36m[K~~~~~~~~~~~~~^~~[m[K
+[5.116s] [01m[K/usr/include/c++/13/ostream:203:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::[01;32m[Koperator<<[m[K(long long int) [35m[K[with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>][m[K[m[K’
+[5.116s]   203 |       [01;36m[Koperator[m[K<<(long long __n)
+[5.116s]       |       [01;36m[K^~~~~~~~[m[K
+[5.116s] [01m[K/usr/include/c++/13/ostream:203:28:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Knav_msgs::msg::OccupancyGrid[m[K’ {aka ‘[01m[Knav_msgs::msg::OccupancyGrid_<std::allocator<void> >[m[K’} to ‘[01m[Klong long int[m[K’
+[5.116s]   203 |       operator<<([01;36m[Klong long __n[m[K)
+[5.116s]       |                  [01;36m[K~~~~~~~~~~^~~[m[K
+[5.117s] [01m[K/usr/include/c++/13/ostream:207:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::[01;32m[Koperator<<[m[K(long long unsigned int) [35m[K[with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>][m[K[m[K’
+[5.117s]   207 |       [01;36m[Koperator[m[K<<(unsigned long long __n)
+[5.117s]       |       [01;36m[K^~~~~~~~[m[K
+[5.117s] [01m[K/usr/include/c++/13/ostream:207:37:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Knav_msgs::msg::OccupancyGrid[m[K’ {aka ‘[01m[Knav_msgs::msg::OccupancyGrid_<std::allocator<void> >[m[K’} to ‘[01m[Klong long unsigned int[m[K’
+[5.117s]   207 |       operator<<([01;36m[Kunsigned long long __n[m[K)
+[5.117s]       |                  [01;36m[K~~~~~~~~~~~~~~~~~~~^~~[m[K
+[5.118s] [01m[K/usr/include/c++/13/ostream:222:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::[01;32m[Koperator<<[m[K(double) [35m[K[with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>][m[K[m[K’
+[5.118s]   222 |       [01;36m[Koperator[m[K<<(double __f)
+[5.118s]       |       [01;36m[K^~~~~~~~[m[K
+[5.118s] [01m[K/usr/include/c++/13/ostream:222:25:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Knav_msgs::msg::OccupancyGrid[m[K’ {aka ‘[01m[Knav_msgs::msg::OccupancyGrid_<std::allocator<void> >[m[K’} to ‘[01m[Kdouble[m[K’
+[5.118s]   222 |       operator<<([01;36m[Kdouble __f[m[K)
+[5.118s]       |                  [01;36m[K~~~~~~~^~~[m[K
+[5.118s] [01m[K/usr/include/c++/13/ostream:226:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::[01;32m[Koperator<<[m[K(float) [35m[K[with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>][m[K[m[K’
+[5.118s]   226 |       [01;36m[Koperator[m[K<<(float __f)
+[5.119s]       |       [01;36m[K^~~~~~~~[m[K
+[5.119s] [01m[K/usr/include/c++/13/ostream:226:24:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Knav_msgs::msg::OccupancyGrid[m[K’ {aka ‘[01m[Knav_msgs::msg::OccupancyGrid_<std::allocator<void> >[m[K’} to ‘[01m[Kfloat[m[K’
+[5.119s]   226 |       operator<<([01;36m[Kfloat __f[m[K)
+[5.119s]       |                  [01;36m[K~~~~~~^~~[m[K
+[5.119s] [01m[K/usr/include/c++/13/ostream:234:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::[01;32m[Koperator<<[m[K(long double) [35m[K[with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>][m[K[m[K’
+[5.119s]   234 |       [01;36m[Koperator[m[K<<(long double __f)
+[5.119s]       |       [01;36m[K^~~~~~~~[m[K
+[5.120s] [01m[K/usr/include/c++/13/ostream:234:30:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Knav_msgs::msg::OccupancyGrid[m[K’ {aka ‘[01m[Knav_msgs::msg::OccupancyGrid_<std::allocator<void> >[m[K’} to ‘[01m[Klong double[m[K’
+[5.120s]   234 |       operator<<([01;36m[Klong double __f[m[K)
+[5.120s]       |                  [01;36m[K~~~~~~~~~~~~^~~[m[K
+[5.120s] [01m[K/usr/include/c++/13/ostream:292:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::[01;32m[Koperator<<[m[K(const void*) [35m[K[with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>][m[K[m[K’
+[5.120s]   292 |       [01;36m[Koperator[m[K<<(const void* __p)
+[5.120s]       |       [01;36m[K^~~~~~~~[m[K
+[5.120s] [01m[K/usr/include/c++/13/ostream:292:30:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Knav_msgs::msg::OccupancyGrid[m[K’ {aka ‘[01m[Knav_msgs::msg::OccupancyGrid_<std::allocator<void> >[m[K’} to ‘[01m[Kconst void*[m[K’
+[5.120s]   292 |       operator<<([01;36m[Kconst void* __p[m[K)
+[5.121s]       |                  [01;36m[K~~~~~~~~~~~~^~~[m[K
+[5.121s] [01m[K/usr/include/c++/13/ostream:297:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::[01;32m[Koperator<<[m[K(std::nullptr_t) [35m[K[with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>; std::nullptr_t = std::nullptr_t][m[K[m[K’
+[5.121s]   297 |       [01;36m[Koperator[m[K<<(nullptr_t)
+[5.121s]       |       [01;36m[K^~~~~~~~[m[K
+[5.121s] [01m[K/usr/include/c++/13/ostream:297:18:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Knav_msgs::msg::OccupancyGrid[m[K’ {aka ‘[01m[Knav_msgs::msg::OccupancyGrid_<std::allocator<void> >[m[K’} to ‘[01m[Kstd::nullptr_t[m[K’
+[5.121s]   297 |       operator<<([01;36m[Knullptr_t[m[K)
+[5.121s]       |                  [01;36m[K^~~~~~~~~[m[K
+[5.122s] [01m[K/usr/include/c++/13/bits/ostream.tcc:124:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_Ch, _Tr>& std::basic_ostream<_CharT, _Traits>::[01;32m[Koperator<<[m[K(__streambuf_type*) [35m[K[with _CharT = char; _Traits = std::char_traits<char>; __streambuf_type = std::basic_streambuf<char>][m[K[m[K’
+[5.122s]   124 |     [01;36m[Kbasic_ostream<_CharT, _Traits>[m[K::
+[5.122s]       |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[5.122s] [01m[K/usr/include/c++/13/bits/ostream.tcc:125:34:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Knav_msgs::msg::OccupancyGrid[m[K’ {aka ‘[01m[Knav_msgs::msg::OccupancyGrid_<std::allocator<void> >[m[K’} to ‘[01m[Kstd::basic_ostream<char>::__streambuf_type*[m[K’ {aka ‘[01m[Kstd::basic_streambuf<char>*[m[K’}
+[5.122s]   125 |     operator<<([01;36m[K__streambuf_type* __sbin[m[K)
+[5.122s]       |                [01;36m[K~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[5.122s] In file included from [01m[K/usr/include/c++/13/memory:80[m[K,
+[5.123s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:173[m[K:
+[5.123s] [01m[K/usr/include/c++/13/bits/shared_ptr.h:70:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Ch, class _Tr, class _Tp, __gnu_cxx::_Lock_policy _Lp> std::basic_ostream<_Ch, _Tr>& std::[01;32m[Koperator<<[m[K(basic_ostream<_Ch, _Tr>&, const __shared_ptr<_Tp, _Lp>&)[m[K’
+[5.123s]    70 |     [01;36m[Koperator[m[K<<(std::basic_ostream<_Ch, _Tr>& __os,
+[5.123s]       |     [01;36m[K^~~~~~~~[m[K
+[5.123s] [01m[K/usr/include/c++/13/bits/shared_ptr.h:70:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[5.123s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:39:19:[m[K [01;36m[Knote: [m[K  ‘[01m[Knav_msgs::msg::OccupancyGrid[m[K’ {aka ‘[01m[Knav_msgs::msg::OccupancyGrid_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::__shared_ptr<_Tp, _Lp>[m[K’
+[5.123s]    39 |           cout << [01;36m[Kmap_[m[K;
+[5.123s]       |                   [01;36m[K^~~~[m[K
+[5.124s] In file included from [01m[K/usr/include/c++/13/bits/basic_string.h:47[m[K,
+[5.124s]                  from [01m[K/usr/include/c++/13/string:54[m[K,
+[5.124s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:18[m[K:
+[5.124s] [01m[K/usr/include/c++/13/string_view:761:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_Ch, _Tr>& std::[01;32m[Koperator<<[m[K(basic_ostream<_Ch, _Tr>&, basic_string_view<_CharT, _Traits>)[m[K’
+[5.124s]   761 |     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __os,
+[5.124s]       |     [01;36m[K^~~~~~~~[m[K
+[5.125s] [01m[K/usr/include/c++/13/string_view:761:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[5.125s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:39:19:[m[K [01;36m[Knote: [m[K  ‘[01m[Knav_msgs::msg::OccupancyGrid_<std::allocator<void> >[m[K’ is not derived from ‘[01m[Kstd::basic_string_view<_CharT, _Traits>[m[K’
+[5.125s]    39 |           cout << [01;36m[Kmap_[m[K;
+[5.125s]       |                   [01;36m[K^~~~[m[K
+[5.125s] [01m[K/usr/include/c++/13/bits/basic_string.h:4032:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> std::basic_ostream<_Ch, _Tr>& std::[01;32m[Koperator<<[m[K(basic_ostream<_Ch, _Tr>&, const __cxx11::basic_string<_CharT, _Traits, _Allocator>&)[m[K’
+[5.125s]  4032 |     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __os,
+[5.125s]       |     [01;36m[K^~~~~~~~[m[K
+[5.126s] [01m[K/usr/include/c++/13/bits/basic_string.h:4032:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[5.126s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:39:19:[m[K [01;36m[Knote: [m[K  ‘[01m[Knav_msgs::msg::OccupancyGrid[m[K’ {aka ‘[01m[Knav_msgs::msg::OccupancyGrid_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Allocator>[m[K’
+[5.126s]    39 |           cout << [01;36m[Kmap_[m[K;
+[5.126s]       |                   [01;36m[K^~~~[m[K
+[5.126s] In file included from [01m[K/usr/include/c++/13/bits/memory_resource.h:38[m[K,
+[5.126s]                  from [01m[K/usr/include/c++/13/string:58[m[K:
+[5.126s] [01m[K/usr/include/c++/13/cstddef:124:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _IntegerType> constexpr std::__byte_op_t<_IntegerType> std::[01;32m[Koperator<<[m[K(byte, _IntegerType)[m[K’
+[5.127s]   124 |     [01;36m[Koperator[m[K<<(byte __b, _IntegerType __shift) noexcept
+[5.127s]       |     [01;36m[K^~~~~~~~[m[K
+[5.127s] [01m[K/usr/include/c++/13/cstddef:124:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[5.127s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:39:11:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[Kstd::cout[m[K’ (type ‘[01m[Kstd::ostream[m[K’ {aka ‘[01m[Kstd::basic_ostream<char>[m[K’}) to type ‘[01m[Kstd::byte[m[K’
+[5.127s]    39 |           [01;36m[Kcout[m[K << map_;
+[5.128s]       |           [01;36m[K^~~~[m[K
+[5.128s] In file included from [01m[K/usr/include/c++/13/bits/ios_base.h:46[m[K,
+[5.128s]                  from [01m[K/usr/include/c++/13/ios:44[m[K,
+[5.128s]                  from [01m[K/usr/include/c++/13/istream:40[m[K:
+[5.128s] [01m[K/usr/include/c++/13/system_error:339:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_Ch, _Tr>& std::[01;32m[Koperator<<[m[K(basic_ostream<_Ch, _Tr>&, const error_code&)[m[K’
+[5.128s]   339 |     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __os, const error_code& __e)
+[5.129s]       |     [01;36m[K^~~~~~~~[m[K
+[5.129s] [01m[K/usr/include/c++/13/system_error:339:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[5.129s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:39:19:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[K((MissionManager*)this)->MissionManager::map_[m[K’ (type ‘[01m[Knav_msgs::msg::OccupancyGrid[m[K’ {aka ‘[01m[Knav_msgs::msg::OccupancyGrid_<std::allocator<void> >[m[K’}) to type ‘[01m[Kconst std::error_code&[m[K’
+[5.129s]    39 |           cout << [01;36m[Kmap_[m[K;
+[5.129s]       |                   [01;36m[K^~~~[m[K
+[5.130s] [01m[K/usr/include/c++/13/ostream:554:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_Ch, _Tr>& std::[01;32m[Koperator<<[m[K(basic_ostream<_Ch, _Tr>&, _CharT)[m[K’
+[5.130s]   554 |     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __out, _CharT __c)
+[5.130s]       |     [01;36m[K^~~~~~~~[m[K
+[5.130s] [01m[K/usr/include/c++/13/ostream:554:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[5.130s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:39:19:[m[K [01;36m[Knote: [m[K  deduced conflicting types for parameter ‘[01m[K_CharT[m[K’ (‘[01m[Kchar[m[K’ and ‘[01m[Knav_msgs::msg::OccupancyGrid_<std::allocator<void> >[m[K’)
+[5.130s]    39 |           cout << [01;36m[Kmap_[m[K;
+[5.130s]       |                   [01;36m[K^~~~[m[K
+[5.131s] [01m[K/usr/include/c++/13/ostream:564:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_Ch, _Tr>& std::[01;32m[Koperator<<[m[K(basic_ostream<_Ch, _Tr>&, char)[m[K’
+[5.131s]   564 |     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __out, char __c)
+[5.131s]       |     [01;36m[K^~~~~~~~[m[K
+[5.131s] [01m[K/usr/include/c++/13/ostream:564:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[5.131s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:39:19:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[K((MissionManager*)this)->MissionManager::map_[m[K’ (type ‘[01m[Knav_msgs::msg::OccupancyGrid[m[K’ {aka ‘[01m[Knav_msgs::msg::OccupancyGrid_<std::allocator<void> >[m[K’}) to type ‘[01m[Kchar[m[K’
+[5.131s]    39 |           cout << [01;36m[Kmap_[m[K;
+[5.131s]       |                   [01;36m[K^~~~[m[K
+[5.131s] [01m[K/usr/include/c++/13/ostream:570:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::[01;32m[Koperator<<[m[K(basic_ostream<char, _Traits>&, char)[m[K’
+[5.132s]   570 |     [01;36m[Koperator[m[K<<(basic_ostream<char, _Traits>& __out, char __c)
+[5.132s]       |     [01;36m[K^~~~~~~~[m[K
+[5.132s] [01m[K/usr/include/c++/13/ostream:570:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[5.132s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:39:19:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[K((MissionManager*)this)->MissionManager::map_[m[K’ (type ‘[01m[Knav_msgs::msg::OccupancyGrid[m[K’ {aka ‘[01m[Knav_msgs::msg::OccupancyGrid_<std::allocator<void> >[m[K’}) to type ‘[01m[Kchar[m[K’
+[5.132s]    39 |           cout << [01;36m[Kmap_[m[K;
+[5.132s]       |                   [01;36m[K^~~~[m[K
+[5.132s] [01m[K/usr/include/c++/13/ostream:581:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::[01;32m[Koperator<<[m[K(basic_ostream<char, _Traits>&, signed char)[m[K’
+[5.133s]   581 |     [01;36m[Koperator[m[K<<(basic_ostream<char, _Traits>& __out, signed char __c)
+[5.133s]       |     [01;36m[K^~~~~~~~[m[K
+[5.133s] [01m[K/usr/include/c++/13/ostream:581:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[5.133s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:39:19:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[K((MissionManager*)this)->MissionManager::map_[m[K’ (type ‘[01m[Knav_msgs::msg::OccupancyGrid[m[K’ {aka ‘[01m[Knav_msgs::msg::OccupancyGrid_<std::allocator<void> >[m[K’}) to type ‘[01m[Ksigned char[m[K’
+[5.133s]    39 |           cout << [01;36m[Kmap_[m[K;
+[5.133s]       |                   [01;36m[K^~~~[m[K
+[5.134s] [01m[K/usr/include/c++/13/ostream:586:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::[01;32m[Koperator<<[m[K(basic_ostream<char, _Traits>&, unsigned char)[m[K’
+[5.134s]   586 |     [01;36m[Koperator[m[K<<(basic_ostream<char, _Traits>& __out, unsigned char __c)
+[5.134s]       |     [01;36m[K^~~~~~~~[m[K
+[5.134s] [01m[K/usr/include/c++/13/ostream:586:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[5.135s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:39:19:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[K((MissionManager*)this)->MissionManager::map_[m[K’ (type ‘[01m[Knav_msgs::msg::OccupancyGrid[m[K’ {aka ‘[01m[Knav_msgs::msg::OccupancyGrid_<std::allocator<void> >[m[K’}) to type ‘[01m[Kunsigned char[m[K’
+[5.135s]    39 |           cout << [01;36m[Kmap_[m[K;
+[5.135s]       |                   [01;36m[K^~~~[m[K
+[5.135s] [01m[K/usr/include/c++/13/ostream:645:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_Ch, _Tr>& std::[01;32m[Koperator<<[m[K(basic_ostream<_Ch, _Tr>&, const _CharT*)[m[K’
+[5.135s]   645 |     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __out, const _CharT* __s)
+[5.135s]       |     [01;36m[K^~~~~~~~[m[K
+[5.135s] [01m[K/usr/include/c++/13/ostream:645:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[5.135s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:39:19:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst _CharT*[m[K’ and ‘[01m[Knav_msgs::msg::OccupancyGrid_<std::allocator<void> >[m[K’
+[5.136s]    39 |           cout << [01;36m[Kmap_[m[K;
+[5.136s]       |                   [01;36m[K^~~~[m[K
+[5.136s] [01m[K/usr/include/c++/13/bits/ostream.tcc:307:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_Ch, _Tr>& std::[01;32m[Koperator<<[m[K(basic_ostream<_Ch, _Tr>&, const char*)[m[K’
+[5.136s]   307 |     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __out, const char* __s)
+[5.136s]       |     [01;36m[K^~~~~~~~[m[K
+[5.136s] [01m[K/usr/include/c++/13/bits/ostream.tcc:307:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[5.136s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:39:19:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[K((MissionManager*)this)->MissionManager::map_[m[K’ (type ‘[01m[Knav_msgs::msg::OccupancyGrid[m[K’ {aka ‘[01m[Knav_msgs::msg::OccupancyGrid_<std::allocator<void> >[m[K’}) to type ‘[01m[Kconst char*[m[K’
+[5.137s]    39 |           cout << [01;36m[Kmap_[m[K;
+[5.137s]       |                   [01;36m[K^~~~[m[K
+[5.137s] [01m[K/usr/include/c++/13/ostream:662:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::[01;32m[Koperator<<[m[K(basic_ostream<char, _Traits>&, const char*)[m[K’
+[5.138s]   662 |     [01;36m[Koperator[m[K<<(basic_ostream<char, _Traits>& __out, const char* __s)
+[5.138s]       |     [01;36m[K^~~~~~~~[m[K
+[5.138s] [01m[K/usr/include/c++/13/ostream:662:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[5.138s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:39:19:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[K((MissionManager*)this)->MissionManager::map_[m[K’ (type ‘[01m[Knav_msgs::msg::OccupancyGrid[m[K’ {aka ‘[01m[Knav_msgs::msg::OccupancyGrid_<std::allocator<void> >[m[K’}) to type ‘[01m[Kconst char*[m[K’
+[5.138s]    39 |           cout << [01;36m[Kmap_[m[K;
+[5.138s]       |                   [01;36m[K^~~~[m[K
+[5.139s] [01m[K/usr/include/c++/13/ostream:675:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::[01;32m[Koperator<<[m[K(basic_ostream<char, _Traits>&, const signed char*)[m[K’
+[5.139s]   675 |     [01;36m[Koperator[m[K<<(basic_ostream<char, _Traits>& __out, const signed char* __s)
+[5.139s]       |     [01;36m[K^~~~~~~~[m[K
+[5.139s] [01m[K/usr/include/c++/13/ostream:675:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[5.140s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:39:19:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[K((MissionManager*)this)->MissionManager::map_[m[K’ (type ‘[01m[Knav_msgs::msg::OccupancyGrid[m[K’ {aka ‘[01m[Knav_msgs::msg::OccupancyGrid_<std::allocator<void> >[m[K’}) to type ‘[01m[Kconst signed char*[m[K’
+[5.140s]    39 |           cout << [01;36m[Kmap_[m[K;
+[5.140s]       |                   [01;36m[K^~~~[m[K
+[5.140s] [01m[K/usr/include/c++/13/ostream:680:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::[01;32m[Koperator<<[m[K(basic_ostream<char, _Traits>&, const unsigned char*)[m[K’
+[5.140s]   680 |     [01;36m[Koperator[m[K<<(basic_ostream<char, _Traits>& __out, const unsigned char* __s)
+[5.140s]       |     [01;36m[K^~~~~~~~[m[K
+[5.140s] [01m[K/usr/include/c++/13/ostream:680:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[5.140s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:39:19:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[K((MissionManager*)this)->MissionManager::map_[m[K’ (type ‘[01m[Knav_msgs::msg::OccupancyGrid[m[K’ {aka ‘[01m[Knav_msgs::msg::OccupancyGrid_<std::allocator<void> >[m[K’}) to type ‘[01m[Kconst unsigned char*[m[K’
+[5.141s]    39 |           cout << [01;36m[Kmap_[m[K;
+[5.141s]       |                   [01;36m[K^~~~[m[K
+[5.141s] [01m[K/usr/include/c++/13/ostream:801:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Ostream, class _Tp> _Ostream&& std::[01;32m[Koperator<<[m[K(_Ostream&&, const _Tp&)[m[K’
+[5.141s]   801 |     [01;36m[Koperator[m[K<<(_Ostream&& __os, const _Tp& __x)
+[5.141s]       |     [01;36m[K^~~~~~~~[m[K
+[5.141s] [01m[K/usr/include/c++/13/ostream:801:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[5.141s] /usr/include/c++/13/ostream: In substitution of ‘[01m[Ktemplate<class _Ostream, class _Tp> _Ostream&& std::[01;32m[Koperator<<[m[K(_Ostream&&, const _Tp&) [35m[K[with _Ostream = std::basic_ostream<char>&; _Tp = nav_msgs::msg::OccupancyGrid_<std::allocator<void> >][m[K[m[K’:
+[5.142s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:39:19:[m[K   required from here
+[5.142s] [01m[K/usr/include/c++/13/ostream:801:5:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Ktype[m[K’ in ‘[01m[Kstruct std::enable_if<false, void>[m[K’
+[5.142s] In file included from [01m[K/opt/ros/jazzy/include/rosidl_runtime_cpp/rosidl_runtime_cpp/traits.hpp:20[m[K,
+[5.142s]                  from [01m[K/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__traits.hpp:18[m[K:
+[5.142s] [01m[K/usr/include/c++/13/iomanip:81:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_Ch, _Tr>& std::[01;32m[Koperator<<[m[K(basic_ostream<_Ch, _Tr>&, _Resetiosflags)[m[K’
+[5.142s]    81 |     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __os, _Resetiosflags __f)
+[5.142s]       |     [01;36m[K^~~~~~~~[m[K
+[5.143s] [01m[K/usr/include/c++/13/iomanip:81:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[5.143s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:39:19:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[K((MissionManager*)this)->MissionManager::map_[m[K’ (type ‘[01m[Knav_msgs::msg::OccupancyGrid[m[K’ {aka ‘[01m[Knav_msgs::msg::OccupancyGrid_<std::allocator<void> >[m[K’}) to type ‘[01m[Kstd::_Resetiosflags[m[K’
+[5.143s]    39 |           cout << [01;36m[Kmap_[m[K;
+[5.143s]       |                   [01;36m[K^~~~[m[K
+[5.143s] [01m[K/usr/include/c++/13/iomanip:111:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_Ch, _Tr>& std::[01;32m[Koperator<<[m[K(basic_ostream<_Ch, _Tr>&, _Setiosflags)[m[K’
+[5.143s]   111 |     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __os, _Setiosflags __f)
+[5.143s]       |     [01;36m[K^~~~~~~~[m[K
+[5.143s] [01m[K/usr/include/c++/13/iomanip:111:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[5.144s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:39:19:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[K((MissionManager*)this)->MissionManager::map_[m[K’ (type ‘[01m[Knav_msgs::msg::OccupancyGrid[m[K’ {aka ‘[01m[Knav_msgs::msg::OccupancyGrid_<std::allocator<void> >[m[K’}) to type ‘[01m[Kstd::_Setiosflags[m[K’
+[5.144s]    39 |           cout << [01;36m[Kmap_[m[K;
+[5.144s]       |                   [01;36m[K^~~~[m[K
+[5.144s] [01m[K/usr/include/c++/13/iomanip:145:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_Ch, _Tr>& std::[01;32m[Koperator<<[m[K(basic_ostream<_Ch, _Tr>&, _Setbase)[m[K’
+[5.144s]   145 |     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __os, _Setbase __f)
+[5.144s]       |     [01;36m[K^~~~~~~~[m[K
+[5.145s] [01m[K/usr/include/c++/13/iomanip:145:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[5.145s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:39:19:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[K((MissionManager*)this)->MissionManager::map_[m[K’ (type ‘[01m[Knav_msgs::msg::OccupancyGrid[m[K’ {aka ‘[01m[Knav_msgs::msg::OccupancyGrid_<std::allocator<void> >[m[K’}) to type ‘[01m[Kstd::_Setbase[m[K’
+[5.145s]    39 |           cout << [01;36m[Kmap_[m[K;
+[5.145s]       |                   [01;36m[K^~~~[m[K
+[5.145s] [01m[K/usr/include/c++/13/iomanip:180:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_Ch, _Tr>& std::[01;32m[Koperator<<[m[K(basic_ostream<_Ch, _Tr>&, _Setfill<_CharT>)[m[K’
+[5.145s]   180 |     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __os, _Setfill<_CharT> __f)
+[5.145s]       |     [01;36m[K^~~~~~~~[m[K
+[5.146s] [01m[K/usr/include/c++/13/iomanip:180:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[5.146s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:39:19:[m[K [01;36m[Knote: [m[K  ‘[01m[Knav_msgs::msg::OccupancyGrid_<std::allocator<void> >[m[K’ is not derived from ‘[01m[Kstd::_Setfill<_CharT>[m[K’
+[5.146s]    39 |           cout << [01;36m[Kmap_[m[K;
+[5.146s]       |                   [01;36m[K^~~~[m[K
+[5.146s] [01m[K/usr/include/c++/13/iomanip:210:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_Ch, _Tr>& std::[01;32m[Koperator<<[m[K(basic_ostream<_Ch, _Tr>&, _Setprecision)[m[K’
+[5.146s]   210 |     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __os, _Setprecision __f)
+[5.146s]       |     [01;36m[K^~~~~~~~[m[K
+[5.146s] [01m[K/usr/include/c++/13/iomanip:210:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[5.147s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:39:19:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[K((MissionManager*)this)->MissionManager::map_[m[K’ (type ‘[01m[Knav_msgs::msg::OccupancyGrid[m[K’ {aka ‘[01m[Knav_msgs::msg::OccupancyGrid_<std::allocator<void> >[m[K’}) to type ‘[01m[Kstd::_Setprecision[m[K’
+[5.147s]    39 |           cout << [01;36m[Kmap_[m[K;
+[5.147s]       |                   [01;36m[K^~~~[m[K
+[5.147s] [01m[K/usr/include/c++/13/iomanip:240:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_Ch, _Tr>& std::[01;32m[Koperator<<[m[K(basic_ostream<_Ch, _Tr>&, _Setw)[m[K’
+[5.147s]   240 |     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __os, _Setw __f)
+[5.147s]       |     [01;36m[K^~~~~~~~[m[K
+[5.147s] [01m[K/usr/include/c++/13/iomanip:240:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[5.148s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:39:19:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[K((MissionManager*)this)->MissionManager::map_[m[K’ (type ‘[01m[Knav_msgs::msg::OccupancyGrid[m[K’ {aka ‘[01m[Knav_msgs::msg::OccupancyGrid_<std::allocator<void> >[m[K’}) to type ‘[01m[Kstd::_Setw[m[K’
+[5.148s]    39 |           cout << [01;36m[Kmap_[m[K;
+[5.148s]       |                   [01;36m[K^~~~[m[K
+[5.148s] [01m[K/usr/include/c++/13/iomanip:313:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _MoneyT> std::basic_ostream<_Ch, _Tr>& std::[01;32m[Koperator<<[m[K(basic_ostream<_Ch, _Tr>&, _Put_money<_MoneyT>)[m[K’
+[5.148s]   313 |     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __os, _Put_money<_MoneyT> __f)
+[5.148s]       |     [01;36m[K^~~~~~~~[m[K
+[5.148s] [01m[K/usr/include/c++/13/iomanip:313:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[5.148s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:39:19:[m[K [01;36m[Knote: [m[K  ‘[01m[Knav_msgs::msg::OccupancyGrid_<std::allocator<void> >[m[K’ is not derived from ‘[01m[Kstd::_Put_money<_MoneyT>[m[K’
+[5.149s]    39 |           cout << [01;36m[Kmap_[m[K;
+[5.149s]       |                   [01;36m[K^~~~[m[K
+[5.149s] [01m[K/usr/include/c++/13/iomanip:365:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_Ch, _Tr>& std::[01;32m[Koperator<<[m[K(basic_ostream<_Ch, _Tr>&, _Put_time<_CharT>)[m[K’
+[5.149s]   365 |     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __os, _Put_time<_CharT> __f)
+[5.149s]       |     [01;36m[K^~~~~~~~[m[K
+[5.149s] [01m[K/usr/include/c++/13/iomanip:365:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[5.150s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:39:19:[m[K [01;36m[Knote: [m[K  ‘[01m[Knav_msgs::msg::OccupancyGrid_<std::allocator<void> >[m[K’ is not derived from ‘[01m[Kstd::_Put_time<_CharT>[m[K’
+[5.150s]    39 |           cout << [01;36m[Kmap_[m[K;
+[5.150s]       |                   [01;36m[K^~~~[m[K
+[5.150s] In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:22[m[K,
+[5.150s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[5.150s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:176[m[K:
+[5.150s] [01m[K/usr/include/c++/13/thread:97:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_Ch, _Tr>& std::[01;32m[Koperator<<[m[K(basic_ostream<_Ch, _Tr>&, thread::id)[m[K’
+[5.150s]    97 |     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __out, thread::id __id)
+[5.151s]       |     [01;36m[K^~~~~~~~[m[K
+[5.151s] [01m[K/usr/include/c++/13/thread:97:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[5.151s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:39:19:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[K((MissionManager*)this)->MissionManager::map_[m[K’ (type ‘[01m[Knav_msgs::msg::OccupancyGrid[m[K’ {aka ‘[01m[Knav_msgs::msg::OccupancyGrid_<std::allocator<void> >[m[K’}) to type ‘[01m[Kstd::thread::id[m[K’
+[5.151s]    39 |           cout << [01;36m[Kmap_[m[K;
+[5.151s]       |                   [01;36m[K^~~~[m[K
+[5.151s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:[m[K In function ‘[01m[Kint[01;32m[K main[m[K(int, char**)[m[K’:
+[5.151s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:52:12:[m[K [01;35m[Kwarning: [m[Kstatement is a reference, not call, to function ‘[01m[Krclcpp::shutdown[m[K’ [[01;35m[K-Waddress[m[K]
+[5.151s]    52 |    [01;35m[Krclcpp::shutdown[m[K;
+[5.152s]       |    [01;35m[K~~~~~~~~^~~~~~~~[m[K
+[5.152s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:52:12:[m[K [01;35m[Kwarning: [m[Kstatement has no effect [[01;35m[K-Wunused-value[m[K]
+[11.370s] gmake[2]: *** [CMakeFiles/mission.dir/build.make:76: CMakeFiles/mission.dir/src/mission.cpp.o] Error 1
+[11.371s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/mission.dir/all] Error 2
+[11.371s] gmake: *** [Makefile:146: all] Error 2
+[11.380s] Invoked command in '/manager_ws/build/mission_manager' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /manager_ws/build/mission_manager -- -j6 -l6

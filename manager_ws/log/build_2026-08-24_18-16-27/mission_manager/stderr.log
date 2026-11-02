@@ -1,0 +1,10 @@
+[01m[K/manager_ws/src/mission_manager/src/mission.cpp:[m[K In member function ‘[01m[Kvoid MissionManager::[01;32m[KExplorationCompleteCallback[m[K(std_msgs::msg::Empty_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/manager_ws/src/mission_manager/src/mission.cpp:18:72:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   18 |  void ExplorationCompleteCallback([01;35m[Kstd_msgs::msg::Empty::SharedPtr msg[m[K)
+      |                                   [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+
+[01m[K/manager_ws/src/mission_manager/src/mission.cpp:[m[K In function ‘[01m[Kint[01;32m[K main[m[K(int, char**)[m[K’:
+[01m[K/manager_ws/src/mission_manager/src/mission.cpp:32:12:[m[K [01;35m[Kwarning: [m[Kstatement is a reference, not call, to function ‘[01m[Krclcpp::shutdown[m[K’ [[01;35m[K-Waddress[m[K]
+   32 |    [01;35m[Krclcpp::shutdown[m[K;
+      |    [01;35m[K~~~~~~~~^~~~~~~~[m[K
+[01m[K/manager_ws/src/mission_manager/src/mission.cpp:32:12:[m[K [01;35m[Kwarning: [m[Kstatement has no effect [[01;35m[K-Wunused-value[m[K]

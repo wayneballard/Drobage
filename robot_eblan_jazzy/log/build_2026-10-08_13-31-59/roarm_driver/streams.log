@@ -1,0 +1,33 @@
+[2.319s] Invoking command in '/robot_eblan/src/roarm_driver': PYTHONPATH=/robot_eblan/build/roarm_driver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/robot_eblan/install/roarm_driver/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/roarm_driver build --build-base /robot_eblan/build/roarm_driver/build install --record /robot_eblan/build/roarm_driver/install.log --install-scripts $base/lib/roarm_driver --single-version-externally-managed install_data
+[2.944s] running egg_info
+[2.988s] creating ../../build/roarm_driver/roarm_driver.egg-info
+[2.991s] writing ../../build/roarm_driver/roarm_driver.egg-info/PKG-INFO
+[2.992s] writing dependency_links to ../../build/roarm_driver/roarm_driver.egg-info/dependency_links.txt
+[2.992s] writing entry points to ../../build/roarm_driver/roarm_driver.egg-info/entry_points.txt
+[2.992s] writing requirements to ../../build/roarm_driver/roarm_driver.egg-info/requires.txt
+[2.992s] writing top-level names to ../../build/roarm_driver/roarm_driver.egg-info/top_level.txt
+[2.992s] writing manifest file '../../build/roarm_driver/roarm_driver.egg-info/SOURCES.txt'
+[3.084s] reading manifest file '../../build/roarm_driver/roarm_driver.egg-info/SOURCES.txt'
+[3.086s] writing manifest file '../../build/roarm_driver/roarm_driver.egg-info/SOURCES.txt'
+[3.086s] running build
+[3.087s] running build_py
+[3.087s] creating /robot_eblan/build/roarm_driver/build/lib/roarm_driver
+[3.087s] copying roarm_driver/roarm_driver.py -> /robot_eblan/build/roarm_driver/build/lib/roarm_driver
+[3.090s] copying roarm_driver/__init__.py -> /robot_eblan/build/roarm_driver/build/lib/roarm_driver
+[3.091s] running install
+[3.100s] running install_lib
+[3.144s] creating /robot_eblan/install/roarm_driver/lib/python3.12/site-packages/roarm_driver
+[3.144s] copying /robot_eblan/build/roarm_driver/build/lib/roarm_driver/roarm_driver.py -> /robot_eblan/install/roarm_driver/lib/python3.12/site-packages/roarm_driver
+[3.144s] copying /robot_eblan/build/roarm_driver/build/lib/roarm_driver/__init__.py -> /robot_eblan/install/roarm_driver/lib/python3.12/site-packages/roarm_driver
+[3.145s] byte-compiling /robot_eblan/install/roarm_driver/lib/python3.12/site-packages/roarm_driver/roarm_driver.py to roarm_driver.cpython-312.pyc
+[3.148s] byte-compiling /robot_eblan/install/roarm_driver/lib/python3.12/site-packages/roarm_driver/__init__.py to __init__.cpython-312.pyc
+[3.148s] running install_data
+[3.149s] creating /robot_eblan/install/roarm_driver/share/ament_index/resource_index/packages
+[3.149s] copying resource/roarm_driver -> /robot_eblan/install/roarm_driver/share/ament_index/resource_index/packages
+[3.149s] copying package.xml -> /robot_eblan/install/roarm_driver/share/roarm_driver
+[3.153s] running install_egg_info
+[3.196s] Copying ../../build/roarm_driver/roarm_driver.egg-info to /robot_eblan/install/roarm_driver/lib/python3.12/site-packages/roarm_driver-0.0.0-py3.12.egg-info
+[3.198s] running install_scripts
+[3.291s] Installing roarm_driver script to /robot_eblan/install/roarm_driver/lib/roarm_driver
+[3.292s] writing list of installed files to '/robot_eblan/build/roarm_driver/install.log'
+[3.373s] Invoked command in '/robot_eblan/src/roarm_driver' returned '0': PYTHONPATH=/robot_eblan/build/roarm_driver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/robot_eblan/install/roarm_driver/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/roarm_driver build --build-base /robot_eblan/build/roarm_driver/build install --record /robot_eblan/build/roarm_driver/install.log --install-scripts $base/lib/roarm_driver --single-version-externally-managed install_data

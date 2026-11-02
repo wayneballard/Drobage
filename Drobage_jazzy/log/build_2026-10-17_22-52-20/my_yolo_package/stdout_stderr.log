@@ -1,0 +1,26 @@
+/usr/local/lib/python3.12/dist-packages/setuptools/_distutils/dist.py:318: UserWarning: Unknown distribution option: 'tests_require'
+  warnings.warn(msg)
+running egg_info
+writing ../../build/my_yolo_package/my_yolo_package.egg-info/PKG-INFO
+writing dependency_links to ../../build/my_yolo_package/my_yolo_package.egg-info/dependency_links.txt
+writing entry points to ../../build/my_yolo_package/my_yolo_package.egg-info/entry_points.txt
+writing requirements to ../../build/my_yolo_package/my_yolo_package.egg-info/requires.txt
+writing top-level names to ../../build/my_yolo_package/my_yolo_package.egg-info/top_level.txt
+reading manifest file '../../build/my_yolo_package/my_yolo_package.egg-info/SOURCES.txt'
+writing manifest file '../../build/my_yolo_package/my_yolo_package.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+running install_data
+running install_egg_info
+removing '/Drobage_jazzy/install/my_yolo_package/lib/python3.12/site-packages/my_yolo_package-0.0.0-py3.12.egg-info' (and everything under it)
+Copying ../../build/my_yolo_package/my_yolo_package.egg-info to /Drobage_jazzy/install/my_yolo_package/lib/python3.12/site-packages/my_yolo_package-0.0.0-py3.12.egg-info
+running install_scripts
+Installing imu_node script to /Drobage_jazzy/install/my_yolo_package/lib/my_yolo_package
+Installing inference_node script to /Drobage_jazzy/install/my_yolo_package/lib/my_yolo_package
+Installing oak_camera_node script to /Drobage_jazzy/install/my_yolo_package/lib/my_yolo_package
+Installing odom_node script to /Drobage_jazzy/install/my_yolo_package/lib/my_yolo_package
+Installing tracking_logger script to /Drobage_jazzy/install/my_yolo_package/lib/my_yolo_package
+Installing visualizer_node script to /Drobage_jazzy/install/my_yolo_package/lib/my_yolo_package
+writing list of installed files to '/Drobage_jazzy/build/my_yolo_package/install.log'

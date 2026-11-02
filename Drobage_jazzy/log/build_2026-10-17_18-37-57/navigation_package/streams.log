@@ -1,0 +1,19 @@
+[2.495s] Invoking command in '/Drobage_jazzy/src/navigation_package': PYTHONPATH=/Drobage_jazzy/build/navigation_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/Drobage_jazzy/install/navigation_package/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/navigation_package build --build-base /Drobage_jazzy/build/navigation_package/build install --record /Drobage_jazzy/build/navigation_package/install.log --install-scripts $base/lib/navigation_package --single-version-externally-managed install_data
+[3.076s] running egg_info
+[3.116s] writing ../../build/navigation_package/navigation_package.egg-info/PKG-INFO
+[3.117s] writing dependency_links to ../../build/navigation_package/navigation_package.egg-info/dependency_links.txt
+[3.118s] writing requirements to ../../build/navigation_package/navigation_package.egg-info/requires.txt
+[3.118s] writing top-level names to ../../build/navigation_package/navigation_package.egg-info/top_level.txt
+[3.206s] reading manifest file '../../build/navigation_package/navigation_package.egg-info/SOURCES.txt'
+[3.208s] writing manifest file '../../build/navigation_package/navigation_package.egg-info/SOURCES.txt'
+[3.208s] running build
+[3.208s] running build_py
+[3.209s] running install
+[3.218s] running install_lib
+[3.261s] running install_data
+[3.262s] running install_egg_info
+[3.306s] removing '/Drobage_jazzy/install/navigation_package/lib/python3.12/site-packages/navigation_package-0.0.0-py3.12.egg-info' (and everything under it)
+[3.306s] Copying ../../build/navigation_package/navigation_package.egg-info to /Drobage_jazzy/install/navigation_package/lib/python3.12/site-packages/navigation_package-0.0.0-py3.12.egg-info
+[3.308s] running install_scripts
+[3.393s] writing list of installed files to '/Drobage_jazzy/build/navigation_package/install.log'
+[3.514s] Invoked command in '/Drobage_jazzy/src/navigation_package' returned '0': PYTHONPATH=/Drobage_jazzy/build/navigation_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/Drobage_jazzy/install/navigation_package/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/navigation_package build --build-base /Drobage_jazzy/build/navigation_package/build install --record /Drobage_jazzy/build/navigation_package/install.log --install-scripts $base/lib/navigation_package --single-version-externally-managed install_data

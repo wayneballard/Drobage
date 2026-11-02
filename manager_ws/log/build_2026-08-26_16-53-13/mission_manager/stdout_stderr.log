@@ -1,0 +1,31 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/mission.dir/src/mission.cpp.o[0m
+[01m[K/manager_ws/src/mission_manager/src/mission.cpp:[m[K In member function ‘[01m[Kvoid MissionManager::[01;32m[KExplorationCompleteCallback[m[K(std_msgs::msg::Empty_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/manager_ws/src/mission_manager/src/mission.cpp:54:78:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   54 |       void ExplorationCompleteCallback([01;35m[Kconst std_msgs::msg::Empty::SharedPtr msg[m[K)
+      |                                        [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[01m[K/manager_ws/src/mission_manager/src/mission.cpp:[m[K In member function ‘[01m[Kvoid MissionManager::[01;32m[KGetRobotPose[m[K()[m[K’:
+[01m[K/manager_ws/src/mission_manager/src/mission.cpp:81:30:[m[K [01;31m[Kerror: [m[K‘[01m[Kx[m[K’ was not declared in this scope
+   81 |             cout << "x: " << [01;31m[Kx[m[K << ", " << "y: " << y << endl;
+      |                              [01;31m[K^[m[K
+[01m[K/manager_ws/src/mission_manager/src/mission.cpp:81:52:[m[K [01;31m[Kerror: [m[K‘[01m[Ky[m[K’ was not declared in this scope; did you mean ‘[01m[Kyn[m[K’?
+   81 |             cout << "x: " << x << ", " << "y: " << [01;31m[Ky[m[K << endl;
+      |                                                    [01;31m[K^[m[K
+      |                                                    [32m[Kyn[m[K
+[01m[K/manager_ws/src/mission_manager/src/mission.cpp:85:59:[m[K [01;31m[Kerror: [m[K‘[01m[Kmap_info[m[K’ was not declared in this scope
+   85 |                 for(unsigned int grid_col = 0; grid_col < [01;31m[Kmap_info[m[K.width; grid_col++){
+      |                                                           [01;31m[K^~~~~~~~[m[K
+In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:175[m[K,
+                 from [01m[K/manager_ws/src/mission_manager/src/mission.cpp:1[m[K:
+[01m[K/manager_ws/src/mission_manager/src/mission.cpp:101:45:[m[K [01;35m[Kwarning: [m[Ktoo many arguments for format [[01;35m[K-Wformat-extra-args[m[K]
+  101 |             RCLCPP_WARN(this->get_logger(), [01;35m[K"Could not get the transform"[m[K, ex.what());
+      |                                             [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/manager_ws/src/mission_manager/src/mission.cpp:[m[K In function ‘[01m[Kint[01;32m[K main[m[K(int, char**)[m[K’:
+[01m[K/manager_ws/src/mission_manager/src/mission.cpp:115:12:[m[K [01;35m[Kwarning: [m[Kstatement is a reference, not call, to function ‘[01m[Krclcpp::shutdown[m[K’ [[01;35m[K-Waddress[m[K]
+  115 |    [01;35m[Krclcpp::shutdown[m[K;
+      |    [01;35m[K~~~~~~~~^~~~~~~~[m[K
+[01m[K/manager_ws/src/mission_manager/src/mission.cpp:115:12:[m[K [01;35m[Kwarning: [m[Kstatement has no effect [[01;35m[K-Wunused-value[m[K]
+gmake[2]: *** [CMakeFiles/mission.dir/build.make:76: CMakeFiles/mission.dir/src/mission.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/mission.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

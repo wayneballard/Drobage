@@ -1,0 +1,259 @@
+[0.000000] (-) TimerEvent: {}
+[0.001151] (mission_manager) JobQueued: {'identifier': 'mission_manager', 'dependencies': OrderedDict()}
+[0.001516] (mission_manager) JobStarted: {'identifier': 'mission_manager'}
+[0.020126] (mission_manager) JobProgress: {'identifier': 'mission_manager', 'progress': 'cmake'}
+[0.021706] (mission_manager) JobProgress: {'identifier': 'mission_manager', 'progress': 'build'}
+[0.022832] (mission_manager) Command: {'cmd': ['/usr/bin/cmake', '--build', '/manager_ws/build/mission_manager', '--', '-j6', '-l6'], 'cwd': '/manager_ws/build/mission_manager', 'env': OrderedDict({'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'HOSTNAME': 'wb-desktop', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/root', 'OLDPWD': '/manager_ws/src', 'ROS_PYTHON_VERSION': '3', 'COLCON_PREFIX_PATH': '/manager_ws/install', 'ROS_DISTRO': 'jazzy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'ROS_DOMAIN_ID': '42', 'AMENT_PREFIX_PATH': '/manager_ws/install/mission_manager:/opt/ros/jazzy', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/manager_ws/build/mission_manager', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/manager_ws/install/mission_manager:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.099407] (-) TimerEvent: {}
+[0.200496] (-) TimerEvent: {}
+[0.203379] (mission_manager) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/mission.dir/src/mission.cpp.o\x1b[0m\n'}
+[0.300644] (-) TimerEvent: {}
+[0.401337] (-) TimerEvent: {}
+[0.501832] (-) TimerEvent: {}
+[0.602332] (-) TimerEvent: {}
+[0.702841] (-) TimerEvent: {}
+[0.803372] (-) TimerEvent: {}
+[0.903937] (-) TimerEvent: {}
+[1.004494] (-) TimerEvent: {}
+[1.105069] (-) TimerEvent: {}
+[1.205670] (-) TimerEvent: {}
+[1.306287] (-) TimerEvent: {}
+[1.407018] (-) TimerEvent: {}
+[1.507524] (-) TimerEvent: {}
+[1.608030] (-) TimerEvent: {}
+[1.708647] (-) TimerEvent: {}
+[1.809343] (-) TimerEvent: {}
+[1.910045] (-) TimerEvent: {}
+[2.010678] (-) TimerEvent: {}
+[2.111218] (-) TimerEvent: {}
+[2.211958] (-) TimerEvent: {}
+[2.312568] (-) TimerEvent: {}
+[2.413092] (-) TimerEvent: {}
+[2.513634] (-) TimerEvent: {}
+[2.614194] (-) TimerEvent: {}
+[2.714739] (-) TimerEvent: {}
+[2.815288] (-) TimerEvent: {}
+[2.916465] (-) TimerEvent: {}
+[3.017025] (-) TimerEvent: {}
+[3.117622] (-) TimerEvent: {}
+[3.218185] (-) TimerEvent: {}
+[3.318786] (-) TimerEvent: {}
+[3.419524] (-) TimerEvent: {}
+[3.520050] (-) TimerEvent: {}
+[3.620585] (-) TimerEvent: {}
+[3.721121] (-) TimerEvent: {}
+[3.821664] (-) TimerEvent: {}
+[3.922309] (-) TimerEvent: {}
+[4.022848] (-) TimerEvent: {}
+[4.123459] (-) TimerEvent: {}
+[4.223983] (-) TimerEvent: {}
+[4.324536] (-) TimerEvent: {}
+[4.425066] (-) TimerEvent: {}
+[4.525668] (-) TimerEvent: {}
+[4.626260] (-) TimerEvent: {}
+[4.726833] (-) TimerEvent: {}
+[4.827372] (-) TimerEvent: {}
+[4.927962] (-) TimerEvent: {}
+[5.028580] (-) TimerEvent: {}
+[5.129124] (-) TimerEvent: {}
+[5.229777] (-) TimerEvent: {}
+[5.330342] (-) TimerEvent: {}
+[5.430905] (-) TimerEvent: {}
+[5.531459] (-) TimerEvent: {}
+[5.632058] (-) TimerEvent: {}
+[5.732612] (-) TimerEvent: {}
+[5.833268] (-) TimerEvent: {}
+[5.933793] (-) TimerEvent: {}
+[6.034317] (-) TimerEvent: {}
+[6.134853] (-) TimerEvent: {}
+[6.231063] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KMissionManager::\x1b[01;32m\x1b[KMissionManager\x1b[m\x1b[K()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.231643] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:38:112:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Knav2_msgs::action::NavigateToPose::NavigateToPose(MissionManager*, const char [17])\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.231854] (mission_manager) StderrLine: {'line': b'   38 |        action_client_ = rclcpp_action::create_client<nav2_msgs::action::NavigateToPose(this, "navigate_to_pose"\x1b[01;31m\x1b[K)\x1b[m\x1b[K;\n'}
+[6.232527] (mission_manager) StderrLine: {'line': b'      |                                                                                                                \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[6.233009] (mission_manager) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/jazzy/include/nav2_msgs/nav2_msgs/action/navigate_to_pose.hpp:7\x1b[m\x1b[K,\n'}
+[6.233474] (mission_manager) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:13\x1b[m\x1b[K:\n'}
+[6.233625] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/nav2_msgs/nav2_msgs/action/detail/navigate_to_pose__struct.hpp:1411:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kconstexpr nav2_msgs::action::NavigateToPose::\x1b[01;32m\x1b[KNavigateToPose\x1b[m\x1b[K()\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.233774] (mission_manager) StderrLine: {'line': b' 1411 | struct \x1b[01;36m\x1b[KNavigateToPose\x1b[m\x1b[K\n'}
+[6.233913] (mission_manager) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.234046] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/nav2_msgs/nav2_msgs/action/detail/navigate_to_pose__struct.hpp:1411:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 0 arguments, 2 provided\n'}
+[6.234184] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/nav2_msgs/nav2_msgs/action/detail/navigate_to_pose__struct.hpp:1411:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kconstexpr nav2_msgs::action::NavigateToPose::\x1b[01;32m\x1b[KNavigateToPose\x1b[m\x1b[K(const nav2_msgs::action::NavigateToPose&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.234322] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/nav2_msgs/nav2_msgs/action/detail/navigate_to_pose__struct.hpp:1411:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 1 argument, 2 provided\n'}
+[6.234467] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/nav2_msgs/nav2_msgs/action/detail/navigate_to_pose__struct.hpp:1411:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kconstexpr nav2_msgs::action::NavigateToPose::\x1b[01;32m\x1b[KNavigateToPose\x1b[m\x1b[K(nav2_msgs::action::NavigateToPose&&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.234769] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/nav2_msgs/nav2_msgs/action/detail/navigate_to_pose__struct.hpp:1411:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 1 argument, 2 provided\n'}
+[6.234916] (-) TimerEvent: {}
+[6.235110] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:38:40:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kparse error in template argument list\n'}
+[6.235271] (mission_manager) StderrLine: {'line': b'   38 |        action_client_ = rclcpp_action::\x1b[01;31m\x1b[Kcreate_client<nav2_msgs::action::NavigateToPose(this, "navigate_to_pose")\x1b[m\x1b[K;\n'}
+[6.235496] (mission_manager) StderrLine: {'line': b'      |                                        \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.235639] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:38:40:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno match for \xe2\x80\x98\x1b[01m\x1b[Koperator=\x1b[m\x1b[K\xe2\x80\x99 (operand types are \xe2\x80\x98\x1b[01m\x1b[Krclcpp_action::Client<nav2_msgs::action::NavigateToPose>::SharedPtr\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<rclcpp_action::Client<nav2_msgs::action::NavigateToPose> >\x1b[m\x1b[K\xe2\x80\x99} and \xe2\x80\x98\x1b[01m\x1b[K<unresolved overloaded function type>\x1b[m\x1b[K\xe2\x80\x99)\n'}
+[6.235789] (mission_manager) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/13/memory:80\x1b[m\x1b[K,\n'}
+[6.235923] (mission_manager) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:173\x1b[m\x1b[K,\n'}
+[6.236054] (mission_manager) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:1\x1b[m\x1b[K:\n'}
+[6.236215] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/shared_ptr.h:418:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Yp> std::shared_ptr<_Tp>::_Assignable<const std::shared_ptr<_Yp>&> std::shared_ptr<_Tp>::\x1b[01;32m\x1b[Koperator=\x1b[m\x1b[K(const std::shared_ptr<_Yp>&) \x1b[35m\x1b[K[with _Tp = rclcpp_action::Client<nav2_msgs::action::NavigateToPose>]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.236370] (mission_manager) StderrLine: {'line': b'  418 |         \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K=(const shared_ptr<_Yp>& __r) noexcept\n'}
+[6.236504] (mission_manager) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.236634] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/shared_ptr.h:418:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[6.236766] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:38:40:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  couldn\xe2\x80\x99t deduce template parameter \xe2\x80\x98\x1b[01m\x1b[K_Yp\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.236920] (mission_manager) StderrLine: {'line': b'   38 |        action_client_ = rclcpp_action::\x1b[01;36m\x1b[Kcreate_client<nav2_msgs::action::NavigateToPose(this, "navigate_to_pose")\x1b[m\x1b[K;\n'}
+[6.237067] (mission_manager) StderrLine: {'line': b'      |                                        \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.237197] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/shared_ptr.h:429:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Yp> std::shared_ptr<_Tp>::_Assignable<std::auto_ptr<_Up> > std::shared_ptr<_Tp>::\x1b[01;32m\x1b[Koperator=\x1b[m\x1b[K(std::auto_ptr<_Up>&&) \x1b[35m\x1b[K[with _Tp = rclcpp_action::Client<nav2_msgs::action::NavigateToPose>]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.237379] (mission_manager) StderrLine: {'line': b'  429 |         \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K=(auto_ptr<_Yp>&& __r)\n'}
+[6.237513] (mission_manager) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.237643] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/shared_ptr.h:429:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[6.237772] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:38:40:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  couldn\xe2\x80\x99t deduce template parameter \xe2\x80\x98\x1b[01m\x1b[K_Yp\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.237915] (mission_manager) StderrLine: {'line': b'   38 |        action_client_ = rclcpp_action::\x1b[01;36m\x1b[Kcreate_client<nav2_msgs::action::NavigateToPose(this, "navigate_to_pose")\x1b[m\x1b[K;\n'}
+[6.238047] (mission_manager) StderrLine: {'line': b'      |                                        \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.238174] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/shared_ptr.h:446:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Yp> std::shared_ptr<_Tp>::_Assignable<std::shared_ptr<_Yp> > std::shared_ptr<_Tp>::\x1b[01;32m\x1b[Koperator=\x1b[m\x1b[K(std::shared_ptr<_Yp>&&) \x1b[35m\x1b[K[with _Tp = rclcpp_action::Client<nav2_msgs::action::NavigateToPose>]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.238306] (mission_manager) StderrLine: {'line': b'  446 |         \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K=(shared_ptr<_Yp>&& __r) noexcept\n'}
+[6.238433] (mission_manager) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.238558] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/shared_ptr.h:446:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[6.238706] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:38:40:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  couldn\xe2\x80\x99t deduce template parameter \xe2\x80\x98\x1b[01m\x1b[K_Yp\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.238835] (mission_manager) StderrLine: {'line': b'   38 |        action_client_ = rclcpp_action::\x1b[01;36m\x1b[Kcreate_client<nav2_msgs::action::NavigateToPose(this, "navigate_to_pose")\x1b[m\x1b[K;\n'}
+[6.238963] (mission_manager) StderrLine: {'line': b'      |                                        \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.239090] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/shared_ptr.h:454:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Yp, class _Del> std::shared_ptr<_Tp>::_Assignable<std::unique_ptr<_Up, _Ep> > std::shared_ptr<_Tp>::\x1b[01;32m\x1b[Koperator=\x1b[m\x1b[K(std::unique_ptr<_Up, _Ep>&&) \x1b[35m\x1b[K[with _Del = _Yp; _Tp = rclcpp_action::Client<nav2_msgs::action::NavigateToPose>]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.239238] (mission_manager) StderrLine: {'line': b'  454 |         \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K=(unique_ptr<_Yp, _Del>&& __r)\n'}
+[6.239366] (mission_manager) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.239493] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/shared_ptr.h:454:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[6.239621] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:38:40:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  couldn\xe2\x80\x99t deduce template parameter \xe2\x80\x98\x1b[01m\x1b[K_Yp\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.239747] (mission_manager) StderrLine: {'line': b'   38 |        action_client_ = rclcpp_action::\x1b[01;36m\x1b[Kcreate_client<nav2_msgs::action::NavigateToPose(this, "navigate_to_pose")\x1b[m\x1b[K;\n'}
+[6.239876] (mission_manager) StderrLine: {'line': b'      |                                        \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.240001] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/shared_ptr.h:414:19:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<_Tp>& std::shared_ptr<_Tp>::\x1b[01;32m\x1b[Koperator=\x1b[m\x1b[K(const std::shared_ptr<_Tp>&) \x1b[35m\x1b[K[with _Tp = rclcpp_action::Client<nav2_msgs::action::NavigateToPose>]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.240150] (mission_manager) StderrLine: {'line': b'  414 |       shared_ptr& \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K=(const shared_ptr&) noexcept = default;\n'}
+[6.240285] (mission_manager) StderrLine: {'line': b'      |                   \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.240417] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/shared_ptr.h:414:29:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[K<unresolved overloaded function type>\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kconst std::shared_ptr<rclcpp_action::Client<nav2_msgs::action::NavigateToPose> >&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.240581] (mission_manager) StderrLine: {'line': b'  414 |       shared_ptr& operator=(\x1b[01;36m\x1b[Kconst shared_ptr&\x1b[m\x1b[K) noexcept = default;\n'}
+[6.240712] (mission_manager) StderrLine: {'line': b'      |                             \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.240838] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/shared_ptr.h:438:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<_Tp>& std::shared_ptr<_Tp>::\x1b[01;32m\x1b[Koperator=\x1b[m\x1b[K(std::shared_ptr<_Tp>&&) \x1b[35m\x1b[K[with _Tp = rclcpp_action::Client<nav2_msgs::action::NavigateToPose>]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.240985] (mission_manager) StderrLine: {'line': b'  438 |       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K=(shared_ptr&& __r) noexcept\n'}
+[6.241115] (mission_manager) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.241264] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/shared_ptr.h:438:30:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[K<unresolved overloaded function type>\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<rclcpp_action::Client<nav2_msgs::action::NavigateToPose> >&&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.241407] (mission_manager) StderrLine: {'line': b'  438 |       operator=(\x1b[01;36m\x1b[Kshared_ptr&& __r\x1b[m\x1b[K) noexcept\n'}
+[6.241550] (mission_manager) StderrLine: {'line': b'      |                 \x1b[01;36m\x1b[K~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[6.241681] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid MissionManager::\x1b[01;32m\x1b[KExplorationCompleteCallback\x1b[m\x1b[K(std_msgs::msg::Empty_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.241812] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:61:78:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kmsg\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[6.241944] (mission_manager) StderrLine: {'line': b'   61 |       void ExplorationCompleteCallback(\x1b[01;35m\x1b[Kconst std_msgs::msg::Empty::SharedPtr msg\x1b[m\x1b[K)\n'}
+[6.242071] (mission_manager) StderrLine: {'line': b'      |                                        \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[6.251497] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid MissionManager::\x1b[01;32m\x1b[KGetRobotPose\x1b[m\x1b[K()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.252006] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:117:35:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kusing std::__shared_ptr_access<rclcpp_action::Client<nav2_msgs::action::NavigateToPose>, __gnu_cxx::_S_atomic, false, false>::element_type = class rclcpp_action::Client<nav2_msgs::action::NavigateToPose>\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kclass rclcpp_action::Client<nav2_msgs::action::NavigateToPose>\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Kasync_goal_send\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.252192] (mission_manager) StderrLine: {'line': b'  117 |                 action_client_ -> \x1b[01;31m\x1b[Kasync_goal_send\x1b[m\x1b[K(goal);\n'}
+[6.252332] (mission_manager) StderrLine: {'line': b'      |                                   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.252615] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:118:22:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Klock\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-variable\x1b[m\x1b[K]\n'}
+[6.252756] (mission_manager) StderrLine: {'line': b'  118 |                 bool \x1b[01;35m\x1b[Klock\x1b[m\x1b[K = true;\n'}
+[6.252890] (mission_manager) StderrLine: {'line': b'      |                      \x1b[01;35m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[6.253022] (mission_manager) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[6.253153] (mission_manager) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27\x1b[m\x1b[K,\n'}
+[6.253369] (mission_manager) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:175\x1b[m\x1b[K:\n'}
+[6.253506] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:124:45:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ktoo many arguments for format [\x1b[01;35m\x1b[K-Wformat-extra-args\x1b[m\x1b[K]\n'}
+[6.253639] (mission_manager) StderrLine: {'line': b'  124 |             RCLCPP_WARN(this->get_logger(), \x1b[01;35m\x1b[K"Could not get the transform"\x1b[m\x1b[K, ex.what());\n'}
+[6.253787] (mission_manager) StderrLine: {'line': b'      |                                             \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.258423] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[01;32m\x1b[K main\x1b[m\x1b[K(int, char**)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.258662] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:138:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstatement is a reference, not call, to function \xe2\x80\x98\x1b[01m\x1b[Krclcpp::shutdown\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Waddress\x1b[m\x1b[K]\n'}
+[6.258807] (mission_manager) StderrLine: {'line': b'  138 |    \x1b[01;35m\x1b[Krclcpp::shutdown\x1b[m\x1b[K;\n'}
+[6.258942] (mission_manager) StderrLine: {'line': b'      |    \x1b[01;35m\x1b[K~~~~~~~~^~~~~~~~\x1b[m\x1b[K\n'}
+[6.259071] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:138:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstatement has no effect [\x1b[01;35m\x1b[K-Wunused-value\x1b[m\x1b[K]\n'}
+[6.335087] (-) TimerEvent: {}
+[6.435647] (-) TimerEvent: {}
+[6.536194] (-) TimerEvent: {}
+[6.636733] (-) TimerEvent: {}
+[6.737301] (-) TimerEvent: {}
+[6.837843] (-) TimerEvent: {}
+[6.938379] (-) TimerEvent: {}
+[7.038915] (-) TimerEvent: {}
+[7.139442] (-) TimerEvent: {}
+[7.239968] (-) TimerEvent: {}
+[7.340655] (-) TimerEvent: {}
+[7.441388] (-) TimerEvent: {}
+[7.541966] (-) TimerEvent: {}
+[7.642674] (-) TimerEvent: {}
+[7.743208] (-) TimerEvent: {}
+[7.843740] (-) TimerEvent: {}
+[7.944327] (-) TimerEvent: {}
+[8.044946] (-) TimerEvent: {}
+[8.145498] (-) TimerEvent: {}
+[8.246372] (-) TimerEvent: {}
+[8.346969] (-) TimerEvent: {}
+[8.447531] (-) TimerEvent: {}
+[8.548095] (-) TimerEvent: {}
+[8.648662] (-) TimerEvent: {}
+[8.749290] (-) TimerEvent: {}
+[8.849870] (-) TimerEvent: {}
+[8.950565] (-) TimerEvent: {}
+[9.051100] (-) TimerEvent: {}
+[9.151618] (-) TimerEvent: {}
+[9.252154] (-) TimerEvent: {}
+[9.352673] (-) TimerEvent: {}
+[9.453195] (-) TimerEvent: {}
+[9.553909] (-) TimerEvent: {}
+[9.654457] (-) TimerEvent: {}
+[9.754997] (-) TimerEvent: {}
+[9.855526] (-) TimerEvent: {}
+[9.956113] (-) TimerEvent: {}
+[10.056672] (-) TimerEvent: {}
+[10.157206] (-) TimerEvent: {}
+[10.257775] (-) TimerEvent: {}
+[10.358302] (-) TimerEvent: {}
+[10.458841] (-) TimerEvent: {}
+[10.559430] (-) TimerEvent: {}
+[10.660163] (-) TimerEvent: {}
+[10.760706] (-) TimerEvent: {}
+[10.861285] (-) TimerEvent: {}
+[10.961812] (-) TimerEvent: {}
+[11.062342] (-) TimerEvent: {}
+[11.162875] (-) TimerEvent: {}
+[11.263461] (-) TimerEvent: {}
+[11.364021] (-) TimerEvent: {}
+[11.464607] (-) TimerEvent: {}
+[11.565158] (-) TimerEvent: {}
+[11.665730] (-) TimerEvent: {}
+[11.766318] (-) TimerEvent: {}
+[11.866843] (-) TimerEvent: {}
+[11.967375] (-) TimerEvent: {}
+[12.067912] (-) TimerEvent: {}
+[12.168450] (-) TimerEvent: {}
+[12.269204] (-) TimerEvent: {}
+[12.369777] (-) TimerEvent: {}
+[12.470308] (-) TimerEvent: {}
+[12.570867] (-) TimerEvent: {}
+[12.671405] (-) TimerEvent: {}
+[12.771978] (-) TimerEvent: {}
+[12.872509] (-) TimerEvent: {}
+[12.973117] (-) TimerEvent: {}
+[13.073726] (-) TimerEvent: {}
+[13.174306] (-) TimerEvent: {}
+[13.274839] (-) TimerEvent: {}
+[13.375440] (-) TimerEvent: {}
+[13.476025] (-) TimerEvent: {}
+[13.576610] (-) TimerEvent: {}
+[13.677121] (-) TimerEvent: {}
+[13.777721] (-) TimerEvent: {}
+[13.878295] (-) TimerEvent: {}
+[13.978818] (-) TimerEvent: {}
+[14.079366] (-) TimerEvent: {}
+[14.180071] (-) TimerEvent: {}
+[14.280647] (-) TimerEvent: {}
+[14.381367] (-) TimerEvent: {}
+[14.481899] (-) TimerEvent: {}
+[14.582491] (-) TimerEvent: {}
+[14.683012] (-) TimerEvent: {}
+[14.783531] (-) TimerEvent: {}
+[14.884067] (-) TimerEvent: {}
+[14.984753] (-) TimerEvent: {}
+[15.085720] (-) TimerEvent: {}
+[15.186280] (-) TimerEvent: {}
+[15.286796] (-) TimerEvent: {}
+[15.387317] (-) TimerEvent: {}
+[15.487862] (-) TimerEvent: {}
+[15.588396] (-) TimerEvent: {}
+[15.688948] (-) TimerEvent: {}
+[15.789526] (-) TimerEvent: {}
+[15.890102] (-) TimerEvent: {}
+[15.990681] (-) TimerEvent: {}
+[16.091226] (-) TimerEvent: {}
+[16.191731] (-) TimerEvent: {}
+[16.292256] (-) TimerEvent: {}
+[16.392765] (-) TimerEvent: {}
+[16.394732] (mission_manager) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/mission.dir/build.make:76: CMakeFiles/mission.dir/src/mission.cpp.o] Error 1\n'}
+[16.395308] (mission_manager) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/mission.dir/all] Error 2\n'}
+[16.395725] (mission_manager) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[16.402403] (mission_manager) CommandEnded: {'returncode': 2}
+[16.464470] (mission_manager) JobEnded: {'identifier': 'mission_manager', 'rc': 2}
+[16.476023] (-) EventReactorShutdown: {}

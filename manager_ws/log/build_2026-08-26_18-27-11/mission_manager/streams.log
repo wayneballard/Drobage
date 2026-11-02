@@ -1,0 +1,98 @@
+[0.025s] Invoking command in '/manager_ws/build/mission_manager': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /manager_ws/build/mission_manager -- -j6 -l6
+[0.103s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.634s] -- Found rclcpp: 28.1.21 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.762s] -- Found rosidl_generator_c: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.798s] -- Found rosidl_generator_cpp: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.847s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.892s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.135s] -- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[1.142s] -- Found rmw_fastrtps_cpp: 8.4.4 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[1.375s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.561s] -- Found std_msgs: 5.3.8 (/opt/ros/jazzy/share/std_msgs/cmake)
+[1.606s] -- Found nav_msgs: 5.3.8 (/opt/ros/jazzy/share/nav_msgs/cmake)
+[1.707s] -- Found tf2_ros: 0.36.21 (/opt/ros/jazzy/share/tf2_ros/cmake)
+[2.013s] -- Found nav2_msgs: 1.3.12 (/opt/ros/jazzy/share/nav2_msgs/cmake)
+[2.193s] -- Found ament_lint_auto: 0.17.5 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[2.474s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.474s] -- Configured cppcheck include dirs: 
+[2.474s] -- Configured cppcheck exclude dirs and/or files: 
+[2.477s] -- Added test 'lint_cmake' to check CMake code style
+[2.480s] -- Added test 'uncrustify' to check C / C++ code style
+[2.480s] -- Configured uncrustify additional arguments: 
+[2.482s] -- Added test 'xmllint' to check XML markup files
+[2.488s] -- Configuring done (2.4s)
+[2.556s] -- Generating done (0.0s)
+[2.567s] -- Build files have been written to: /manager_ws/build/mission_manager
+[2.689s] [ 50%] [32mBuilding CXX object CMakeFiles/mission.dir/src/mission.cpp.o[0m
+[3.448s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:47:29:[m[K [01;35m[Kwarning: [m[Kmissing terminating " character
+[3.448s]    47 |       rclcpp_action::client<[01;35m[K"[m[Knav2_msgs::action::NavigateToPose>::SharedPtr action_client_;
+[3.448s]       |                             [01;35m[K^[m[K
+[3.449s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:47:29:[m[K [01;31m[Kerror: [m[Kmissing terminating " character
+[3.449s]    47 |       rclcpp_action::client<[01;31m[K"nav2_msgs::action::NavigateToPose>::SharedPtr action_client_;[m[K
+[3.449s]       |                             [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[8.710s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:47:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kclient[m[K’ in namespace ‘[01m[Krclcpp_action[m[K’ does not name a template type; did you mean ‘[01m[KClient[m[K’?
+[8.710s]    47 |       rclcpp_action::[01;31m[Kclient[m[K<"nav2_msgs::action::NavigateToPose>::SharedPtr action_client_;
+[8.710s]       |                      [01;31m[K^~~~~~[m[K
+[8.711s]       |                      [32m[KClient[m[K
+[8.789s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:[m[K In constructor ‘[01m[KMissionManager::[01;32m[KMissionManager[m[K()[m[K’:
+[8.789s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:38:8:[m[K [01;31m[Kerror: [m[K‘[01m[Kaction_client_[m[K’ was not declared in this scope; did you mean ‘[01m[Krcl_action_client_t[m[K’?
+[8.790s]    38 |        [01;31m[Kaction_client_[m[K = rclcpp_action::create_client<nav2_msgs::action::NavigateToPose(this, "navigate_to_pose");
+[8.790s]       |        [01;31m[K^~~~~~~~~~~~~~[m[K
+[8.790s]       |        [32m[Krcl_action_client_t[m[K
+[8.790s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:38:112:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Knav2_msgs::action::NavigateToPose::NavigateToPose(MissionManager*, const char [17])[m[K’
+[8.790s]    38 |        action_client_ = rclcpp_action::create_client<nav2_msgs::action::NavigateToPose(this, "navigate_to_pose"[01;31m[K)[m[K;
+[8.790s]       |                                                                                                                [01;31m[K^[m[K
+[8.791s] In file included from [01m[K/opt/ros/jazzy/include/nav2_msgs/nav2_msgs/action/navigate_to_pose.hpp:7[m[K,
+[8.791s]                  from [01m[K/manager_ws/src/mission_manager/src/mission.cpp:13[m[K:
+[8.791s] [01m[K/opt/ros/jazzy/include/nav2_msgs/nav2_msgs/action/detail/navigate_to_pose__struct.hpp:1411:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr nav2_msgs::action::NavigateToPose::[01;32m[KNavigateToPose[m[K()[m[K’
+[8.791s]  1411 | struct [01;36m[KNavigateToPose[m[K
+[8.791s]       |        [01;36m[K^~~~~~~~~~~~~~[m[K
+[8.791s] [01m[K/opt/ros/jazzy/include/nav2_msgs/nav2_msgs/action/detail/navigate_to_pose__struct.hpp:1411:8:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 2 provided
+[8.791s] [01m[K/opt/ros/jazzy/include/nav2_msgs/nav2_msgs/action/detail/navigate_to_pose__struct.hpp:1411:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr nav2_msgs::action::NavigateToPose::[01;32m[KNavigateToPose[m[K(const nav2_msgs::action::NavigateToPose&)[m[K’
+[8.792s] [01m[K/opt/ros/jazzy/include/nav2_msgs/nav2_msgs/action/detail/navigate_to_pose__struct.hpp:1411:8:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[8.792s] [01m[K/opt/ros/jazzy/include/nav2_msgs/nav2_msgs/action/detail/navigate_to_pose__struct.hpp:1411:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr nav2_msgs::action::NavigateToPose::[01;32m[KNavigateToPose[m[K(nav2_msgs::action::NavigateToPose&&)[m[K’
+[8.792s] [01m[K/opt/ros/jazzy/include/nav2_msgs/nav2_msgs/action/detail/navigate_to_pose__struct.hpp:1411:8:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[8.792s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:38:40:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+[8.792s]    38 |        action_client_ = rclcpp_action::[01;31m[Kcreate_client<nav2_msgs::action::NavigateToPose(this, "navigate_to_pose")[m[K;
+[8.793s]       |                                        [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[8.793s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:[m[K In member function ‘[01m[Kvoid MissionManager::[01;32m[KExplorationCompleteCallback[m[K(std_msgs::msg::Empty_<std::allocator<void> >::SharedPtr)[m[K’:
+[8.793s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:61:78:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[8.793s]    61 |       void ExplorationCompleteCallback([01;35m[Kconst std_msgs::msg::Empty::SharedPtr msg[m[K)
+[8.793s]       |                                        [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[8.812s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:[m[K In member function ‘[01m[Kvoid MissionManager::[01;32m[KOccupancyCallback[m[K(nav_msgs::msg::OccupancyGrid_<std::allocator<void> >::SharedPtr)[m[K’:
+[8.812s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:70:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kmap_[m[K’ was not declared in this scope
+[8.812s]    70 |           [01;31m[Kmap_[m[K = *msg;
+[8.813s]       |           [01;31m[K^~~~[m[K
+[8.839s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:[m[K In member function ‘[01m[Kvoid MissionManager::[01;32m[KGetRobotPose[m[K()[m[K’:
+[8.839s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:92:55:[m[K [01;31m[Kerror: [m[K‘[01m[Kmap_[m[K’ was not declared in this scope
+[8.839s]    92 |             for(unsigned int grid_row = 0; grid_row < [01;31m[Kmap_[m[K.info.height; grid_row++){
+[8.839s]       |                                                       [01;31m[K^~~~[m[K
+[8.862s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:107:17:[m[K [01;31m[Kerror: [m[K‘[01m[Knext_goal_x[m[K’ was not declared in this scope
+[8.862s]   107 |                 [01;31m[Knext_goal_x[m[K = candidates[0].first;
+[8.862s]       |                 [01;31m[K^~~~~~~~~~~[m[K
+[8.880s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:108:17:[m[K [01;31m[Kerror: [m[K‘[01m[Knext_goal_y[m[K’ was not declared in this scope
+[8.881s]   108 |                 [01;31m[Knext_goal_y[m[K = candidates[0].second;
+[8.881s]       |                 [01;31m[K^~~~~~~~~~~[m[K
+[8.901s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:117:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kaction_client_[m[K’ was not declared in this scope; did you mean ‘[01m[Krcl_action_client_t[m[K’?
+[8.901s]   117 |                 [01;31m[Kaction_client_[m[K -> async_goal_send(goal);
+[8.902s]       |                 [01;31m[K^~~~~~~~~~~~~~[m[K
+[8.902s]       |                 [32m[Krcl_action_client_t[m[K
+[8.902s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:118:22:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Klock[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[8.902s]   118 |                 bool [01;35m[Klock[m[K = true;
+[8.902s]       |                      [01;35m[K^~~~[m[K
+[8.902s] In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[8.903s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27[m[K,
+[8.903s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:175[m[K,
+[8.903s]                  from [01m[K/manager_ws/src/mission_manager/src/mission.cpp:1[m[K:
+[8.903s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:124:45:[m[K [01;35m[Kwarning: [m[Ktoo many arguments for format [[01;35m[K-Wformat-extra-args[m[K]
+[8.903s]   124 |             RCLCPP_WARN(this->get_logger(), [01;35m[K"Could not get the transform"[m[K, ex.what());
+[8.904s]       |                                             [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[8.908s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:[m[K In function ‘[01m[Kint[01;32m[K main[m[K(int, char**)[m[K’:
+[8.909s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:138:12:[m[K [01;35m[Kwarning: [m[Kstatement is a reference, not call, to function ‘[01m[Krclcpp::shutdown[m[K’ [[01;35m[K-Waddress[m[K]
+[8.909s]   138 |    [01;35m[Krclcpp::shutdown[m[K;
+[8.909s]       |    [01;35m[K~~~~~~~~^~~~~~~~[m[K
+[8.909s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:138:12:[m[K [01;35m[Kwarning: [m[Kstatement has no effect [[01;35m[K-Wunused-value[m[K]
+[19.041s] gmake[2]: *** [CMakeFiles/mission.dir/build.make:76: CMakeFiles/mission.dir/src/mission.cpp.o] Error 1
+[19.042s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/mission.dir/all] Error 2
+[19.042s] gmake: *** [Makefile:146: all] Error 2
+[19.050s] Invoked command in '/manager_ws/build/mission_manager' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /manager_ws/build/mission_manager -- -j6 -l6

@@ -1,0 +1,217 @@
+[0.000000] (-) TimerEvent: {}
+[0.000532] (mission_manager) JobQueued: {'identifier': 'mission_manager', 'dependencies': OrderedDict()}
+[0.000977] (mission_manager) JobStarted: {'identifier': 'mission_manager'}
+[0.018346] (mission_manager) JobProgress: {'identifier': 'mission_manager', 'progress': 'cmake'}
+[0.019746] (mission_manager) JobProgress: {'identifier': 'mission_manager', 'progress': 'build'}
+[0.020765] (mission_manager) Command: {'cmd': ['/usr/bin/cmake', '--build', '/manager_ws/build/mission_manager', '--', '-j6', '-l6'], 'cwd': '/manager_ws/build/mission_manager', 'env': OrderedDict({'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'HOSTNAME': 'wb-desktop', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/root', 'OLDPWD': '/manager_ws/src', 'ROS_PYTHON_VERSION': '3', 'ROS_DISTRO': 'jazzy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'ROS_DOMAIN_ID': '42', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/manager_ws/build/mission_manager', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.099767] (-) TimerEvent: {}
+[0.178515] (mission_manager) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/mission_manager.dir/src/mission.cpp.o\x1b[0m\n'}
+[0.199982] (-) TimerEvent: {}
+[0.301008] (-) TimerEvent: {}
+[0.401897] (-) TimerEvent: {}
+[0.502574] (-) TimerEvent: {}
+[0.603782] (-) TimerEvent: {}
+[0.704495] (-) TimerEvent: {}
+[0.805419] (-) TimerEvent: {}
+[0.906570] (-) TimerEvent: {}
+[1.007411] (-) TimerEvent: {}
+[1.108115] (-) TimerEvent: {}
+[1.209011] (-) TimerEvent: {}
+[1.309707] (-) TimerEvent: {}
+[1.410406] (-) TimerEvent: {}
+[1.511171] (-) TimerEvent: {}
+[1.611863] (-) TimerEvent: {}
+[1.712532] (-) TimerEvent: {}
+[1.813102] (-) TimerEvent: {}
+[1.913760] (-) TimerEvent: {}
+[2.014312] (-) TimerEvent: {}
+[2.114859] (-) TimerEvent: {}
+[2.215453] (-) TimerEvent: {}
+[2.316024] (-) TimerEvent: {}
+[2.416586] (-) TimerEvent: {}
+[2.517152] (-) TimerEvent: {}
+[2.617708] (-) TimerEvent: {}
+[2.718268] (-) TimerEvent: {}
+[2.818825] (-) TimerEvent: {}
+[2.919439] (-) TimerEvent: {}
+[3.020187] (-) TimerEvent: {}
+[3.120744] (-) TimerEvent: {}
+[3.221303] (-) TimerEvent: {}
+[3.321862] (-) TimerEvent: {}
+[3.422394] (-) TimerEvent: {}
+[3.522950] (-) TimerEvent: {}
+[3.623572] (-) TimerEvent: {}
+[3.724114] (-) TimerEvent: {}
+[3.824686] (-) TimerEvent: {}
+[3.925233] (-) TimerEvent: {}
+[4.025770] (-) TimerEvent: {}
+[4.126314] (-) TimerEvent: {}
+[4.226873] (-) TimerEvent: {}
+[4.327600] (-) TimerEvent: {}
+[4.428151] (-) TimerEvent: {}
+[4.528710] (-) TimerEvent: {}
+[4.629270] (-) TimerEvent: {}
+[4.729816] (-) TimerEvent: {}
+[4.830349] (-) TimerEvent: {}
+[4.930973] (-) TimerEvent: {}
+[5.031704] (-) TimerEvent: {}
+[5.120495] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KMissionManager::\x1b[01;32m\x1b[KMissionManager\x1b[m\x1b[K()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.121119] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:13:35:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstds_msgs\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[5.121306] (mission_manager) StderrLine: {'line': b'   13 |         this->create_subscription<\x1b[01;31m\x1b[Kstds_msgs\x1b[m\x1b[K::msg::Empty>("/exploration_complete", 10, bind(&MissionManager::ExplorationCompleteCallback, this, placeholders::_1));\n'}
+[5.121466] (mission_manager) StderrLine: {'line': b'      |                                   \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[5.121620] (mission_manager) StderrLine: {'line': b'      |                                   \x1b[32m\x1b[Kstd_msgs\x1b[m\x1b[K\n'}
+[5.121764] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:13:15:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kparse error in template argument list\n'}
+[5.121905] (mission_manager) StderrLine: {'line': b'   13 |         this->\x1b[01;31m\x1b[Kcreate_subscription<stds_msgs::msg::Empty>\x1b[m\x1b[K("/exploration_complete", 10, bind(&MissionManager::ExplorationCompleteCallback, this, placeholders::_1));\n'}
+[5.122068] (mission_manager) StderrLine: {'line': b'      |               \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.131842] (-) TimerEvent: {}
+[5.134054] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:13:57:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[KMissionManager::create_subscription<<expression error> >(const char [22], int, std::_Bind_helper<false, void (MissionManager::*)(std::shared_ptr<std_msgs::msg::Empty_<std::allocator<void> > >), MissionManager*, const std::_Placeholder<1>&>::type)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.135249] (mission_manager) StderrLine: {'line': b'   13 |         \x1b[01;31m\x1b[Kthis->create_subscription<stds_msgs::msg::Empty>("/exploration_complete", 10, bind(&MissionManager::ExplorationCompleteCallback, this, placeholders::_1))\x1b[m\x1b[K;\n'}
+[5.135948] (mission_manager) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.136327] (mission_manager) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[5.138191] (mission_manager) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[5.138623] (mission_manager) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:176\x1b[m\x1b[K,\n'}
+[5.139273] (mission_manager) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:1\x1b[m\x1b[K:\n'}
+[5.139476] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:221:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class MessageT, class CallbackT, class AllocatorT, class SubscriptionT, class MessageMemoryStrategyT> std::shared_ptr<ROSMessageT> rclcpp::Node::\x1b[01;32m\x1b[Kcreate_subscription\x1b[m\x1b[K(const std::string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.139694] (mission_manager) StderrLine: {'line': b'  221 |   \x1b[01;36m\x1b[Kcreate_subscription\x1b[m\x1b[K(\n'}
+[5.139848] (mission_manager) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.139987] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:221:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[5.140127] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:13:57:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[5.140265] (mission_manager) StderrLine: {'line': b'   13 |         \x1b[01;31m\x1b[Kthis->create_subscription<stds_msgs::msg::Empty>("/exploration_complete", 10, bind(&MissionManager::ExplorationCompleteCallback, this, placeholders::_1))\x1b[m\x1b[K;\n'}
+[5.140460] (mission_manager) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.140602] (mission_manager) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27\x1b[m\x1b[K,\n'}
+[5.140737] (mission_manager) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:175\x1b[m\x1b[K:\n'}
+[5.140911] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid MissionManager::\x1b[01;32m\x1b[KExplorationCompleteCallback\x1b[m\x1b[K(std_msgs::msg::Empty_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.141069] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:20:27:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno match for \xe2\x80\x98\x1b[01m\x1b[Koperator-\x1b[m\x1b[K\xe2\x80\x99 (operand types are \xe2\x80\x98\x1b[01m\x1b[KMissionManager*\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Logger\x1b[m\x1b[K\xe2\x80\x99)\n'}
+[5.141228] (mission_manager) StderrLine: {'line': b'   20 |           RCLCPP_INFO(\x1b[32m\x1b[Kthis\x1b[m\x1b[K\x1b[01;31m\x1b[K-\x1b[m\x1b[K\x1b[34m\x1b[Kget_logger()\x1b[m\x1b[K, "No more frontiers left to explore, starting roaming...");\n'}
+[5.141381] (mission_manager) StderrLine: {'line': b'      |                       \x1b[32m\x1b[K~~~~\x1b[m\x1b[K\x1b[01;31m\x1b[K^\x1b[m\x1b[K\x1b[34m\x1b[K~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.141518] (mission_manager) StderrLine: {'line': b'      |                       \x1b[32m\x1b[K|\x1b[m\x1b[K              \x1b[34m\x1b[K|\x1b[m\x1b[K\n'}
+[5.141698] (mission_manager) StderrLine: {'line': b'      |                       \x1b[32m\x1b[K|\x1b[m\x1b[K              \x1b[34m\x1b[Krclcpp::Logger\x1b[m\x1b[K\n'}
+[5.141843] (mission_manager) StderrLine: {'line': b'      |                       \x1b[32m\x1b[KMissionManager*\x1b[m\x1b[K\n'}
+[5.141982] (mission_manager) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/13/bits/stl_algobase.h:67\x1b[m\x1b[K,\n'}
+[5.142115] (mission_manager) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/13/bits/stl_uninitialized.h:63\x1b[m\x1b[K,\n'}
+[5.142246] (mission_manager) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/13/memory:69\x1b[m\x1b[K,\n'}
+[5.142377] (mission_manager) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:173\x1b[m\x1b[K:\n'}
+[5.142508] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_iterator.h:625:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _IteratorL, class _IteratorR> constexpr decltype ((__y.base() - __x.base())) std::\x1b[01;32m\x1b[Koperator-\x1b[m\x1b[K(const reverse_iterator<_Iterator>&, const reverse_iterator<_IteratorR>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.142645] (mission_manager) StderrLine: {'line': b'  625 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K-(const reverse_iterator<_IteratorL>& __x,\n'}
+[5.142772] (mission_manager) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.142898] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_iterator.h:625:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[5.143027] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:20:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst std::reverse_iterator<_Iterator>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[KMissionManager*\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.143209] (mission_manager) StderrLine: {'line': b'   20 |           RCLCPP_INFO(this-get_logger(\x1b[01;36m\x1b[K)\x1b[m\x1b[K, "No more frontiers left to explore, starting roaming...");\n'}
+[5.143346] (mission_manager) StderrLine: {'line': b'      |                                       \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[5.143478] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_iterator.h:1800:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _IteratorL, class _IteratorR> constexpr decltype ((__x.base() - __y.base())) std::\x1b[01;32m\x1b[Koperator-\x1b[m\x1b[K(const move_iterator<_IteratorL>&, const move_iterator<_IteratorR>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.143641] (mission_manager) StderrLine: {'line': b' 1800 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K-(const move_iterator<_IteratorL>& __x,\n'}
+[5.143771] (mission_manager) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.143900] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_iterator.h:1800:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[5.144030] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:20:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst std::move_iterator<_IteratorL>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[KMissionManager*\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.144162] (mission_manager) StderrLine: {'line': b'   20 |           RCLCPP_INFO(this-get_logger(\x1b[01;36m\x1b[K)\x1b[m\x1b[K, "No more frontiers left to explore, starting roaming...");\n'}
+[5.144344] (mission_manager) StderrLine: {'line': b'      |                                       \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[5.144484] (mission_manager) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/time.hpp:24\x1b[m\x1b[K,\n'}
+[5.144617] (mission_manager) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/clock.hpp:24\x1b[m\x1b[K,\n'}
+[5.144767] (mission_manager) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/client.hpp:38\x1b[m\x1b[K,\n'}
+[5.144919] (mission_manager) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[5.145072] (mission_manager) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[5.145225] (mission_manager) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[5.145377] (mission_manager) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[5.145801] (mission_manager) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/executor_options.hpp:22\x1b[m\x1b[K,\n'}
+[5.145949] (mission_manager) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/executor.hpp:38\x1b[m\x1b[K,\n'}
+[5.146083] (mission_manager) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[5.146218] (mission_manager) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K:\n'}
+[5.146349] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/duration.hpp:168:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kbuiltin_interfaces::msg::Time rclcpp::\x1b[01;32m\x1b[Koperator-\x1b[m\x1b[K(const builtin_interfaces::msg::Time&, const Duration&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.146485] (mission_manager) StderrLine: {'line': b'  168 | \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K-(const builtin_interfaces::msg::Time & lhs, const rclcpp::Duration & rhs);\n'}
+[5.146633] (mission_manager) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.146783] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/duration.hpp:168:49:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[KMissionManager*\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kconst builtin_interfaces::msg::Time&\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst builtin_interfaces::msg::Time_<std::allocator<void> >&\x1b[m\x1b[K\xe2\x80\x99}\n'}
+[5.146926] (mission_manager) StderrLine: {'line': b'  168 | operator-(\x1b[01;36m\x1b[Kconst builtin_interfaces::msg::Time & lhs\x1b[m\x1b[K, const rclcpp::Duration & rhs);\n'}
+[5.147326] (mission_manager) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[5.147481] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:20:11:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[5.147625] (mission_manager) StderrLine: {'line': b'   20 |           \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this-get_logger(), "No more frontiers left to explore, starting roaming...");\n'}
+[5.147762] (mission_manager) StderrLine: {'line': b'      |           \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.147893] (mission_manager) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K:\n'}
+[5.148024] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:20:27:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno match for \xe2\x80\x98\x1b[01m\x1b[Koperator-\x1b[m\x1b[K\xe2\x80\x99 (operand types are \xe2\x80\x98\x1b[01m\x1b[KMissionManager*\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Logger\x1b[m\x1b[K\xe2\x80\x99)\n'}
+[5.148159] (mission_manager) StderrLine: {'line': b'   20 |           RCLCPP_INFO(\x1b[32m\x1b[Kthis\x1b[m\x1b[K\x1b[01;31m\x1b[K-\x1b[m\x1b[K\x1b[34m\x1b[Kget_logger()\x1b[m\x1b[K, "No more frontiers left to explore, starting roaming...");\n'}
+[5.148293] (mission_manager) StderrLine: {'line': b'      |                       \x1b[32m\x1b[K~~~~\x1b[m\x1b[K\x1b[01;31m\x1b[K^\x1b[m\x1b[K\x1b[34m\x1b[K~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.148423] (mission_manager) StderrLine: {'line': b'      |                       \x1b[32m\x1b[K|\x1b[m\x1b[K              \x1b[34m\x1b[K|\x1b[m\x1b[K\n'}
+[5.148550] (mission_manager) StderrLine: {'line': b'      |                       \x1b[32m\x1b[K|\x1b[m\x1b[K              \x1b[34m\x1b[Krclcpp::Logger\x1b[m\x1b[K\n'}
+[5.148677] (mission_manager) StderrLine: {'line': b'      |                       \x1b[32m\x1b[KMissionManager*\x1b[m\x1b[K\n'}
+[5.148803] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_iterator.h:625:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _IteratorL, class _IteratorR> constexpr decltype ((__y.base() - __x.base())) std::\x1b[01;32m\x1b[Koperator-\x1b[m\x1b[K(const reverse_iterator<_Iterator>&, const reverse_iterator<_IteratorR>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.148941] (mission_manager) StderrLine: {'line': b'  625 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K-(const reverse_iterator<_IteratorL>& __x,\n'}
+[5.149070] (mission_manager) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.149198] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_iterator.h:625:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[5.149328] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:20:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst std::reverse_iterator<_Iterator>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[KMissionManager*\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.149512] (mission_manager) StderrLine: {'line': b'   20 |           RCLCPP_INFO(this-get_logger(\x1b[01;36m\x1b[K)\x1b[m\x1b[K, "No more frontiers left to explore, starting roaming...");\n'}
+[5.149702] (mission_manager) StderrLine: {'line': b'      |                                       \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[5.149841] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_iterator.h:1800:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _IteratorL, class _IteratorR> constexpr decltype ((__x.base() - __y.base())) std::\x1b[01;32m\x1b[Koperator-\x1b[m\x1b[K(const move_iterator<_IteratorL>&, const move_iterator<_IteratorR>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.150007] (mission_manager) StderrLine: {'line': b' 1800 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K-(const move_iterator<_IteratorL>& __x,\n'}
+[5.150142] (mission_manager) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.150271] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_iterator.h:1800:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[5.150421] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:20:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst std::move_iterator<_IteratorL>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[KMissionManager*\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.150557] (mission_manager) StderrLine: {'line': b'   20 |           RCLCPP_INFO(this-get_logger(\x1b[01;36m\x1b[K)\x1b[m\x1b[K, "No more frontiers left to explore, starting roaming...");\n'}
+[5.150688] (mission_manager) StderrLine: {'line': b'      |                                       \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[5.150818] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/duration.hpp:168:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kbuiltin_interfaces::msg::Time rclcpp::\x1b[01;32m\x1b[Koperator-\x1b[m\x1b[K(const builtin_interfaces::msg::Time&, const Duration&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.150951] (mission_manager) StderrLine: {'line': b'  168 | \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K-(const builtin_interfaces::msg::Time & lhs, const rclcpp::Duration & rhs);\n'}
+[5.151155] (mission_manager) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.151298] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/duration.hpp:168:49:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[KMissionManager*\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kconst builtin_interfaces::msg::Time&\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst builtin_interfaces::msg::Time_<std::allocator<void> >&\x1b[m\x1b[K\xe2\x80\x99}\n'}
+[5.151485] (mission_manager) StderrLine: {'line': b'  168 | operator-(\x1b[01;36m\x1b[Kconst builtin_interfaces::msg::Time & lhs\x1b[m\x1b[K, const rclcpp::Duration & rhs);\n'}
+[5.151624] (mission_manager) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[5.151755] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:20:27:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno match for \xe2\x80\x98\x1b[01m\x1b[Koperator-\x1b[m\x1b[K\xe2\x80\x99 (operand types are \xe2\x80\x98\x1b[01m\x1b[KMissionManager*\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Logger\x1b[m\x1b[K\xe2\x80\x99)\n'}
+[5.151891] (mission_manager) StderrLine: {'line': b'   20 |           RCLCPP_INFO(\x1b[32m\x1b[Kthis\x1b[m\x1b[K\x1b[01;31m\x1b[K-\x1b[m\x1b[K\x1b[34m\x1b[Kget_logger()\x1b[m\x1b[K, "No more frontiers left to explore, starting roaming...");\n'}
+[5.152023] (mission_manager) StderrLine: {'line': b'      |                       \x1b[32m\x1b[K~~~~\x1b[m\x1b[K\x1b[01;31m\x1b[K^\x1b[m\x1b[K\x1b[34m\x1b[K~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.152151] (mission_manager) StderrLine: {'line': b'      |                       \x1b[32m\x1b[K|\x1b[m\x1b[K              \x1b[34m\x1b[K|\x1b[m\x1b[K\n'}
+[5.152279] (mission_manager) StderrLine: {'line': b'      |                       \x1b[32m\x1b[K|\x1b[m\x1b[K              \x1b[34m\x1b[Krclcpp::Logger\x1b[m\x1b[K\n'}
+[5.152408] (mission_manager) StderrLine: {'line': b'      |                       \x1b[32m\x1b[KMissionManager*\x1b[m\x1b[K\n'}
+[5.152537] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_iterator.h:625:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _IteratorL, class _IteratorR> constexpr decltype ((__y.base() - __x.base())) std::\x1b[01;32m\x1b[Koperator-\x1b[m\x1b[K(const reverse_iterator<_Iterator>&, const reverse_iterator<_IteratorR>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.152692] (mission_manager) StderrLine: {'line': b'  625 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K-(const reverse_iterator<_IteratorL>& __x,\n'}
+[5.152823] (mission_manager) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.152952] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_iterator.h:625:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[5.153084] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:20:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst std::reverse_iterator<_Iterator>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[KMissionManager*\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.153220] (mission_manager) StderrLine: {'line': b'   20 |           RCLCPP_INFO(this-get_logger(\x1b[01;36m\x1b[K)\x1b[m\x1b[K, "No more frontiers left to explore, starting roaming...");\n'}
+[5.154359] (mission_manager) StderrLine: {'line': b'      |                                       \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[5.154542] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_iterator.h:1800:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _IteratorL, class _IteratorR> constexpr decltype ((__x.base() - __y.base())) std::\x1b[01;32m\x1b[Koperator-\x1b[m\x1b[K(const move_iterator<_IteratorL>&, const move_iterator<_IteratorR>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.154709] (mission_manager) StderrLine: {'line': b' 1800 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K-(const move_iterator<_IteratorL>& __x,\n'}
+[5.154850] (mission_manager) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.154985] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_iterator.h:1800:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[5.155207] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:20:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst std::move_iterator<_IteratorL>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[KMissionManager*\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.155351] (mission_manager) StderrLine: {'line': b'   20 |           RCLCPP_INFO(this-get_logger(\x1b[01;36m\x1b[K)\x1b[m\x1b[K, "No more frontiers left to explore, starting roaming...");\n'}
+[5.155514] (mission_manager) StderrLine: {'line': b'      |                                       \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[5.155651] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/duration.hpp:168:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kbuiltin_interfaces::msg::Time rclcpp::\x1b[01;32m\x1b[Koperator-\x1b[m\x1b[K(const builtin_interfaces::msg::Time&, const Duration&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.156052] (mission_manager) StderrLine: {'line': b'  168 | \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K-(const builtin_interfaces::msg::Time & lhs, const rclcpp::Duration & rhs);\n'}
+[5.156572] (mission_manager) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.156731] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/duration.hpp:168:49:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[KMissionManager*\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kconst builtin_interfaces::msg::Time&\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst builtin_interfaces::msg::Time_<std::allocator<void> >&\x1b[m\x1b[K\xe2\x80\x99}\n'}
+[5.156902] (mission_manager) StderrLine: {'line': b'  168 | operator-(\x1b[01;36m\x1b[Kconst builtin_interfaces::msg::Time & lhs\x1b[m\x1b[K, const rclcpp::Duration & rhs);\n'}
+[5.157045] (mission_manager) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[5.157181] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:18:72:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kmsg\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[5.157339] (mission_manager) StderrLine: {'line': b'   18 |       void ExplorationCompleteCallback(\x1b[01;35m\x1b[Kstd_msgs::msg::Empty::SharedPtr msg\x1b[m\x1b[K)\n'}
+[5.157500] (mission_manager) StderrLine: {'line': b'      |                                        \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[5.157633] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[01;32m\x1b[K main\x1b[m\x1b[K(int, char**)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.157766] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:32:11:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kshutdown\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Krclcpp::shutdown\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[5.157900] (mission_manager) StderrLine: {'line': b'   32 |    rclcpp:\x1b[01;31m\x1b[Kshutdown\x1b[m\x1b[K();\n'}
+[5.158032] (mission_manager) StderrLine: {'line': b'      |           \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.158163] (mission_manager) StderrLine: {'line': b'      |           \x1b[32m\x1b[Krclcpp::shutdown\x1b[m\x1b[K\n'}
+[5.158293] (mission_manager) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:25\x1b[m\x1b[K:\n'}
+[5.158421] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/utilities.hpp:194:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Krclcpp::shutdown\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[5.158551] (mission_manager) StderrLine: {'line': b'  194 | \x1b[01;36m\x1b[Kshutdown\x1b[m\x1b[K(\n'}
+[5.158679] (mission_manager) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.158808] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:32:4:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Klabel \xe2\x80\x98\x1b[01m\x1b[Krclcpp\x1b[m\x1b[K\xe2\x80\x99 defined but not used [\x1b[01;35m\x1b[K-Wunused-label\x1b[m\x1b[K]\n'}
+[5.159036] (mission_manager) StderrLine: {'line': b'   32 |    \x1b[01;35m\x1b[Krclcpp\x1b[m\x1b[K:shutdown();\n'}
+[5.159370] (mission_manager) StderrLine: {'line': b'      |    \x1b[01;35m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[5.232001] (-) TimerEvent: {}
+[5.332540] (-) TimerEvent: {}
+[5.433089] (-) TimerEvent: {}
+[5.533781] (-) TimerEvent: {}
+[5.634713] (-) TimerEvent: {}
+[5.735458] (-) TimerEvent: {}
+[5.836152] (-) TimerEvent: {}
+[5.936878] (-) TimerEvent: {}
+[6.037590] (-) TimerEvent: {}
+[6.138338] (-) TimerEvent: {}
+[6.239119] (-) TimerEvent: {}
+[6.339823] (-) TimerEvent: {}
+[6.440530] (-) TimerEvent: {}
+[6.541224] (-) TimerEvent: {}
+[6.641812] (-) TimerEvent: {}
+[6.704254] (mission_manager) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/mission_manager.dir/build.make:76: CMakeFiles/mission_manager.dir/src/mission.cpp.o] Error 1\n'}
+[6.705059] (mission_manager) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/mission_manager.dir/all] Error 2\n'}
+[6.705650] (mission_manager) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[6.711029] (mission_manager) CommandEnded: {'returncode': 2}
+[6.742762] (-) TimerEvent: {}
+[6.749754] (mission_manager) JobEnded: {'identifier': 'mission_manager', 'rc': 2}
+[6.752462] (-) EventReactorShutdown: {}

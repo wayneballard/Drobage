@@ -1,0 +1,28 @@
+[34.038s] Invoking command in '/Drobage_jazzy/src/my_yolo_package': PYTHONPATH=/Drobage_jazzy/build/my_yolo_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/Drobage_jazzy/install/my_yolo_package/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_yolo_package build --build-base /Drobage_jazzy/build/my_yolo_package/build install --record /Drobage_jazzy/build/my_yolo_package/install.log --install-scripts $base/lib/my_yolo_package --single-version-externally-managed install_data
+[34.397s] /usr/local/lib/python3.12/dist-packages/setuptools/_distutils/dist.py:318: UserWarning: Unknown distribution option: 'tests_require'
+[34.397s]   warnings.warn(msg)
+[34.662s] running egg_info
+[34.706s] writing ../../build/my_yolo_package/my_yolo_package.egg-info/PKG-INFO
+[34.708s] writing dependency_links to ../../build/my_yolo_package/my_yolo_package.egg-info/dependency_links.txt
+[34.709s] writing entry points to ../../build/my_yolo_package/my_yolo_package.egg-info/entry_points.txt
+[34.711s] writing requirements to ../../build/my_yolo_package/my_yolo_package.egg-info/requires.txt
+[34.711s] writing top-level names to ../../build/my_yolo_package/my_yolo_package.egg-info/top_level.txt
+[34.813s] reading manifest file '../../build/my_yolo_package/my_yolo_package.egg-info/SOURCES.txt'
+[34.817s] writing manifest file '../../build/my_yolo_package/my_yolo_package.egg-info/SOURCES.txt'
+[34.818s] running build
+[34.818s] running build_py
+[34.826s] running install
+[34.836s] running install_lib
+[34.883s] running install_data
+[34.885s] running install_egg_info
+[34.931s] removing '/Drobage_jazzy/install/my_yolo_package/lib/python3.12/site-packages/my_yolo_package-0.0.0-py3.12.egg-info' (and everything under it)
+[34.931s] Copying ../../build/my_yolo_package/my_yolo_package.egg-info to /Drobage_jazzy/install/my_yolo_package/lib/python3.12/site-packages/my_yolo_package-0.0.0-py3.12.egg-info
+[34.935s] running install_scripts
+[35.029s] Installing imu_node script to /Drobage_jazzy/install/my_yolo_package/lib/my_yolo_package
+[35.030s] Installing inference_node script to /Drobage_jazzy/install/my_yolo_package/lib/my_yolo_package
+[35.030s] Installing oak_camera_node script to /Drobage_jazzy/install/my_yolo_package/lib/my_yolo_package
+[35.032s] Installing odom_node script to /Drobage_jazzy/install/my_yolo_package/lib/my_yolo_package
+[35.033s] Installing tracking_logger script to /Drobage_jazzy/install/my_yolo_package/lib/my_yolo_package
+[35.033s] Installing visualizer_node script to /Drobage_jazzy/install/my_yolo_package/lib/my_yolo_package
+[35.033s] writing list of installed files to '/Drobage_jazzy/build/my_yolo_package/install.log'
+[35.178s] Invoked command in '/Drobage_jazzy/src/my_yolo_package' returned '0': PYTHONPATH=/Drobage_jazzy/build/my_yolo_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/Drobage_jazzy/install/my_yolo_package/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_yolo_package build --build-base /Drobage_jazzy/build/my_yolo_package/build install --record /Drobage_jazzy/build/my_yolo_package/install.log --install-scripts $base/lib/my_yolo_package --single-version-externally-managed install_data

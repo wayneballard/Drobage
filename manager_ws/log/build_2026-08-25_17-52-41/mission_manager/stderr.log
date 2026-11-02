@@ -1,0 +1,82 @@
+[01m[K/manager_ws/src/mission_manager/src/mission.cpp:[m[K In constructor ‘[01m[KMissionManager::[01;32m[KMissionManager[m[K()[m[K’:
+[01m[K/manager_ws/src/mission_manager/src/mission.cpp:30:8:[m[K [01;31m[Kerror: [m[K‘[01m[Ktf_buffer[m[K’ was not declared in this scope; did you mean ‘[01m[Ktf_buffer_[m[K’?
+   30 |        [01;31m[Ktf_buffer[m[K = make_unique<tf2_ros::Buffer>(this->get_clock());
+      |        [01;31m[K^~~~~~~~~[m[K
+      |        [32m[Ktf_buffer_[m[K
+[01m[K/manager_ws/src/mission_manager/src/mission.cpp:32:8:[m[K [01;31m[Kerror: [m[K‘[01m[Ktf_listener[m[K’ was not declared in this scope; did you mean ‘[01m[Ktf_listener_[m[K’?
+   32 |        [01;31m[Ktf_listener[m[K = make_shared<tf2_ros::TransformListener(*tf_buffer_);
+      |        [01;31m[K^~~~~~~~~~~[m[K
+      |        [32m[Ktf_listener_[m[K
+[01m[K/manager_ws/src/mission_manager/src/mission.cpp:32:43:[m[K [01;31m[Kerror: [m[Ktemporary of non-literal type ‘[01m[Ktf2_ros::TransformListener[m[K’ in a constant expression
+   32 |        tf_listener = make_shared<tf2_ros::[01;31m[KTransformListener(*tf_buffer_)[m[K;
+      |                                           [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/jazzy/include/tf2_ros/tf2_ros/transform_listener.h:35[m[K,
+                 from [01m[K/manager_ws/src/mission_manager/src/mission.cpp:8[m[K:
+[01m[K/opt/ros/jazzy/include/tf2_ros/tf2_ros/transform_listener.hpp:84:7:[m[K [01;36m[Knote: [m[K‘[01m[Ktf2_ros::TransformListener[m[K’ is not literal because:
+   84 | class [01;36m[KTransformListener[m[K
+      |       [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/jazzy/include/tf2_ros/tf2_ros/transform_listener.hpp:84:7:[m[K [01;36m[Knote: [m[K  ‘[01m[Ktf2_ros::TransformListener[m[K’ has a non-trivial destructor
+[01m[K/manager_ws/src/mission_manager/src/mission.cpp:32:22:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+   32 |        tf_listener = [01;31m[Kmake_shared<tf2_ros::TransformListener(*tf_buffer_)[m[K;
+      |                      [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/manager_ws/src/mission_manager/src/mission.cpp:[m[K In member function ‘[01m[Kvoid MissionManager::[01;32m[KExplorationCompleteCallback[m[K(std_msgs::msg::Empty_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/manager_ws/src/mission_manager/src/mission.cpp:47:78:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   47 |       void ExplorationCompleteCallback([01;35m[Kconst std_msgs::msg::Empty::SharedPtr msg[m[K)
+      |                                        [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[01m[K/manager_ws/src/mission_manager/src/mission.cpp:[m[K In member function ‘[01m[Kvoid MissionManager::[01;32m[KGetRobotPose[m[K()[m[K’:
+[01m[K/manager_ws/src/mission_manager/src/mission.cpp:69:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::unique_ptr<tf2_ros::Buffer>[m[K’ has no member named ‘[01m[Ktransforms[m[K’
+   69 |             double x = tf_buffer_.[01;31m[Ktransforms[m[K.transform.x;
+      |                                   [01;31m[K^~~~~~~~~~[m[K
+[01m[K/manager_ws/src/mission_manager/src/mission.cpp:70:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::unique_ptr<tf2_ros::Buffer>[m[K’ has no member named ‘[01m[Ktransforms[m[K’
+   70 |             double y = tf_buffer_.[01;31m[Ktransforms[m[K.transform.y;
+      |                                   [01;31m[K^~~~~~~~~~[m[K
+[01m[K/manager_ws/src/mission_manager/src/mission.cpp:74:46:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K&[m[K’ token
+   74 |          catch(const tf2::TrasnformException [01;31m[K&[m[Kex)
+      |                                              [01;31m[K^[m[K
+[01m[K/manager_ws/src/mission_manager/src/mission.cpp:74:46:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K&[m[K’ token
+[01m[K/manager_ws/src/mission_manager/src/mission.cpp:74:15:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K([m[K’
+   74 |          catch[01;36m[K([m[Kconst tf2::TrasnformException &ex)
+      |               [01;36m[K^[m[K
+[01m[K/manager_ws/src/mission_manager/src/mission.cpp:74:46:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K{[m[K’ before ‘[01m[K&[m[K’ token
+   74 |          catch(const tf2::TrasnformException [01;31m[K&[m[Kex)
+      |                                              [01;31m[K^[m[K
+[01m[K/manager_ws/src/mission_manager/src/mission.cpp:74:47:[m[K [01;31m[Kerror: [m[K‘[01m[Kex[m[K’ was not declared in this scope; did you mean ‘[01m[Kexp[m[K’?
+   74 |          catch(const tf2::TrasnformException &[01;31m[Kex[m[K)
+      |                                               [01;31m[K^~[m[K
+      |                                               [32m[Kexp[m[K
+[01m[K/manager_ws/src/mission_manager/src/mission.cpp:[m[K In function ‘[01m[Kint[01;32m[K main[m[K(int, char**)[m[K’:
+[01m[K/manager_ws/src/mission_manager/src/mission.cpp:91:12:[m[K [01;35m[Kwarning: [m[Kstatement is a reference, not call, to function ‘[01m[Krclcpp::shutdown[m[K’ [[01;35m[K-Waddress[m[K]
+   91 |    [01;35m[Krclcpp::shutdown[m[K;
+      |    [01;35m[K~~~~~~~~^~~~~~~~[m[K
+[01m[K/manager_ws/src/mission_manager/src/mission.cpp:91:12:[m[K [01;35m[Kwarning: [m[Kstatement has no effect [[01;35m[K-Wunused-value[m[K]
+In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/context.hpp:35[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/utilities.hpp:24[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:25[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:175[m[K,
+                 from [01m[K/manager_ws/src/mission_manager/src/mission.cpp:1[m[K:
+/opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp: In instantiation of ‘[01m[Kstatic std::unique_ptr<rclcpp::Node> rclcpp::Node::[01;32m[Kmake_unique[m[K(Args&& ...) [35m[K[with Args = {tf2_ros::Buffer}][m[K[m[K’:
+[01m[K/manager_ws/src/mission_manager/src/mission.cpp:30:48:[m[K   required from here
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:82:3:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Node::Node(tf2_ros::Buffer)[m[K’
+   82 |   [01;31m[KRCLCPP_SMART_PTR_DEFINITIONS[m[K(Node)
+      |   [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:176[m[K:
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:1629:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Node::[01;32m[KNode[m[K(const rclcpp::Node&, const std::string&)[m[K’
+ 1629 |   [01;36m[KNode[m[K(
+      |   [01;36m[K^~~~[m[K
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:1629:3:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:103:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Node::[01;32m[KNode[m[K(const std::string&, const std::string&, const rclcpp::NodeOptions&)[m[K’
+  103 |   explicit [01;36m[KNode[m[K(
+      |            [01;36m[K^~~~[m[K
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:103:12:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 1 provided
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:91:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Node::[01;32m[KNode[m[K(const std::string&, const rclcpp::NodeOptions&)[m[K’
+   91 |   explicit [01;36m[KNode[m[K(
+      |            [01;36m[K^~~~[m[K
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:92:25:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Ktf2_ros::Buffer[m[K’ to ‘[01m[Kconst std::string&[m[K’ {aka ‘[01m[Kconst std::__cxx11::basic_string<char>&[m[K’}
+   92 |     [01;36m[Kconst std::string & node_name[m[K,
+      |     [01;36m[K~~~~~~~~~~~~~~~~~~~~^~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/mission.dir/build.make:76: CMakeFiles/mission.dir/src/mission.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/mission.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

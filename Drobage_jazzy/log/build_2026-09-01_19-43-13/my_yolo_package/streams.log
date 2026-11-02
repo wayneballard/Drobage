@@ -1,0 +1,66 @@
+[2.937s] Invoking command in '/Drobage_jazzy/src/my_yolo_package': PYTHONPATH=/Drobage_jazzy/build/my_yolo_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/Drobage_jazzy/install/my_yolo_package/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_yolo_package build --build-base /Drobage_jazzy/build/my_yolo_package/build install --record /Drobage_jazzy/build/my_yolo_package/install.log --install-scripts $base/lib/my_yolo_package --single-version-externally-managed install_data
+[3.275s] /usr/local/lib/python3.12/dist-packages/setuptools/_distutils/dist.py:318: UserWarning: Unknown distribution option: 'tests_require'
+[3.275s]   warnings.warn(msg)
+[3.507s] running egg_info
+[3.545s] creating ../../build/my_yolo_package/my_yolo_package.egg-info
+[3.546s] writing ../../build/my_yolo_package/my_yolo_package.egg-info/PKG-INFO
+[3.547s] writing dependency_links to ../../build/my_yolo_package/my_yolo_package.egg-info/dependency_links.txt
+[3.547s] writing entry points to ../../build/my_yolo_package/my_yolo_package.egg-info/entry_points.txt
+[3.547s] writing requirements to ../../build/my_yolo_package/my_yolo_package.egg-info/requires.txt
+[3.547s] writing top-level names to ../../build/my_yolo_package/my_yolo_package.egg-info/top_level.txt
+[3.548s] writing manifest file '../../build/my_yolo_package/my_yolo_package.egg-info/SOURCES.txt'
+[3.633s] reading manifest file '../../build/my_yolo_package/my_yolo_package.egg-info/SOURCES.txt'
+[3.635s] writing manifest file '../../build/my_yolo_package/my_yolo_package.egg-info/SOURCES.txt'
+[3.635s] running build
+[3.635s] running build_py
+[3.636s] creating /Drobage_jazzy/build/my_yolo_package/build/lib/my_yolo_package
+[3.636s] copying my_yolo_package/odom_node.py -> /Drobage_jazzy/build/my_yolo_package/build/lib/my_yolo_package
+[3.640s] copying my_yolo_package/visualizer_node.py -> /Drobage_jazzy/build/my_yolo_package/build/lib/my_yolo_package
+[3.641s] copying my_yolo_package/odom_node_tracker.py -> /Drobage_jazzy/build/my_yolo_package/build/lib/my_yolo_package
+[3.642s] copying my_yolo_package/odom_node_humble_copy.py -> /Drobage_jazzy/build/my_yolo_package/build/lib/my_yolo_package
+[3.643s] copying my_yolo_package/tracking_logger.py -> /Drobage_jazzy/build/my_yolo_package/build/lib/my_yolo_package
+[3.644s] copying my_yolo_package/inference_node.py -> /Drobage_jazzy/build/my_yolo_package/build/lib/my_yolo_package
+[3.644s] copying my_yolo_package/imu_node.py -> /Drobage_jazzy/build/my_yolo_package/build/lib/my_yolo_package
+[3.645s] copying my_yolo_package/inference_node_classic.py -> /Drobage_jazzy/build/my_yolo_package/build/lib/my_yolo_package
+[3.646s] copying my_yolo_package/oak_camera_node.py -> /Drobage_jazzy/build/my_yolo_package/build/lib/my_yolo_package
+[3.646s] copying my_yolo_package/__init__.py -> /Drobage_jazzy/build/my_yolo_package/build/lib/my_yolo_package
+[3.647s] running install
+[3.657s] running install_lib
+[3.696s] creating /Drobage_jazzy/install/my_yolo_package/lib/python3.12/site-packages/my_yolo_package
+[3.697s] copying /Drobage_jazzy/build/my_yolo_package/build/lib/my_yolo_package/odom_node.py -> /Drobage_jazzy/install/my_yolo_package/lib/python3.12/site-packages/my_yolo_package
+[3.697s] copying /Drobage_jazzy/build/my_yolo_package/build/lib/my_yolo_package/visualizer_node.py -> /Drobage_jazzy/install/my_yolo_package/lib/python3.12/site-packages/my_yolo_package
+[3.697s] copying /Drobage_jazzy/build/my_yolo_package/build/lib/my_yolo_package/odom_node_tracker.py -> /Drobage_jazzy/install/my_yolo_package/lib/python3.12/site-packages/my_yolo_package
+[3.698s] copying /Drobage_jazzy/build/my_yolo_package/build/lib/my_yolo_package/odom_node_humble_copy.py -> /Drobage_jazzy/install/my_yolo_package/lib/python3.12/site-packages/my_yolo_package
+[3.698s] copying /Drobage_jazzy/build/my_yolo_package/build/lib/my_yolo_package/tracking_logger.py -> /Drobage_jazzy/install/my_yolo_package/lib/python3.12/site-packages/my_yolo_package
+[3.698s] copying /Drobage_jazzy/build/my_yolo_package/build/lib/my_yolo_package/inference_node.py -> /Drobage_jazzy/install/my_yolo_package/lib/python3.12/site-packages/my_yolo_package
+[3.699s] copying /Drobage_jazzy/build/my_yolo_package/build/lib/my_yolo_package/imu_node.py -> /Drobage_jazzy/install/my_yolo_package/lib/python3.12/site-packages/my_yolo_package
+[3.699s] copying /Drobage_jazzy/build/my_yolo_package/build/lib/my_yolo_package/inference_node_classic.py -> /Drobage_jazzy/install/my_yolo_package/lib/python3.12/site-packages/my_yolo_package
+[3.699s] copying /Drobage_jazzy/build/my_yolo_package/build/lib/my_yolo_package/oak_camera_node.py -> /Drobage_jazzy/install/my_yolo_package/lib/python3.12/site-packages/my_yolo_package
+[3.700s] copying /Drobage_jazzy/build/my_yolo_package/build/lib/my_yolo_package/__init__.py -> /Drobage_jazzy/install/my_yolo_package/lib/python3.12/site-packages/my_yolo_package
+[3.701s] byte-compiling /Drobage_jazzy/install/my_yolo_package/lib/python3.12/site-packages/my_yolo_package/odom_node.py to odom_node.cpython-312.pyc
+[3.702s] byte-compiling /Drobage_jazzy/install/my_yolo_package/lib/python3.12/site-packages/my_yolo_package/visualizer_node.py to visualizer_node.cpython-312.pyc
+[3.708s] byte-compiling /Drobage_jazzy/install/my_yolo_package/lib/python3.12/site-packages/my_yolo_package/odom_node_tracker.py to odom_node_tracker.cpython-312.pyc
+[3.709s] byte-compiling /Drobage_jazzy/install/my_yolo_package/lib/python3.12/site-packages/my_yolo_package/odom_node_humble_copy.py to odom_node_humble_copy.cpython-312.pyc
+[3.712s] byte-compiling /Drobage_jazzy/install/my_yolo_package/lib/python3.12/site-packages/my_yolo_package/tracking_logger.py to tracking_logger.cpython-312.pyc
+[3.713s] byte-compiling /Drobage_jazzy/install/my_yolo_package/lib/python3.12/site-packages/my_yolo_package/inference_node.py to inference_node.cpython-312.pyc
+[3.716s] byte-compiling /Drobage_jazzy/install/my_yolo_package/lib/python3.12/site-packages/my_yolo_package/imu_node.py to imu_node.cpython-312.pyc
+[3.718s] byte-compiling /Drobage_jazzy/install/my_yolo_package/lib/python3.12/site-packages/my_yolo_package/inference_node_classic.py to inference_node_classic.cpython-312.pyc
+[3.720s] byte-compiling /Drobage_jazzy/install/my_yolo_package/lib/python3.12/site-packages/my_yolo_package/oak_camera_node.py to oak_camera_node.cpython-312.pyc
+[3.724s] byte-compiling /Drobage_jazzy/install/my_yolo_package/lib/python3.12/site-packages/my_yolo_package/__init__.py to __init__.cpython-312.pyc
+[3.724s] running install_data
+[3.725s] creating /Drobage_jazzy/install/my_yolo_package/share/ament_index/resource_index/packages
+[3.725s] copying resource/my_yolo_package -> /Drobage_jazzy/install/my_yolo_package/share/ament_index/resource_index/packages
+[3.726s] copying package.xml -> /Drobage_jazzy/install/my_yolo_package/share/my_yolo_package
+[3.726s] creating /Drobage_jazzy/install/my_yolo_package/share/my_yolo_package/launch
+[3.726s] copying launch/launch_yolo_package.launch.py -> /Drobage_jazzy/install/my_yolo_package/share/my_yolo_package/launch
+[3.728s] running install_egg_info
+[3.768s] Copying ../../build/my_yolo_package/my_yolo_package.egg-info to /Drobage_jazzy/install/my_yolo_package/lib/python3.12/site-packages/my_yolo_package-0.0.0-py3.12.egg-info
+[3.770s] running install_scripts
+[3.854s] Installing imu_node script to /Drobage_jazzy/install/my_yolo_package/lib/my_yolo_package
+[3.854s] Installing inference_node script to /Drobage_jazzy/install/my_yolo_package/lib/my_yolo_package
+[3.854s] Installing oak_camera_node script to /Drobage_jazzy/install/my_yolo_package/lib/my_yolo_package
+[3.855s] Installing odom_node script to /Drobage_jazzy/install/my_yolo_package/lib/my_yolo_package
+[3.855s] Installing tracking_logger script to /Drobage_jazzy/install/my_yolo_package/lib/my_yolo_package
+[3.855s] Installing visualizer_node script to /Drobage_jazzy/install/my_yolo_package/lib/my_yolo_package
+[3.856s] writing list of installed files to '/Drobage_jazzy/build/my_yolo_package/install.log'
+[3.945s] Invoked command in '/Drobage_jazzy/src/my_yolo_package' returned '0': PYTHONPATH=/Drobage_jazzy/build/my_yolo_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/Drobage_jazzy/install/my_yolo_package/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_yolo_package build --build-base /Drobage_jazzy/build/my_yolo_package/build install --record /Drobage_jazzy/build/my_yolo_package/install.log --install-scripts $base/lib/my_yolo_package --single-version-externally-managed install_data

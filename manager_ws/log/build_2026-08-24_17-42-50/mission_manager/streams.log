@@ -1,0 +1,20 @@
+[0.023s] Invoking command in '/manager_ws/build/mission_manager': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /manager_ws/build/mission_manager -- -j6 -l6
+[0.128s] Invoked command in '/manager_ws/build/mission_manager' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /manager_ws/build/mission_manager -- -j6 -l6
+[0.155s] Invoking command in '/manager_ws/build/mission_manager': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /manager_ws/build/mission_manager
+[0.187s] -- Install configuration: ""
+[0.187s] -- Up-to-date: /manager_ws/install/mission_manager/share/ament_index/resource_index/package_run_dependencies/mission_manager
+[0.187s] -- Up-to-date: /manager_ws/install/mission_manager/share/ament_index/resource_index/parent_prefix_path/mission_manager
+[0.188s] -- Up-to-date: /manager_ws/install/mission_manager/share/mission_manager/environment/ament_prefix_path.sh
+[0.188s] -- Up-to-date: /manager_ws/install/mission_manager/share/mission_manager/environment/ament_prefix_path.dsv
+[0.188s] -- Up-to-date: /manager_ws/install/mission_manager/share/mission_manager/environment/path.sh
+[0.188s] -- Up-to-date: /manager_ws/install/mission_manager/share/mission_manager/environment/path.dsv
+[0.188s] -- Up-to-date: /manager_ws/install/mission_manager/share/mission_manager/local_setup.bash
+[0.189s] -- Up-to-date: /manager_ws/install/mission_manager/share/mission_manager/local_setup.sh
+[0.189s] -- Up-to-date: /manager_ws/install/mission_manager/share/mission_manager/local_setup.zsh
+[0.189s] -- Up-to-date: /manager_ws/install/mission_manager/share/mission_manager/local_setup.dsv
+[0.189s] -- Up-to-date: /manager_ws/install/mission_manager/share/mission_manager/package.dsv
+[0.189s] -- Up-to-date: /manager_ws/install/mission_manager/share/ament_index/resource_index/packages/mission_manager
+[0.190s] -- Up-to-date: /manager_ws/install/mission_manager/share/mission_manager/cmake/mission_managerConfig.cmake
+[0.190s] -- Up-to-date: /manager_ws/install/mission_manager/share/mission_manager/cmake/mission_managerConfig-version.cmake
+[0.190s] -- Up-to-date: /manager_ws/install/mission_manager/share/mission_manager/package.xml
+[0.193s] Invoked command in '/manager_ws/build/mission_manager' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /manager_ws/build/mission_manager

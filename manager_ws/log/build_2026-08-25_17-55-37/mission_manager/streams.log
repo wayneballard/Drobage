@@ -1,0 +1,108 @@
+[0.025s] Invoking command in '/manager_ws/build/mission_manager': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /manager_ws/build/mission_manager -- -j6 -l6
+[0.094s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.553s] -- Found rclcpp: 28.1.21 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.625s] -- Found rosidl_generator_c: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.642s] -- Found rosidl_generator_cpp: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.663s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.688s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.794s] -- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.796s] -- Found rmw_fastrtps_cpp: 8.4.4 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.913s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.026s] -- Found std_msgs: 5.3.8 (/opt/ros/jazzy/share/std_msgs/cmake)
+[1.049s] -- Found nav_msgs: 5.3.8 (/opt/ros/jazzy/share/nav_msgs/cmake)
+[1.112s] -- Found tf2_ros: 0.36.21 (/opt/ros/jazzy/share/tf2_ros/cmake)
+[1.294s] -- Found ament_lint_auto: 0.17.5 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[1.502s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.503s] -- Configured cppcheck include dirs: 
+[1.503s] -- Configured cppcheck exclude dirs and/or files: 
+[1.504s] -- Added test 'lint_cmake' to check CMake code style
+[1.505s] -- Added test 'uncrustify' to check C / C++ code style
+[1.506s] -- Configured uncrustify additional arguments: 
+[1.506s] -- Added test 'xmllint' to check XML markup files
+[1.508s] -- Configuring done (1.4s)
+[1.541s] -- Generating done (0.0s)
+[1.550s] -- Build files have been written to: /manager_ws/build/mission_manager
+[1.683s] [ 50%] [32mBuilding CXX object CMakeFiles/mission.dir/src/mission.cpp.o[0m
+[7.282s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:[m[K In constructor ‘[01m[KMissionManager::[01;32m[KMissionManager[m[K()[m[K’:
+[7.282s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:30:8:[m[K [01;31m[Kerror: [m[K‘[01m[Ktf_buffer[m[K’ was not declared in this scope; did you mean ‘[01m[Ktf_buffer_[m[K’?
+[7.282s]    30 |        [01;31m[Ktf_buffer[m[K = make_unique<tf2_ros::Buffer>(this->get_clock());
+[7.282s]       |        [01;31m[K^~~~~~~~~[m[K
+[7.283s]       |        [32m[Ktf_buffer_[m[K
+[7.300s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:32:8:[m[K [01;31m[Kerror: [m[K‘[01m[Ktf_listener[m[K’ was not declared in this scope; did you mean ‘[01m[Ktf_listener_[m[K’?
+[7.300s]    32 |        [01;31m[Ktf_listener[m[K = make_shared<tf2_ros::TransformListener(*tf_buffer_);
+[7.301s]       |        [01;31m[K^~~~~~~~~~~[m[K
+[7.301s]       |        [32m[Ktf_listener_[m[K
+[7.301s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:32:43:[m[K [01;31m[Kerror: [m[Ktemporary of non-literal type ‘[01m[Ktf2_ros::TransformListener[m[K’ in a constant expression
+[7.301s]    32 |        tf_listener = make_shared<tf2_ros::[01;31m[KTransformListener(*tf_buffer_)[m[K;
+[7.301s]       |                                           [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[7.301s] In file included from [01m[K/opt/ros/jazzy/include/tf2_ros/tf2_ros/transform_listener.h:35[m[K,
+[7.302s]                  from [01m[K/manager_ws/src/mission_manager/src/mission.cpp:8[m[K:
+[7.302s] [01m[K/opt/ros/jazzy/include/tf2_ros/tf2_ros/transform_listener.hpp:84:7:[m[K [01;36m[Knote: [m[K‘[01m[Ktf2_ros::TransformListener[m[K’ is not literal because:
+[7.302s]    84 | class [01;36m[KTransformListener[m[K
+[7.302s]       |       [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[7.302s] [01m[K/opt/ros/jazzy/include/tf2_ros/tf2_ros/transform_listener.hpp:84:7:[m[K [01;36m[Knote: [m[K  ‘[01m[Ktf2_ros::TransformListener[m[K’ has a non-trivial destructor
+[7.302s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:32:22:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+[7.303s]    32 |        tf_listener = [01;31m[Kmake_shared<tf2_ros::TransformListener(*tf_buffer_)[m[K;
+[7.303s]       |                      [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[7.303s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:[m[K In member function ‘[01m[Kvoid MissionManager::[01;32m[KExplorationCompleteCallback[m[K(std_msgs::msg::Empty_<std::allocator<void> >::SharedPtr)[m[K’:
+[7.303s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:47:78:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[7.303s]    47 |       void ExplorationCompleteCallback([01;35m[Kconst std_msgs::msg::Empty::SharedPtr msg[m[K)
+[7.304s]       |                                        [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[7.306s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:[m[K In member function ‘[01m[Kvoid MissionManager::[01;32m[KGetRobotPose[m[K()[m[K’:
+[7.306s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:69:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::unique_ptr<tf2_ros::Buffer>[m[K’ has no member named ‘[01m[Ktransforms[m[K’
+[7.307s]    69 |             double x = tf_buffer_.[01;31m[Ktransforms[m[K.transform.x;
+[7.307s]       |                                   [01;31m[K^~~~~~~~~~[m[K
+[7.307s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:70:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::unique_ptr<tf2_ros::Buffer>[m[K’ has no member named ‘[01m[Ktransforms[m[K’
+[7.307s]    70 |             double y = tf_buffer_.[01;31m[Ktransforms[m[K.transform.y;
+[7.307s]       |                                   [01;31m[K^~~~~~~~~~[m[K
+[7.307s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:74:46:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K&[m[K’ token
+[7.308s]    74 |          catch(const tf2::TrasnformException [01;31m[K&[m[Kex)
+[7.308s]       |                                              [01;31m[K^[m[K
+[7.308s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:74:46:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K&[m[K’ token
+[7.308s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:74:15:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K([m[K’
+[7.308s]    74 |          catch[01;36m[K([m[Kconst tf2::TrasnformException &ex)
+[7.309s]       |               [01;36m[K^[m[K
+[7.309s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:74:46:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K{[m[K’ before ‘[01m[K&[m[K’ token
+[7.309s]    74 |          catch(const tf2::TrasnformException [01;31m[K&[m[Kex)
+[7.310s]       |                                              [01;31m[K^[m[K
+[7.321s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:74:47:[m[K [01;31m[Kerror: [m[K‘[01m[Kex[m[K’ was not declared in this scope; did you mean ‘[01m[Kexp[m[K’?
+[7.321s]    74 |          catch(const tf2::TrasnformException &[01;31m[Kex[m[K)
+[7.321s]       |                                               [01;31m[K^~[m[K
+[7.322s]       |                                               [32m[Kexp[m[K
+[7.327s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:[m[K In function ‘[01m[Kint[01;32m[K main[m[K(int, char**)[m[K’:
+[7.327s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:91:12:[m[K [01;35m[Kwarning: [m[Kstatement is a reference, not call, to function ‘[01m[Krclcpp::shutdown[m[K’ [[01;35m[K-Waddress[m[K]
+[7.328s]    91 |    [01;35m[Krclcpp::shutdown[m[K;
+[7.328s]       |    [01;35m[K~~~~~~~~^~~~~~~~[m[K
+[7.328s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:91:12:[m[K [01;35m[Kwarning: [m[Kstatement has no effect [[01;35m[K-Wunused-value[m[K]
+[7.634s] In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/context.hpp:35[m[K,
+[7.634s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/utilities.hpp:24[m[K,
+[7.634s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:25[m[K,
+[7.635s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27[m[K,
+[7.635s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:175[m[K,
+[7.635s]                  from [01m[K/manager_ws/src/mission_manager/src/mission.cpp:1[m[K:
+[7.636s] /opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp: In instantiation of ‘[01m[Kstatic std::unique_ptr<rclcpp::Node> rclcpp::Node::[01;32m[Kmake_unique[m[K(Args&& ...) [35m[K[with Args = {tf2_ros::Buffer}][m[K[m[K’:
+[7.636s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:30:48:[m[K   required from here
+[7.636s] [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:82:3:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Node::Node(tf2_ros::Buffer)[m[K’
+[7.636s]    82 |   [01;31m[KRCLCPP_SMART_PTR_DEFINITIONS[m[K(Node)
+[7.636s]       |   [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[7.636s] In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[7.636s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[7.637s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:176[m[K:
+[7.637s] [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:1629:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Node::[01;32m[KNode[m[K(const rclcpp::Node&, const std::string&)[m[K’
+[7.637s]  1629 |   [01;36m[KNode[m[K(
+[7.637s]       |   [01;36m[K^~~~[m[K
+[7.637s] [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:1629:3:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[7.637s] [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:103:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Node::[01;32m[KNode[m[K(const std::string&, const std::string&, const rclcpp::NodeOptions&)[m[K’
+[7.637s]   103 |   explicit [01;36m[KNode[m[K(
+[7.637s]       |            [01;36m[K^~~~[m[K
+[7.638s] [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:103:12:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 1 provided
+[7.638s] [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:91:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Node::[01;32m[KNode[m[K(const std::string&, const rclcpp::NodeOptions&)[m[K’
+[7.638s]    91 |   explicit [01;36m[KNode[m[K(
+[7.638s]       |            [01;36m[K^~~~[m[K
+[7.639s] [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:92:25:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Ktf2_ros::Buffer[m[K’ to ‘[01m[Kconst std::string&[m[K’ {aka ‘[01m[Kconst std::__cxx11::basic_string<char>&[m[K’}
+[7.639s]    92 |     [01;36m[Kconst std::string & node_name[m[K,
+[7.639s]       |     [01;36m[K~~~~~~~~~~~~~~~~~~~~^~~~~~~~~[m[K
+[13.883s] gmake[2]: *** [CMakeFiles/mission.dir/build.make:76: CMakeFiles/mission.dir/src/mission.cpp.o] Error 1
+[13.883s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/mission.dir/all] Error 2
+[13.883s] gmake: *** [Makefile:146: all] Error 2
+[13.890s] Invoked command in '/manager_ws/build/mission_manager' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /manager_ws/build/mission_manager -- -j6 -l6

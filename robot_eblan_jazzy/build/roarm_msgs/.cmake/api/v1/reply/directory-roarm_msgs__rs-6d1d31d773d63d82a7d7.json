@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "roarm_msgs__rs",
+		"source" : "/robot_eblan/build/roarm_msgs/roarm_msgs__rs"
+	}
+}

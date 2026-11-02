@@ -1,0 +1,245 @@
+[0.060s] Invoking command in '/robot_eblan/build/roarm_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/robot_eblan/install/roarm_moveit_cmd:/robot_eblan/install/roarm_driver:/robot_eblan/install/roarm_description:/Drobage_jazzy/install/robot_ctrl_package:/Drobage_jazzy/install/navigation_package:/Drobage_jazzy/install/my_yolo_package:/opt/ros/jazzy /usr/bin/cmake /robot_eblan/src/roarm_msgs -DCMAKE_INSTALL_PREFIX=/robot_eblan/install/roarm_msgs
+[0.846s] -- The C compiler identification is GNU 13.3.0
+[1.324s] -- The CXX compiler identification is GNU 13.3.0
+[1.380s] -- Detecting C compiler ABI info
+[1.621s] -- Detecting C compiler ABI info - done
+[1.644s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.647s] -- Detecting C compile features
+[1.649s] -- Detecting C compile features - done
+[1.679s] -- Detecting CXX compiler ABI info
+[1.946s] -- Detecting CXX compiler ABI info - done
+[1.967s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.968s] -- Detecting CXX compile features
+[1.969s] -- Detecting CXX compile features - done
+[2.013s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[2.436s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[2.934s] -- Found rosidl_default_generators: 1.6.1 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[2.973s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.241s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.514s] -- Found rosidl_adapter: 4.6.9 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[3.538s] -- Found ament_lint_auto: 0.17.5 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[4.891s] -- Found ament_cmake_ros: 0.12.1 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)
+[5.768s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[6.926s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[6.947s] -- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)
+[7.247s] -- Found PythonExtra: /usr/bin/python3  
+[8.327s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed 
+[8.476s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[8.525s] -- Configuring done (8.4s)
+[8.618s] -- Generating done (0.1s)
+[8.644s] -- Build files have been written to: /robot_eblan/build/roarm_msgs
+[8.670s] Invoked command in '/robot_eblan/build/roarm_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/robot_eblan/install/roarm_moveit_cmd:/robot_eblan/install/roarm_driver:/robot_eblan/install/roarm_description:/Drobage_jazzy/install/robot_ctrl_package:/Drobage_jazzy/install/navigation_package:/Drobage_jazzy/install/my_yolo_package:/opt/ros/jazzy /usr/bin/cmake /robot_eblan/src/roarm_msgs -DCMAKE_INSTALL_PREFIX=/robot_eblan/install/roarm_msgs
+[8.673s] Invoking command in '/robot_eblan/build/roarm_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/robot_eblan/install/roarm_moveit_cmd:/robot_eblan/install/roarm_driver:/robot_eblan/install/roarm_description:/Drobage_jazzy/install/robot_ctrl_package:/Drobage_jazzy/install/navigation_package:/Drobage_jazzy/install/my_yolo_package:/opt/ros/jazzy /usr/bin/cmake --build /robot_eblan/build/roarm_msgs -- -j6 -l6
+[8.797s] [  5%] [34m[1mGenerating Rust code for ROS interfaces[0m
+[8.797s] [  5%] [34m[1mGenerating type hashes for ROS interfaces[0m
+[8.825s] [  5%] Built target ament_cmake_python_copy_roarm_msgs
+[9.205s] [  5%] Built target roarm_msgs__rosidl_generator_type_description
+[9.241s] [  8%] [34m[1mGenerating C code for ROS interfaces[0m
+[9.258s] [ 11%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[9.332s] [ 11%] Built target roarm_msgs__rs
+[9.447s] running egg_info
+[9.492s] creating roarm_msgs.egg-info
+[9.493s] writing roarm_msgs.egg-info/PKG-INFO
+[9.495s] writing dependency_links to roarm_msgs.egg-info/dependency_links.txt
+[9.496s] writing top-level names to roarm_msgs.egg-info/top_level.txt
+[9.496s] writing manifest file 'roarm_msgs.egg-info/SOURCES.txt'
+[9.651s] reading manifest file 'roarm_msgs.egg-info/SOURCES.txt'
+[9.651s] writing manifest file 'roarm_msgs.egg-info/SOURCES.txt'
+[9.752s] [ 11%] Built target ament_cmake_python_build_roarm_msgs_egg
+[9.848s] [ 11%] Built target roarm_msgs__cpp
+[9.973s] [ 17%] [32mBuilding C object CMakeFiles/roarm_msgs__rosidl_generator_c.dir/rosidl_generator_c/roarm_msgs/srv/detail/move_to_xyz__type_support.c.o[0m
+[9.973s] [ 17%] [32mBuilding C object CMakeFiles/roarm_msgs__rosidl_generator_c.dir/rosidl_generator_c/roarm_msgs/srv/detail/move_to_xyz__functions.c.o[0m
+[9.974s] [ 20%] [32mBuilding C object CMakeFiles/roarm_msgs__rosidl_generator_c.dir/rosidl_generator_c/roarm_msgs/srv/detail/move_to_xyz__description.c.o[0m
+[10.215s] [ 22%] [32m[1mLinking C shared library libroarm_msgs__rosidl_generator_c.so[0m
+[10.303s] [ 22%] Built target roarm_msgs__rosidl_generator_c
+[10.330s] [ 25%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[10.334s] [ 31%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[10.334s] [ 31%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[10.337s] [ 34%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[10.351s] [ 37%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[10.378s] [ 40%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[11.007s] [ 42%] [32mBuilding CXX object CMakeFiles/roarm_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/roarm_msgs/srv/move_to_xyz__type_support.cpp.o[0m
+[11.011s] [ 45%] [32mBuilding CXX object CMakeFiles/roarm_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/roarm_msgs/srv/detail/move_to_xyz__type_support.cpp.o[0m
+[11.042s] [ 48%] [32mBuilding CXX object CMakeFiles/roarm_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/roarm_msgs/srv/move_to_xyz__type_support.cpp.o[0m
+[11.168s] [ 51%] [32mBuilding CXX object CMakeFiles/roarm_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/roarm_msgs/srv/detail/move_to_xyz__type_support_c.cpp.o[0m
+[11.195s] [ 54%] [32m[1mLinking CXX shared library libroarm_msgs__rosidl_typesupport_c.so[0m
+[11.299s] [ 57%] [32mBuilding CXX object CMakeFiles/roarm_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/roarm_msgs/srv/detail/dds_fastrtps/move_to_xyz__type_support.cpp.o[0m
+[11.320s] [ 57%] Built target roarm_msgs__rosidl_typesupport_c
+[11.335s] [ 60%] [32mBuilding C object CMakeFiles/roarm_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/roarm_msgs/srv/detail/move_to_xyz__type_support.c.o[0m
+[11.472s] [ 62%] [32m[1mLinking C shared library libroarm_msgs__rosidl_typesupport_introspection_c.so[0m
+[11.557s] [ 62%] Built target roarm_msgs__rosidl_typesupport_introspection_c
+[12.125s] [ 65%] [32m[1mLinking CXX shared library libroarm_msgs__rosidl_typesupport_cpp.so[0m
+[12.318s] [ 65%] Built target roarm_msgs__rosidl_typesupport_cpp
+[12.361s] [ 68%] [32m[1mLinking CXX shared library libroarm_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[12.584s] [ 68%] Built target roarm_msgs__rosidl_typesupport_introspection_cpp
+[12.649s] [ 71%] [32m[1mLinking CXX shared library libroarm_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[12.838s] [ 71%] Built target roarm_msgs__rosidl_typesupport_fastrtps_c
+[12.995s] [ 74%] [32m[1mLinking CXX shared library libroarm_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[13.176s] [ 74%] Built target roarm_msgs__rosidl_typesupport_fastrtps_cpp
+[13.228s] [ 74%] Built target roarm_msgs
+[13.273s] [ 77%] [34m[1mGenerating Python code for ROS interfaces[0m
+[14.024s] [ 77%] Built target roarm_msgs__py
+[14.070s] [ 80%] [32mBuilding C object CMakeFiles/roarm_msgs__rosidl_generator_py.dir/rosidl_generator_py/roarm_msgs/srv/_move_to_xyz_s.c.o[0m
+[14.521s] [ 82%] [32m[1mLinking C shared library libroarm_msgs__rosidl_generator_py.so[0m
+[14.620s] [ 82%] Built target roarm_msgs__rosidl_generator_py
+[14.667s] [ 91%] [32mBuilding C object CMakeFiles/roarm_msgs_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/roarm_msgs/_roarm_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[14.667s] [ 91%] [32mBuilding C object CMakeFiles/roarm_msgs_s__rosidl_typesupport_c.dir/rosidl_generator_py/roarm_msgs/_roarm_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[14.668s] [ 91%] [32mBuilding C object CMakeFiles/roarm_msgs_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/roarm_msgs/_roarm_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[14.915s] [ 94%] [32m[1mLinking C shared module rosidl_generator_py/roarm_msgs/roarm_msgs_s__rosidl_typesupport_c.so[0m
+[14.926s] [ 97%] [32m[1mLinking C shared module rosidl_generator_py/roarm_msgs/roarm_msgs_s__rosidl_typesupport_fastrtps_c.so[0m
+[14.932s] [100%] [32m[1mLinking C shared module rosidl_generator_py/roarm_msgs/roarm_msgs_s__rosidl_typesupport_introspection_c.so[0m
+[14.988s] [100%] Built target roarm_msgs_s__rosidl_typesupport_c
+[15.017s] [100%] Built target roarm_msgs_s__rosidl_typesupport_fastrtps_c
+[15.018s] [100%] Built target roarm_msgs_s__rosidl_typesupport_introspection_c
+[15.048s] Invoked command in '/robot_eblan/build/roarm_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/robot_eblan/install/roarm_moveit_cmd:/robot_eblan/install/roarm_driver:/robot_eblan/install/roarm_description:/Drobage_jazzy/install/robot_ctrl_package:/Drobage_jazzy/install/navigation_package:/Drobage_jazzy/install/my_yolo_package:/opt/ros/jazzy /usr/bin/cmake --build /robot_eblan/build/roarm_msgs -- -j6 -l6
+[15.075s] Invoking command in '/robot_eblan/build/roarm_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/robot_eblan/install/roarm_moveit_cmd:/robot_eblan/install/roarm_driver:/robot_eblan/install/roarm_description:/Drobage_jazzy/install/robot_ctrl_package:/Drobage_jazzy/install/navigation_package:/Drobage_jazzy/install/my_yolo_package:/opt/ros/jazzy /usr/bin/cmake --install /robot_eblan/build/roarm_msgs
+[15.097s] -- Install configuration: ""
+[15.097s] -- Installing: /robot_eblan/install/roarm_msgs/share/ament_index/resource_index/rosidl_interfaces/roarm_msgs
+[15.098s] -- Installing: /robot_eblan/install/roarm_msgs/share/roarm_msgs/srv/MoveToXYZ.json
+[15.098s] -- Installing: /robot_eblan/install/roarm_msgs/include/roarm_msgs/roarm_msgs
+[15.099s] -- Installing: /robot_eblan/install/roarm_msgs/include/roarm_msgs/roarm_msgs/msg
+[15.099s] -- Installing: /robot_eblan/install/roarm_msgs/include/roarm_msgs/roarm_msgs/msg/rosidl_generator_c__visibility_control.h
+[15.099s] -- Installing: /robot_eblan/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv
+[15.099s] -- Installing: /robot_eblan/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail
+[15.099s] -- Installing: /robot_eblan/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail/move_to_xyz__functions.h
+[15.100s] -- Installing: /robot_eblan/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail/move_to_xyz__struct.h
+[15.100s] -- Installing: /robot_eblan/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail/move_to_xyz__functions.c
+[15.101s] -- Installing: /robot_eblan/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail/move_to_xyz__type_support.h
+[15.101s] -- Installing: /robot_eblan/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail/move_to_xyz__type_support.c
+[15.101s] -- Installing: /robot_eblan/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail/move_to_xyz__description.c
+[15.101s] -- Installing: /robot_eblan/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/move_to_xyz.h
+[15.102s] -- Installing: /robot_eblan/install/roarm_msgs/share/roarm_msgs/environment/library_path.sh
+[15.102s] -- Installing: /robot_eblan/install/roarm_msgs/share/roarm_msgs/environment/library_path.dsv
+[15.105s] -- Installing: /robot_eblan/install/roarm_msgs/lib/libroarm_msgs__rosidl_generator_c.so
+[15.106s] -- Set non-toolchain portion of runtime path of "/robot_eblan/install/roarm_msgs/lib/libroarm_msgs__rosidl_generator_c.so" to ""
+[15.106s] -- Up-to-date: /robot_eblan/install/roarm_msgs/include/roarm_msgs/roarm_msgs
+[15.106s] -- Up-to-date: /robot_eblan/install/roarm_msgs/include/roarm_msgs/roarm_msgs/msg
+[15.107s] -- Installing: /robot_eblan/install/roarm_msgs/include/roarm_msgs/roarm_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[15.108s] -- Up-to-date: /robot_eblan/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv
+[15.109s] -- Up-to-date: /robot_eblan/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail
+[15.109s] -- Installing: /robot_eblan/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail/move_to_xyz__rosidl_typesupport_fastrtps_c.h
+[15.109s] -- Installing: /robot_eblan/install/roarm_msgs/lib/libroarm_msgs__rosidl_typesupport_fastrtps_c.so
+[15.111s] -- Set non-toolchain portion of runtime path of "/robot_eblan/install/roarm_msgs/lib/libroarm_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[15.111s] -- Up-to-date: /robot_eblan/install/roarm_msgs/include/roarm_msgs/roarm_msgs
+[15.111s] -- Up-to-date: /robot_eblan/install/roarm_msgs/include/roarm_msgs/roarm_msgs/msg
+[15.112s] -- Installing: /robot_eblan/install/roarm_msgs/include/roarm_msgs/roarm_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[15.112s] -- Up-to-date: /robot_eblan/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv
+[15.114s] -- Up-to-date: /robot_eblan/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail
+[15.114s] -- Installing: /robot_eblan/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail/move_to_xyz__rosidl_typesupport_introspection_c.h
+[15.114s] -- Installing: /robot_eblan/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail/move_to_xyz__type_support.c
+[15.114s] -- Installing: /robot_eblan/install/roarm_msgs/lib/libroarm_msgs__rosidl_typesupport_introspection_c.so
+[15.116s] -- Set non-toolchain portion of runtime path of "/robot_eblan/install/roarm_msgs/lib/libroarm_msgs__rosidl_typesupport_introspection_c.so" to ""
+[15.116s] -- Installing: /robot_eblan/install/roarm_msgs/lib/libroarm_msgs__rosidl_typesupport_c.so
+[15.117s] -- Set non-toolchain portion of runtime path of "/robot_eblan/install/roarm_msgs/lib/libroarm_msgs__rosidl_typesupport_c.so" to ""
+[15.117s] -- Up-to-date: /robot_eblan/install/roarm_msgs/include/roarm_msgs/roarm_msgs
+[15.118s] -- Up-to-date: /robot_eblan/install/roarm_msgs/include/roarm_msgs/roarm_msgs/msg
+[15.118s] -- Installing: /robot_eblan/install/roarm_msgs/include/roarm_msgs/roarm_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[15.118s] -- Up-to-date: /robot_eblan/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv
+[15.119s] -- Up-to-date: /robot_eblan/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail
+[15.119s] -- Installing: /robot_eblan/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail/move_to_xyz__struct.hpp
+[15.119s] -- Installing: /robot_eblan/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail/move_to_xyz__traits.hpp
+[15.119s] -- Installing: /robot_eblan/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail/move_to_xyz__builder.hpp
+[15.120s] -- Installing: /robot_eblan/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail/move_to_xyz__type_support.hpp
+[15.120s] -- Installing: /robot_eblan/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/move_to_xyz.hpp
+[15.120s] -- Up-to-date: /robot_eblan/install/roarm_msgs/include/roarm_msgs/roarm_msgs
+[15.121s] -- Up-to-date: /robot_eblan/install/roarm_msgs/include/roarm_msgs/roarm_msgs/msg
+[15.121s] -- Installing: /robot_eblan/install/roarm_msgs/include/roarm_msgs/roarm_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[15.121s] -- Up-to-date: /robot_eblan/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv
+[15.121s] -- Up-to-date: /robot_eblan/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail
+[15.122s] -- Installing: /robot_eblan/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail/dds_fastrtps
+[15.122s] -- Installing: /robot_eblan/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail/move_to_xyz__rosidl_typesupport_fastrtps_cpp.hpp
+[15.122s] -- Installing: /robot_eblan/install/roarm_msgs/lib/libroarm_msgs__rosidl_typesupport_fastrtps_cpp.so
+[15.123s] -- Set non-toolchain portion of runtime path of "/robot_eblan/install/roarm_msgs/lib/libroarm_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[15.124s] -- Up-to-date: /robot_eblan/install/roarm_msgs/include/roarm_msgs/roarm_msgs
+[15.125s] -- Up-to-date: /robot_eblan/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv
+[15.125s] -- Up-to-date: /robot_eblan/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail
+[15.125s] -- Installing: /robot_eblan/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail/move_to_xyz__type_support.cpp
+[15.125s] -- Installing: /robot_eblan/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail/move_to_xyz__rosidl_typesupport_introspection_cpp.hpp
+[15.126s] -- Installing: /robot_eblan/install/roarm_msgs/lib/libroarm_msgs__rosidl_typesupport_introspection_cpp.so
+[15.126s] -- Set non-toolchain portion of runtime path of "/robot_eblan/install/roarm_msgs/lib/libroarm_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[15.126s] -- Installing: /robot_eblan/install/roarm_msgs/lib/libroarm_msgs__rosidl_typesupport_cpp.so
+[15.126s] -- Set non-toolchain portion of runtime path of "/robot_eblan/install/roarm_msgs/lib/libroarm_msgs__rosidl_typesupport_cpp.so" to ""
+[15.126s] -- Installing: /robot_eblan/install/roarm_msgs/share/roarm_msgs/environment/pythonpath.sh
+[15.127s] -- Installing: /robot_eblan/install/roarm_msgs/share/roarm_msgs/environment/pythonpath.dsv
+[15.127s] -- Installing: /robot_eblan/install/roarm_msgs/lib/python3.12/site-packages/roarm_msgs-0.0.1-py3.12.egg-info
+[15.127s] -- Installing: /robot_eblan/install/roarm_msgs/lib/python3.12/site-packages/roarm_msgs-0.0.1-py3.12.egg-info/top_level.txt
+[15.127s] -- Installing: /robot_eblan/install/roarm_msgs/lib/python3.12/site-packages/roarm_msgs-0.0.1-py3.12.egg-info/SOURCES.txt
+[15.127s] -- Installing: /robot_eblan/install/roarm_msgs/lib/python3.12/site-packages/roarm_msgs-0.0.1-py3.12.egg-info/PKG-INFO
+[15.128s] -- Installing: /robot_eblan/install/roarm_msgs/lib/python3.12/site-packages/roarm_msgs-0.0.1-py3.12.egg-info/dependency_links.txt
+[15.128s] -- Installing: /robot_eblan/install/roarm_msgs/lib/python3.12/site-packages/roarm_msgs
+[15.128s] -- Installing: /robot_eblan/install/roarm_msgs/lib/python3.12/site-packages/roarm_msgs/_roarm_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[15.128s] -- Installing: /robot_eblan/install/roarm_msgs/lib/python3.12/site-packages/roarm_msgs/_roarm_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[15.128s] -- Installing: /robot_eblan/install/roarm_msgs/lib/python3.12/site-packages/roarm_msgs/roarm_msgs_s__rosidl_typesupport_introspection_c.so
+[15.129s] -- Installing: /robot_eblan/install/roarm_msgs/lib/python3.12/site-packages/roarm_msgs/roarm_msgs_s__rosidl_typesupport_c.so
+[15.129s] -- Installing: /robot_eblan/install/roarm_msgs/lib/python3.12/site-packages/roarm_msgs/_roarm_msgs_s.ep.rosidl_typesupport_c.c
+[15.129s] -- Installing: /robot_eblan/install/roarm_msgs/lib/python3.12/site-packages/roarm_msgs/roarm_msgs_s__rosidl_typesupport_fastrtps_c.so
+[15.129s] -- Installing: /robot_eblan/install/roarm_msgs/lib/python3.12/site-packages/roarm_msgs/srv
+[15.129s] -- Installing: /robot_eblan/install/roarm_msgs/lib/python3.12/site-packages/roarm_msgs/srv/_move_to_xyz_s.c
+[15.130s] -- Installing: /robot_eblan/install/roarm_msgs/lib/python3.12/site-packages/roarm_msgs/srv/_move_to_xyz.py
+[15.130s] -- Installing: /robot_eblan/install/roarm_msgs/lib/python3.12/site-packages/roarm_msgs/srv/__init__.py
+[15.130s] -- Installing: /robot_eblan/install/roarm_msgs/lib/python3.12/site-packages/roarm_msgs/__init__.py
+[15.221s] Listing '/robot_eblan/install/roarm_msgs/lib/python3.12/site-packages/roarm_msgs'...
+[15.221s] Compiling '/robot_eblan/install/roarm_msgs/lib/python3.12/site-packages/roarm_msgs/__init__.py'...
+[15.222s] Listing '/robot_eblan/install/roarm_msgs/lib/python3.12/site-packages/roarm_msgs/srv'...
+[15.222s] Compiling '/robot_eblan/install/roarm_msgs/lib/python3.12/site-packages/roarm_msgs/srv/__init__.py'...
+[15.222s] Compiling '/robot_eblan/install/roarm_msgs/lib/python3.12/site-packages/roarm_msgs/srv/_move_to_xyz.py'...
+[15.238s] -- Installing: /robot_eblan/install/roarm_msgs/lib/python3.12/site-packages/roarm_msgs/roarm_msgs_s__rosidl_typesupport_fastrtps_c.so
+[15.239s] -- Set non-toolchain portion of runtime path of "/robot_eblan/install/roarm_msgs/lib/python3.12/site-packages/roarm_msgs/roarm_msgs_s__rosidl_typesupport_fastrtps_c.so" to ""
+[15.239s] -- Installing: /robot_eblan/install/roarm_msgs/lib/python3.12/site-packages/roarm_msgs/roarm_msgs_s__rosidl_typesupport_introspection_c.so
+[15.240s] -- Set non-toolchain portion of runtime path of "/robot_eblan/install/roarm_msgs/lib/python3.12/site-packages/roarm_msgs/roarm_msgs_s__rosidl_typesupport_introspection_c.so" to ""
+[15.241s] -- Installing: /robot_eblan/install/roarm_msgs/lib/python3.12/site-packages/roarm_msgs/roarm_msgs_s__rosidl_typesupport_c.so
+[15.241s] -- Set non-toolchain portion of runtime path of "/robot_eblan/install/roarm_msgs/lib/python3.12/site-packages/roarm_msgs/roarm_msgs_s__rosidl_typesupport_c.so" to ""
+[15.242s] -- Installing: /robot_eblan/install/roarm_msgs/lib/libroarm_msgs__rosidl_generator_py.so
+[15.242s] -- Set non-toolchain portion of runtime path of "/robot_eblan/install/roarm_msgs/lib/libroarm_msgs__rosidl_generator_py.so" to ""
+[15.242s] -- Installing: /robot_eblan/install/roarm_msgs/share/ament_index/resource_index/rust_packages/roarm_msgs
+[15.243s] -- Installing: /robot_eblan/install/roarm_msgs/share/roarm_msgs/rust
+[15.243s] -- Installing: /robot_eblan/install/roarm_msgs/share/roarm_msgs/rust/src
+[15.243s] -- Installing: /robot_eblan/install/roarm_msgs/share/roarm_msgs/rust/src/srv.rs
+[15.244s] -- Installing: /robot_eblan/install/roarm_msgs/share/roarm_msgs/rust/src/srv
+[15.245s] -- Installing: /robot_eblan/install/roarm_msgs/share/roarm_msgs/rust/src/srv/rmw.rs
+[15.245s] -- Installing: /robot_eblan/install/roarm_msgs/share/roarm_msgs/rust/src/lib.rs
+[15.246s] -- Installing: /robot_eblan/install/roarm_msgs/share/roarm_msgs/rust/build.rs
+[15.246s] -- Installing: /robot_eblan/install/roarm_msgs/share/roarm_msgs/rust/Cargo.toml
+[15.246s] -- Installing: /robot_eblan/install/roarm_msgs/share/roarm_msgs/srv/MoveToXYZ.idl
+[15.247s] -- Installing: /robot_eblan/install/roarm_msgs/share/roarm_msgs/srv/MoveToXYZ.srv
+[15.247s] -- Installing: /robot_eblan/install/roarm_msgs/share/ament_index/resource_index/package_run_dependencies/roarm_msgs
+[15.248s] -- Installing: /robot_eblan/install/roarm_msgs/share/ament_index/resource_index/parent_prefix_path/roarm_msgs
+[15.248s] -- Installing: /robot_eblan/install/roarm_msgs/share/roarm_msgs/environment/ament_prefix_path.sh
+[15.249s] -- Installing: /robot_eblan/install/roarm_msgs/share/roarm_msgs/environment/ament_prefix_path.dsv
+[15.249s] -- Installing: /robot_eblan/install/roarm_msgs/share/roarm_msgs/environment/path.sh
+[15.250s] -- Installing: /robot_eblan/install/roarm_msgs/share/roarm_msgs/environment/path.dsv
+[15.250s] -- Installing: /robot_eblan/install/roarm_msgs/share/roarm_msgs/local_setup.bash
+[15.250s] -- Installing: /robot_eblan/install/roarm_msgs/share/roarm_msgs/local_setup.sh
+[15.251s] -- Installing: /robot_eblan/install/roarm_msgs/share/roarm_msgs/local_setup.zsh
+[15.251s] -- Installing: /robot_eblan/install/roarm_msgs/share/roarm_msgs/local_setup.dsv
+[15.251s] -- Installing: /robot_eblan/install/roarm_msgs/share/roarm_msgs/package.dsv
+[15.252s] -- Installing: /robot_eblan/install/roarm_msgs/share/ament_index/resource_index/packages/roarm_msgs
+[15.252s] -- Installing: /robot_eblan/install/roarm_msgs/share/roarm_msgs/cmake/export_roarm_msgs__rosidl_generator_cExport.cmake
+[15.253s] -- Installing: /robot_eblan/install/roarm_msgs/share/roarm_msgs/cmake/export_roarm_msgs__rosidl_generator_cExport-noconfig.cmake
+[15.253s] -- Installing: /robot_eblan/install/roarm_msgs/share/roarm_msgs/cmake/export_roarm_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[15.253s] -- Installing: /robot_eblan/install/roarm_msgs/share/roarm_msgs/cmake/export_roarm_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[15.254s] -- Installing: /robot_eblan/install/roarm_msgs/share/roarm_msgs/cmake/roarm_msgs__rosidl_typesupport_introspection_cExport.cmake
+[15.254s] -- Installing: /robot_eblan/install/roarm_msgs/share/roarm_msgs/cmake/roarm_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[15.254s] -- Installing: /robot_eblan/install/roarm_msgs/share/roarm_msgs/cmake/roarm_msgs__rosidl_typesupport_cExport.cmake
+[15.255s] -- Installing: /robot_eblan/install/roarm_msgs/share/roarm_msgs/cmake/roarm_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[15.256s] -- Installing: /robot_eblan/install/roarm_msgs/share/roarm_msgs/cmake/export_roarm_msgs__rosidl_generator_cppExport.cmake
+[15.256s] -- Installing: /robot_eblan/install/roarm_msgs/share/roarm_msgs/cmake/export_roarm_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[15.256s] -- Installing: /robot_eblan/install/roarm_msgs/share/roarm_msgs/cmake/export_roarm_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[15.257s] -- Installing: /robot_eblan/install/roarm_msgs/share/roarm_msgs/cmake/roarm_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[15.257s] -- Installing: /robot_eblan/install/roarm_msgs/share/roarm_msgs/cmake/roarm_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[15.257s] -- Installing: /robot_eblan/install/roarm_msgs/share/roarm_msgs/cmake/roarm_msgs__rosidl_typesupport_cppExport.cmake
+[15.257s] -- Installing: /robot_eblan/install/roarm_msgs/share/roarm_msgs/cmake/roarm_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[15.258s] -- Installing: /robot_eblan/install/roarm_msgs/share/roarm_msgs/cmake/export_roarm_msgs__rosidl_generator_pyExport.cmake
+[15.260s] -- Installing: /robot_eblan/install/roarm_msgs/share/roarm_msgs/cmake/export_roarm_msgs__rosidl_generator_pyExport-noconfig.cmake
+[15.260s] -- Installing: /robot_eblan/install/roarm_msgs/share/roarm_msgs/cmake/rosidl_cmake-extras.cmake
+[15.261s] -- Installing: /robot_eblan/install/roarm_msgs/share/roarm_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[15.261s] -- Installing: /robot_eblan/install/roarm_msgs/share/roarm_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[15.262s] -- Installing: /robot_eblan/install/roarm_msgs/share/roarm_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[15.262s] -- Installing: /robot_eblan/install/roarm_msgs/share/roarm_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[15.263s] -- Installing: /robot_eblan/install/roarm_msgs/share/roarm_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[15.263s] -- Installing: /robot_eblan/install/roarm_msgs/share/roarm_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[15.263s] -- Installing: /robot_eblan/install/roarm_msgs/share/roarm_msgs/cmake/rosidl_cmake_aggregate_target-extras.cmake
+[15.264s] -- Installing: /robot_eblan/install/roarm_msgs/share/roarm_msgs/cmake/roarm_msgsConfig.cmake
+[15.264s] -- Installing: /robot_eblan/install/roarm_msgs/share/roarm_msgs/cmake/roarm_msgsConfig-version.cmake
+[15.264s] -- Installing: /robot_eblan/install/roarm_msgs/share/roarm_msgs/package.xml
+[15.269s] Invoked command in '/robot_eblan/build/roarm_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/robot_eblan/install/roarm_moveit_cmd:/robot_eblan/install/roarm_driver:/robot_eblan/install/roarm_description:/Drobage_jazzy/install/robot_ctrl_package:/Drobage_jazzy/install/navigation_package:/Drobage_jazzy/install/my_yolo_package:/opt/ros/jazzy /usr/bin/cmake --install /robot_eblan/build/roarm_msgs

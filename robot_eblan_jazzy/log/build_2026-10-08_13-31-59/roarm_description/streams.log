@@ -1,0 +1,50 @@
+[2.308s] Invoking command in '/robot_eblan/src/roarm_description': PYTHONPATH=/robot_eblan/build/roarm_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/robot_eblan/install/roarm_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/roarm_description build --build-base /robot_eblan/build/roarm_description/build install --record /robot_eblan/build/roarm_description/install.log --install-scripts $base/lib/roarm_description --single-version-externally-managed install_data
+[2.988s] running egg_info
+[3.033s] creating ../../build/roarm_description/roarm_description.egg-info
+[3.033s] writing ../../build/roarm_description/roarm_description.egg-info/PKG-INFO
+[3.037s] writing dependency_links to ../../build/roarm_description/roarm_description.egg-info/dependency_links.txt
+[3.038s] writing requirements to ../../build/roarm_description/roarm_description.egg-info/requires.txt
+[3.038s] writing top-level names to ../../build/roarm_description/roarm_description.egg-info/top_level.txt
+[3.038s] writing manifest file '../../build/roarm_description/roarm_description.egg-info/SOURCES.txt'
+[3.142s] reading manifest file '../../build/roarm_description/roarm_description.egg-info/SOURCES.txt'
+[3.145s] writing manifest file '../../build/roarm_description/roarm_description.egg-info/SOURCES.txt'
+[3.145s] running build
+[3.146s] running build_py
+[3.146s] creating /robot_eblan/build/roarm_description/build/lib/roarm_description
+[3.146s] copying roarm_description/__init__.py -> /robot_eblan/build/roarm_description/build/lib/roarm_description
+[3.147s] running install
+[3.157s] running install_lib
+[3.204s] creating /robot_eblan/install/roarm_description/lib/python3.12/site-packages/roarm_description
+[3.204s] copying /robot_eblan/build/roarm_description/build/lib/roarm_description/__init__.py -> /robot_eblan/install/roarm_description/lib/python3.12/site-packages/roarm_description
+[3.205s] byte-compiling /robot_eblan/install/roarm_description/lib/python3.12/site-packages/roarm_description/__init__.py to __init__.cpython-312.pyc
+[3.206s] running install_data
+[3.206s] creating /robot_eblan/install/roarm_description/share/ament_index/resource_index/packages
+[3.207s] copying resource/roarm_description -> /robot_eblan/install/roarm_description/share/ament_index/resource_index/packages
+[3.207s] copying package.xml -> /robot_eblan/install/roarm_description/share/roarm_description
+[3.208s] creating /robot_eblan/install/roarm_description/share/roarm_description/launch
+[3.208s] copying launch/display.launch.py -> /robot_eblan/install/roarm_description/share/roarm_description/launch
+[3.209s] creating /robot_eblan/install/roarm_description/share/roarm_description/urdf
+[3.209s] copying urdf/roarm_m3_description.xacro -> /robot_eblan/install/roarm_description/share/roarm_description/urdf
+[3.210s] copying urdf/roarm_m3_moveit.xacro -> /robot_eblan/install/roarm_description/share/roarm_description/urdf
+[3.211s] creating /robot_eblan/install/roarm_description/share/roarm_description/urdf/roarm_m3
+[3.212s] copying urdf/roarm_m3/roarm_m3.trans -> /robot_eblan/install/roarm_description/share/roarm_description/urdf/roarm_m3
+[3.212s] copying urdf/roarm_m3/materials.xacro -> /robot_eblan/install/roarm_description/share/roarm_description/urdf/roarm_m3
+[3.213s] copying urdf/roarm_m3/roarm_m3.xacro -> /robot_eblan/install/roarm_description/share/roarm_description/urdf/roarm_m3
+[3.214s] copying urdf/roarm_m3/roarm_m3.gazebo -> /robot_eblan/install/roarm_description/share/roarm_description/urdf/roarm_m3
+[3.215s] copying urdf/roarm_m3/roarm_m3.save.xacro -> /robot_eblan/install/roarm_description/share/roarm_description/urdf/roarm_m3
+[3.216s] creating /robot_eblan/install/roarm_description/share/roarm_description/meshes/roarm_m3
+[3.216s] copying meshes/roarm_m3/link3.stl -> /robot_eblan/install/roarm_description/share/roarm_description/meshes/roarm_m3
+[3.218s] copying meshes/roarm_m3/base_link.stl -> /robot_eblan/install/roarm_description/share/roarm_description/meshes/roarm_m3
+[3.219s] copying meshes/roarm_m3/link4.stl -> /robot_eblan/install/roarm_description/share/roarm_description/meshes/roarm_m3
+[3.219s] copying meshes/roarm_m3/gripper_left_link.stl -> /robot_eblan/install/roarm_description/share/roarm_description/meshes/roarm_m3
+[3.234s] copying meshes/roarm_m3/link1.stl -> /robot_eblan/install/roarm_description/share/roarm_description/meshes/roarm_m3
+[3.236s] copying meshes/roarm_m3/link5.stl -> /robot_eblan/install/roarm_description/share/roarm_description/meshes/roarm_m3
+[3.248s] copying meshes/roarm_m3/link2.stl -> /robot_eblan/install/roarm_description/share/roarm_description/meshes/roarm_m3
+[3.256s] copying meshes/roarm_m3/gripper_link.stl -> /robot_eblan/install/roarm_description/share/roarm_description/meshes/roarm_m3
+[3.269s] creating /robot_eblan/install/roarm_description/share/roarm_description/rviz
+[3.270s] copying rviz/view_description.rviz -> /robot_eblan/install/roarm_description/share/roarm_description/rviz
+[3.270s] running install_egg_info
+[3.320s] Copying ../../build/roarm_description/roarm_description.egg-info to /robot_eblan/install/roarm_description/lib/python3.12/site-packages/roarm_description-0.0.1-py3.12.egg-info
+[3.323s] running install_scripts
+[3.420s] writing list of installed files to '/robot_eblan/build/roarm_description/install.log'
+[3.518s] Invoked command in '/robot_eblan/src/roarm_description' returned '0': PYTHONPATH=/robot_eblan/build/roarm_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/robot_eblan/install/roarm_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/roarm_description build --build-base /robot_eblan/build/roarm_description/build install --record /robot_eblan/build/roarm_description/install.log --install-scripts $base/lib/roarm_description --single-version-externally-managed install_data

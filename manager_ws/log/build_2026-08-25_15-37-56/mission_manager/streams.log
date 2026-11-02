@@ -1,0 +1,10 @@
+[0.018s] Invoking command in '/manager_ws/build/mission_manager': /usr/bin/cmake --build /manager_ws/build/mission_manager -- -j6 -l6
+[0.140s] [ 50%] [32mBuilding CXX object CMakeFiles/mission.dir/src/mission.cpp.o[0m
+[0.609s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:5:10:[m[K [01;31m[Kfatal error: [m[Knav_msgs/msg/occupancygrid.hpp: No such file or directory
+[0.609s]     5 | #include [01;31m[K<nav_msgs/msg/occupancygrid.hpp>[m[K
+[0.609s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.609s] compilation terminated.
+[0.620s] gmake[2]: *** [CMakeFiles/mission.dir/build.make:76: CMakeFiles/mission.dir/src/mission.cpp.o] Error 1
+[0.620s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/mission.dir/all] Error 2
+[0.621s] gmake: *** [Makefile:146: all] Error 2
+[0.635s] Invoked command in '/manager_ws/build/mission_manager' returned '2': /usr/bin/cmake --build /manager_ws/build/mission_manager -- -j6 -l6

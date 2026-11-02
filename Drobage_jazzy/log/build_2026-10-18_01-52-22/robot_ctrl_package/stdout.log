@@ -1,0 +1,24 @@
+running egg_info
+writing ../../build/robot_ctrl_package/robot_ctrl_package.egg-info/PKG-INFO
+writing dependency_links to ../../build/robot_ctrl_package/robot_ctrl_package.egg-info/dependency_links.txt
+writing entry points to ../../build/robot_ctrl_package/robot_ctrl_package.egg-info/entry_points.txt
+writing requirements to ../../build/robot_ctrl_package/robot_ctrl_package.egg-info/requires.txt
+writing top-level names to ../../build/robot_ctrl_package/robot_ctrl_package.egg-info/top_level.txt
+reading manifest file '../../build/robot_ctrl_package/robot_ctrl_package.egg-info/SOURCES.txt'
+writing manifest file '../../build/robot_ctrl_package/robot_ctrl_package.egg-info/SOURCES.txt'
+running build
+running build_py
+copying robot_ctrl_package/control_node_leo.py -> /Drobage_jazzy/build/robot_ctrl_package/build/lib/robot_ctrl_package
+running install
+running install_lib
+copying /Drobage_jazzy/build/robot_ctrl_package/build/lib/robot_ctrl_package/control_node_leo.py -> /Drobage_jazzy/install/robot_ctrl_package/lib/python3.12/site-packages/robot_ctrl_package
+byte-compiling /Drobage_jazzy/install/robot_ctrl_package/lib/python3.12/site-packages/robot_ctrl_package/control_node_leo.py to control_node_leo.cpython-312.pyc
+running install_data
+running install_egg_info
+removing '/Drobage_jazzy/install/robot_ctrl_package/lib/python3.12/site-packages/robot_ctrl_package-0.0.0-py3.12.egg-info' (and everything under it)
+Copying ../../build/robot_ctrl_package/robot_ctrl_package.egg-info to /Drobage_jazzy/install/robot_ctrl_package/lib/python3.12/site-packages/robot_ctrl_package-0.0.0-py3.12.egg-info
+running install_scripts
+Installing arm_node script to /Drobage_jazzy/install/robot_ctrl_package/lib/robot_ctrl_package
+Installing control_node script to /Drobage_jazzy/install/robot_ctrl_package/lib/robot_ctrl_package
+Installing transform_node script to /Drobage_jazzy/install/robot_ctrl_package/lib/robot_ctrl_package
+writing list of installed files to '/Drobage_jazzy/build/robot_ctrl_package/install.log'

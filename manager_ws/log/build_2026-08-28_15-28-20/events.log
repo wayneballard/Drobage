@@ -1,0 +1,468 @@
+[0.000000] (-) TimerEvent: {}
+[0.000507] (mission_manager) JobQueued: {'identifier': 'mission_manager', 'dependencies': OrderedDict()}
+[0.000963] (mission_manager) JobStarted: {'identifier': 'mission_manager'}
+[0.017562] (mission_manager) JobProgress: {'identifier': 'mission_manager', 'progress': 'cmake'}
+[0.018708] (mission_manager) JobProgress: {'identifier': 'mission_manager', 'progress': 'build'}
+[0.019662] (mission_manager) Command: {'cmd': ['/usr/bin/cmake', '--build', '/manager_ws/build/mission_manager', '--', '-j6', '-l6'], 'cwd': '/manager_ws/build/mission_manager', 'env': OrderedDict({'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'HOSTNAME': 'wb-desktop', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/root', 'OLDPWD': '/manager_ws/src', 'ROS_PYTHON_VERSION': '3', 'COLCON_PREFIX_PATH': '/manager_ws/install', 'ROS_DISTRO': 'jazzy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'ROS_DOMAIN_ID': '42', 'AMENT_PREFIX_PATH': '/manager_ws/install/mission_manager:/opt/ros/jazzy', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/manager_ws/build/mission_manager', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/manager_ws/install/mission_manager:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.099650] (-) TimerEvent: {}
+[0.170337] (mission_manager) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/mission.dir/src/mission.cpp.o\x1b[0m\n'}
+[0.199917] (-) TimerEvent: {}
+[0.300676] (-) TimerEvent: {}
+[0.401221] (-) TimerEvent: {}
+[0.501799] (-) TimerEvent: {}
+[0.602402] (-) TimerEvent: {}
+[0.702994] (-) TimerEvent: {}
+[0.791803] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:168:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kunterminated argument list invoking macro "RCLCPP_INFO"\n'}
+[0.792393] (mission_manager) StderrLine: {'line': b'  168 | \n'}
+[0.792568] (mission_manager) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[0.803091] (-) TimerEvent: {}
+[0.903799] (-) TimerEvent: {}
+[1.004396] (-) TimerEvent: {}
+[1.104994] (-) TimerEvent: {}
+[1.205594] (-) TimerEvent: {}
+[1.306183] (-) TimerEvent: {}
+[1.406778] (-) TimerEvent: {}
+[1.507647] (-) TimerEvent: {}
+[1.608342] (-) TimerEvent: {}
+[1.709149] (-) TimerEvent: {}
+[1.809699] (-) TimerEvent: {}
+[1.910334] (-) TimerEvent: {}
+[2.010890] (-) TimerEvent: {}
+[2.111622] (-) TimerEvent: {}
+[2.212107] (-) TimerEvent: {}
+[2.312604] (-) TimerEvent: {}
+[2.413126] (-) TimerEvent: {}
+[2.513668] (-) TimerEvent: {}
+[2.614248] (-) TimerEvent: {}
+[2.714757] (-) TimerEvent: {}
+[2.815253] (-) TimerEvent: {}
+[2.915804] (-) TimerEvent: {}
+[3.016449] (-) TimerEvent: {}
+[3.117021] (-) TimerEvent: {}
+[3.217508] (-) TimerEvent: {}
+[3.318048] (-) TimerEvent: {}
+[3.418567] (-) TimerEvent: {}
+[3.519081] (-) TimerEvent: {}
+[3.619582] (-) TimerEvent: {}
+[3.720274] (-) TimerEvent: {}
+[3.820977] (-) TimerEvent: {}
+[3.921519] (-) TimerEvent: {}
+[4.022135] (-) TimerEvent: {}
+[4.122911] (-) TimerEvent: {}
+[4.223612] (-) TimerEvent: {}
+[4.324125] (-) TimerEvent: {}
+[4.424639] (-) TimerEvent: {}
+[4.525358] (-) TimerEvent: {}
+[4.625850] (-) TimerEvent: {}
+[4.726592] (-) TimerEvent: {}
+[4.827309] (-) TimerEvent: {}
+[4.927889] (-) TimerEvent: {}
+[5.028767] (-) TimerEvent: {}
+[5.129342] (-) TimerEvent: {}
+[5.229864] (-) TimerEvent: {}
+[5.330440] (-) TimerEvent: {}
+[5.430990] (-) TimerEvent: {}
+[5.531526] (-) TimerEvent: {}
+[5.632089] (-) TimerEvent: {}
+[5.710253] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:79:74:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmsg\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Knav2_msgs\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.711739] (mission_manager) StderrLine: {'line': b'   79 |       void GoalResponse(const rclcpp_action::ClientGoalHandle<nav2_msgs::\x1b[01;31m\x1b[Kmsg\x1b[m\x1b[K::NavigateToPose>::SharedPtr &goal_handle){\n'}
+[5.712468] (mission_manager) StderrLine: {'line': b'      |                                                                          \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.712831] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:79:74:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Ksuggested alternatives:\n'}
+[5.713203] (mission_manager) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__struct.hpp:157\x1b[m\x1b[K,\n'}
+[5.714143] (mission_manager) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/list_parameters.hpp:7\x1b[m\x1b[K,\n'}
+[5.714482] (mission_manager) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:21\x1b[m\x1b[K,\n'}
+[5.714796] (mission_manager) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:175\x1b[m\x1b[K,\n'}
+[5.715100] (mission_manager) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:1\x1b[m\x1b[K:\n'}
+[5.715396] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__struct.hpp:31:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Krcl_interfaces::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.715692] (mission_manager) StderrLine: {'line': b'   31 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[5.715976] (mission_manager) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.716255] (mission_manager) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/jazzy/include/service_msgs/service_msgs/msg/detail/service_event_info__struct.hpp:24\x1b[m\x1b[K,\n'}
+[5.716536] (mission_manager) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__struct.hpp:268\x1b[m\x1b[K:\n'}
+[5.716818] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp:31:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kbuiltin_interfaces::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.717123] (mission_manager) StderrLine: {'line': b'   31 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[5.717405] (mission_manager) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.717684] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/service_msgs/service_msgs/msg/detail/service_event_info__struct.hpp:35:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kservice_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.717968] (mission_manager) StderrLine: {'line': b'   35 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[5.718288] (mission_manager) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.718575] (mission_manager) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/jazzy/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__struct.hpp:27\x1b[m\x1b[K,\n'}
+[5.718858] (mission_manager) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/statistics_msgs/statistics_msgs/msg/metrics_message.hpp:7\x1b[m\x1b[K,\n'}
+[5.719139] (mission_manager) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/collector/generate_statistics_message.hpp:21\x1b[m\x1b[K,\n'}
+[5.719415] (mission_manager) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp:23\x1b[m\x1b[K,\n'}
+[5.719692] (mission_manager) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/subscription.hpp:50\x1b[m\x1b[K,\n'}
+[5.720063] (mission_manager) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/any_executable.hpp:25\x1b[m\x1b[K,\n'}
+[5.720358] (mission_manager) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[5.720676] (mission_manager) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[5.720959] (mission_manager) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/executor_options.hpp:22\x1b[m\x1b[K,\n'}
+[5.721237] (mission_manager) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/executor.hpp:38\x1b[m\x1b[K,\n'}
+[5.721948] (mission_manager) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[5.722291] (mission_manager) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[5.722926] (mission_manager) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:176\x1b[m\x1b[K:\n'}
+[5.723239] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/statistics_msgs/statistics_msgs/msg/detail/statistic_data_point__struct.hpp:31:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstatistics_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.723537] (mission_manager) StderrLine: {'line': b'   31 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[5.724378] (mission_manager) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.724679] (mission_manager) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/jazzy/include/std_msgs/std_msgs/msg/empty.hpp:7\x1b[m\x1b[K,\n'}
+[5.725003] (mission_manager) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:3\x1b[m\x1b[K:\n'}
+[5.725320] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/empty__struct.hpp:31:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.725615] (mission_manager) StderrLine: {'line': b'   31 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[5.725898] (mission_manager) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.726245] (mission_manager) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose__struct.hpp:24\x1b[m\x1b[K,\n'}
+[5.726534] (mission_manager) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/detail/map_meta_data__struct.hpp:26\x1b[m\x1b[K,\n'}
+[5.726814] (mission_manager) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/detail/occupancy_grid__struct.hpp:26\x1b[m\x1b[K,\n'}
+[5.727093] (mission_manager) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/occupancy_grid.hpp:7\x1b[m\x1b[K,\n'}
+[5.727372] (mission_manager) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:5\x1b[m\x1b[K:\n'}
+[5.727648] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp:31:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.727928] (mission_manager) StderrLine: {'line': b'   31 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[5.728202] (mission_manager) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.728623] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/detail/map_meta_data__struct.hpp:37:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Knav_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.728911] (mission_manager) StderrLine: {'line': b'   37 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[5.729191] (mission_manager) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.729494] (mission_manager) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/jazzy/include/tf2_msgs/tf2_msgs/msg/tf_message.hpp:7\x1b[m\x1b[K,\n'}
+[5.729774] (mission_manager) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/tf2_ros/tf2_ros/transform_listener.hpp:46\x1b[m\x1b[K,\n'}
+[5.730088] (mission_manager) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/tf2_ros/tf2_ros/transform_listener.h:35\x1b[m\x1b[K,\n'}
+[5.730390] (mission_manager) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:8\x1b[m\x1b[K:\n'}
+[5.730675] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__struct.hpp:35:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Ktf2_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.730954] (mission_manager) StderrLine: {'line': b'   35 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[5.731230] (mission_manager) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.731504] (mission_manager) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/jazzy/include/action_msgs/action_msgs/msg/detail/goal_info__struct.hpp:24\x1b[m\x1b[K,\n'}
+[5.731782] (mission_manager) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/action_msgs/action_msgs/msg/detail/goal_status__struct.hpp:24\x1b[m\x1b[K,\n'}
+[5.732056] (mission_manager) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/action_msgs/action_msgs/msg/goal_status.hpp:7\x1b[m\x1b[K,\n'}
+[5.732328] (-) TimerEvent: {}
+[5.732621] (mission_manager) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp_action/rclcpp_action/client_goal_handle.hpp:25\x1b[m\x1b[K,\n'}
+[5.732949] (mission_manager) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp_action/rclcpp_action/client.hpp:43\x1b[m\x1b[K,\n'}
+[5.733239] (mission_manager) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp_action/rclcpp_action/rclcpp_action.hpp:36\x1b[m\x1b[K,\n'}
+[5.733523] (mission_manager) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:12\x1b[m\x1b[K:\n'}
+[5.733802] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__struct.hpp:31:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kunique_identifier_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.734131] (mission_manager) StderrLine: {'line': b'   31 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[5.734425] (mission_manager) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.734702] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/action_msgs/action_msgs/msg/detail/goal_info__struct.hpp:37:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kaction_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.734984] (mission_manager) StderrLine: {'line': b'   37 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[5.735258] (mission_manager) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.735560] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:79:93:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[5.735854] (mission_manager) StderrLine: {'line': b'   79 |       void GoalResponse(const rclcpp_action::ClientGoalHandle<nav2_msgs::msg::NavigateToPose\x1b[01;31m\x1b[K>\x1b[m\x1b[K::SharedPtr &goal_handle){\n'}
+[5.736138] (mission_manager) StderrLine: {'line': b'      |                                                                                             \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[5.736416] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:79:74:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmsg\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Knav2_msgs\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.736724] (mission_manager) StderrLine: {'line': b'   79 |       void GoalResponse(const rclcpp_action::ClientGoalHandle<nav2_msgs::\x1b[01;31m\x1b[Kmsg\x1b[m\x1b[K::NavigateToPose>::SharedPtr &goal_handle){\n'}
+[5.737004] (mission_manager) StderrLine: {'line': b'      |                                                                          \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.737283] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:79:74:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Ksuggested alternatives:\n'}
+[5.737599] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__struct.hpp:31:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Krcl_interfaces::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.737907] (mission_manager) StderrLine: {'line': b'   31 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[5.738226] (mission_manager) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.738507] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp:31:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kbuiltin_interfaces::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.738790] (mission_manager) StderrLine: {'line': b'   31 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[5.739068] (mission_manager) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.739346] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/service_msgs/service_msgs/msg/detail/service_event_info__struct.hpp:35:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kservice_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.739628] (mission_manager) StderrLine: {'line': b'   35 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[5.739905] (mission_manager) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.740178] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/statistics_msgs/statistics_msgs/msg/detail/statistic_data_point__struct.hpp:31:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstatistics_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.740454] (mission_manager) StderrLine: {'line': b'   31 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[5.740723] (mission_manager) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.740996] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/empty__struct.hpp:31:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.741276] (mission_manager) StderrLine: {'line': b'   31 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[5.741551] (mission_manager) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.741825] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp:31:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.742132] (mission_manager) StderrLine: {'line': b'   31 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[5.742414] (mission_manager) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.742685] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/detail/map_meta_data__struct.hpp:37:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Knav_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.742990] (mission_manager) StderrLine: {'line': b'   37 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[5.743265] (mission_manager) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.743538] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__struct.hpp:35:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Ktf2_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.743810] (mission_manager) StderrLine: {'line': b'   35 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[5.744084] (mission_manager) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.744354] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__struct.hpp:31:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kunique_identifier_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.744630] (mission_manager) StderrLine: {'line': b'   31 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[5.744901] (mission_manager) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.745173] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/action_msgs/action_msgs/msg/detail/goal_info__struct.hpp:37:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kaction_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.745448] (mission_manager) StderrLine: {'line': b'   37 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[5.745719] (mission_manager) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.745988] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:79:93:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[5.746307] (mission_manager) StderrLine: {'line': b'   79 |       void GoalResponse(const rclcpp_action::ClientGoalHandle<nav2_msgs::msg::NavigateToPose\x1b[01;31m\x1b[K>\x1b[m\x1b[K::SharedPtr &goal_handle){\n'}
+[5.746589] (mission_manager) StderrLine: {'line': b'      |                                                                                             \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[5.746891] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:79:74:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmsg\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Knav2_msgs\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.747179] (mission_manager) StderrLine: {'line': b'   79 |       void GoalResponse(const rclcpp_action::ClientGoalHandle<nav2_msgs::\x1b[01;31m\x1b[Kmsg\x1b[m\x1b[K::NavigateToPose>::SharedPtr &goal_handle){\n'}
+[5.747462] (mission_manager) StderrLine: {'line': b'      |                                                                          \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.747741] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:79:74:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Ksuggested alternatives:\n'}
+[5.748016] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__struct.hpp:31:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Krcl_interfaces::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.748300] (mission_manager) StderrLine: {'line': b'   31 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[5.748572] (mission_manager) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.748843] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp:31:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kbuiltin_interfaces::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.749121] (mission_manager) StderrLine: {'line': b'   31 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[5.749417] (mission_manager) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.749690] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/service_msgs/service_msgs/msg/detail/service_event_info__struct.hpp:35:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kservice_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.750225] (mission_manager) StderrLine: {'line': b'   35 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[5.750519] (mission_manager) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.750798] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/statistics_msgs/statistics_msgs/msg/detail/statistic_data_point__struct.hpp:31:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstatistics_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.751080] (mission_manager) StderrLine: {'line': b'   31 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[5.751359] (mission_manager) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.751634] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/empty__struct.hpp:31:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.751915] (mission_manager) StderrLine: {'line': b'   31 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[5.752191] (mission_manager) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.752463] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp:31:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.752740] (mission_manager) StderrLine: {'line': b'   31 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[5.753011] (mission_manager) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.753281] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/detail/map_meta_data__struct.hpp:37:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Knav_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.753556] (mission_manager) StderrLine: {'line': b'   37 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[5.753828] (mission_manager) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.754133] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__struct.hpp:35:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Ktf2_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.754421] (mission_manager) StderrLine: {'line': b'   35 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[5.754699] (mission_manager) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.754976] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__struct.hpp:31:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kunique_identifier_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.755257] (mission_manager) StderrLine: {'line': b'   31 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[5.755682] (mission_manager) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.755965] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/action_msgs/action_msgs/msg/detail/goal_info__struct.hpp:37:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kaction_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.756247] (mission_manager) StderrLine: {'line': b'   37 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[5.756521] (mission_manager) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.756797] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:79:93:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[5.757100] (mission_manager) StderrLine: {'line': b'   79 |       void GoalResponse(const rclcpp_action::ClientGoalHandle<nav2_msgs::msg::NavigateToPose\x1b[01;31m\x1b[K>\x1b[m\x1b[K::SharedPtr &goal_handle){\n'}
+[5.757379] (mission_manager) StderrLine: {'line': b'      |                                                                                             \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[5.757654] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:79:31:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid template-id\n'}
+[5.757929] (mission_manager) StderrLine: {'line': b'   79 |       void GoalResponse(const \x1b[01;31m\x1b[Krclcpp_action\x1b[m\x1b[K::ClientGoalHandle<nav2_msgs::msg::NavigateToPose>::SharedPtr &goal_handle){\n'}
+[5.758278] (mission_manager) StderrLine: {'line': b'      |                               \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.758693] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:79:74:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Knav2_msgs::msg\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[5.758993] (mission_manager) StderrLine: {'line': b'   79 |       void GoalResponse(const rclcpp_action::ClientGoalHandle<nav2_msgs::\x1b[01;31m\x1b[Kmsg\x1b[m\x1b[K::NavigateToPose>::SharedPtr &goal_handle){\n'}
+[5.759277] (mission_manager) StderrLine: {'line': b'      |                                                                          \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.759560] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:79:106:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[K&\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[5.759842] (mission_manager) StderrLine: {'line': b'   79 |       void GoalResponse(const rclcpp_action::ClientGoalHandle<nav2_msgs::msg::NavigateToPose>::SharedPtr \x1b[01;31m\x1b[K&\x1b[m\x1b[Kgoal_handle){\n'}
+[5.760122] (mission_manager) StderrLine: {'line': b'      |                                                                                                          \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[5.760401] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:79:105:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K&\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[5.760683] (mission_manager) StderrLine: {'line': b'   79 |       void GoalResponse\x1b[34m\x1b[K(\x1b[m\x1b[Kconst rclcpp_action::ClientGoalHandle<nav2_msgs::msg::NavigateToPose>::SharedPtr\x1b[01;31m\x1b[K \x1b[m\x1b[K\x1b[32m\x1b[K&\x1b[m\x1b[Kgoal_handle){\n'}
+[5.760960] (mission_manager) StderrLine: {'line': b'      |                        \x1b[34m\x1b[K~\x1b[m\x1b[K                                                                                \x1b[01;31m\x1b[K^\x1b[m\x1b[K\x1b[32m\x1b[K~\x1b[m\x1b[K\n'}
+[5.761235] (mission_manager) StderrLine: {'line': b'      |                                                                                                         \x1b[32m\x1b[K)\x1b[m\x1b[K\n'}
+[5.761510] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:79:106:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 at end of member declaration\n'}
+[5.761837] (mission_manager) StderrLine: {'line': b'   79 |       void GoalResponse(const rclcpp_action::ClientGoalHandle<nav2_msgs::msg::NavigateToPose>::SharedPtr \x1b[01;31m\x1b[K&\x1b[m\x1b[Kgoal_handle){\n'}
+[5.762166] (mission_manager) StderrLine: {'line': b'      |                                                                                                          \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[5.762574] (mission_manager) StderrLine: {'line': b'      |                                                                                                           \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[5.762865] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:79:107:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kgoal_handle\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[5.763153] (mission_manager) StderrLine: {'line': b'   79 |      void GoalResponse(const rclcpp_action::ClientGoalHandle<nav2_msgs::msg::NavigateToPose>::SharedPtr &\x1b[01;31m\x1b[Kgoal_handle\x1b[m\x1b[K){\n'}
+[5.763435] (mission_manager) StderrLine: {'line': b'      |                                                                                                          \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.763711] (mission_manager) StderrLine: {'line': b'\n'}
+[5.763987] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:87:76:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmsg\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Knav2_msgs\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.764271] (mission_manager) StderrLine: {'line': b'   87 |       void ResultResponse(const rclcpp_action::ClientGoalHandle<nav2_msgs::\x1b[01;31m\x1b[Kmsg\x1b[m\x1b[K::NavigateToPose>::WrappedResult &result){\n'}
+[5.764554] (mission_manager) StderrLine: {'line': b'      |                                                                            \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.764832] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:87:76:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Ksuggested alternatives:\n'}
+[5.765112] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__struct.hpp:31:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Krcl_interfaces::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.765397] (mission_manager) StderrLine: {'line': b'   31 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[5.765675] (mission_manager) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.765950] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp:31:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kbuiltin_interfaces::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.766278] (mission_manager) StderrLine: {'line': b'   31 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[5.766561] (mission_manager) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.766842] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/service_msgs/service_msgs/msg/detail/service_event_info__struct.hpp:35:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kservice_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.767126] (mission_manager) StderrLine: {'line': b'   35 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[5.767409] (mission_manager) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.767706] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/statistics_msgs/statistics_msgs/msg/detail/statistic_data_point__struct.hpp:31:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstatistics_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.767990] (mission_manager) StderrLine: {'line': b'   31 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[5.768266] (mission_manager) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.768540] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/empty__struct.hpp:31:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.768843] (mission_manager) StderrLine: {'line': b'   31 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[5.769120] (mission_manager) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.769395] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp:31:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.769674] (mission_manager) StderrLine: {'line': b'   31 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[5.769948] (mission_manager) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.770258] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/detail/map_meta_data__struct.hpp:37:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Knav_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.770541] (mission_manager) StderrLine: {'line': b'   37 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[5.770815] (mission_manager) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.771090] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__struct.hpp:35:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Ktf2_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.771366] (mission_manager) StderrLine: {'line': b'   35 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[5.771640] (mission_manager) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.771911] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__struct.hpp:31:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kunique_identifier_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.772190] (mission_manager) StderrLine: {'line': b'   31 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[5.772463] (mission_manager) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.772734] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/action_msgs/action_msgs/msg/detail/goal_info__struct.hpp:37:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kaction_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.773012] (mission_manager) StderrLine: {'line': b'   37 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[5.773285] (mission_manager) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.773555] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:87:95:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[5.773829] (mission_manager) StderrLine: {'line': b'   87 |       void ResultResponse(const rclcpp_action::ClientGoalHandle<nav2_msgs::msg::NavigateToPose\x1b[01;31m\x1b[K>\x1b[m\x1b[K::WrappedResult &result){\n'}
+[5.774192] (mission_manager) StderrLine: {'line': b'      |                                                                                               \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[5.774483] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:87:76:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmsg\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Knav2_msgs\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.774768] (mission_manager) StderrLine: {'line': b'   87 |       void ResultResponse(const rclcpp_action::ClientGoalHandle<nav2_msgs::\x1b[01;31m\x1b[Kmsg\x1b[m\x1b[K::NavigateToPose>::WrappedResult &result){\n'}
+[5.775050] (mission_manager) StderrLine: {'line': b'      |                                                                            \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.775328] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:87:76:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Ksuggested alternatives:\n'}
+[5.775626] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__struct.hpp:31:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Krcl_interfaces::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.775904] (mission_manager) StderrLine: {'line': b'   31 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[5.776174] (mission_manager) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.776444] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp:31:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kbuiltin_interfaces::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.776718] (mission_manager) StderrLine: {'line': b'   31 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[5.776983] (mission_manager) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.777257] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/service_msgs/service_msgs/msg/detail/service_event_info__struct.hpp:35:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kservice_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.777532] (mission_manager) StderrLine: {'line': b'   35 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[5.777800] (mission_manager) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.778108] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/statistics_msgs/statistics_msgs/msg/detail/statistic_data_point__struct.hpp:31:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstatistics_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.778373] (mission_manager) StderrLine: {'line': b'   31 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[5.778623] (mission_manager) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.778871] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/empty__struct.hpp:31:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.779141] (mission_manager) StderrLine: {'line': b'   31 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[5.779396] (mission_manager) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.779643] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp:31:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.779894] (mission_manager) StderrLine: {'line': b'   31 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[5.780139] (mission_manager) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.780385] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/detail/map_meta_data__struct.hpp:37:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Knav_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.780636] (mission_manager) StderrLine: {'line': b'   37 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[5.780881] (mission_manager) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.781126] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__struct.hpp:35:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Ktf2_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.781377] (mission_manager) StderrLine: {'line': b'   35 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[5.781621] (mission_manager) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.781864] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__struct.hpp:31:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kunique_identifier_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.782170] (mission_manager) StderrLine: {'line': b'   31 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[5.782429] (mission_manager) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.782678] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/action_msgs/action_msgs/msg/detail/goal_info__struct.hpp:37:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kaction_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.782933] (mission_manager) StderrLine: {'line': b'   37 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[5.783181] (mission_manager) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.783428] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:87:95:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[5.783677] (mission_manager) StderrLine: {'line': b'   87 |       void ResultResponse(const rclcpp_action::ClientGoalHandle<nav2_msgs::msg::NavigateToPose\x1b[01;31m\x1b[K>\x1b[m\x1b[K::WrappedResult &result){\n'}
+[5.783927] (mission_manager) StderrLine: {'line': b'      |                                                                                               \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[5.784176] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:87:76:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmsg\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Knav2_msgs\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.784427] (mission_manager) StderrLine: {'line': b'   87 |       void ResultResponse(const rclcpp_action::ClientGoalHandle<nav2_msgs::\x1b[01;31m\x1b[Kmsg\x1b[m\x1b[K::NavigateToPose>::WrappedResult &result){\n'}
+[5.784680] (mission_manager) StderrLine: {'line': b'      |                                                                            \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.784927] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:87:76:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Ksuggested alternatives:\n'}
+[5.785221] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__struct.hpp:31:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Krcl_interfaces::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.785475] (mission_manager) StderrLine: {'line': b'   31 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[5.785722] (mission_manager) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.785966] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp:31:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kbuiltin_interfaces::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.786244] (mission_manager) StderrLine: {'line': b'   31 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[5.786474] (mission_manager) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.786701] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/service_msgs/service_msgs/msg/detail/service_event_info__struct.hpp:35:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kservice_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.786935] (mission_manager) StderrLine: {'line': b'   35 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[5.787163] (mission_manager) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.787391] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/statistics_msgs/statistics_msgs/msg/detail/statistic_data_point__struct.hpp:31:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstatistics_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.787643] (mission_manager) StderrLine: {'line': b'   31 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[5.787872] (mission_manager) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.788099] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/empty__struct.hpp:31:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.788329] (mission_manager) StderrLine: {'line': b'   31 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[5.788553] (mission_manager) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.788777] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp:31:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.789027] (mission_manager) StderrLine: {'line': b'   31 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[5.789264] (mission_manager) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.789494] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/detail/map_meta_data__struct.hpp:37:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Knav_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.789728] (mission_manager) StderrLine: {'line': b'   37 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[5.789955] (mission_manager) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.790206] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__struct.hpp:35:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Ktf2_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.790424] (mission_manager) StderrLine: {'line': b'   35 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[5.790637] (mission_manager) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.790849] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__struct.hpp:31:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kunique_identifier_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.791083] (mission_manager) StderrLine: {'line': b'   31 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[5.791299] (mission_manager) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.791513] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/action_msgs/action_msgs/msg/detail/goal_info__struct.hpp:37:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kaction_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.791729] (mission_manager) StderrLine: {'line': b'   37 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[5.791936] (mission_manager) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.792145] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:87:95:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[5.792358] (mission_manager) StderrLine: {'line': b'   87 |       void ResultResponse(const rclcpp_action::ClientGoalHandle<nav2_msgs::msg::NavigateToPose\x1b[01;31m\x1b[K>\x1b[m\x1b[K::WrappedResult &result){\n'}
+[5.792570] (mission_manager) StderrLine: {'line': b'      |                                                                                               \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[5.792783] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:87:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid template-id\n'}
+[5.792993] (mission_manager) StderrLine: {'line': b'   87 |       void ResultResponse(const \x1b[01;31m\x1b[Krclcpp_action\x1b[m\x1b[K::ClientGoalHandle<nav2_msgs::msg::NavigateToPose>::WrappedResult &result){\n'}
+[5.793229] (mission_manager) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.793443] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:87:76:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Knav2_msgs::msg\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[5.793658] (mission_manager) StderrLine: {'line': b'   87 |       void ResultResponse(const rclcpp_action::ClientGoalHandle<nav2_msgs::\x1b[01;31m\x1b[Kmsg\x1b[m\x1b[K::NavigateToPose>::WrappedResult &result){\n'}
+[5.793874] (mission_manager) StderrLine: {'line': b'      |                                                                            \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.794117] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:87:112:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[K&\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[5.794340] (mission_manager) StderrLine: {'line': b'   87 |   void ResultResponse(const rclcpp_action::ClientGoalHandle<nav2_msgs::msg::NavigateToPose>::WrappedResult \x1b[01;31m\x1b[K&\x1b[m\x1b[Kresult){\n'}
+[5.794558] (mission_manager) StderrLine: {'line': b'      |                                                                                                            \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[5.794791] (mission_manager) StderrLine: {'line': b'\n'}
+[5.795003] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:87:111:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K&\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[5.795239] (mission_manager) StderrLine: {'line': b'   87 |   void ResultResponse\x1b[34m\x1b[K(\x1b[m\x1b[Kconst rclcpp_action::ClientGoalHandle<nav2_msgs::msg::NavigateToPose>::WrappedResult\x1b[01;31m\x1b[K \x1b[m\x1b[K\x1b[32m\x1b[K&\x1b[m\x1b[Kresult){\n'}
+[5.795459] (mission_manager) StderrLine: {'line': b'      |                      \x1b[34m\x1b[K~\x1b[m\x1b[K                                                                                    \x1b[01;31m\x1b[K^\x1b[m\x1b[K\x1b[32m\x1b[K~\x1b[m\x1b[K\n'}
+[5.795674] (mission_manager) StderrLine: {'line': b'      |                                                                                                           \x1b[32m\x1b[K)\x1b[m\x1b[K\n'}
+[5.795886] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:87:112:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 at end of member declaration\n'}
+[5.796101] (mission_manager) StderrLine: {'line': b'   87 |   void ResultResponse(const rclcpp_action::ClientGoalHandle<nav2_msgs::msg::NavigateToPose>::WrappedResult \x1b[01;31m\x1b[K&\x1b[m\x1b[Kresult){\n'}
+[5.796314] (mission_manager) StderrLine: {'line': b'      |                                                                                                            \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[5.796527] (mission_manager) StderrLine: {'line': b'      |                                                                                                             \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[5.796755] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:87:113:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kresult\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[5.796973] (mission_manager) StderrLine: {'line': b'   87 |   void ResultResponse(const rclcpp_action::ClientGoalHandle<nav2_msgs::msg::NavigateToPose>::WrappedResult &\x1b[01;31m\x1b[Kresult\x1b[m\x1b[K){\n'}
+[5.797185] (mission_manager) StderrLine: {'line': b'      |                                                                                                             \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[5.797414] (mission_manager) StderrLine: {'line': b'\n'}
+[5.797625] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:88:22:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K}\x1b[m\x1b[K\xe2\x80\x99 at end of input\n'}
+[5.797840] (mission_manager) StderrLine: {'line': b'   88 |           RCLCPP_INFO\x1b[01;31m\x1b[K(\x1b[m\x1b[Kthis->get_logger(), "Navigation finished with code: %d ", static_cast<int>(result.code);\n'}
+[5.798080] (mission_manager) StderrLine: {'line': b'      |                      \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[5.798288] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:19:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kto match this \xe2\x80\x98\x1b[01m\x1b[K{\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.798493] (mission_manager) StderrLine: {'line': b'   19 | \x1b[01;36m\x1b[K{\x1b[m\x1b[K\n'}
+[5.798691] (mission_manager) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[5.798889] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KMissionManager::\x1b[01;32m\x1b[KMissionManager\x1b[m\x1b[K()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.799090] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:32:89:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KGetRobotPose\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[KMissionManager\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.799294] (mission_manager) StderrLine: {'line': b'   32 |        timer_ = this->create_wall_timer(chrono::milliseconds(20), bind(&MissionManager::\x1b[01;31m\x1b[KGetRobotPose\x1b[m\x1b[K, this));\n'}
+[5.799496] (mission_manager) StderrLine: {'line': b'      |                                                                                         \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.799696] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid MissionManager::\x1b[01;32m\x1b[KExplorationCompleteCallback\x1b[m\x1b[K(std_msgs::msg::Empty_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.799898] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:61:78:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kmsg\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[5.800098] (mission_manager) StderrLine: {'line': b'   61 |       void ExplorationCompleteCallback(\x1b[01;35m\x1b[Kconst std_msgs::msg::Empty::SharedPtr msg\x1b[m\x1b[K)\n'}
+[5.800296] (mission_manager) StderrLine: {'line': b'      |                                        \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[5.800492] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:\x1b[m\x1b[K At global scope:\n'}
+[5.800687] (mission_manager) StderrLine: {'line': b'\x1b[01m\x1b[K/manager_ws/src/mission_manager/src/mission.cpp:88:22:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id at end of input\n'}
+[5.800883] (mission_manager) StderrLine: {'line': b'   88 |           RCLCPP_INFO\x1b[01;31m\x1b[K(\x1b[m\x1b[Kthis->get_logger(), "Navigation finished with code: %d ", static_cast<int>(result.code);\n'}
+[5.801080] (mission_manager) StderrLine: {'line': b'      |                      \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[5.832445] (-) TimerEvent: {}
+[5.932984] (-) TimerEvent: {}
+[6.033654] (-) TimerEvent: {}
+[6.134565] (-) TimerEvent: {}
+[6.235396] (-) TimerEvent: {}
+[6.336196] (-) TimerEvent: {}
+[6.436993] (-) TimerEvent: {}
+[6.537795] (-) TimerEvent: {}
+[6.638494] (-) TimerEvent: {}
+[6.739042] (-) TimerEvent: {}
+[6.839786] (-) TimerEvent: {}
+[6.940363] (-) TimerEvent: {}
+[7.041233] (-) TimerEvent: {}
+[7.142100] (-) TimerEvent: {}
+[7.242932] (-) TimerEvent: {}
+[7.343707] (-) TimerEvent: {}
+[7.444513] (-) TimerEvent: {}
+[7.545285] (-) TimerEvent: {}
+[7.646062] (-) TimerEvent: {}
+[7.746780] (-) TimerEvent: {}
+[7.847501] (-) TimerEvent: {}
+[7.948022] (-) TimerEvent: {}
+[8.048589] (-) TimerEvent: {}
+[8.149410] (-) TimerEvent: {}
+[8.250166] (-) TimerEvent: {}
+[8.350870] (-) TimerEvent: {}
+[8.451645] (-) TimerEvent: {}
+[8.552408] (-) TimerEvent: {}
+[8.653120] (-) TimerEvent: {}
+[8.753834] (-) TimerEvent: {}
+[8.854590] (-) TimerEvent: {}
+[8.955298] (-) TimerEvent: {}
+[9.055860] (-) TimerEvent: {}
+[9.156740] (-) TimerEvent: {}
+[9.257533] (-) TimerEvent: {}
+[9.358283] (-) TimerEvent: {}
+[9.459061] (-) TimerEvent: {}
+[9.559825] (-) TimerEvent: {}
+[9.660339] (-) TimerEvent: {}
+[9.760828] (-) TimerEvent: {}
+[9.861537] (-) TimerEvent: {}
+[9.962070] (-) TimerEvent: {}
+[10.062645] (-) TimerEvent: {}
+[10.163535] (-) TimerEvent: {}
+[10.264330] (-) TimerEvent: {}
+[10.365106] (-) TimerEvent: {}
+[10.465695] (-) TimerEvent: {}
+[10.566485] (-) TimerEvent: {}
+[10.667190] (-) TimerEvent: {}
+[10.767697] (-) TimerEvent: {}
+[10.868468] (-) TimerEvent: {}
+[10.969247] (-) TimerEvent: {}
+[11.069830] (-) TimerEvent: {}
+[11.170747] (-) TimerEvent: {}
+[11.271543] (-) TimerEvent: {}
+[11.372284] (-) TimerEvent: {}
+[11.473064] (-) TimerEvent: {}
+[11.573812] (-) TimerEvent: {}
+[11.674617] (-) TimerEvent: {}
+[11.775343] (-) TimerEvent: {}
+[11.876047] (-) TimerEvent: {}
+[11.976535] (-) TimerEvent: {}
+[12.077106] (-) TimerEvent: {}
+[12.177991] (-) TimerEvent: {}
+[12.278845] (-) TimerEvent: {}
+[12.379601] (-) TimerEvent: {}
+[12.480380] (-) TimerEvent: {}
+[12.581140] (-) TimerEvent: {}
+[12.681861] (-) TimerEvent: {}
+[12.782393] (-) TimerEvent: {}
+[12.883092] (-) TimerEvent: {}
+[12.983579] (-) TimerEvent: {}
+[13.084165] (-) TimerEvent: {}
+[13.114380] (mission_manager) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/mission.dir/build.make:76: CMakeFiles/mission.dir/src/mission.cpp.o] Error 1\n'}
+[13.115156] (mission_manager) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/mission.dir/all] Error 2\n'}
+[13.115593] (mission_manager) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[13.123846] (mission_manager) CommandEnded: {'returncode': 2}
+[13.183141] (mission_manager) JobEnded: {'identifier': 'mission_manager', 'rc': 2}
+[13.190569] (-) TimerEvent: {}
+[13.191044] (-) EventReactorShutdown: {}

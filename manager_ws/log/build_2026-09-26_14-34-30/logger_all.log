@@ -1,0 +1,141 @@
+[0.226s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.227s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=6, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0xffff92941b20>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffff9354c950>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffff9354c950>>, mixin_verb=('build',))
+[0.303s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.304s] INFO:colcon.colcon_metadata.package_discovery.colcon_meta:Using configuration from '/root/.colcon/metadata/default/Gazebo.meta'
+[0.305s] INFO:colcon.colcon_metadata.package_discovery.colcon_meta:Using configuration from '/root/.colcon/metadata/default/fastdds.meta'
+[0.306s] INFO:colcon.colcon_metadata.package_discovery.colcon_meta:Using configuration from '/root/.colcon/metadata/default/fastrtps.meta'
+[0.306s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.306s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.306s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.306s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.306s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.306s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/manager_ws'
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.358s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.358s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.358s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.358s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.358s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.359s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.359s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.359s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.359s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.359s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.359s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.359s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.359s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.359s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.359s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(src/mission_manager) by extensions ['ignore', 'ignore_ament_install']
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(src/mission_manager) by extension 'ignore'
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(src/mission_manager) by extension 'ignore_ament_install'
+[0.361s] Level 1:colcon.colcon_core.package_identification:_identify(src/mission_manager) by extensions ['colcon_pkg']
+[0.361s] Level 1:colcon.colcon_core.package_identification:_identify(src/mission_manager) by extension 'colcon_pkg'
+[0.361s] Level 1:colcon.colcon_core.package_identification:_identify(src/mission_manager) by extensions ['colcon_meta']
+[0.361s] Level 1:colcon.colcon_core.package_identification:_identify(src/mission_manager) by extension 'colcon_meta'
+[0.361s] Level 1:colcon.colcon_core.package_identification:_identify(src/mission_manager) by extensions ['ros']
+[0.361s] Level 1:colcon.colcon_core.package_identification:_identify(src/mission_manager) by extension 'ros'
+[0.366s] DEBUG:colcon.colcon_core.package_identification:Package 'src/mission_manager' with type 'ros.ament_cmake' and name 'mission_manager'
+[0.366s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.366s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.366s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.366s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.366s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.397s] Level 5:colcon.colcon_core.verb:set package 'mission_manager' build argument 'cmake_args' from command line to 'None'
+[0.397s] Level 5:colcon.colcon_core.verb:set package 'mission_manager' build argument 'cmake_target' from command line to 'None'
+[0.398s] Level 5:colcon.colcon_core.verb:set package 'mission_manager' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.398s] Level 5:colcon.colcon_core.verb:set package 'mission_manager' build argument 'cmake_clean_cache' from command line to 'False'
+[0.398s] Level 5:colcon.colcon_core.verb:set package 'mission_manager' build argument 'cmake_clean_first' from command line to 'False'
+[0.398s] Level 5:colcon.colcon_core.verb:set package 'mission_manager' build argument 'cmake_force_configure' from command line to 'False'
+[0.398s] Level 5:colcon.colcon_core.verb:set package 'mission_manager' build argument 'ament_cmake_args' from command line to 'None'
+[0.398s] Level 5:colcon.colcon_core.verb:set package 'mission_manager' build argument 'catkin_cmake_args' from command line to 'None'
+[0.398s] Level 5:colcon.colcon_core.verb:set package 'mission_manager' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.398s] DEBUG:colcon.colcon_core.verb:Building package 'mission_manager' with the following arguments: {'ament_cmake_args': None, 'build_base': '/manager_ws/build/mission_manager', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/manager_ws/install/mission_manager', 'merge_install': False, 'path': '/manager_ws/src/mission_manager', 'symlink_install': False, 'test_result_base': None}
+[0.398s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.400s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.400s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/manager_ws/src/mission_manager' with build type 'ament_cmake'
+[0.401s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/manager_ws/src/mission_manager'
+[0.404s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.404s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.405s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.424s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/manager_ws/build/mission_manager': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Drobage_jazzy/install/robot_ctrl_package:/Drobage_jazzy/install/navigation_package:/Drobage_jazzy/install/my_yolo_package:/opt/ros/jazzy /usr/bin/cmake --build /manager_ws/build/mission_manager -- -j6 -l6
+[26.906s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/manager_ws/build/mission_manager' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Drobage_jazzy/install/robot_ctrl_package:/Drobage_jazzy/install/navigation_package:/Drobage_jazzy/install/my_yolo_package:/opt/ros/jazzy /usr/bin/cmake --build /manager_ws/build/mission_manager -- -j6 -l6
+[26.932s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/manager_ws/build/mission_manager': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Drobage_jazzy/install/robot_ctrl_package:/Drobage_jazzy/install/navigation_package:/Drobage_jazzy/install/my_yolo_package:/opt/ros/jazzy /usr/bin/cmake --install /manager_ws/build/mission_manager
+[26.987s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mission_manager)
+[26.988s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/manager_ws/build/mission_manager' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Drobage_jazzy/install/robot_ctrl_package:/Drobage_jazzy/install/navigation_package:/Drobage_jazzy/install/my_yolo_package:/opt/ros/jazzy /usr/bin/cmake --install /manager_ws/build/mission_manager
+[26.994s] Level 1:colcon.colcon_core.environment:checking '/manager_ws/install/mission_manager' for CMake module files
+[26.996s] Level 1:colcon.colcon_core.environment:checking '/manager_ws/install/mission_manager' for CMake config files
+[26.998s] Level 1:colcon.colcon_core.shell:create_environment_hook('mission_manager', 'cmake_prefix_path')
+[26.998s] INFO:colcon.colcon_core.shell:Creating environment hook '/manager_ws/install/mission_manager/share/mission_manager/hook/cmake_prefix_path.ps1'
+[27.001s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/manager_ws/install/mission_manager/share/mission_manager/hook/cmake_prefix_path.dsv'
+[27.003s] INFO:colcon.colcon_core.shell:Creating environment hook '/manager_ws/install/mission_manager/share/mission_manager/hook/cmake_prefix_path.sh'
+[27.006s] Level 1:colcon.colcon_core.environment:checking '/manager_ws/install/mission_manager/lib'
+[27.007s] Level 1:colcon.colcon_core.environment:checking '/manager_ws/install/mission_manager/bin'
+[27.007s] Level 1:colcon.colcon_core.environment:checking '/manager_ws/install/mission_manager/lib/pkgconfig/mission_manager.pc'
+[27.012s] Level 1:colcon.colcon_core.environment:checking '/manager_ws/install/mission_manager/lib/python3.12/site-packages'
+[27.013s] Level 1:colcon.colcon_core.environment:checking '/manager_ws/install/mission_manager/bin'
+[27.013s] INFO:colcon.colcon_core.shell:Creating package script '/manager_ws/install/mission_manager/share/mission_manager/package.ps1'
+[27.015s] INFO:colcon.colcon_core.shell:Creating package descriptor '/manager_ws/install/mission_manager/share/mission_manager/package.dsv'
+[27.017s] INFO:colcon.colcon_core.shell:Creating package script '/manager_ws/install/mission_manager/share/mission_manager/package.sh'
+[27.018s] INFO:colcon.colcon_core.shell:Creating package script '/manager_ws/install/mission_manager/share/mission_manager/package.bash'
+[27.019s] INFO:colcon.colcon_core.shell:Creating package script '/manager_ws/install/mission_manager/share/mission_manager/package.zsh'
+[27.020s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/manager_ws/install/mission_manager/share/colcon-core/packages/mission_manager)
+[27.021s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mission_manager)
+[27.022s] Level 1:colcon.colcon_core.environment:checking '/manager_ws/install/mission_manager' for CMake module files
+[27.023s] Level 1:colcon.colcon_core.environment:checking '/manager_ws/install/mission_manager' for CMake config files
+[27.023s] Level 1:colcon.colcon_core.shell:create_environment_hook('mission_manager', 'cmake_prefix_path')
+[27.024s] INFO:colcon.colcon_core.shell:Creating environment hook '/manager_ws/install/mission_manager/share/mission_manager/hook/cmake_prefix_path.ps1'
+[27.025s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/manager_ws/install/mission_manager/share/mission_manager/hook/cmake_prefix_path.dsv'
+[27.025s] INFO:colcon.colcon_core.shell:Creating environment hook '/manager_ws/install/mission_manager/share/mission_manager/hook/cmake_prefix_path.sh'
+[27.026s] Level 1:colcon.colcon_core.environment:checking '/manager_ws/install/mission_manager/lib'
+[27.026s] Level 1:colcon.colcon_core.environment:checking '/manager_ws/install/mission_manager/bin'
+[27.026s] Level 1:colcon.colcon_core.environment:checking '/manager_ws/install/mission_manager/lib/pkgconfig/mission_manager.pc'
+[27.027s] Level 1:colcon.colcon_core.environment:checking '/manager_ws/install/mission_manager/lib/python3.12/site-packages'
+[27.028s] Level 1:colcon.colcon_core.environment:checking '/manager_ws/install/mission_manager/bin'
+[27.028s] INFO:colcon.colcon_core.shell:Creating package script '/manager_ws/install/mission_manager/share/mission_manager/package.ps1'
+[27.029s] INFO:colcon.colcon_core.shell:Creating package descriptor '/manager_ws/install/mission_manager/share/mission_manager/package.dsv'
+[27.030s] INFO:colcon.colcon_core.shell:Creating package script '/manager_ws/install/mission_manager/share/mission_manager/package.sh'
+[27.031s] INFO:colcon.colcon_core.shell:Creating package script '/manager_ws/install/mission_manager/share/mission_manager/package.bash'
+[27.032s] INFO:colcon.colcon_core.shell:Creating package script '/manager_ws/install/mission_manager/share/mission_manager/package.zsh'
+[27.032s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/manager_ws/install/mission_manager/share/colcon-core/packages/mission_manager)
+[27.033s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[27.033s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[27.033s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[27.034s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[27.050s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[27.051s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[27.051s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[27.051s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[27.060s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.Spawn.ExecFailed: /usr/bin/dbus-launch terminated abnormally without any error message
+[27.061s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[27.062s] INFO:colcon.colcon_core.shell:Creating prefix script '/manager_ws/install/local_setup.ps1'
+[27.064s] INFO:colcon.colcon_core.shell:Creating prefix util module '/manager_ws/install/_local_setup_util_ps1.py'
+[27.067s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/manager_ws/install/setup.ps1'
+[27.071s] INFO:colcon.colcon_core.shell:Creating prefix script '/manager_ws/install/local_setup.sh'
+[27.072s] INFO:colcon.colcon_core.shell:Creating prefix util module '/manager_ws/install/_local_setup_util_sh.py'
+[27.073s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/manager_ws/install/setup.sh'
+[27.076s] INFO:colcon.colcon_core.shell:Creating prefix script '/manager_ws/install/local_setup.bash'
+[27.077s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/manager_ws/install/setup.bash'
+[27.079s] INFO:colcon.colcon_core.shell:Creating prefix script '/manager_ws/install/local_setup.zsh'
+[27.080s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/manager_ws/install/setup.zsh'

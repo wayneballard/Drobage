@@ -1,0 +1,48 @@
+running egg_info
+creating ../../build/roarm_description/roarm_description.egg-info
+writing ../../build/roarm_description/roarm_description.egg-info/PKG-INFO
+writing dependency_links to ../../build/roarm_description/roarm_description.egg-info/dependency_links.txt
+writing requirements to ../../build/roarm_description/roarm_description.egg-info/requires.txt
+writing top-level names to ../../build/roarm_description/roarm_description.egg-info/top_level.txt
+writing manifest file '../../build/roarm_description/roarm_description.egg-info/SOURCES.txt'
+reading manifest file '../../build/roarm_description/roarm_description.egg-info/SOURCES.txt'
+writing manifest file '../../build/roarm_description/roarm_description.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /robot_eblan/build/roarm_description/build/lib/roarm_description
+copying roarm_description/__init__.py -> /robot_eblan/build/roarm_description/build/lib/roarm_description
+running install
+running install_lib
+creating /robot_eblan/install/roarm_description/lib/python3.12/site-packages/roarm_description
+copying /robot_eblan/build/roarm_description/build/lib/roarm_description/__init__.py -> /robot_eblan/install/roarm_description/lib/python3.12/site-packages/roarm_description
+byte-compiling /robot_eblan/install/roarm_description/lib/python3.12/site-packages/roarm_description/__init__.py to __init__.cpython-312.pyc
+running install_data
+creating /robot_eblan/install/roarm_description/share/ament_index/resource_index/packages
+copying resource/roarm_description -> /robot_eblan/install/roarm_description/share/ament_index/resource_index/packages
+copying package.xml -> /robot_eblan/install/roarm_description/share/roarm_description
+creating /robot_eblan/install/roarm_description/share/roarm_description/launch
+copying launch/display.launch.py -> /robot_eblan/install/roarm_description/share/roarm_description/launch
+creating /robot_eblan/install/roarm_description/share/roarm_description/urdf
+copying urdf/roarm_m3_description.xacro -> /robot_eblan/install/roarm_description/share/roarm_description/urdf
+copying urdf/roarm_m3_moveit.xacro -> /robot_eblan/install/roarm_description/share/roarm_description/urdf
+creating /robot_eblan/install/roarm_description/share/roarm_description/urdf/roarm_m3
+copying urdf/roarm_m3/roarm_m3.trans -> /robot_eblan/install/roarm_description/share/roarm_description/urdf/roarm_m3
+copying urdf/roarm_m3/materials.xacro -> /robot_eblan/install/roarm_description/share/roarm_description/urdf/roarm_m3
+copying urdf/roarm_m3/roarm_m3.xacro -> /robot_eblan/install/roarm_description/share/roarm_description/urdf/roarm_m3
+copying urdf/roarm_m3/roarm_m3.gazebo -> /robot_eblan/install/roarm_description/share/roarm_description/urdf/roarm_m3
+copying urdf/roarm_m3/roarm_m3.save.xacro -> /robot_eblan/install/roarm_description/share/roarm_description/urdf/roarm_m3
+creating /robot_eblan/install/roarm_description/share/roarm_description/meshes/roarm_m3
+copying meshes/roarm_m3/link3.stl -> /robot_eblan/install/roarm_description/share/roarm_description/meshes/roarm_m3
+copying meshes/roarm_m3/base_link.stl -> /robot_eblan/install/roarm_description/share/roarm_description/meshes/roarm_m3
+copying meshes/roarm_m3/link4.stl -> /robot_eblan/install/roarm_description/share/roarm_description/meshes/roarm_m3
+copying meshes/roarm_m3/gripper_left_link.stl -> /robot_eblan/install/roarm_description/share/roarm_description/meshes/roarm_m3
+copying meshes/roarm_m3/link1.stl -> /robot_eblan/install/roarm_description/share/roarm_description/meshes/roarm_m3
+copying meshes/roarm_m3/link5.stl -> /robot_eblan/install/roarm_description/share/roarm_description/meshes/roarm_m3
+copying meshes/roarm_m3/link2.stl -> /robot_eblan/install/roarm_description/share/roarm_description/meshes/roarm_m3
+copying meshes/roarm_m3/gripper_link.stl -> /robot_eblan/install/roarm_description/share/roarm_description/meshes/roarm_m3
+creating /robot_eblan/install/roarm_description/share/roarm_description/rviz
+copying rviz/view_description.rviz -> /robot_eblan/install/roarm_description/share/roarm_description/rviz
+running install_egg_info
+Copying ../../build/roarm_description/roarm_description.egg-info to /robot_eblan/install/roarm_description/lib/python3.12/site-packages/roarm_description-0.0.1-py3.12.egg-info
+running install_scripts
+writing list of installed files to '/robot_eblan/build/roarm_description/install.log'

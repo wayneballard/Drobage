@@ -1,0 +1,4 @@
+[console_scripts]
+arm_node = robot_ctrl_package.arm_node:main
+control_node = robot_ctrl_package.control_node_leo:main
+transform_node = robot_ctrl_package.transform_node:main

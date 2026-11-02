@@ -1,0 +1,31 @@
+[0.026s] Invoking command in '/manager_ws/build/mission_manager': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /manager_ws/build/mission_manager -- -j6 -l6
+[0.080s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.542s] -- Found rclcpp: 28.1.21 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.606s] -- Found rosidl_generator_c: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.624s] -- Found rosidl_generator_cpp: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.646s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.671s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.779s] -- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.781s] -- Found rmw_fastrtps_cpp: 8.4.4 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.909s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.034s] -- Found std_msgs: 5.3.8 (/opt/ros/jazzy/share/std_msgs/cmake)
+[1.061s] -- Found ament_lint_auto: 0.17.5 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[1.266s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.266s] -- Configured cppcheck include dirs: 
+[1.266s] -- Configured cppcheck exclude dirs and/or files: 
+[1.267s] -- Added test 'lint_cmake' to check CMake code style
+[1.269s] -- Added test 'uncrustify' to check C / C++ code style
+[1.269s] -- Configured uncrustify additional arguments: 
+[1.270s] -- Added test 'xmllint' to check XML markup files
+[1.273s] -- Configuring done (1.2s)
+[1.301s] -- Generating done (0.0s)
+[1.311s] -- Build files have been written to: /manager_ws/build/mission_manager
+[1.408s] [ 50%] [32mBuilding CXX object CMakeFiles/mission_manager.dir/src/mission.cpp.o[0m
+[2.791s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:3:10:[m[K [01;31m[Kfatal error: [m[Kstds_msgs/msg/empty.hpp: No such file or directory
+[2.792s]     3 | #include [01;31m[K<stds_msgs/msg/empty.hpp>[m[K
+[2.792s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.792s] compilation terminated.
+[2.804s] gmake[2]: *** [CMakeFiles/mission_manager.dir/build.make:76: CMakeFiles/mission_manager.dir/src/mission.cpp.o] Error 1
+[2.804s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/mission_manager.dir/all] Error 2
+[2.805s] gmake: *** [Makefile:146: all] Error 2
+[2.811s] Invoked command in '/manager_ws/build/mission_manager' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /manager_ws/build/mission_manager -- -j6 -l6

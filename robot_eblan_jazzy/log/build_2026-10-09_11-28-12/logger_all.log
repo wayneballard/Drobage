@@ -1,0 +1,372 @@
+[0.231s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.231s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=6, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0xffff86e45fa0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffff8702a570>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffff8702a570>>, mixin_verb=('build',))
+[0.314s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.315s] INFO:colcon.colcon_metadata.package_discovery.colcon_meta:Using configuration from '/root/.colcon/metadata/default/Gazebo.meta'
+[0.316s] INFO:colcon.colcon_metadata.package_discovery.colcon_meta:Using configuration from '/root/.colcon/metadata/default/fastdds.meta'
+[0.317s] INFO:colcon.colcon_metadata.package_discovery.colcon_meta:Using configuration from '/root/.colcon/metadata/default/fastrtps.meta'
+[0.317s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.317s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.317s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.317s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.317s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.317s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/robot_eblan'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.380s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.383s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.383s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.383s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.383s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.383s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.383s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.383s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.383s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.384s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.384s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.384s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.384s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.384s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.384s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.384s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.384s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.385s] Level 1:colcon.colcon_core.package_identification:_identify(src/roarm_description) by extensions ['ignore', 'ignore_ament_install']
+[0.386s] Level 1:colcon.colcon_core.package_identification:_identify(src/roarm_description) by extension 'ignore'
+[0.386s] Level 1:colcon.colcon_core.package_identification:_identify(src/roarm_description) by extension 'ignore_ament_install'
+[0.386s] Level 1:colcon.colcon_core.package_identification:_identify(src/roarm_description) by extensions ['colcon_pkg']
+[0.386s] Level 1:colcon.colcon_core.package_identification:_identify(src/roarm_description) by extension 'colcon_pkg'
+[0.386s] Level 1:colcon.colcon_core.package_identification:_identify(src/roarm_description) by extensions ['colcon_meta']
+[0.386s] Level 1:colcon.colcon_core.package_identification:_identify(src/roarm_description) by extension 'colcon_meta'
+[0.386s] Level 1:colcon.colcon_core.package_identification:_identify(src/roarm_description) by extensions ['ros']
+[0.386s] Level 1:colcon.colcon_core.package_identification:_identify(src/roarm_description) by extension 'ros'
+[0.391s] DEBUG:colcon.colcon_core.package_identification:Package 'src/roarm_description' with type 'ros.ament_python' and name 'roarm_description'
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(src/roarm_driver) by extensions ['ignore', 'ignore_ament_install']
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(src/roarm_driver) by extension 'ignore'
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(src/roarm_driver) by extension 'ignore_ament_install'
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(src/roarm_driver) by extensions ['colcon_pkg']
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(src/roarm_driver) by extension 'colcon_pkg'
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(src/roarm_driver) by extensions ['colcon_meta']
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(src/roarm_driver) by extension 'colcon_meta'
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(src/roarm_driver) by extensions ['ros']
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(src/roarm_driver) by extension 'ros'
+[0.395s] DEBUG:colcon.colcon_core.package_identification:Package 'src/roarm_driver' with type 'ros.ament_python' and name 'roarm_driver'
+[0.395s] Level 1:colcon.colcon_core.package_identification:_identify(src/roarm_moveit_cmd) by extensions ['ignore', 'ignore_ament_install']
+[0.395s] Level 1:colcon.colcon_core.package_identification:_identify(src/roarm_moveit_cmd) by extension 'ignore'
+[0.395s] Level 1:colcon.colcon_core.package_identification:_identify(src/roarm_moveit_cmd) by extension 'ignore_ament_install'
+[0.395s] Level 1:colcon.colcon_core.package_identification:_identify(src/roarm_moveit_cmd) by extensions ['colcon_pkg']
+[0.396s] Level 1:colcon.colcon_core.package_identification:_identify(src/roarm_moveit_cmd) by extension 'colcon_pkg'
+[0.396s] Level 1:colcon.colcon_core.package_identification:_identify(src/roarm_moveit_cmd) by extensions ['colcon_meta']
+[0.396s] Level 1:colcon.colcon_core.package_identification:_identify(src/roarm_moveit_cmd) by extension 'colcon_meta'
+[0.396s] Level 1:colcon.colcon_core.package_identification:_identify(src/roarm_moveit_cmd) by extensions ['ros']
+[0.396s] Level 1:colcon.colcon_core.package_identification:_identify(src/roarm_moveit_cmd) by extension 'ros'
+[0.397s] DEBUG:colcon.colcon_core.package_identification:Package 'src/roarm_moveit_cmd' with type 'ros.ament_python' and name 'roarm_moveit_cmd'
+[0.397s] Level 1:colcon.colcon_core.package_identification:_identify(src/roarm_moveit_config) by extensions ['ignore', 'ignore_ament_install']
+[0.398s] Level 1:colcon.colcon_core.package_identification:_identify(src/roarm_moveit_config) by extension 'ignore'
+[0.398s] Level 1:colcon.colcon_core.package_identification:_identify(src/roarm_moveit_config) by extension 'ignore_ament_install'
+[0.398s] Level 1:colcon.colcon_core.package_identification:_identify(src/roarm_moveit_config) by extensions ['colcon_pkg']
+[0.398s] Level 1:colcon.colcon_core.package_identification:_identify(src/roarm_moveit_config) by extension 'colcon_pkg'
+[0.398s] Level 1:colcon.colcon_core.package_identification:_identify(src/roarm_moveit_config) by extensions ['colcon_meta']
+[0.398s] Level 1:colcon.colcon_core.package_identification:_identify(src/roarm_moveit_config) by extension 'colcon_meta'
+[0.398s] Level 1:colcon.colcon_core.package_identification:_identify(src/roarm_moveit_config) by extensions ['ros']
+[0.398s] Level 1:colcon.colcon_core.package_identification:_identify(src/roarm_moveit_config) by extension 'ros'
+[0.400s] DEBUG:colcon.colcon_core.package_identification:Package 'src/roarm_moveit_config' with type 'ros.ament_cmake' and name 'roarm_moveit_config'
+[0.401s] Level 1:colcon.colcon_core.package_identification:_identify(src/roarm_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.401s] Level 1:colcon.colcon_core.package_identification:_identify(src/roarm_msgs) by extension 'ignore'
+[0.401s] Level 1:colcon.colcon_core.package_identification:_identify(src/roarm_msgs) by extension 'ignore_ament_install'
+[0.401s] Level 1:colcon.colcon_core.package_identification:_identify(src/roarm_msgs) by extensions ['colcon_pkg']
+[0.401s] Level 1:colcon.colcon_core.package_identification:_identify(src/roarm_msgs) by extension 'colcon_pkg'
+[0.401s] Level 1:colcon.colcon_core.package_identification:_identify(src/roarm_msgs) by extensions ['colcon_meta']
+[0.401s] Level 1:colcon.colcon_core.package_identification:_identify(src/roarm_msgs) by extension 'colcon_meta'
+[0.402s] Level 1:colcon.colcon_core.package_identification:_identify(src/roarm_msgs) by extensions ['ros']
+[0.402s] Level 1:colcon.colcon_core.package_identification:_identify(src/roarm_msgs) by extension 'ros'
+[0.403s] DEBUG:colcon.colcon_core.package_identification:Package 'src/roarm_msgs' with type 'ros.ament_cmake' and name 'roarm_msgs'
+[0.403s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.403s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.403s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.403s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.403s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.440s] Level 5:colcon.colcon_core.verb:set package 'roarm_description' build argument 'cmake_args' from command line to 'None'
+[0.440s] Level 5:colcon.colcon_core.verb:set package 'roarm_description' build argument 'cmake_target' from command line to 'None'
+[0.440s] Level 5:colcon.colcon_core.verb:set package 'roarm_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.440s] Level 5:colcon.colcon_core.verb:set package 'roarm_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.440s] Level 5:colcon.colcon_core.verb:set package 'roarm_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.440s] Level 5:colcon.colcon_core.verb:set package 'roarm_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.440s] Level 5:colcon.colcon_core.verb:set package 'roarm_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.440s] Level 5:colcon.colcon_core.verb:set package 'roarm_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.440s] Level 5:colcon.colcon_core.verb:set package 'roarm_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.441s] DEBUG:colcon.colcon_core.verb:Building package 'roarm_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/robot_eblan/build/roarm_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/robot_eblan/install/roarm_description', 'merge_install': False, 'path': '/robot_eblan/src/roarm_description', 'symlink_install': False, 'test_result_base': None}
+[0.441s] Level 5:colcon.colcon_core.verb:set package 'roarm_driver' build argument 'cmake_args' from command line to 'None'
+[0.441s] Level 5:colcon.colcon_core.verb:set package 'roarm_driver' build argument 'cmake_target' from command line to 'None'
+[0.441s] Level 5:colcon.colcon_core.verb:set package 'roarm_driver' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.441s] Level 5:colcon.colcon_core.verb:set package 'roarm_driver' build argument 'cmake_clean_cache' from command line to 'False'
+[0.441s] Level 5:colcon.colcon_core.verb:set package 'roarm_driver' build argument 'cmake_clean_first' from command line to 'False'
+[0.441s] Level 5:colcon.colcon_core.verb:set package 'roarm_driver' build argument 'cmake_force_configure' from command line to 'False'
+[0.441s] Level 5:colcon.colcon_core.verb:set package 'roarm_driver' build argument 'ament_cmake_args' from command line to 'None'
+[0.441s] Level 5:colcon.colcon_core.verb:set package 'roarm_driver' build argument 'catkin_cmake_args' from command line to 'None'
+[0.441s] Level 5:colcon.colcon_core.verb:set package 'roarm_driver' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.441s] DEBUG:colcon.colcon_core.verb:Building package 'roarm_driver' with the following arguments: {'ament_cmake_args': None, 'build_base': '/robot_eblan/build/roarm_driver', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/robot_eblan/install/roarm_driver', 'merge_install': False, 'path': '/robot_eblan/src/roarm_driver', 'symlink_install': False, 'test_result_base': None}
+[0.442s] Level 5:colcon.colcon_core.verb:set package 'roarm_msgs' build argument 'cmake_args' from command line to 'None'
+[0.442s] Level 5:colcon.colcon_core.verb:set package 'roarm_msgs' build argument 'cmake_target' from command line to 'None'
+[0.442s] Level 5:colcon.colcon_core.verb:set package 'roarm_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.442s] Level 5:colcon.colcon_core.verb:set package 'roarm_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.442s] Level 5:colcon.colcon_core.verb:set package 'roarm_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.442s] Level 5:colcon.colcon_core.verb:set package 'roarm_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.442s] Level 5:colcon.colcon_core.verb:set package 'roarm_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.442s] Level 5:colcon.colcon_core.verb:set package 'roarm_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.442s] Level 5:colcon.colcon_core.verb:set package 'roarm_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.442s] DEBUG:colcon.colcon_core.verb:Building package 'roarm_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/robot_eblan/build/roarm_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/robot_eblan/install/roarm_msgs', 'merge_install': False, 'path': '/robot_eblan/src/roarm_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.443s] Level 5:colcon.colcon_core.verb:set package 'roarm_moveit_cmd' build argument 'cmake_args' from command line to 'None'
+[0.443s] Level 5:colcon.colcon_core.verb:set package 'roarm_moveit_cmd' build argument 'cmake_target' from command line to 'None'
+[0.443s] Level 5:colcon.colcon_core.verb:set package 'roarm_moveit_cmd' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.443s] Level 5:colcon.colcon_core.verb:set package 'roarm_moveit_cmd' build argument 'cmake_clean_cache' from command line to 'False'
+[0.443s] Level 5:colcon.colcon_core.verb:set package 'roarm_moveit_cmd' build argument 'cmake_clean_first' from command line to 'False'
+[0.443s] Level 5:colcon.colcon_core.verb:set package 'roarm_moveit_cmd' build argument 'cmake_force_configure' from command line to 'False'
+[0.443s] Level 5:colcon.colcon_core.verb:set package 'roarm_moveit_cmd' build argument 'ament_cmake_args' from command line to 'None'
+[0.443s] Level 5:colcon.colcon_core.verb:set package 'roarm_moveit_cmd' build argument 'catkin_cmake_args' from command line to 'None'
+[0.443s] Level 5:colcon.colcon_core.verb:set package 'roarm_moveit_cmd' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.443s] DEBUG:colcon.colcon_core.verb:Building package 'roarm_moveit_cmd' with the following arguments: {'ament_cmake_args': None, 'build_base': '/robot_eblan/build/roarm_moveit_cmd', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/robot_eblan/install/roarm_moveit_cmd', 'merge_install': False, 'path': '/robot_eblan/src/roarm_moveit_cmd', 'symlink_install': False, 'test_result_base': None}
+[0.444s] Level 5:colcon.colcon_core.verb:set package 'roarm_moveit_config' build argument 'cmake_args' from command line to 'None'
+[0.444s] Level 5:colcon.colcon_core.verb:set package 'roarm_moveit_config' build argument 'cmake_target' from command line to 'None'
+[0.444s] Level 5:colcon.colcon_core.verb:set package 'roarm_moveit_config' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.444s] Level 5:colcon.colcon_core.verb:set package 'roarm_moveit_config' build argument 'cmake_clean_cache' from command line to 'False'
+[0.444s] Level 5:colcon.colcon_core.verb:set package 'roarm_moveit_config' build argument 'cmake_clean_first' from command line to 'False'
+[0.444s] Level 5:colcon.colcon_core.verb:set package 'roarm_moveit_config' build argument 'cmake_force_configure' from command line to 'False'
+[0.444s] Level 5:colcon.colcon_core.verb:set package 'roarm_moveit_config' build argument 'ament_cmake_args' from command line to 'None'
+[0.444s] Level 5:colcon.colcon_core.verb:set package 'roarm_moveit_config' build argument 'catkin_cmake_args' from command line to 'None'
+[0.444s] Level 5:colcon.colcon_core.verb:set package 'roarm_moveit_config' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.444s] DEBUG:colcon.colcon_core.verb:Building package 'roarm_moveit_config' with the following arguments: {'ament_cmake_args': None, 'build_base': '/robot_eblan/build/roarm_moveit_config', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/robot_eblan/install/roarm_moveit_config', 'merge_install': False, 'path': '/robot_eblan/src/roarm_moveit_config', 'symlink_install': False, 'test_result_base': None}
+[0.444s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.446s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.447s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/robot_eblan/src/roarm_msgs' with build type 'ament_cmake'
+[0.447s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/robot_eblan/src/roarm_msgs'
+[0.451s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.451s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.451s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.465s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/robot_eblan/src/roarm_description' with build type 'ament_python'
+[0.465s] Level 1:colcon.colcon_core.shell:create_environment_hook('roarm_description', 'ament_prefix_path')
+[0.465s] INFO:colcon.colcon_core.shell:Creating environment hook '/robot_eblan/install/roarm_description/share/roarm_description/hook/ament_prefix_path.ps1'
+[0.467s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/robot_eblan/install/roarm_description/share/roarm_description/hook/ament_prefix_path.dsv'
+[0.467s] INFO:colcon.colcon_core.shell:Creating environment hook '/robot_eblan/install/roarm_description/share/roarm_description/hook/ament_prefix_path.sh'
+[0.469s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.469s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.478s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/robot_eblan/src/roarm_driver' with build type 'ament_python'
+[0.479s] Level 1:colcon.colcon_core.shell:create_environment_hook('roarm_driver', 'ament_prefix_path')
+[0.479s] INFO:colcon.colcon_core.shell:Creating environment hook '/robot_eblan/install/roarm_driver/share/roarm_driver/hook/ament_prefix_path.ps1'
+[0.480s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/robot_eblan/install/roarm_driver/share/roarm_driver/hook/ament_prefix_path.dsv'
+[0.481s] INFO:colcon.colcon_core.shell:Creating environment hook '/robot_eblan/install/roarm_driver/share/roarm_driver/hook/ament_prefix_path.sh'
+[0.482s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.482s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.505s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/robot_eblan/build/roarm_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/robot_eblan/install/roarm_moveit_cmd:/robot_eblan/install/roarm_driver:/robot_eblan/install/roarm_description:/Drobage_jazzy/install/robot_ctrl_package:/Drobage_jazzy/install/navigation_package:/Drobage_jazzy/install/my_yolo_package:/opt/ros/jazzy /usr/bin/cmake --build /robot_eblan/build/roarm_msgs -- -j6 -l6
+[1.003s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/robot_eblan/src/roarm_description'
+[1.004s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.004s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.508s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/robot_eblan/src/roarm_driver'
+[1.508s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.509s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.682s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/robot_eblan/build/roarm_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/robot_eblan/install/roarm_moveit_cmd:/robot_eblan/install/roarm_driver:/robot_eblan/install/roarm_description:/Drobage_jazzy/install/robot_ctrl_package:/Drobage_jazzy/install/navigation_package:/Drobage_jazzy/install/my_yolo_package:/opt/ros/jazzy /usr/bin/cmake --build /robot_eblan/build/roarm_msgs -- -j6 -l6
+[1.783s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/robot_eblan/build/roarm_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/robot_eblan/install/roarm_moveit_cmd:/robot_eblan/install/roarm_driver:/robot_eblan/install/roarm_description:/Drobage_jazzy/install/robot_ctrl_package:/Drobage_jazzy/install/navigation_package:/Drobage_jazzy/install/my_yolo_package:/opt/ros/jazzy /usr/bin/cmake --install /robot_eblan/build/roarm_msgs
+[2.009s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(roarm_msgs)
+[2.011s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/robot_eblan/build/roarm_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/robot_eblan/install/roarm_moveit_cmd:/robot_eblan/install/roarm_driver:/robot_eblan/install/roarm_description:/Drobage_jazzy/install/robot_ctrl_package:/Drobage_jazzy/install/navigation_package:/Drobage_jazzy/install/my_yolo_package:/opt/ros/jazzy /usr/bin/cmake --install /robot_eblan/build/roarm_msgs
+[2.015s] Level 1:colcon.colcon_core.environment:checking '/robot_eblan/install/roarm_msgs' for CMake module files
+[2.017s] Level 1:colcon.colcon_core.environment:checking '/robot_eblan/install/roarm_msgs' for CMake config files
+[2.018s] Level 1:colcon.colcon_core.shell:create_environment_hook('roarm_msgs', 'cmake_prefix_path')
+[2.019s] INFO:colcon.colcon_core.shell:Creating environment hook '/robot_eblan/install/roarm_msgs/share/roarm_msgs/hook/cmake_prefix_path.ps1'
+[2.020s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/robot_eblan/install/roarm_msgs/share/roarm_msgs/hook/cmake_prefix_path.dsv'
+[2.021s] INFO:colcon.colcon_core.shell:Creating environment hook '/robot_eblan/install/roarm_msgs/share/roarm_msgs/hook/cmake_prefix_path.sh'
+[2.022s] Level 1:colcon.colcon_core.environment:checking '/robot_eblan/install/roarm_msgs/lib'
+[2.022s] Level 1:colcon.colcon_core.shell:create_environment_hook('roarm_msgs', 'ld_library_path_lib')
+[2.023s] INFO:colcon.colcon_core.shell:Creating environment hook '/robot_eblan/install/roarm_msgs/share/roarm_msgs/hook/ld_library_path_lib.ps1'
+[2.024s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/robot_eblan/install/roarm_msgs/share/roarm_msgs/hook/ld_library_path_lib.dsv'
+[2.024s] INFO:colcon.colcon_core.shell:Creating environment hook '/robot_eblan/install/roarm_msgs/share/roarm_msgs/hook/ld_library_path_lib.sh'
+[2.025s] Level 1:colcon.colcon_core.environment:checking '/robot_eblan/install/roarm_msgs/bin'
+[2.025s] Level 1:colcon.colcon_core.environment:checking '/robot_eblan/install/roarm_msgs/lib/pkgconfig/roarm_msgs.pc'
+[2.026s] Level 1:colcon.colcon_core.environment:checking '/robot_eblan/install/roarm_msgs/lib/python3.12/site-packages'
+[2.026s] Level 1:colcon.colcon_core.shell:create_environment_hook('roarm_msgs', 'pythonpath')
+[2.026s] INFO:colcon.colcon_core.shell:Creating environment hook '/robot_eblan/install/roarm_msgs/share/roarm_msgs/hook/pythonpath.ps1'
+[2.027s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/robot_eblan/install/roarm_msgs/share/roarm_msgs/hook/pythonpath.dsv'
+[2.028s] INFO:colcon.colcon_core.shell:Creating environment hook '/robot_eblan/install/roarm_msgs/share/roarm_msgs/hook/pythonpath.sh'
+[2.029s] Level 1:colcon.colcon_core.environment:checking '/robot_eblan/install/roarm_msgs/bin'
+[2.030s] INFO:colcon.colcon_core.shell:Creating package script '/robot_eblan/install/roarm_msgs/share/roarm_msgs/package.ps1'
+[2.032s] INFO:colcon.colcon_core.shell:Creating package descriptor '/robot_eblan/install/roarm_msgs/share/roarm_msgs/package.dsv'
+[2.033s] INFO:colcon.colcon_core.shell:Creating package script '/robot_eblan/install/roarm_msgs/share/roarm_msgs/package.sh'
+[2.034s] INFO:colcon.colcon_core.shell:Creating package script '/robot_eblan/install/roarm_msgs/share/roarm_msgs/package.bash'
+[2.035s] INFO:colcon.colcon_core.shell:Creating package script '/robot_eblan/install/roarm_msgs/share/roarm_msgs/package.zsh'
+[2.036s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/robot_eblan/install/roarm_msgs/share/colcon-core/packages/roarm_msgs)
+[2.037s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(roarm_msgs)
+[2.038s] Level 1:colcon.colcon_core.environment:checking '/robot_eblan/install/roarm_msgs' for CMake module files
+[2.039s] Level 1:colcon.colcon_core.environment:checking '/robot_eblan/install/roarm_msgs' for CMake config files
+[2.040s] Level 1:colcon.colcon_core.shell:create_environment_hook('roarm_msgs', 'cmake_prefix_path')
+[2.040s] INFO:colcon.colcon_core.shell:Creating environment hook '/robot_eblan/install/roarm_msgs/share/roarm_msgs/hook/cmake_prefix_path.ps1'
+[2.041s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/robot_eblan/install/roarm_msgs/share/roarm_msgs/hook/cmake_prefix_path.dsv'
+[2.042s] INFO:colcon.colcon_core.shell:Creating environment hook '/robot_eblan/install/roarm_msgs/share/roarm_msgs/hook/cmake_prefix_path.sh'
+[2.043s] Level 1:colcon.colcon_core.environment:checking '/robot_eblan/install/roarm_msgs/lib'
+[2.043s] Level 1:colcon.colcon_core.shell:create_environment_hook('roarm_msgs', 'ld_library_path_lib')
+[2.044s] INFO:colcon.colcon_core.shell:Creating environment hook '/robot_eblan/install/roarm_msgs/share/roarm_msgs/hook/ld_library_path_lib.ps1'
+[2.044s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/robot_eblan/install/roarm_msgs/share/roarm_msgs/hook/ld_library_path_lib.dsv'
+[2.045s] INFO:colcon.colcon_core.shell:Creating environment hook '/robot_eblan/install/roarm_msgs/share/roarm_msgs/hook/ld_library_path_lib.sh'
+[2.046s] Level 1:colcon.colcon_core.environment:checking '/robot_eblan/install/roarm_msgs/bin'
+[2.046s] Level 1:colcon.colcon_core.environment:checking '/robot_eblan/install/roarm_msgs/lib/pkgconfig/roarm_msgs.pc'
+[2.046s] Level 1:colcon.colcon_core.environment:checking '/robot_eblan/install/roarm_msgs/lib/python3.12/site-packages'
+[2.047s] Level 1:colcon.colcon_core.shell:create_environment_hook('roarm_msgs', 'pythonpath')
+[2.047s] INFO:colcon.colcon_core.shell:Creating environment hook '/robot_eblan/install/roarm_msgs/share/roarm_msgs/hook/pythonpath.ps1'
+[2.048s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/robot_eblan/install/roarm_msgs/share/roarm_msgs/hook/pythonpath.dsv'
+[2.048s] INFO:colcon.colcon_core.shell:Creating environment hook '/robot_eblan/install/roarm_msgs/share/roarm_msgs/hook/pythonpath.sh'
+[2.050s] Level 1:colcon.colcon_core.environment:checking '/robot_eblan/install/roarm_msgs/bin'
+[2.051s] INFO:colcon.colcon_core.shell:Creating package script '/robot_eblan/install/roarm_msgs/share/roarm_msgs/package.ps1'
+[2.052s] INFO:colcon.colcon_core.shell:Creating package descriptor '/robot_eblan/install/roarm_msgs/share/roarm_msgs/package.dsv'
+[2.053s] INFO:colcon.colcon_core.shell:Creating package script '/robot_eblan/install/roarm_msgs/share/roarm_msgs/package.sh'
+[2.054s] INFO:colcon.colcon_core.shell:Creating package script '/robot_eblan/install/roarm_msgs/share/roarm_msgs/package.bash'
+[2.055s] INFO:colcon.colcon_core.shell:Creating package script '/robot_eblan/install/roarm_msgs/share/roarm_msgs/package.zsh'
+[2.055s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/robot_eblan/install/roarm_msgs/share/colcon-core/packages/roarm_msgs)
+[2.056s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/robot_eblan/src/roarm_moveit_cmd' with build type 'ament_python'
+[2.057s] Level 1:colcon.colcon_core.shell:create_environment_hook('roarm_moveit_cmd', 'ament_prefix_path')
+[2.057s] INFO:colcon.colcon_core.shell:Creating environment hook '/robot_eblan/install/roarm_moveit_cmd/share/roarm_moveit_cmd/hook/ament_prefix_path.ps1'
+[2.058s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/robot_eblan/install/roarm_moveit_cmd/share/roarm_moveit_cmd/hook/ament_prefix_path.dsv'
+[2.059s] INFO:colcon.colcon_core.shell:Creating environment hook '/robot_eblan/install/roarm_moveit_cmd/share/roarm_moveit_cmd/hook/ament_prefix_path.sh'
+[2.060s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.060s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.634s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/robot_eblan/src/roarm_moveit_cmd'
+[2.635s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.635s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.053s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools commands: build_clib, update_catalog, dist_info, install_headers, bdist_dumb, build_ext, bdist_rpm, bdist_egg, setopt, bdist_wheel, clean, develop, install_scripts, compile_catalog, bdist, check, alias, symlink_data, easy_install, install_data, build_scripts, install_lib, extract_messages, install_egg_info, editable_wheel, init_catalog, egg_info, build_py, saveopts, build, install, sdist, rotate
+[3.056s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools commands: build_clib, update_catalog, dist_info, install_headers, bdist_dumb, build_ext, bdist_rpm, bdist_egg, setopt, bdist_wheel, clean, develop, install_scripts, compile_catalog, bdist, check, alias, symlink_data, easy_install, install_data, build_scripts, install_lib, extract_messages, install_egg_info, editable_wheel, init_catalog, egg_info, build_py, saveopts, build, install, sdist, rotate
+[3.057s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/robot_eblan/src/roarm_driver': PYTHONPATH=/robot_eblan/build/roarm_driver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/robot_eblan/install/roarm_driver/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/roarm_driver build --build-base /robot_eblan/build/roarm_driver/build install --record /robot_eblan/build/roarm_driver/install.log --install-scripts $base/lib/roarm_driver --single-version-externally-managed install_data
+[3.062s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/robot_eblan/src/roarm_description': PYTHONPATH=/robot_eblan/build/roarm_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/robot_eblan/install/roarm_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/roarm_description build --build-base /robot_eblan/build/roarm_description/build install --record /robot_eblan/build/roarm_description/install.log --install-scripts $base/lib/roarm_description --single-version-externally-managed install_data
+[3.669s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools commands: build_clib, update_catalog, dist_info, install_headers, bdist_dumb, build_ext, bdist_rpm, bdist_egg, setopt, bdist_wheel, clean, develop, install_scripts, compile_catalog, bdist, check, alias, symlink_data, easy_install, install_data, build_scripts, install_lib, extract_messages, install_egg_info, editable_wheel, init_catalog, egg_info, build_py, saveopts, build, install, sdist, rotate
+[3.673s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/robot_eblan/src/roarm_moveit_cmd': CMAKE_PREFIX_PATH=/robot_eblan/install/roarm_msgs:/robot_eblan/install/roarm_moveit_config:/manager_ws/install/mission_manager:/ldlidar_ros2_binning/install/ldlidar_stl_ros2:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor PYTHONPATH=/robot_eblan/build/roarm_moveit_cmd/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/robot_eblan/install/roarm_moveit_cmd/lib/python3.12/site-packages:/robot_eblan/install/roarm_msgs/lib/python3.12/site-packages:/robot_eblan/install/roarm_moveit_cmd/lib/python3.12/site-packages:/robot_eblan/install/roarm_driver/lib/python3.12/site-packages:/robot_eblan/install/roarm_description/lib/python3.12/site-packages:/Drobage_jazzy/install/robot_ctrl_package/lib/python3.12/site-packages:/Drobage_jazzy/install/navigation_package/lib/python3.12/site-packages:/Drobage_jazzy/install/my_yolo_package/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/roarm_moveit_cmd build --build-base /robot_eblan/build/roarm_moveit_cmd/build install --record /robot_eblan/build/roarm_moveit_cmd/install.log --install-scripts $base/lib/roarm_moveit_cmd --single-version-externally-managed install_data
+[4.067s] Level 1:colcon.colcon_core.environment:checking '/robot_eblan/install/roarm_driver' for CMake module files
+[4.068s] Level 1:colcon.colcon_core.environment:checking '/robot_eblan/install/roarm_driver' for CMake config files
+[4.070s] Level 1:colcon.colcon_core.environment:checking '/robot_eblan/install/roarm_driver/lib'
+[4.070s] Level 1:colcon.colcon_core.environment:checking '/robot_eblan/install/roarm_driver/bin'
+[4.070s] Level 1:colcon.colcon_core.environment:checking '/robot_eblan/install/roarm_driver/lib/pkgconfig/roarm_driver.pc'
+[4.071s] Level 1:colcon.colcon_core.environment:checking '/robot_eblan/install/roarm_driver/lib/python3.12/site-packages'
+[4.071s] Level 1:colcon.colcon_core.shell:create_environment_hook('roarm_driver', 'pythonpath')
+[4.071s] INFO:colcon.colcon_core.shell:Creating environment hook '/robot_eblan/install/roarm_driver/share/roarm_driver/hook/pythonpath.ps1'
+[4.073s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/robot_eblan/src/roarm_driver' returned '0': PYTHONPATH=/robot_eblan/build/roarm_driver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/robot_eblan/install/roarm_driver/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/roarm_driver build --build-base /robot_eblan/build/roarm_driver/build install --record /robot_eblan/build/roarm_driver/install.log --install-scripts $base/lib/roarm_driver --single-version-externally-managed install_data
+[4.073s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/robot_eblan/install/roarm_driver/share/roarm_driver/hook/pythonpath.dsv'
+[4.074s] INFO:colcon.colcon_core.shell:Creating environment hook '/robot_eblan/install/roarm_driver/share/roarm_driver/hook/pythonpath.sh'
+[4.075s] Level 1:colcon.colcon_core.environment:checking '/robot_eblan/install/roarm_driver/bin'
+[4.075s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(roarm_driver)
+[4.076s] INFO:colcon.colcon_core.shell:Creating package script '/robot_eblan/install/roarm_driver/share/roarm_driver/package.ps1'
+[4.077s] INFO:colcon.colcon_core.shell:Creating package descriptor '/robot_eblan/install/roarm_driver/share/roarm_driver/package.dsv'
+[4.078s] INFO:colcon.colcon_core.shell:Creating package script '/robot_eblan/install/roarm_driver/share/roarm_driver/package.sh'
+[4.079s] INFO:colcon.colcon_core.shell:Creating package script '/robot_eblan/install/roarm_driver/share/roarm_driver/package.bash'
+[4.080s] INFO:colcon.colcon_core.shell:Creating package script '/robot_eblan/install/roarm_driver/share/roarm_driver/package.zsh'
+[4.080s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/robot_eblan/install/roarm_driver/share/colcon-core/packages/roarm_driver)
+[4.083s] Level 1:colcon.colcon_core.environment:checking '/robot_eblan/install/roarm_description' for CMake module files
+[4.084s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/robot_eblan/src/roarm_description' returned '0': PYTHONPATH=/robot_eblan/build/roarm_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/robot_eblan/install/roarm_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/roarm_description build --build-base /robot_eblan/build/roarm_description/build install --record /robot_eblan/build/roarm_description/install.log --install-scripts $base/lib/roarm_description --single-version-externally-managed install_data
+[4.084s] Level 1:colcon.colcon_core.environment:checking '/robot_eblan/install/roarm_description' for CMake config files
+[4.086s] Level 1:colcon.colcon_core.environment:checking '/robot_eblan/install/roarm_description/lib'
+[4.086s] Level 1:colcon.colcon_core.environment:checking '/robot_eblan/install/roarm_description/bin'
+[4.086s] Level 1:colcon.colcon_core.environment:checking '/robot_eblan/install/roarm_description/lib/pkgconfig/roarm_description.pc'
+[4.086s] Level 1:colcon.colcon_core.environment:checking '/robot_eblan/install/roarm_description/lib/python3.12/site-packages'
+[4.087s] Level 1:colcon.colcon_core.shell:create_environment_hook('roarm_description', 'pythonpath')
+[4.087s] INFO:colcon.colcon_core.shell:Creating environment hook '/robot_eblan/install/roarm_description/share/roarm_description/hook/pythonpath.ps1'
+[4.088s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/robot_eblan/install/roarm_description/share/roarm_description/hook/pythonpath.dsv'
+[4.089s] INFO:colcon.colcon_core.shell:Creating environment hook '/robot_eblan/install/roarm_description/share/roarm_description/hook/pythonpath.sh'
+[4.090s] Level 1:colcon.colcon_core.environment:checking '/robot_eblan/install/roarm_description/bin'
+[4.090s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(roarm_description)
+[4.091s] INFO:colcon.colcon_core.shell:Creating package script '/robot_eblan/install/roarm_description/share/roarm_description/package.ps1'
+[4.092s] INFO:colcon.colcon_core.shell:Creating package descriptor '/robot_eblan/install/roarm_description/share/roarm_description/package.dsv'
+[4.093s] INFO:colcon.colcon_core.shell:Creating package script '/robot_eblan/install/roarm_description/share/roarm_description/package.sh'
+[4.094s] INFO:colcon.colcon_core.shell:Creating package script '/robot_eblan/install/roarm_description/share/roarm_description/package.bash'
+[4.094s] INFO:colcon.colcon_core.shell:Creating package script '/robot_eblan/install/roarm_description/share/roarm_description/package.zsh'
+[4.095s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/robot_eblan/install/roarm_description/share/colcon-core/packages/roarm_description)
+[4.662s] Level 1:colcon.colcon_core.environment:checking '/robot_eblan/install/roarm_moveit_cmd' for CMake module files
+[4.663s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/robot_eblan/src/roarm_moveit_cmd' returned '0': CMAKE_PREFIX_PATH=/robot_eblan/install/roarm_msgs:/robot_eblan/install/roarm_moveit_config:/manager_ws/install/mission_manager:/ldlidar_ros2_binning/install/ldlidar_stl_ros2:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor PYTHONPATH=/robot_eblan/build/roarm_moveit_cmd/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/robot_eblan/install/roarm_moveit_cmd/lib/python3.12/site-packages:/robot_eblan/install/roarm_msgs/lib/python3.12/site-packages:/robot_eblan/install/roarm_moveit_cmd/lib/python3.12/site-packages:/robot_eblan/install/roarm_driver/lib/python3.12/site-packages:/robot_eblan/install/roarm_description/lib/python3.12/site-packages:/Drobage_jazzy/install/robot_ctrl_package/lib/python3.12/site-packages:/Drobage_jazzy/install/navigation_package/lib/python3.12/site-packages:/Drobage_jazzy/install/my_yolo_package/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/roarm_moveit_cmd build --build-base /robot_eblan/build/roarm_moveit_cmd/build install --record /robot_eblan/build/roarm_moveit_cmd/install.log --install-scripts $base/lib/roarm_moveit_cmd --single-version-externally-managed install_data
+[4.666s] Level 1:colcon.colcon_core.environment:checking '/robot_eblan/install/roarm_moveit_cmd' for CMake config files
+[4.668s] Level 1:colcon.colcon_core.environment:checking '/robot_eblan/install/roarm_moveit_cmd/lib'
+[4.669s] Level 1:colcon.colcon_core.environment:checking '/robot_eblan/install/roarm_moveit_cmd/bin'
+[4.669s] Level 1:colcon.colcon_core.environment:checking '/robot_eblan/install/roarm_moveit_cmd/lib/pkgconfig/roarm_moveit_cmd.pc'
+[4.671s] Level 1:colcon.colcon_core.environment:checking '/robot_eblan/install/roarm_moveit_cmd/lib/python3.12/site-packages'
+[4.671s] Level 1:colcon.colcon_core.shell:create_environment_hook('roarm_moveit_cmd', 'pythonpath')
+[4.673s] INFO:colcon.colcon_core.shell:Creating environment hook '/robot_eblan/install/roarm_moveit_cmd/share/roarm_moveit_cmd/hook/pythonpath.ps1'
+[4.677s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/robot_eblan/install/roarm_moveit_cmd/share/roarm_moveit_cmd/hook/pythonpath.dsv'
+[4.678s] INFO:colcon.colcon_core.shell:Creating environment hook '/robot_eblan/install/roarm_moveit_cmd/share/roarm_moveit_cmd/hook/pythonpath.sh'
+[4.682s] Level 1:colcon.colcon_core.environment:checking '/robot_eblan/install/roarm_moveit_cmd/bin'
+[4.682s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(roarm_moveit_cmd)
+[4.683s] INFO:colcon.colcon_core.shell:Creating package script '/robot_eblan/install/roarm_moveit_cmd/share/roarm_moveit_cmd/package.ps1'
+[4.687s] INFO:colcon.colcon_core.shell:Creating package descriptor '/robot_eblan/install/roarm_moveit_cmd/share/roarm_moveit_cmd/package.dsv'
+[4.689s] INFO:colcon.colcon_core.shell:Creating package script '/robot_eblan/install/roarm_moveit_cmd/share/roarm_moveit_cmd/package.sh'
+[4.690s] INFO:colcon.colcon_core.shell:Creating package script '/robot_eblan/install/roarm_moveit_cmd/share/roarm_moveit_cmd/package.bash'
+[4.692s] INFO:colcon.colcon_core.shell:Creating package script '/robot_eblan/install/roarm_moveit_cmd/share/roarm_moveit_cmd/package.zsh'
+[4.693s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/robot_eblan/install/roarm_moveit_cmd/share/colcon-core/packages/roarm_moveit_cmd)
+[4.695s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/robot_eblan/src/roarm_moveit_config' with build type 'ament_cmake'
+[4.696s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/robot_eblan/src/roarm_moveit_config'
+[4.697s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.697s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.762s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/robot_eblan/build/roarm_moveit_config': AMENT_PREFIX_PATH=/robot_eblan/install/roarm_moveit_cmd:/robot_eblan/install/roarm_description:/robot_eblan/install/roarm_moveit_config:/robot_eblan/install/roarm_msgs:/robot_eblan/install/roarm_driver:/manager_ws/install/mission_manager:/Drobage_jazzy/install/robot_ctrl_package:/Drobage_jazzy/install/navigation_package:/Drobage_jazzy/install/my_yolo_package:/ldlidar_ros2_binning/install/ldlidar_stl_ros2:/opt/ros/jazzy CMAKE_PREFIX_PATH=/robot_eblan/install/roarm_msgs:/robot_eblan/install/roarm_moveit_config:/manager_ws/install/mission_manager:/ldlidar_ros2_binning/install/ldlidar_stl_ros2:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/robot_eblan/install/roarm_moveit_cmd:/robot_eblan/install/roarm_driver:/robot_eblan/install/roarm_description:/Drobage_jazzy/install/robot_ctrl_package:/Drobage_jazzy/install/navigation_package:/Drobage_jazzy/install/my_yolo_package:/opt/ros/jazzy PYTHONPATH=/robot_eblan/install/roarm_moveit_cmd/lib/python3.12/site-packages:/robot_eblan/install/roarm_msgs/lib/python3.12/site-packages:/robot_eblan/install/roarm_description/lib/python3.12/site-packages:/robot_eblan/install/roarm_driver/lib/python3.12/site-packages:/Drobage_jazzy/install/robot_ctrl_package/lib/python3.12/site-packages:/Drobage_jazzy/install/navigation_package/lib/python3.12/site-packages:/Drobage_jazzy/install/my_yolo_package/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --build /robot_eblan/build/roarm_moveit_config -- -j6 -l6
+[4.888s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/robot_eblan/build/roarm_moveit_config' returned '0': AMENT_PREFIX_PATH=/robot_eblan/install/roarm_moveit_cmd:/robot_eblan/install/roarm_description:/robot_eblan/install/roarm_moveit_config:/robot_eblan/install/roarm_msgs:/robot_eblan/install/roarm_driver:/manager_ws/install/mission_manager:/Drobage_jazzy/install/robot_ctrl_package:/Drobage_jazzy/install/navigation_package:/Drobage_jazzy/install/my_yolo_package:/ldlidar_ros2_binning/install/ldlidar_stl_ros2:/opt/ros/jazzy CMAKE_PREFIX_PATH=/robot_eblan/install/roarm_msgs:/robot_eblan/install/roarm_moveit_config:/manager_ws/install/mission_manager:/ldlidar_ros2_binning/install/ldlidar_stl_ros2:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/robot_eblan/install/roarm_moveit_cmd:/robot_eblan/install/roarm_driver:/robot_eblan/install/roarm_description:/Drobage_jazzy/install/robot_ctrl_package:/Drobage_jazzy/install/navigation_package:/Drobage_jazzy/install/my_yolo_package:/opt/ros/jazzy PYTHONPATH=/robot_eblan/install/roarm_moveit_cmd/lib/python3.12/site-packages:/robot_eblan/install/roarm_msgs/lib/python3.12/site-packages:/robot_eblan/install/roarm_description/lib/python3.12/site-packages:/robot_eblan/install/roarm_driver/lib/python3.12/site-packages:/Drobage_jazzy/install/robot_ctrl_package/lib/python3.12/site-packages:/Drobage_jazzy/install/navigation_package/lib/python3.12/site-packages:/Drobage_jazzy/install/my_yolo_package/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --build /robot_eblan/build/roarm_moveit_config -- -j6 -l6
+[4.896s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/robot_eblan/build/roarm_moveit_config': AMENT_PREFIX_PATH=/robot_eblan/install/roarm_moveit_cmd:/robot_eblan/install/roarm_description:/robot_eblan/install/roarm_moveit_config:/robot_eblan/install/roarm_msgs:/robot_eblan/install/roarm_driver:/manager_ws/install/mission_manager:/Drobage_jazzy/install/robot_ctrl_package:/Drobage_jazzy/install/navigation_package:/Drobage_jazzy/install/my_yolo_package:/ldlidar_ros2_binning/install/ldlidar_stl_ros2:/opt/ros/jazzy CMAKE_PREFIX_PATH=/robot_eblan/install/roarm_msgs:/robot_eblan/install/roarm_moveit_config:/manager_ws/install/mission_manager:/ldlidar_ros2_binning/install/ldlidar_stl_ros2:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/robot_eblan/install/roarm_moveit_cmd:/robot_eblan/install/roarm_driver:/robot_eblan/install/roarm_description:/Drobage_jazzy/install/robot_ctrl_package:/Drobage_jazzy/install/navigation_package:/Drobage_jazzy/install/my_yolo_package:/opt/ros/jazzy PYTHONPATH=/robot_eblan/install/roarm_moveit_cmd/lib/python3.12/site-packages:/robot_eblan/install/roarm_msgs/lib/python3.12/site-packages:/robot_eblan/install/roarm_description/lib/python3.12/site-packages:/robot_eblan/install/roarm_driver/lib/python3.12/site-packages:/Drobage_jazzy/install/robot_ctrl_package/lib/python3.12/site-packages:/Drobage_jazzy/install/navigation_package/lib/python3.12/site-packages:/Drobage_jazzy/install/my_yolo_package/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --install /robot_eblan/build/roarm_moveit_config
+[4.937s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(roarm_moveit_config)
+[4.938s] Level 1:colcon.colcon_core.environment:checking '/robot_eblan/install/roarm_moveit_config' for CMake module files
+[4.938s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/robot_eblan/build/roarm_moveit_config' returned '0': AMENT_PREFIX_PATH=/robot_eblan/install/roarm_moveit_cmd:/robot_eblan/install/roarm_description:/robot_eblan/install/roarm_moveit_config:/robot_eblan/install/roarm_msgs:/robot_eblan/install/roarm_driver:/manager_ws/install/mission_manager:/Drobage_jazzy/install/robot_ctrl_package:/Drobage_jazzy/install/navigation_package:/Drobage_jazzy/install/my_yolo_package:/ldlidar_ros2_binning/install/ldlidar_stl_ros2:/opt/ros/jazzy CMAKE_PREFIX_PATH=/robot_eblan/install/roarm_msgs:/robot_eblan/install/roarm_moveit_config:/manager_ws/install/mission_manager:/ldlidar_ros2_binning/install/ldlidar_stl_ros2:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/robot_eblan/install/roarm_moveit_cmd:/robot_eblan/install/roarm_driver:/robot_eblan/install/roarm_description:/Drobage_jazzy/install/robot_ctrl_package:/Drobage_jazzy/install/navigation_package:/Drobage_jazzy/install/my_yolo_package:/opt/ros/jazzy PYTHONPATH=/robot_eblan/install/roarm_moveit_cmd/lib/python3.12/site-packages:/robot_eblan/install/roarm_msgs/lib/python3.12/site-packages:/robot_eblan/install/roarm_description/lib/python3.12/site-packages:/robot_eblan/install/roarm_driver/lib/python3.12/site-packages:/Drobage_jazzy/install/robot_ctrl_package/lib/python3.12/site-packages:/Drobage_jazzy/install/navigation_package/lib/python3.12/site-packages:/Drobage_jazzy/install/my_yolo_package/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --install /robot_eblan/build/roarm_moveit_config
+[4.940s] Level 1:colcon.colcon_core.environment:checking '/robot_eblan/install/roarm_moveit_config' for CMake config files
+[4.940s] Level 1:colcon.colcon_core.shell:create_environment_hook('roarm_moveit_config', 'cmake_prefix_path')
+[4.941s] INFO:colcon.colcon_core.shell:Creating environment hook '/robot_eblan/install/roarm_moveit_config/share/roarm_moveit_config/hook/cmake_prefix_path.ps1'
+[4.943s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/robot_eblan/install/roarm_moveit_config/share/roarm_moveit_config/hook/cmake_prefix_path.dsv'
+[4.944s] INFO:colcon.colcon_core.shell:Creating environment hook '/robot_eblan/install/roarm_moveit_config/share/roarm_moveit_config/hook/cmake_prefix_path.sh'
+[4.947s] Level 1:colcon.colcon_core.environment:checking '/robot_eblan/install/roarm_moveit_config/bin'
+[4.947s] Level 1:colcon.colcon_core.environment:checking '/robot_eblan/install/roarm_moveit_config/lib/pkgconfig/roarm_moveit_config.pc'
+[4.949s] Level 1:colcon.colcon_core.environment:checking '/robot_eblan/install/roarm_moveit_config/lib/python3.12/site-packages'
+[4.950s] Level 1:colcon.colcon_core.environment:checking '/robot_eblan/install/roarm_moveit_config/bin'
+[4.951s] INFO:colcon.colcon_core.shell:Creating package script '/robot_eblan/install/roarm_moveit_config/share/roarm_moveit_config/package.ps1'
+[4.954s] INFO:colcon.colcon_core.shell:Creating package descriptor '/robot_eblan/install/roarm_moveit_config/share/roarm_moveit_config/package.dsv'
+[4.956s] INFO:colcon.colcon_core.shell:Creating package script '/robot_eblan/install/roarm_moveit_config/share/roarm_moveit_config/package.sh'
+[4.958s] INFO:colcon.colcon_core.shell:Creating package script '/robot_eblan/install/roarm_moveit_config/share/roarm_moveit_config/package.bash'
+[4.959s] INFO:colcon.colcon_core.shell:Creating package script '/robot_eblan/install/roarm_moveit_config/share/roarm_moveit_config/package.zsh'
+[4.963s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/robot_eblan/install/roarm_moveit_config/share/colcon-core/packages/roarm_moveit_config)
+[4.967s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(roarm_moveit_config)
+[4.968s] Level 1:colcon.colcon_core.environment:checking '/robot_eblan/install/roarm_moveit_config' for CMake module files
+[4.970s] Level 1:colcon.colcon_core.environment:checking '/robot_eblan/install/roarm_moveit_config' for CMake config files
+[4.971s] Level 1:colcon.colcon_core.shell:create_environment_hook('roarm_moveit_config', 'cmake_prefix_path')
+[4.972s] INFO:colcon.colcon_core.shell:Creating environment hook '/robot_eblan/install/roarm_moveit_config/share/roarm_moveit_config/hook/cmake_prefix_path.ps1'
+[4.974s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/robot_eblan/install/roarm_moveit_config/share/roarm_moveit_config/hook/cmake_prefix_path.dsv'
+[4.975s] INFO:colcon.colcon_core.shell:Creating environment hook '/robot_eblan/install/roarm_moveit_config/share/roarm_moveit_config/hook/cmake_prefix_path.sh'
+[4.978s] Level 1:colcon.colcon_core.environment:checking '/robot_eblan/install/roarm_moveit_config/bin'
+[4.978s] Level 1:colcon.colcon_core.environment:checking '/robot_eblan/install/roarm_moveit_config/lib/pkgconfig/roarm_moveit_config.pc'
+[4.979s] Level 1:colcon.colcon_core.environment:checking '/robot_eblan/install/roarm_moveit_config/lib/python3.12/site-packages'
+[4.981s] Level 1:colcon.colcon_core.environment:checking '/robot_eblan/install/roarm_moveit_config/bin'
+[4.982s] INFO:colcon.colcon_core.shell:Creating package script '/robot_eblan/install/roarm_moveit_config/share/roarm_moveit_config/package.ps1'
+[4.984s] INFO:colcon.colcon_core.shell:Creating package descriptor '/robot_eblan/install/roarm_moveit_config/share/roarm_moveit_config/package.dsv'
+[4.986s] INFO:colcon.colcon_core.shell:Creating package script '/robot_eblan/install/roarm_moveit_config/share/roarm_moveit_config/package.sh'
+[4.988s] INFO:colcon.colcon_core.shell:Creating package script '/robot_eblan/install/roarm_moveit_config/share/roarm_moveit_config/package.bash'
+[4.989s] INFO:colcon.colcon_core.shell:Creating package script '/robot_eblan/install/roarm_moveit_config/share/roarm_moveit_config/package.zsh'
+[4.991s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/robot_eblan/install/roarm_moveit_config/share/colcon-core/packages/roarm_moveit_config)
+[4.992s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[4.994s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[4.994s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[4.995s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[5.072s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[5.073s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[5.073s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[5.073s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[5.090s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.Spawn.ExecFailed: /usr/bin/dbus-launch terminated abnormally without any error message
+[5.091s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[5.093s] INFO:colcon.colcon_core.shell:Creating prefix script '/robot_eblan/install/local_setup.ps1'
+[5.096s] INFO:colcon.colcon_core.shell:Creating prefix util module '/robot_eblan/install/_local_setup_util_ps1.py'
+[5.101s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/robot_eblan/install/setup.ps1'
+[5.109s] INFO:colcon.colcon_core.shell:Creating prefix script '/robot_eblan/install/local_setup.sh'
+[5.111s] INFO:colcon.colcon_core.shell:Creating prefix util module '/robot_eblan/install/_local_setup_util_sh.py'
+[5.113s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/robot_eblan/install/setup.sh'
+[5.120s] INFO:colcon.colcon_core.shell:Creating prefix script '/robot_eblan/install/local_setup.bash'
+[5.122s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/robot_eblan/install/setup.bash'
+[5.128s] INFO:colcon.colcon_core.shell:Creating prefix script '/robot_eblan/install/local_setup.zsh'
+[5.130s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/robot_eblan/install/setup.zsh'

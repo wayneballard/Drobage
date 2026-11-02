@@ -1,0 +1,52 @@
+[0.047s] Invoking command in '/manager_ws/build/mission_manager': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Drobage_jazzy/install/robot_ctrl_package:/Drobage_jazzy/install/navigation_package:/Drobage_jazzy/install/my_yolo_package:/opt/ros/jazzy /usr/bin/cmake /manager_ws/src/mission_manager -DCMAKE_INSTALL_PREFIX=/manager_ws/install/mission_manager
+[1.255s] -- The C compiler identification is GNU 13.3.0
+[1.777s] -- The CXX compiler identification is GNU 13.3.0
+[1.849s] -- Detecting C compiler ABI info
+[2.103s] -- Detecting C compiler ABI info - done
+[2.134s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.138s] -- Detecting C compile features
+[2.140s] -- Detecting C compile features - done
+[2.174s] -- Detecting CXX compiler ABI info
+[2.445s] -- Detecting CXX compiler ABI info - done
+[2.484s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.485s] -- Detecting CXX compile features
+[2.487s] -- Detecting CXX compile features - done
+[2.531s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[2.877s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[3.364s] -- Found rclcpp: 28.1.21 (/opt/ros/jazzy/share/rclcpp/cmake)
+[3.589s] -- Found rosidl_generator_c: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[3.649s] -- Found rosidl_generator_cpp: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[3.724s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.799s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.062s] -- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[4.077s] -- Found rmw_fastrtps_cpp: 8.4.4 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[4.375s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[4.461s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[4.518s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[4.771s] -- Found ament_lint_auto: 0.17.5 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[5.107s] -- Added test 'lint_cmake' to check CMake code style
+[5.114s] -- Added test 'xmllint' to check XML markup files
+[5.128s] -- Configuring done (4.6s)
+[5.155s] -- Generating done (0.0s)
+[5.161s] -- Build files have been written to: /manager_ws/build/mission_manager
+[5.186s] Invoked command in '/manager_ws/build/mission_manager' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Drobage_jazzy/install/robot_ctrl_package:/Drobage_jazzy/install/navigation_package:/Drobage_jazzy/install/my_yolo_package:/opt/ros/jazzy /usr/bin/cmake /manager_ws/src/mission_manager -DCMAKE_INSTALL_PREFIX=/manager_ws/install/mission_manager
+[5.189s] Invoking command in '/manager_ws/build/mission_manager': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Drobage_jazzy/install/robot_ctrl_package:/Drobage_jazzy/install/navigation_package:/Drobage_jazzy/install/my_yolo_package:/opt/ros/jazzy /usr/bin/cmake --build /manager_ws/build/mission_manager -- -j6 -l6
+[5.308s] Invoked command in '/manager_ws/build/mission_manager' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Drobage_jazzy/install/robot_ctrl_package:/Drobage_jazzy/install/navigation_package:/Drobage_jazzy/install/my_yolo_package:/opt/ros/jazzy /usr/bin/cmake --build /manager_ws/build/mission_manager -- -j6 -l6
+[5.341s] Invoking command in '/manager_ws/build/mission_manager': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Drobage_jazzy/install/robot_ctrl_package:/Drobage_jazzy/install/navigation_package:/Drobage_jazzy/install/my_yolo_package:/opt/ros/jazzy /usr/bin/cmake --install /manager_ws/build/mission_manager
+[5.372s] -- Install configuration: ""
+[5.372s] -- Installing: /manager_ws/install/mission_manager/share/ament_index/resource_index/package_run_dependencies/mission_manager
+[5.374s] -- Installing: /manager_ws/install/mission_manager/share/ament_index/resource_index/parent_prefix_path/mission_manager
+[5.374s] -- Installing: /manager_ws/install/mission_manager/share/mission_manager/environment/ament_prefix_path.sh
+[5.375s] -- Installing: /manager_ws/install/mission_manager/share/mission_manager/environment/ament_prefix_path.dsv
+[5.375s] -- Installing: /manager_ws/install/mission_manager/share/mission_manager/environment/path.sh
+[5.375s] -- Installing: /manager_ws/install/mission_manager/share/mission_manager/environment/path.dsv
+[5.376s] -- Installing: /manager_ws/install/mission_manager/share/mission_manager/local_setup.bash
+[5.376s] -- Installing: /manager_ws/install/mission_manager/share/mission_manager/local_setup.sh
+[5.376s] -- Installing: /manager_ws/install/mission_manager/share/mission_manager/local_setup.zsh
+[5.377s] -- Installing: /manager_ws/install/mission_manager/share/mission_manager/local_setup.dsv
+[5.377s] -- Installing: /manager_ws/install/mission_manager/share/mission_manager/package.dsv
+[5.377s] -- Installing: /manager_ws/install/mission_manager/share/ament_index/resource_index/packages/mission_manager
+[5.378s] -- Installing: /manager_ws/install/mission_manager/share/mission_manager/cmake/mission_managerConfig.cmake
+[5.378s] -- Installing: /manager_ws/install/mission_manager/share/mission_manager/cmake/mission_managerConfig-version.cmake
+[5.378s] -- Installing: /manager_ws/install/mission_manager/share/mission_manager/package.xml
+[5.383s] Invoked command in '/manager_ws/build/mission_manager' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Drobage_jazzy/install/robot_ctrl_package:/Drobage_jazzy/install/navigation_package:/Drobage_jazzy/install/my_yolo_package:/opt/ros/jazzy /usr/bin/cmake --install /manager_ws/build/mission_manager

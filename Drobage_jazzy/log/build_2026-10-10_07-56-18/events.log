@@ -1,0 +1,299 @@
+[0.000000] (-) TimerEvent: {}
+[0.000608] (my_yolo_package) JobQueued: {'identifier': 'my_yolo_package', 'dependencies': OrderedDict()}
+[0.001249] (navigation_package) JobQueued: {'identifier': 'navigation_package', 'dependencies': OrderedDict()}
+[0.001580] (robot_ctrl_package) JobQueued: {'identifier': 'robot_ctrl_package', 'dependencies': OrderedDict()}
+[0.001856] (my_yolo_package) JobStarted: {'identifier': 'my_yolo_package'}
+[0.085031] (navigation_package) JobStarted: {'identifier': 'navigation_package'}
+[0.099200] (-) TimerEvent: {}
+[0.101353] (robot_ctrl_package) JobStarted: {'identifier': 'robot_ctrl_package'}
+[0.199351] (-) TimerEvent: {}
+[0.299863] (-) TimerEvent: {}
+[0.400469] (-) TimerEvent: {}
+[0.501256] (-) TimerEvent: {}
+[0.602139] (-) TimerEvent: {}
+[0.703198] (-) TimerEvent: {}
+[0.803982] (-) TimerEvent: {}
+[0.904543] (-) TimerEvent: {}
+[1.005148] (-) TimerEvent: {}
+[1.105896] (-) TimerEvent: {}
+[1.206689] (-) TimerEvent: {}
+[1.307204] (-) TimerEvent: {}
+[1.407793] (-) TimerEvent: {}
+[1.508693] (-) TimerEvent: {}
+[1.609707] (-) TimerEvent: {}
+[1.710411] (-) TimerEvent: {}
+[1.811321] (-) TimerEvent: {}
+[1.912574] (-) TimerEvent: {}
+[2.013313] (-) TimerEvent: {}
+[2.114447] (-) TimerEvent: {}
+[2.216354] (-) TimerEvent: {}
+[2.317220] (-) TimerEvent: {}
+[2.417912] (-) TimerEvent: {}
+[2.518519] (-) TimerEvent: {}
+[2.619150] (-) TimerEvent: {}
+[2.719783] (-) TimerEvent: {}
+[15.265375] (-) TimerEvent: {}
+[15.366984] (-) TimerEvent: {}
+[15.467855] (-) TimerEvent: {}
+[15.568554] (-) TimerEvent: {}
+[15.669256] (-) TimerEvent: {}
+[15.769902] (-) TimerEvent: {}
+[15.870627] (-) TimerEvent: {}
+[15.971404] (-) TimerEvent: {}
+[16.072143] (-) TimerEvent: {}
+[16.172772] (-) TimerEvent: {}
+[16.273408] (-) TimerEvent: {}
+[16.374404] (-) TimerEvent: {}
+[16.475003] (-) TimerEvent: {}
+[16.575509] (-) TimerEvent: {}
+[16.676009] (-) TimerEvent: {}
+[16.776552] (-) TimerEvent: {}
+[16.877247] (-) TimerEvent: {}
+[16.978197] (-) TimerEvent: {}
+[17.079102] (-) TimerEvent: {}
+[17.179630] (-) TimerEvent: {}
+[17.280181] (-) TimerEvent: {}
+[17.380727] (-) TimerEvent: {}
+[17.481728] (-) TimerEvent: {}
+[17.582919] (-) TimerEvent: {}
+[17.683883] (-) TimerEvent: {}
+[17.785550] (-) TimerEvent: {}
+[17.886175] (-) TimerEvent: {}
+[17.987996] (-) TimerEvent: {}
+[18.089656] (-) TimerEvent: {}
+[18.191220] (-) TimerEvent: {}
+[18.292937] (-) TimerEvent: {}
+[18.551704] (-) TimerEvent: {}
+[18.652398] (-) TimerEvent: {}
+[18.753075] (-) TimerEvent: {}
+[18.853658] (-) TimerEvent: {}
+[18.954343] (-) TimerEvent: {}
+[19.054943] (-) TimerEvent: {}
+[19.155569] (-) TimerEvent: {}
+[19.256183] (-) TimerEvent: {}
+[19.356894] (-) TimerEvent: {}
+[19.457425] (-) TimerEvent: {}
+[19.558023] (-) TimerEvent: {}
+[19.658515] (-) TimerEvent: {}
+[19.759017] (-) TimerEvent: {}
+[19.859594] (-) TimerEvent: {}
+[19.960309] (-) TimerEvent: {}
+[20.061021] (-) TimerEvent: {}
+[20.161736] (-) TimerEvent: {}
+[20.262487] (-) TimerEvent: {}
+[20.363686] (-) TimerEvent: {}
+[20.464502] (-) TimerEvent: {}
+[20.565161] (-) TimerEvent: {}
+[20.665694] (-) TimerEvent: {}
+[20.766183] (-) TimerEvent: {}
+[20.866741] (-) TimerEvent: {}
+[20.967408] (-) TimerEvent: {}
+[21.068021] (-) TimerEvent: {}
+[21.168664] (-) TimerEvent: {}
+[21.269714] (-) TimerEvent: {}
+[21.370272] (-) TimerEvent: {}
+[21.470969] (-) TimerEvent: {}
+[21.571561] (-) TimerEvent: {}
+[21.672139] (-) TimerEvent: {}
+[21.772679] (-) TimerEvent: {}
+[21.873208] (-) TimerEvent: {}
+[21.973808] (-) TimerEvent: {}
+[22.074529] (-) TimerEvent: {}
+[22.175159] (-) TimerEvent: {}
+[22.275759] (-) TimerEvent: {}
+[22.376387] (-) TimerEvent: {}
+[22.477155] (-) TimerEvent: {}
+[22.578319] (-) TimerEvent: {}
+[22.679595] (-) TimerEvent: {}
+[22.781400] (-) TimerEvent: {}
+[22.884141] (-) TimerEvent: {}
+[22.985402] (-) TimerEvent: {}
+[23.087132] (-) TimerEvent: {}
+[23.188456] (-) TimerEvent: {}
+[23.289802] (-) TimerEvent: {}
+[23.390517] (-) TimerEvent: {}
+[23.491437] (-) TimerEvent: {}
+[23.603983] (-) TimerEvent: {}
+[23.704638] (-) TimerEvent: {}
+[23.805193] (-) TimerEvent: {}
+[23.905968] (-) TimerEvent: {}
+[24.006665] (-) TimerEvent: {}
+[24.107376] (-) TimerEvent: {}
+[24.208161] (-) TimerEvent: {}
+[24.308750] (-) TimerEvent: {}
+[24.409323] (-) TimerEvent: {}
+[24.509911] (-) TimerEvent: {}
+[24.610576] (-) TimerEvent: {}
+[24.711403] (-) TimerEvent: {}
+[24.812257] (-) TimerEvent: {}
+[24.913063] (-) TimerEvent: {}
+[25.014267] (-) TimerEvent: {}
+[25.116205] (-) TimerEvent: {}
+[25.217166] (-) TimerEvent: {}
+[25.318554] (-) TimerEvent: {}
+[25.419741] (-) TimerEvent: {}
+[25.521728] (-) TimerEvent: {}
+[25.622781] (-) TimerEvent: {}
+[25.724006] (-) TimerEvent: {}
+[25.824965] (-) TimerEvent: {}
+[25.925908] (-) TimerEvent: {}
+[26.026547] (-) TimerEvent: {}
+[26.127569] (-) TimerEvent: {}
+[26.229063] (-) TimerEvent: {}
+[26.331244] (-) TimerEvent: {}
+[26.431986] (-) TimerEvent: {}
+[26.532884] (-) TimerEvent: {}
+[26.633780] (-) TimerEvent: {}
+[26.735022] (-) TimerEvent: {}
+[26.835975] (-) TimerEvent: {}
+[26.937246] (-) TimerEvent: {}
+[27.038116] (-) TimerEvent: {}
+[27.139109] (-) TimerEvent: {}
+[27.239989] (-) TimerEvent: {}
+[27.340958] (-) TimerEvent: {}
+[27.441602] (-) TimerEvent: {}
+[27.542576] (-) TimerEvent: {}
+[27.643277] (-) TimerEvent: {}
+[27.744016] (-) TimerEvent: {}
+[27.845477] (-) TimerEvent: {}
+[27.946697] (-) TimerEvent: {}
+[28.047509] (-) TimerEvent: {}
+[28.500513] (-) TimerEvent: {}
+[28.601312] (-) TimerEvent: {}
+[28.702218] (-) TimerEvent: {}
+[29.181933] (-) TimerEvent: {}
+[29.284996] (-) TimerEvent: {}
+[29.385572] (-) TimerEvent: {}
+[29.486345] (-) TimerEvent: {}
+[29.587050] (-) TimerEvent: {}
+[29.688051] (-) TimerEvent: {}
+[29.789008] (-) TimerEvent: {}
+[29.890134] (-) TimerEvent: {}
+[29.991337] (-) TimerEvent: {}
+[30.093144] (-) TimerEvent: {}
+[30.194130] (-) TimerEvent: {}
+[30.295282] (-) TimerEvent: {}
+[30.396085] (-) TimerEvent: {}
+[30.497012] (-) TimerEvent: {}
+[30.597973] (-) TimerEvent: {}
+[30.699106] (-) TimerEvent: {}
+[30.799900] (-) TimerEvent: {}
+[30.901005] (-) TimerEvent: {}
+[31.001966] (-) TimerEvent: {}
+[31.102871] (-) TimerEvent: {}
+[31.203757] (-) TimerEvent: {}
+[31.304715] (-) TimerEvent: {}
+[31.405481] (-) TimerEvent: {}
+[31.506363] (-) TimerEvent: {}
+[31.607096] (-) TimerEvent: {}
+[31.707864] (-) TimerEvent: {}
+[31.808971] (-) TimerEvent: {}
+[31.909760] (-) TimerEvent: {}
+[32.010854] (-) TimerEvent: {}
+[32.111723] (-) TimerEvent: {}
+[32.212693] (-) TimerEvent: {}
+[32.313650] (-) TimerEvent: {}
+[32.414680] (-) TimerEvent: {}
+[32.515686] (-) TimerEvent: {}
+[32.616727] (-) TimerEvent: {}
+[32.717731] (-) TimerEvent: {}
+[32.818601] (-) TimerEvent: {}
+[32.919554] (-) TimerEvent: {}
+[33.020666] (-) TimerEvent: {}
+[33.121351] (-) TimerEvent: {}
+[33.221949] (-) TimerEvent: {}
+[33.322522] (-) TimerEvent: {}
+[33.423249] (-) TimerEvent: {}
+[33.523856] (-) TimerEvent: {}
+[33.624685] (-) TimerEvent: {}
+[33.725287] (-) TimerEvent: {}
+[33.825925] (-) TimerEvent: {}
+[33.926632] (-) TimerEvent: {}
+[34.022907] (navigation_package) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/navigation_package', 'build', '--build-base', '/Drobage_jazzy/build/navigation_package/build', 'install', '--record', '/Drobage_jazzy/build/navigation_package/install.log', '--install-scripts', '$base/lib/navigation_package', '--single-version-externally-managed', 'install_data'], 'cwd': '/Drobage_jazzy/src/navigation_package', 'env': {'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'HOSTNAME': 'wb-desktop', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/root', 'OLDPWD': '/Drobage_jazzy/src', 'ROS_PYTHON_VERSION': '3', 'COLCON_PREFIX_PATH': '/Drobage_jazzy/install:/ldlidar_ros2_binning/install', 'ROS_DISTRO': 'jazzy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'ROS_DOMAIN_ID': '42', 'AMENT_PREFIX_PATH': '/Drobage_jazzy/install/robot_ctrl_package:/Drobage_jazzy/install/navigation_package:/Drobage_jazzy/install/my_yolo_package:/ldlidar_ros2_binning/install/ldlidar_stl_ros2:/opt/ros/jazzy', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/Drobage_jazzy/build/navigation_package', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/Drobage_jazzy/build/navigation_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/Drobage_jazzy/install/navigation_package/lib/python3.12/site-packages:/Drobage_jazzy/install/robot_ctrl_package/lib/python3.12/site-packages:/Drobage_jazzy/install/navigation_package/lib/python3.12/site-packages:/Drobage_jazzy/install/my_yolo_package/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/ldlidar_ros2_binning/install/ldlidar_stl_ros2:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[34.027196] (-) TimerEvent: {}
+[34.037618] (my_yolo_package) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/my_yolo_package', 'build', '--build-base', '/Drobage_jazzy/build/my_yolo_package/build', 'install', '--record', '/Drobage_jazzy/build/my_yolo_package/install.log', '--install-scripts', '$base/lib/my_yolo_package', '--single-version-externally-managed', 'install_data'], 'cwd': '/Drobage_jazzy/src/my_yolo_package', 'env': {'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'HOSTNAME': 'wb-desktop', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/root', 'OLDPWD': '/Drobage_jazzy/src', 'ROS_PYTHON_VERSION': '3', 'COLCON_PREFIX_PATH': '/Drobage_jazzy/install:/ldlidar_ros2_binning/install', 'ROS_DISTRO': 'jazzy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'ROS_DOMAIN_ID': '42', 'AMENT_PREFIX_PATH': '/Drobage_jazzy/install/robot_ctrl_package:/Drobage_jazzy/install/navigation_package:/Drobage_jazzy/install/my_yolo_package:/ldlidar_ros2_binning/install/ldlidar_stl_ros2:/opt/ros/jazzy', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/Drobage_jazzy/build/my_yolo_package', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/Drobage_jazzy/build/my_yolo_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/Drobage_jazzy/install/my_yolo_package/lib/python3.12/site-packages:/Drobage_jazzy/install/robot_ctrl_package/lib/python3.12/site-packages:/Drobage_jazzy/install/navigation_package/lib/python3.12/site-packages:/Drobage_jazzy/install/my_yolo_package/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/ldlidar_ros2_binning/install/ldlidar_stl_ros2:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[34.041509] (robot_ctrl_package) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/robot_ctrl_package', 'build', '--build-base', '/Drobage_jazzy/build/robot_ctrl_package/build', 'install', '--record', '/Drobage_jazzy/build/robot_ctrl_package/install.log', '--install-scripts', '$base/lib/robot_ctrl_package', '--single-version-externally-managed', 'install_data'], 'cwd': '/Drobage_jazzy/src/robot_ctrl_package', 'env': {'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'HOSTNAME': 'wb-desktop', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/root', 'OLDPWD': '/Drobage_jazzy/src', 'ROS_PYTHON_VERSION': '3', 'COLCON_PREFIX_PATH': '/Drobage_jazzy/install:/ldlidar_ros2_binning/install', 'ROS_DISTRO': 'jazzy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'ROS_DOMAIN_ID': '42', 'AMENT_PREFIX_PATH': '/Drobage_jazzy/install/robot_ctrl_package:/Drobage_jazzy/install/navigation_package:/Drobage_jazzy/install/my_yolo_package:/ldlidar_ros2_binning/install/ldlidar_stl_ros2:/opt/ros/jazzy', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/Drobage_jazzy/build/robot_ctrl_package', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/Drobage_jazzy/build/robot_ctrl_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/Drobage_jazzy/install/robot_ctrl_package/lib/python3.12/site-packages:/Drobage_jazzy/install/robot_ctrl_package/lib/python3.12/site-packages:/Drobage_jazzy/install/navigation_package/lib/python3.12/site-packages:/Drobage_jazzy/install/my_yolo_package/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/ldlidar_ros2_binning/install/ldlidar_stl_ros2:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[34.127445] (-) TimerEvent: {}
+[34.228009] (-) TimerEvent: {}
+[34.332969] (-) TimerEvent: {}
+[34.387252] (robot_ctrl_package) StderrLine: {'line': b"/usr/local/lib/python3.12/dist-packages/setuptools/_distutils/dist.py:318: UserWarning: Unknown distribution option: 'tests_require'\n"}
+[34.387808] (robot_ctrl_package) StderrLine: {'line': b'  warnings.warn(msg)\n'}
+[34.398185] (my_yolo_package) StderrLine: {'line': b"/usr/local/lib/python3.12/dist-packages/setuptools/_distutils/dist.py:318: UserWarning: Unknown distribution option: 'tests_require'\n"}
+[34.398578] (my_yolo_package) StderrLine: {'line': b'  warnings.warn(msg)\n'}
+[34.433095] (-) TimerEvent: {}
+[34.533881] (-) TimerEvent: {}
+[34.634427] (-) TimerEvent: {}
+[34.644033] (robot_ctrl_package) StdoutLine: {'line': b'running egg_info\n'}
+[34.662438] (navigation_package) StdoutLine: {'line': b'running egg_info\n'}
+[34.663901] (my_yolo_package) StdoutLine: {'line': b'running egg_info\n'}
+[34.686306] (robot_ctrl_package) StdoutLine: {'line': b'writing ../../build/robot_ctrl_package/robot_ctrl_package.egg-info/PKG-INFO\n'}
+[34.689693] (robot_ctrl_package) StdoutLine: {'line': b'writing dependency_links to ../../build/robot_ctrl_package/robot_ctrl_package.egg-info/dependency_links.txt\n'}
+[34.690128] (robot_ctrl_package) StdoutLine: {'line': b'writing entry points to ../../build/robot_ctrl_package/robot_ctrl_package.egg-info/entry_points.txt\n'}
+[34.690516] (robot_ctrl_package) StdoutLine: {'line': b'writing requirements to ../../build/robot_ctrl_package/robot_ctrl_package.egg-info/requires.txt\n'}
+[34.690766] (robot_ctrl_package) StdoutLine: {'line': b'writing top-level names to ../../build/robot_ctrl_package/robot_ctrl_package.egg-info/top_level.txt\n'}
+[34.705303] (navigation_package) StdoutLine: {'line': b'writing ../../build/navigation_package/navigation_package.egg-info/PKG-INFO\n'}
+[34.707420] (my_yolo_package) StdoutLine: {'line': b'writing ../../build/my_yolo_package/my_yolo_package.egg-info/PKG-INFO\n'}
+[34.709751] (navigation_package) StdoutLine: {'line': b'writing dependency_links to ../../build/navigation_package/navigation_package.egg-info/dependency_links.txt\n'}
+[34.710142] (my_yolo_package) StdoutLine: {'line': b'writing dependency_links to ../../build/my_yolo_package/my_yolo_package.egg-info/dependency_links.txt\n'}
+[34.710512] (navigation_package) StdoutLine: {'line': b'writing requirements to ../../build/navigation_package/navigation_package.egg-info/requires.txt\n'}
+[34.710729] (my_yolo_package) StdoutLine: {'line': b'writing entry points to ../../build/my_yolo_package/my_yolo_package.egg-info/entry_points.txt\n'}
+[34.710949] (navigation_package) StdoutLine: {'line': b'writing top-level names to ../../build/navigation_package/navigation_package.egg-info/top_level.txt\n'}
+[34.712692] (my_yolo_package) StdoutLine: {'line': b'writing requirements to ../../build/my_yolo_package/my_yolo_package.egg-info/requires.txt\n'}
+[34.712938] (my_yolo_package) StdoutLine: {'line': b'writing top-level names to ../../build/my_yolo_package/my_yolo_package.egg-info/top_level.txt\n'}
+[34.734542] (-) TimerEvent: {}
+[34.788386] (robot_ctrl_package) StdoutLine: {'line': b"reading manifest file '../../build/robot_ctrl_package/robot_ctrl_package.egg-info/SOURCES.txt'\n"}
+[34.791848] (robot_ctrl_package) StdoutLine: {'line': b"writing manifest file '../../build/robot_ctrl_package/robot_ctrl_package.egg-info/SOURCES.txt'\n"}
+[34.792289] (robot_ctrl_package) StdoutLine: {'line': b'running build\n'}
+[34.792579] (robot_ctrl_package) StdoutLine: {'line': b'running build_py\n'}
+[34.801077] (robot_ctrl_package) StdoutLine: {'line': b'running install\n'}
+[34.801841] (navigation_package) StdoutLine: {'line': b"reading manifest file '../../build/navigation_package/navigation_package.egg-info/SOURCES.txt'\n"}
+[34.805142] (navigation_package) StdoutLine: {'line': b"writing manifest file '../../build/navigation_package/navigation_package.egg-info/SOURCES.txt'\n"}
+[34.805564] (navigation_package) StdoutLine: {'line': b'running build\n'}
+[34.805769] (navigation_package) StdoutLine: {'line': b'running build_py\n'}
+[34.810521] (robot_ctrl_package) StdoutLine: {'line': b'running install_lib\n'}
+[34.810975] (navigation_package) StdoutLine: {'line': b'running install\n'}
+[34.814781] (my_yolo_package) StdoutLine: {'line': b"reading manifest file '../../build/my_yolo_package/my_yolo_package.egg-info/SOURCES.txt'\n"}
+[34.818851] (my_yolo_package) StdoutLine: {'line': b"writing manifest file '../../build/my_yolo_package/my_yolo_package.egg-info/SOURCES.txt'\n"}
+[34.819285] (my_yolo_package) StdoutLine: {'line': b'running build\n'}
+[34.819517] (my_yolo_package) StdoutLine: {'line': b'running build_py\n'}
+[34.820486] (navigation_package) StdoutLine: {'line': b'running install_lib\n'}
+[34.827914] (my_yolo_package) StdoutLine: {'line': b'running install\n'}
+[34.834666] (-) TimerEvent: {}
+[34.837831] (my_yolo_package) StdoutLine: {'line': b'running install_lib\n'}
+[34.857159] (robot_ctrl_package) StdoutLine: {'line': b'running install_data\n'}
+[34.857992] (robot_ctrl_package) StdoutLine: {'line': b'running install_egg_info\n'}
+[34.866092] (navigation_package) StdoutLine: {'line': b'running install_data\n'}
+[34.867270] (navigation_package) StdoutLine: {'line': b'running install_egg_info\n'}
+[34.885103] (my_yolo_package) StdoutLine: {'line': b'running install_data\n'}
+[34.887025] (my_yolo_package) StdoutLine: {'line': b'running install_egg_info\n'}
+[34.901502] (robot_ctrl_package) StdoutLine: {'line': b"removing '/Drobage_jazzy/install/robot_ctrl_package/lib/python3.12/site-packages/robot_ctrl_package-0.0.0-py3.12.egg-info' (and everything under it)\n"}
+[34.902340] (robot_ctrl_package) StdoutLine: {'line': b'Copying ../../build/robot_ctrl_package/robot_ctrl_package.egg-info to /Drobage_jazzy/install/robot_ctrl_package/lib/python3.12/site-packages/robot_ctrl_package-0.0.0-py3.12.egg-info\n'}
+[34.906259] (robot_ctrl_package) StdoutLine: {'line': b'running install_scripts\n'}
+[34.911086] (navigation_package) StdoutLine: {'line': b"removing '/Drobage_jazzy/install/navigation_package/lib/python3.12/site-packages/navigation_package-0.0.0-py3.12.egg-info' (and everything under it)\n"}
+[34.911826] (navigation_package) StdoutLine: {'line': b'Copying ../../build/navigation_package/navigation_package.egg-info to /Drobage_jazzy/install/navigation_package/lib/python3.12/site-packages/navigation_package-0.0.0-py3.12.egg-info\n'}
+[34.914626] (navigation_package) StdoutLine: {'line': b'running install_scripts\n'}
+[34.932263] (my_yolo_package) StdoutLine: {'line': b"removing '/Drobage_jazzy/install/my_yolo_package/lib/python3.12/site-packages/my_yolo_package-0.0.0-py3.12.egg-info' (and everything under it)\n"}
+[34.933216] (my_yolo_package) StdoutLine: {'line': b'Copying ../../build/my_yolo_package/my_yolo_package.egg-info to /Drobage_jazzy/install/my_yolo_package/lib/python3.12/site-packages/my_yolo_package-0.0.0-py3.12.egg-info\n'}
+[34.934751] (-) TimerEvent: {}
+[34.936951] (my_yolo_package) StdoutLine: {'line': b'running install_scripts\n'}
+[34.995940] (robot_ctrl_package) StdoutLine: {'line': b'Installing arm_node script to /Drobage_jazzy/install/robot_ctrl_package/lib/robot_ctrl_package\n'}
+[34.997369] (robot_ctrl_package) StdoutLine: {'line': b'Installing control_node script to /Drobage_jazzy/install/robot_ctrl_package/lib/robot_ctrl_package\n'}
+[34.997779] (robot_ctrl_package) StdoutLine: {'line': b'Installing transform_node script to /Drobage_jazzy/install/robot_ctrl_package/lib/robot_ctrl_package\n'}
+[34.998743] (robot_ctrl_package) StdoutLine: {'line': b"writing list of installed files to '/Drobage_jazzy/build/robot_ctrl_package/install.log'\n"}
+[35.003963] (navigation_package) StdoutLine: {'line': b"writing list of installed files to '/Drobage_jazzy/build/navigation_package/install.log'\n"}
+[35.030265] (my_yolo_package) StdoutLine: {'line': b'Installing imu_node script to /Drobage_jazzy/install/my_yolo_package/lib/my_yolo_package\n'}
+[35.031403] (my_yolo_package) StdoutLine: {'line': b'Installing inference_node script to /Drobage_jazzy/install/my_yolo_package/lib/my_yolo_package\n'}
+[35.031727] (my_yolo_package) StdoutLine: {'line': b'Installing oak_camera_node script to /Drobage_jazzy/install/my_yolo_package/lib/my_yolo_package\n'}
+[35.034052] (my_yolo_package) StdoutLine: {'line': b'Installing odom_node script to /Drobage_jazzy/install/my_yolo_package/lib/my_yolo_package\n'}
+[35.034459] (my_yolo_package) StdoutLine: {'line': b'Installing tracking_logger script to /Drobage_jazzy/install/my_yolo_package/lib/my_yolo_package\n'}
+[35.034660] (my_yolo_package) StdoutLine: {'line': b'Installing visualizer_node script to /Drobage_jazzy/install/my_yolo_package/lib/my_yolo_package\n'}
+[35.034822] (-) TimerEvent: {}
+[35.035114] (my_yolo_package) StdoutLine: {'line': b"writing list of installed files to '/Drobage_jazzy/build/my_yolo_package/install.log'\n"}
+[35.091488] (robot_ctrl_package) CommandEnded: {'returncode': 0}
+[35.135896] (-) TimerEvent: {}
+[35.157448] (robot_ctrl_package) JobEnded: {'identifier': 'robot_ctrl_package', 'rc': 0}
+[35.162248] (navigation_package) CommandEnded: {'returncode': 0}
+[35.177826] (navigation_package) JobEnded: {'identifier': 'navigation_package', 'rc': 0}
+[35.179624] (my_yolo_package) CommandEnded: {'returncode': 0}
+[35.193181] (my_yolo_package) JobEnded: {'identifier': 'my_yolo_package', 'rc': 0}
+[35.195726] (-) EventReactorShutdown: {}

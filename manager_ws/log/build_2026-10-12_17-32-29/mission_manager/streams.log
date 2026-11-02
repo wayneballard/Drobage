@@ -1,0 +1,15 @@
+[0.033s] Invoking command in '/manager_ws/build/mission_manager': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Drobage_jazzy/install/robot_ctrl_package:/Drobage_jazzy/install/navigation_package:/Drobage_jazzy/install/my_yolo_package:/opt/ros/jazzy /usr/bin/cmake --build /manager_ws/build/mission_manager -- -j6 -l6
+[0.788s] [ 50%] [32mBuilding CXX object CMakeFiles/mission.dir/src/mission.cpp.o[0m
+[7.898s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:[m[K In constructor ‘[01m[KMissionManager::[01;32m[KMissionManager[m[K()[m[K’:
+[7.898s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:220:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kresume_exploration_sub_[m[K’ was not declared in this scope; did you mean ‘[01m[KResumeExplorationCallback[m[K’?
+[7.899s]   220 |         [01;31m[Kresume_exploration_sub_[m[K =
+[7.899s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[7.899s]       |         [32m[KResumeExplorationCallback[m[K
+[7.960s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:[m[K In member function ‘[01m[Kvoid MissionManager::[01;32m[KResumeExplorationCallback[m[K(std_msgs::msg::Bool_<std::allocator<void> >::SharedPtr)[m[K’:
+[7.961s] [01m[K/manager_ws/src/mission_manager/src/mission.cpp:462:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kresume_exploration[m[K’ was not declared in this scope
+[7.961s]   462 |         [01;31m[Kresume_exploration[m[K = msg->data;
+[7.961s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[19.051s] gmake[2]: *** [CMakeFiles/mission.dir/build.make:76: CMakeFiles/mission.dir/src/mission.cpp.o] Error 1
+[19.051s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/mission.dir/all] Error 2
+[19.052s] gmake: *** [Makefile:146: all] Error 2
+[19.059s] Invoked command in '/manager_ws/build/mission_manager' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Drobage_jazzy/install/robot_ctrl_package:/Drobage_jazzy/install/navigation_package:/Drobage_jazzy/install/my_yolo_package:/opt/ros/jazzy /usr/bin/cmake --build /manager_ws/build/mission_manager -- -j6 -l6
