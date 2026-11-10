@@ -1,5 +1,7 @@
 The repository for demonstration purposes only.
 
+Demonstration of results: https://drive.google.com/drive/folders/1JuG-kh2-Das2qe-BWxKyKAV0xQG6d8ql?usp=share_link
+
 # Architecture 
 We use BFS to find reachable sells. Once selected, one's coordinates are sent to Nav2 planner in order to compute safe path. When reached - process repeats. 
 This navigation setup is based on LD19 2-D Lidar and ROS slam_toolbox which constructs the map of our surroundings.
