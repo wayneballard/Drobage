@@ -30,6 +30,14 @@ More specifically, YOLO model and depth-coordinates extraction run in different 
 - OAK-D Lite depth camera
 - Jetson Orin Nano
 
+# Future work
+
+- Navigation is purely lidar-based, so this is the direction to work on. The main limitation is that we have 2D lidar, and it is not suitable for outdoor performance. So we either have to plug in 3D lidar or do sensor fusion for depth camera and lidar in order to make it work.
+
+- Detection model was open-source. So new detection model is needed.
+
+
+
 
 
 
