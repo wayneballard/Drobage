@@ -20,3 +20,19 @@ More specifically, YOLO model and depth-coordinates extraction run in different 
 - `manager_ws` - BFS algorithm
 - `my_yolo_package_jazzy` - in our case, we launch oak_camera_node, inference_node and visualizer_node form this package, because it is located in different docker environment and we need to launch from that environment.
 - `robot_eblan_jazzy` - robotic arm's driver, configuration files.
+
+# Hardware
+
+- Leo Rover
+- RoArm M3
+- imu BNO085
+- LD19 lidar
+- OAK-D Lite depth camera
+- Jetson Orin Nano
+
+
+
+
+
+
+
