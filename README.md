@@ -1,6 +1,6 @@
 The repository for demonstration purposes only.
 
-Demonstration of results: https://drive.google.com/drive/folders/1JuG-kh2-Das2qe-BWxKyKAV0xQG6d8ql?usp=share_link
+Videos: https://drive.google.com/drive/folders/1JuG-kh2-Das2qe-BWxKyKAV0xQG6d8ql?usp=share_link
 
 # Architecture
 
