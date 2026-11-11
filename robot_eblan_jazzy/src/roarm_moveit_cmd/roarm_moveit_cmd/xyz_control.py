@@ -653,16 +653,7 @@ class MoveToXYZServer(Node):
             step4_req,
             step4_resp
         )
-
-        # ------------------------------------------------------------
-        # FIX:
-        #
-        # Original code checked step3_resp.success here.
-        #
-        # That meant Step 4 could fail while the service still
-        # reported success.
-        # ------------------------------------------------------------
-
+        
         if not step4_resp.success:
 
             response.success = False
@@ -688,16 +679,6 @@ class MoveToXYZServer(Node):
     # =================================================================
 
     def solve_ik(self, x, y, z):
-
-        # ------------------------------------------------------------
-        # Same pitch list as your original code.
-        #
-        # IMPORTANT:
-        # We still try these in the same order.
-        #
-        # The difference is that we DON'T immediately return when
-        # the first solution is found.
-        # ------------------------------------------------------------
 
         pitch_values = [
             90,
@@ -733,13 +714,6 @@ class MoveToXYZServer(Node):
             175,
             180
         ]
-
-        # ============================================================
-        # YOUR ORIGINAL CENTERING LOGIC
-        # ============================================================
-
-        # Base angle:
-        # The base joint points toward the object.
 
         base_angle = math.atan2(
             y,
@@ -865,11 +839,7 @@ class MoveToXYZServer(Node):
             return math.sqrt(
                 total_distance
             )
-
-        # ============================================================
-        # COLLECT VALID SOLUTIONS
-        # ============================================================
-
+            
         valid_solutions = []
 
         last_result = None
