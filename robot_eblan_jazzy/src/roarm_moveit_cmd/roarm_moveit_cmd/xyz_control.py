@@ -208,19 +208,14 @@ class MoveToXYZServer(Node):
 
         print(self.x, self.y, self.z)
 
-    # -----------------------------------------------------------------
-
     def detection_callback(self, msg: Bool):
 
         self.detected = bool(msg.data)
-
-    # -----------------------------------------------------------------
 
     def stop_callback(self, msg):
 
         self.full_stop = msg.data
 
-    # -----------------------------------------------------------------
 
     def joint_state_callback(self, msg: JointState):
 
@@ -424,7 +419,6 @@ class MoveToXYZServer(Node):
 
         return True
 
-    # -----------------------------------------------------------------
 
     def open_gripper(self):
 
