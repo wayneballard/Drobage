@@ -10,7 +10,7 @@ from launch.event_handlers import OnProcessStart
 def generate_launch_description():
 
     imu = ExecuteProcess(
-        cmd=['python3', '/joanna/bno085_node.py'],
+        cmd=['python3', '/imu_jazzy/bno085_node.py'],
         output='screen'
     )
 
