@@ -16,8 +16,6 @@ def generate_launch_description():
 
     hardware = IncludeLaunchDescription(PythonLaunchDescriptionSource('/Drobage_jazzy/src/navigation_package/launch/launch_hardware.launch.py'))
 
-#    arm = IncludeLaunchDescription(PythonLaunchDescriptionSource('/robot_eblan/src/roarm_moveit_config/launch/launch_arm.launch.py'))
-
     localization = TimerAction(period=5.0, actions=[IncludeLaunchDescription(PythonLaunchDescriptionSource('/Drobage_jazzy/src/navigation_package/launch/launch_lidar.launch.py'))])
 
     nav = TimerAction(period=10.0, actions=[IncludeLaunchDescription(PythonLaunchDescriptionSource('/Drobage_jazzy/src/navigation_package/launch/launch_nav2.launch.py'))])
@@ -38,7 +36,6 @@ def generate_launch_description():
 
     delayed_manager = TimerAction(period=35.0, actions=[manager]) 
 
-#    delayed_arm = TimerAction(period=45.0, actions=[arm])
 
     return LaunchDescription([
         imu,
@@ -47,5 +44,4 @@ def generate_launch_description():
         nav,
         delayed_control,
         delayed_manager,
- #       delayed_arm,
     ])
