@@ -9,11 +9,11 @@ from launch.event_handlers import OnProcessStart
 
 def generate_launch_description():
 
-    demo = IncludeLaunchDescription(PythonLaunchDescriptionSource('/robot_eblan/src/roarm_moveit_config/launch/demo.launch.py'))
+    demo = IncludeLaunchDescription(PythonLaunchDescriptionSource('/robot_arm_jazzy/src/roarm_moveit_config/launch/demo.launch.py'))
 
-    xyz_control = IncludeLaunchDescription(PythonLaunchDescriptionSource('/robot_eblan/src/roarm_moveit_config/launch/xyz_control.launch.py'))
+    xyz_control = IncludeLaunchDescription(PythonLaunchDescriptionSource('/robot_arm_jazzy/src/roarm_moveit_config/launch/xyz_control.launch.py'))
 
-    driver = IncludeLaunchDescription(PythonLaunchDescriptionSource('/robot_eblan/src/roarm_moveit_config/launch/driver.launch.py'))
+    driver = IncludeLaunchDescription(PythonLaunchDescriptionSource('/robot_arm_jazzy/src/roarm_moveit_config/launch/driver.launch.py'))
 
     
 
